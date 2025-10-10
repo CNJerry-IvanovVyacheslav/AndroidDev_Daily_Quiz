@@ -60,4 +60,5 @@ dependencies {
 
     implementation(libs.gson)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.material3)
 }

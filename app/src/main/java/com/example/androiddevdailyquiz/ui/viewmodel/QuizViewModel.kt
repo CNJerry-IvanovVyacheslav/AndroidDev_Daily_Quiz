@@ -14,7 +14,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     val questions: LiveData<List<Question>> get() = _questions
 
     private val _currentIndex = MutableLiveData(0)
-    val currentIndex: LiveData<Int> get() = _currentIndex   // ✅ публичное
+    val currentIndex: LiveData<Int> get() = _currentIndex
 
     private val _currentQuestion = MutableLiveData<Question?>()
     val currentQuestion: LiveData<Question?> get() = _currentQuestion

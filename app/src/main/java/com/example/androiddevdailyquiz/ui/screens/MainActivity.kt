@@ -40,11 +40,10 @@ class MainActivity : ComponentActivity() {
             }
         }
     }
+
     @Composable
     fun ModeSelectionScreen(viewModel: QuizViewModel) {
         var selectedMode by remember { mutableStateOf<QuestionType?>(null) }
-
-
 
         BackHandler(enabled = selectedMode != null) {
             selectedMode = null
@@ -87,5 +86,4 @@ class MainActivity : ComponentActivity() {
             QuizScreen(viewModel = viewModel, mode = selectedMode!!)
         }
     }
-
 }
