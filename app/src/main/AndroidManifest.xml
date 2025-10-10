@@ -12,10 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevDailyQuiz">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.screens.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.AndroidDevDailyQuiz">
+            android:theme="@style/Theme.AndroidDevDailyQuiz"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

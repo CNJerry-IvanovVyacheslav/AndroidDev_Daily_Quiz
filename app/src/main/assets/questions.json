@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "type": "MULTIPLE_CHOICE",
+    "question": "What is LiveData in Android?",
+    "options": ["A database", "An observable data holder", "A UI component", "A thread"],
+    "answer": "An observable data holder"
+  },
+  {
+    "id": 2,
+    "type": "SELF_PRACTICE",
+    "question": "ViewModel stores _____________ that survives configuration changes.",
+    "answer": "UI-related data"
+  }
+]
