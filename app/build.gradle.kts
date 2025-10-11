@@ -61,4 +61,6 @@ dependencies {
     implementation(libs.gson)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.work.runtime.ktx)
 }

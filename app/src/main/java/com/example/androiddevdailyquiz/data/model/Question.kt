@@ -2,8 +2,8 @@ package com.example.androiddevdailyquiz.data.model
 
 data class Question(
     val id: Int,
-    val type: QuestionType,
     val question: String,
-    val options: List<String>? = null,
-    val answer: String
+    val answer: String,
+    val type: QuestionType,
+    val fakeOptions: List<String>? = null
 )

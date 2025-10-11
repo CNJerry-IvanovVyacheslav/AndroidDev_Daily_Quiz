@@ -1,6 +1,7 @@
 package com.example.androiddevdailyquiz.ui.theme
 
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
@@ -23,7 +24,13 @@ private val DarkColors = darkColorScheme(
 fun DailyQuizTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = DarkColors,
-        typography = Typography,
-        content = content
-    )
+        typography = Typography
+    ) {
+        Surface(
+            color = MaterialTheme.colorScheme.background,
+            contentColor = MaterialTheme.colorScheme.onBackground
+        ) {
+            content()
+        }
+    }
 }
