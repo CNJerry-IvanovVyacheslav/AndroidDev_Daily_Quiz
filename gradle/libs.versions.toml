@@ -1,5 +1,6 @@
 [versions]
 agp = "8.13.0"
+datastorePreferences = "1.1.7"
 gson = "2.13.2"
 kotlin = "2.0.21"
 coreKtx = "1.10.1"
@@ -15,6 +16,7 @@ runtimeLivedata = "1.9.3"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-datastore-preferences = { module = "androidx.datastore:datastore-preferences", version.ref = "datastorePreferences" }
 androidx-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycleViewmodelCompose" }
 androidx-material3 = { module = "androidx.compose.material3:material3", version.ref = "material3" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }

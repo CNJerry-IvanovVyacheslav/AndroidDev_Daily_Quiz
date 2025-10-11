@@ -19,10 +19,6 @@ fun QuizScreen(
     val questions by viewModel.questions.observeAsState(emptyList())
     val currentIndex by viewModel.currentIndex.observeAsState(0)
     val currentQuestion = questions.getOrNull(currentIndex)
-    val showAnswer by viewModel.showAnswer.observeAsState(false)
-
-    var selectedOption by remember { mutableStateOf<String?>(null) }
-    var isAnswered by remember { mutableStateOf(false) }
 
     Column(
         modifier = Modifier
@@ -32,47 +28,12 @@ fun QuizScreen(
         verticalArrangement = Arrangement.SpaceBetween
     ) {
         if (currentQuestion != null) {
-            Column {
-                Text(
-                    text = currentQuestion.question,
-                    style = MaterialTheme.typography.headlineMedium,
-                    color = MaterialTheme.colorScheme.onBackground
-                )
-
-                Spacer(Modifier.height(24.dp))
-
-                currentQuestion.fakeOptions?.forEach { option ->
-                    Button(
-                        onClick = {
-                            selectedOption = option
-                            isAnswered = true
-                            viewModel.toggleAnswer()
-                        },
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(vertical = 6.dp),
-                        colors = ButtonDefaults.buttonColors(
-                            containerColor = when {
-                                !isAnswered -> MaterialTheme.colorScheme.secondary
-                                option == currentQuestion.answer -> MaterialTheme.colorScheme.primary
-                                selectedOption == option -> MaterialTheme.colorScheme.error
-                                else -> MaterialTheme.colorScheme.secondary
-                            }
-                        )
-                    ) {
-                        Text(option, color = MaterialTheme.colorScheme.onSecondary)
-                    }
+            BlankWithOptionsQuestion(
+                question = currentQuestion,
+                onCheckAnswer = { answer ->
+                    viewModel.checkAnswer(answer)
                 }
-
-                if (showAnswer && isAnswered) {
-                    Spacer(Modifier.height(16.dp))
-                    Text(
-                        text = "✅ Correct answer: ${currentQuestion.answer}",
-                        style = MaterialTheme.typography.titleMedium,
-                        color = MaterialTheme.colorScheme.primary
-                    )
-                }
-            }
+            )
 
             Spacer(Modifier.height(16.dp))
 
@@ -88,11 +49,7 @@ fun QuizScreen(
                 }
 
                 Button(
-                    onClick = {
-                        viewModel.nextQuestion()
-                        selectedOption = null
-                        isAnswered = false
-                    },
+                    onClick = { viewModel.nextQuestion() },
                     colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
                 ) {
                     Text("Next Question", color = MaterialTheme.colorScheme.onPrimary)
