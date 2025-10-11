@@ -46,4 +46,3 @@ fun StatisticsScreen(viewModel: QuizViewModel, onBack: () -> Unit) {
         }
     }
 }
-

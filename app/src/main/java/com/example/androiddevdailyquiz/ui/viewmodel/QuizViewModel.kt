@@ -4,13 +4,18 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
+import com.example.androiddevdailyquiz.data.DataStoreManager
 import com.example.androiddevdailyquiz.data.model.Question
 import com.example.androiddevdailyquiz.data.repo.QuestionRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = QuestionRepository(application)
+    private val dataStore = DataStoreManager(application)
 
     private val _questions = MutableLiveData<List<Question>>(emptyList())
     val questions: LiveData<List<Question>> get() = _questions
@@ -24,7 +29,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _showAnswer = MutableLiveData(false)
     val showAnswer: LiveData<Boolean> get() = _showAnswer
 
-    // **Статистика**
+    // Статистика и стрик
     private val _correctAnswers = MutableStateFlow(0)
     val correctAnswers: StateFlow<Int> = _correctAnswers
 
@@ -39,14 +44,29 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     init {
         loadQuestions()
+        // Подгружаем сохранённые данные из DataStore
+        viewModelScope.launch {
+            dataStore.correctFlow.collectLatest { _correctAnswers.value = it }
+        }
+        viewModelScope.launch {
+            dataStore.incorrectFlow.collectLatest { _incorrectAnswers.value = it }
+        }
+        viewModelScope.launch {
+            dataStore.streakFlow.collectLatest { _streakCount.value = it }
+        }
+        viewModelScope.launch {
+            dataStore.lastStreakDateFlow.collectLatest { lastDate ->
+                val today = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault())
+                    .format(java.util.Calendar.getInstance().time)
+                _streakActive.value = (lastDate == today)
+            }
+        }
     }
 
     fun loadQuestions() {
         val loaded = repository.loadQuestions().shuffled()
         _questions.value = loaded
-        if (loaded.isNotEmpty()) {
-            _currentQuestion.value = loaded[0]
-        }
+        if (loaded.isNotEmpty()) _currentQuestion.value = loaded[0]
     }
 
     fun nextQuestion() {
@@ -65,18 +85,14 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     fun checkAnswer(userInput: String): Boolean {
         val correct = _currentQuestion.value?.answer ?: return false
         val isCorrect = userInput.trim().equals(correct.trim(), ignoreCase = true)
-        if (isCorrect) _correctAnswers.value += 1
-        else _incorrectAnswers.value += 1
+
+        viewModelScope.launch {
+            if (isCorrect) dataStore.incrementCorrect()
+            else dataStore.incrementIncorrect()
+            dataStore.updateStreak()
+        }
+
         return isCorrect
-    }
-
-    fun markQuizDoneToday() {
-        _streakActive.value = true
-        _streakCount.value += 1
-    }
-
-    fun resetStreakIfInactive() {
-        _streakActive.value = false
     }
 
     fun getAccuracy(): Float {

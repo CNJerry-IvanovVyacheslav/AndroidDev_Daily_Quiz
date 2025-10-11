@@ -22,17 +22,12 @@ class MainActivity : ComponentActivity() {
                 when (currentScreen) {
                     "menu" -> MainMenuScreen(
                         viewModel = quizViewModel,
-                        onStartQuiz = {
-                            currentScreen = "quiz"
-                            quizViewModel.markQuizDoneToday()
-                        },
+                        onStartQuiz = { currentScreen = "quiz" },
                         onShowStats = { currentScreen = "stats" }
                     )
 
                     "quiz" -> {
-                        BackHandler {
-                            currentScreen = "menu" // ✅ Назад в меню, не закрываем приложение
-                        }
+                        BackHandler { currentScreen = "menu" }
                         QuizScreen(
                             viewModel = quizViewModel,
                             mode = QuestionType.MULTIPLE_CHOICE,
@@ -41,9 +36,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     "stats" -> {
-                        BackHandler {
-                            currentScreen = "menu"
-                        }
+                        BackHandler { currentScreen = "menu" }
                         StatisticsScreen(
                             viewModel = quizViewModel,
                             onBack = { currentScreen = "menu" }
