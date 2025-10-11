@@ -11,7 +11,6 @@ import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.androiddevdailyquiz.R
-import com.example.androiddevdailyquiz.data.model.QuestionType
 import com.example.androiddevdailyquiz.ui.viewmodel.QuizViewModel
 
 @Composable
@@ -29,7 +28,6 @@ fun MainMenuScreen(
             .background(MaterialTheme.colorScheme.background)
             .padding(24.dp)
     ) {
-        // 🔥 Streak Indicator
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -58,7 +56,6 @@ fun MainMenuScreen(
             )
         }
 
-        // 🏠 Title
         Text(
             text = "Android Dev Daily Quiz",
             style = MaterialTheme.typography.headlineLarge,
@@ -66,7 +63,6 @@ fun MainMenuScreen(
             modifier = Modifier.padding(bottom = 32.dp)
         )
 
-        // 🧩 Buttons
         Button(
             onClick = onStartQuiz,
             modifier = Modifier.fillMaxWidth(),

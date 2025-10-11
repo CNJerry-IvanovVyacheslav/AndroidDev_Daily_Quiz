@@ -16,7 +16,7 @@ fun BlankWithOptionsQuestion(
     question: Question,
     onCheckAnswer: (String) -> Boolean
 ) {
-    key(question.id) { // ключ по вопросу — пересоздаём состояние при новом вопросе
+    key(question.id) {
         var selectedOption by remember { mutableStateOf<String?>(null) }
         var isCorrect by remember { mutableStateOf<Boolean?>(null) }
 

@@ -26,7 +26,6 @@ fun DailyQuizTheme(content: @Composable () -> Unit) {
         colorScheme = DarkColors,
         typography = Typography
     ) {
-        // Surface задаёт базовый фон и цвет текста по умолчанию
         Surface(
             color = MaterialTheme.colorScheme.background,
             contentColor = MaterialTheme.colorScheme.onBackground

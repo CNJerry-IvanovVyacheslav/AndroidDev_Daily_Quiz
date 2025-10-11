@@ -29,7 +29,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _showAnswer = MutableLiveData(false)
     val showAnswer: LiveData<Boolean> get() = _showAnswer
 
-    // Статистика и стрик
     private val _correctAnswers = MutableStateFlow(0)
     val correctAnswers: StateFlow<Int> = _correctAnswers
 
@@ -44,7 +43,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
     init {
         loadQuestions()
-        // Подгружаем сохранённые данные из DataStore
         viewModelScope.launch {
             dataStore.correctFlow.collectLatest { _correctAnswers.value = it }
         }
@@ -98,5 +96,11 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     fun getAccuracy(): Float {
         val total = _correctAnswers.value + _incorrectAnswers.value
         return if (total == 0) 0f else (_correctAnswers.value * 100f / total)
+    }
+
+    fun resetStatistics() {
+        viewModelScope.launch {
+            dataStore.resetStats()
+        }
     }
 }
