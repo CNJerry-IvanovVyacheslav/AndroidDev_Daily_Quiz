@@ -45,14 +45,10 @@ fun BlankWithOptionsQuestion(
                 val isAnswerCorrect = question.answer.trim().equals(option.trim(), ignoreCase = true)
 
                 val buttonColor = when {
-                    // Если выбрали правильный ответ — зелёный
                     isSelected && isCorrect == true -> MaterialTheme.colorScheme.primary
-                    // Если выбрали неправильный — красный
                     isSelected && isCorrect == false -> MaterialTheme.colorScheme.errorContainer
-                    // Если выбрали неправильно, показываем правильный ответ зелёным
                     selectedOption != null && isCorrect == false && isAnswerCorrect ->
                         MaterialTheme.colorScheme.primary
-                    // Остальные — серый фон
                     else -> MaterialTheme.colorScheme.secondaryContainer
                 }
 
