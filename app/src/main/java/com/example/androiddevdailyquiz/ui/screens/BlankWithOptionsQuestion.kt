@@ -42,9 +42,17 @@ fun BlankWithOptionsQuestion(
 
             options.forEach { option ->
                 val isSelected = selectedOption == option
+                val isAnswerCorrect = question.answer.trim().equals(option.trim(), ignoreCase = true)
+
                 val buttonColor = when {
+                    // Если выбрали правильный ответ — зелёный
                     isSelected && isCorrect == true -> MaterialTheme.colorScheme.primary
+                    // Если выбрали неправильный — красный
                     isSelected && isCorrect == false -> MaterialTheme.colorScheme.errorContainer
+                    // Если выбрали неправильно, показываем правильный ответ зелёным
+                    selectedOption != null && isCorrect == false && isAnswerCorrect ->
+                        MaterialTheme.colorScheme.primary
+                    // Остальные — серый фон
                     else -> MaterialTheme.colorScheme.secondaryContainer
                 }
 
@@ -58,7 +66,7 @@ fun BlankWithOptionsQuestion(
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(vertical = 4.dp),
-                    enabled = selectedOption == null || selectedOption == option,
+                    enabled = selectedOption == null,
                     colors = ButtonDefaults.buttonColors(
                         containerColor = buttonColor,
                         disabledContainerColor = buttonColor
