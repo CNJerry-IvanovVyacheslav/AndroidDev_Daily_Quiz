@@ -11,8 +11,13 @@ class QuestionRepository(private val context: Context) {
     private val type = object : TypeToken<List<Question>>() {}.type
 
     fun loadQuestions(): List<Question> {
-        val inputStream = context.assets.open("questions.json")
-        val json = inputStream.bufferedReader().use { it.readText() }
-        return gson.fromJson(json, type)
+        return try {
+            val inputStream = context.assets.open("questions.json")
+            val json = inputStream.bufferedReader().use { it.readText() }
+            gson.fromJson(json, type)
+        } catch (e: Exception) {
+            e.printStackTrace()
+            emptyList()
+        }
     }
 }

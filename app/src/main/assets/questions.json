@@ -1,15 +1,28 @@
 [
   {
     "id": 1,
+    "question": "ViewModel stores _________ that survives configuration changes.",
+    "answer": "UI-related data",
     "type": "MULTIPLE_CHOICE",
-    "question": "What is LiveData in Android?",
-    "options": ["A database", "An observable data holder", "A UI component", "A thread"],
-    "answer": "An observable data holder"
+    "fakeOptions": [
+      "temporary data",
+      "application state",
+      "user preferences",
+      "local variables",
+      "UI-related data"
+    ]
   },
   {
     "id": 2,
-    "type": "SELF_PRACTICE",
-    "question": "ViewModel stores _____________ that survives configuration changes.",
-    "answer": "UI-related data"
+    "question": "Jetpack _________ is used for local data persistence.",
+    "answer": "Room",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Compose",
+      "Navigation",
+      "WorkManager",
+      "LiveData",
+      "Room"
+    ]
   }
 ]
