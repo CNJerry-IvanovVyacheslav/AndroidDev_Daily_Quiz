@@ -1,6 +1,6 @@
-# Android Dev Daily Quiz
+# AndroidDev Daily Quiz
 
-**Android Dev Daily Quiz** is an educational Android application aimed at helping developers consistently improve their Android skills. It is designed as a **daily practice tool** for both beginners and experienced developers, and currently contains **more than 200 tests** to deepen knowledge about Android development concepts.
+**Android Dev Daily Quiz** is an educational Android application aimed at helping developers consistently improve their Android skills. It is designed as a **daily practice tool** for both beginners and experienced developers, and currently contains **300 tests** to deepen knowledge about Android development concepts.
 
 ### You can try the app [here](https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/releases/tag/v0.5)
 
