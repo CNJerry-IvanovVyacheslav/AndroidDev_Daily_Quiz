@@ -19,6 +19,9 @@ class DataStoreManager(private val context: Context) {
         private val INCORRECT_KEY = intPreferencesKey("incorrect")
         private val STREAK_COUNT_KEY = intPreferencesKey("streak_count")
         private val LAST_STREAK_DATE_KEY = stringPreferencesKey("last_streak_date")
+
+        private val CURRENT_CONSECUTIVE_KEY = intPreferencesKey("current_consecutive")
+        private val MAX_CONSECUTIVE_KEY = intPreferencesKey("max_consecutive")
     }
 
     val correctFlow: Flow<Int> = context.dataStore.data.map { it[CORRECT_KEY] ?: 0 }
@@ -26,19 +29,31 @@ class DataStoreManager(private val context: Context) {
     val streakFlow: Flow<Int> = context.dataStore.data.map { it[STREAK_COUNT_KEY] ?: 0 }
     val lastStreakDateFlow: Flow<String> = context.dataStore.data.map { it[LAST_STREAK_DATE_KEY] ?: "" }
 
+    val currentConsecutiveFlow: Flow<Int> = context.dataStore.data.map { it[CURRENT_CONSECUTIVE_KEY] ?: 0 }
+    val maxConsecutiveFlow: Flow<Int> = context.dataStore.data.map { it[MAX_CONSECUTIVE_KEY] ?: 0 }
+
     suspend fun incrementCorrect() = context.dataStore.edit { prefs ->
         prefs[CORRECT_KEY] = (prefs[CORRECT_KEY] ?: 0) + 1
+
+        val curr = (prefs[CURRENT_CONSECUTIVE_KEY] ?: 0) + 1
+        prefs[CURRENT_CONSECUTIVE_KEY] = curr
+
+        val max = prefs[MAX_CONSECUTIVE_KEY] ?: 0
+        if (curr > max) {
+            prefs[MAX_CONSECUTIVE_KEY] = curr
+        }
     }
 
     suspend fun incrementIncorrect() = context.dataStore.edit { prefs ->
         prefs[INCORRECT_KEY] = (prefs[INCORRECT_KEY] ?: 0) + 1
+        prefs[CURRENT_CONSECUTIVE_KEY] = 0
     }
 
     suspend fun updateStreak() = context.dataStore.edit { prefs ->
         val today = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
             .format(Calendar.getInstance().time)
-        val lastDate = prefs[LAST_STREAK_DATE_KEY] ?: ""
 
+        val lastDate = prefs[LAST_STREAK_DATE_KEY] ?: ""
         if (lastDate != today) {
             prefs[STREAK_COUNT_KEY] = (prefs[STREAK_COUNT_KEY] ?: 0) + 1
             prefs[LAST_STREAK_DATE_KEY] = today
@@ -50,5 +65,7 @@ class DataStoreManager(private val context: Context) {
         prefs[INCORRECT_KEY] = 0
         prefs[STREAK_COUNT_KEY] = 0
         prefs[LAST_STREAK_DATE_KEY] = ""
+        prefs[CURRENT_CONSECUTIVE_KEY] = 0
+        prefs[MAX_CONSECUTIVE_KEY] = 0
     }
 }

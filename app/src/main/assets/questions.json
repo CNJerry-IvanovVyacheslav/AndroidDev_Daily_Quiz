@@ -4,14 +4,26 @@
     "question": "Which keyword is used to declare a read-only variable in Kotlin?",
     "answer": "val",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["var", "const", "let", "readonly", "val"]
+    "fakeOptions": [
+      "var",
+      "const",
+      "let",
+      "readonly",
+      "val"
+    ]
   },
   {
     "id": 2,
     "question": "What is the default visibility modifier for a top-level declaration in Kotlin?",
     "answer": "public",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["private", "internal", "protected", "default", "public"]
+    "fakeOptions": [
+      "private",
+      "internal",
+      "protected",
+      "default",
+      "public"
+    ]
   },
   {
     "id": 3,
@@ -44,7 +56,13 @@
     "question": "Which function is used to safely call a method on a nullable object?",
     "answer": "?.",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": [".", "!!", "?:", "?.", "safeCall()"]
+    "fakeOptions": [
+      ".",
+      "!!",
+      "?:",
+      "?.",
+      "safeCall()"
+    ]
   },
   {
     "id": 6,
@@ -90,14 +108,26 @@
     "question": "Which of these keywords is used for inheritance in Kotlin?",
     "answer": "open",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["final", "inherit", "abstract", "open", "extends"]
+    "fakeOptions": [
+      "final",
+      "inherit",
+      "abstract",
+      "open",
+      "extends"
+    ]
   },
   {
     "id": 10,
     "question": "Which type of class cannot be inherited in Kotlin?",
     "answer": "final",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["abstract", "interface", "open", "final", "sealed"]
+    "fakeOptions": [
+      "abstract",
+      "interface",
+      "open",
+      "final",
+      "sealed"
+    ]
   },
   {
     "id": 11,
@@ -130,21 +160,39 @@
     "question": "Which of these keywords defines a sealed class in Kotlin?",
     "answer": "sealed",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["sealed", "open", "abstract", "final", "interface"]
+    "fakeOptions": [
+      "sealed",
+      "open",
+      "abstract",
+      "final",
+      "interface"
+    ]
   },
   {
     "id": 14,
     "question": "What is the result of 'listOf(1,2,3).filter { it > 1 }'?",
     "answer": "[2, 3]",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["[1]", "[1,2,3]", "[2,3]", "[1,3]", "Error"]
+    "fakeOptions": [
+      "[1]",
+      "[1,2,3]",
+      "[2,3]",
+      "[1,3]",
+      "Error"
+    ]
   },
   {
     "id": 15,
     "question": "Which Kotlin collection is mutable by default?",
     "answer": "MutableList",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["List", "Array", "MutableList", "Set", "Map"]
+    "fakeOptions": [
+      "List",
+      "Array",
+      "MutableList",
+      "Set",
+      "Map"
+    ]
   },
   {
     "id": 16,
@@ -216,7 +264,13 @@
     "question": "Which function can be used to launch a coroutine in Kotlin?",
     "answer": "launch",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["startCoroutine", "run", "launch", "asyncBlock", "delay"]
+    "fakeOptions": [
+      "startCoroutine",
+      "run",
+      "launch",
+      "asyncBlock",
+      "delay"
+    ]
   },
   {
     "id": 22,
@@ -236,14 +290,26 @@
     "question": "Which keyword is used to delegate a property in Kotlin?",
     "answer": "by",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["delegate", "using", "by", "with", "implements"]
+    "fakeOptions": [
+      "delegate",
+      "using",
+      "by",
+      "with",
+      "implements"
+    ]
   },
   {
     "id": 24,
     "question": "What is the type of 'numbers.filter { it % 2 == 0 }' if numbers: List<Int>?",
     "answer": "List<Int>",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["List<Boolean>", "List<Int>", "Sequence<Int>", "Array<Int>", "IntArray"]
+    "fakeOptions": [
+      "List<Boolean>",
+      "List<Int>",
+      "Sequence<Int>",
+      "Array<Int>",
+      "IntArray"
+    ]
   },
   {
     "id": 25,
@@ -263,7 +329,13 @@
     "question": "Which function converts a collection to a sequence in Kotlin?",
     "answer": "asSequence()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["toSequence()", "sequenceOf()", "asSequence()", "toSeq()", "seq()"]
+    "fakeOptions": [
+      "toSequence()",
+      "sequenceOf()",
+      "asSequence()",
+      "toSeq()",
+      "seq()"
+    ]
   },
   {
     "id": 27,
@@ -309,7 +381,13 @@
     "question": "Which keyword is used to define an interface in Kotlin?",
     "answer": "interface",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["interface", "abstract", "implements", "trait", "class"]
+    "fakeOptions": [
+      "interface",
+      "abstract",
+      "implements",
+      "trait",
+      "class"
+    ]
   },
   {
     "id": 31,
@@ -329,14 +407,26 @@
     "question": "Which of these creates a range from 1 to 10 inclusive?",
     "answer": "1..10",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["1..10", "1 until 10", "range(1,10)", "1->10", "1-10"]
+    "fakeOptions": [
+      "1..10",
+      "1 until 10",
+      "range(1,10)",
+      "1->10",
+      "1-10"
+    ]
   },
   {
     "id": 33,
     "question": "Which coroutine builder can be used to return a value?",
     "answer": "async",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["launch", "runBlocking", "async", "delay", "suspend"]
+    "fakeOptions": [
+      "launch",
+      "runBlocking",
+      "async",
+      "delay",
+      "suspend"
+    ]
   },
   {
     "id": 34,
@@ -369,7 +459,13 @@
     "question": "Which operator is known as the Elvis operator in Kotlin?",
     "answer": "?:",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": [":", "!!", "?:", "??", "?."]
+    "fakeOptions": [
+      ":",
+      "!!",
+      "?:",
+      "??",
+      "?."
+    ]
   },
   {
     "id": 37,
@@ -415,7 +511,13 @@
     "question": "Which function is used to launch a coroutine and block current thread until it completes?",
     "answer": "runBlocking",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["launch", "async", "delay", "runBlocking", "withContext"]
+    "fakeOptions": [
+      "launch",
+      "async",
+      "delay",
+      "runBlocking",
+      "withContext"
+    ]
   },
   {
     "id": 41,
@@ -448,7 +550,13 @@
     "question": "Which of these is used to check null and provide default value?",
     "answer": "?:",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["!!", "as?", "?:", "?.", "ifnull"]
+    "fakeOptions": [
+      "!!",
+      "as?",
+      "?:",
+      "?.",
+      "ifnull"
+    ]
   },
   {
     "id": 44,
@@ -465,10 +573,16 @@
   },
   {
     "id": 45,
-    "question": "Which scope function returns the last expression?",
+    "question": "Which scope function returns the last expression and provides 'this' as the context object?",
     "answer": "run",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["apply", "let", "with", "run", "also"]
+    "fakeOptions": [
+      "apply",
+      "let",
+      "with",
+      "run",
+      "also"
+    ]
   },
   {
     "id": 46,
@@ -540,21 +654,39 @@
     "question": "Which class is used to store UI-related data that survives configuration changes?",
     "answer": "ViewModel",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData", "Repository", "Activity", "ViewModel", "Service"]
+    "fakeOptions": [
+      "LiveData",
+      "Repository",
+      "Activity",
+      "ViewModel",
+      "Service"
+    ]
   },
   {
     "id": 52,
     "question": "Which Kotlin Flow type can emit events to multiple collectors?",
     "answer": "SharedFlow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData", "StateFlow", "Flow", "SharedFlow", "MutableLiveData"]
+    "fakeOptions": [
+      "LiveData",
+      "StateFlow",
+      "Flow",
+      "SharedFlow",
+      "MutableLiveData"
+    ]
   },
   {
     "id": 53,
     "question": "Which Jetpack library is used for navigation between destinations?",
     "answer": "Navigation Component",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Navigation Component", "Paging", "WorkManager", "DataStore", "Room"]
+    "fakeOptions": [
+      "Navigation Component",
+      "Paging",
+      "WorkManager",
+      "DataStore",
+      "Room"
+    ]
   },
   {
     "id": 54,
@@ -574,63 +706,117 @@
     "question": "Which component can perform background tasks with constraints like network availability?",
     "answer": "WorkManager",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Service", "IntentService", "WorkManager", "Thread", "Handler"]
+    "fakeOptions": [
+      "Service",
+      "IntentService",
+      "WorkManager",
+      "Thread",
+      "Handler"
+    ]
   },
   {
     "id": 56,
     "question": "Which Jetpack component is lifecycle-aware and can observe Activity/Fragment lifecycle?",
     "answer": "LifecycleObserver",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData", "ViewModel", "LifecycleObserver", "CoroutineScope", "Repository"]
+    "fakeOptions": [
+      "LiveData",
+      "ViewModel",
+      "LifecycleObserver",
+      "CoroutineScope",
+      "Repository"
+    ]
   },
   {
     "id": 57,
     "question": "Which class provides a reactive data holder that updates the UI automatically?",
     "answer": "LiveData",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData", "StateFlow", "MutableState", "Flow", "ViewModel"]
+    "fakeOptions": [
+      "LiveData",
+      "StateFlow",
+      "MutableState",
+      "Flow",
+      "ViewModel"
+    ]
   },
   {
     "id": 58,
     "question": "Which component is recommended for paging large datasets in RecyclerView?",
     "answer": "Paging",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Room", "Paging", "DataStore", "WorkManager", "Navigation"]
+    "fakeOptions": [
+      "Room",
+      "Paging",
+      "DataStore",
+      "WorkManager",
+      "Navigation"
+    ]
   },
   {
     "id": 59,
     "question": "Which Jetpack component is designed for asynchronous local data storage?",
     "answer": "DataStore",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["SharedPreferences", "DataStore", "Room", "SQLiteDatabase", "ContentProvider"]
+    "fakeOptions": [
+      "SharedPreferences",
+      "DataStore",
+      "Room",
+      "SQLiteDatabase",
+      "ContentProvider"
+    ]
   },
   {
     "id": 60,
     "question": "Which annotation defines a database entity in Room?",
     "answer": "@Entity",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Entity", "@Database", "@Dao", "@Module", "@Provides"]
+    "fakeOptions": [
+      "@Entity",
+      "@Database",
+      "@Dao",
+      "@Module",
+      "@Provides"
+    ]
   },
   {
     "id": 61,
     "question": "Which annotation defines a Data Access Object (DAO) in Room?",
     "answer": "@Dao",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Dao", "@Entity", "@Database", "@Repository", "@Inject"]
+    "fakeOptions": [
+      "@Dao",
+      "@Entity",
+      "@Database",
+      "@Repository",
+      "@Inject"
+    ]
   },
   {
     "id": 62,
     "question": "Which component provides lifecycle-aware coroutine scopes tied to ViewModel?",
     "answer": "viewModelScope",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["lifecycleScope", "GlobalScope", "viewModelScope", "runBlocking", "CoroutineScope"]
+    "fakeOptions": [
+      "lifecycleScope",
+      "GlobalScope",
+      "viewModelScope",
+      "runBlocking",
+      "CoroutineScope"
+    ]
   },
   {
     "id": 63,
     "question": "Which annotation is used to mark a Room database class?",
     "answer": "@Database",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Entity", "@Database", "@Dao", "@Module", "@Provides"]
+    "fakeOptions": [
+      "@Entity",
+      "@Database",
+      "@Dao",
+      "@Module",
+      "@Provides"
+    ]
   },
   {
     "id": 64,
@@ -650,154 +836,286 @@
     "question": "Which component allows navigation to destinations using deep links?",
     "answer": "Navigation Component",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Intent", "Navigation Component", "Activity", "BroadcastReceiver", "Service"]
+    "fakeOptions": [
+      "Intent",
+      "Navigation Component",
+      "Activity",
+      "BroadcastReceiver",
+      "Service"
+    ]
   },
   {
     "id": 66,
-    "question": "Which Jetpack class ensures only one instance of a repository is used throughout the app?",
+    "question": "Which design pattern is commonly used to ensure that only one instance of a repository exists throughout the app?",
     "answer": "Singleton Repository",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["ViewModel", "LiveData", "Singleton Repository", "WorkManager", "Service"]
+    "fakeOptions": [
+      "ViewModel",
+      "LiveData",
+      "Singleton Repository",
+      "WorkManager",
+      "Service"
+    ]
   },
   {
     "id": 67,
     "question": "Which component is used to schedule deferred, periodic, or one-off tasks?",
     "answer": "WorkManager",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Service", "Thread", "Handler", "WorkManager", "Coroutine"]
+    "fakeOptions": [
+      "Service",
+      "Thread",
+      "Handler",
+      "WorkManager",
+      "Coroutine"
+    ]
   },
   {
     "id": 68,
     "question": "Which Jetpack component automatically handles configuration changes?",
     "answer": "ViewModel",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Activity", "Fragment", "ViewModel", "LiveData", "Service"]
+    "fakeOptions": [
+      "Activity",
+      "Fragment",
+      "ViewModel",
+      "LiveData",
+      "Service"
+    ]
   },
   {
     "id": 69,
     "question": "Which Kotlin Flow type holds a current value and emits it to new collectors immediately?",
     "answer": "StateFlow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["SharedFlow", "Flow", "LiveData", "StateFlow", "Channel"]
+    "fakeOptions": [
+      "SharedFlow",
+      "Flow",
+      "LiveData",
+      "StateFlow",
+      "Channel"
+    ]
   },
   {
     "id": 70,
     "question": "Which annotation is used to inject dependencies in Hilt/Dagger for Jetpack components?",
     "answer": "@Inject",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Provides", "@Module", "@Singleton", "@Inject", "@Component"]
+    "fakeOptions": [
+      "@Provides",
+      "@Module",
+      "@Singleton",
+      "@Inject",
+      "@Component"
+    ]
   },
   {
     "id": 71,
     "question": "Which annotation defines a Hilt module?",
     "answer": "@Module",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Module", "@Provides", "@Inject", "@Singleton", "@Component"]
+    "fakeOptions": [
+      "@Module",
+      "@Provides",
+      "@Inject",
+      "@Singleton",
+      "@Component"
+    ]
   },
   {
     "id": 72,
     "question": "Which annotation marks a class as a singleton in Hilt/Dagger?",
     "answer": "@Singleton",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Singleton", "@Module", "@Inject", "@Provides", "@Component"]
+    "fakeOptions": [
+      "@Singleton",
+      "@Module",
+      "@Inject",
+      "@Provides",
+      "@Component"
+    ]
   },
   {
     "id": 73,
     "question": "Which class in Jetpack handles UI-related data and survives process death when using SavedStateHandle?",
     "answer": "ViewModel",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Activity", "LiveData", "ViewModel", "Service", "Repository"]
+    "fakeOptions": [
+      "Activity",
+      "LiveData",
+      "ViewModel",
+      "Service",
+      "Repository"
+    ]
   },
   {
     "id": 74,
     "question": "Which Jetpack component provides reactive streams of data for UI updates?",
     "answer": "LiveData or Flow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData or Flow", "ViewModel", "Service", "Handler", "BroadcastReceiver"]
+    "fakeOptions": [
+      "LiveData or Flow",
+      "ViewModel",
+      "Service",
+      "Handler",
+      "BroadcastReceiver"
+    ]
   },
   {
     "id": 75,
     "question": "Which Jetpack component supports type-safe navigation arguments?",
     "answer": "Safe Args",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Intent extras", "Bundle", "Safe Args", "SharedPreferences", "Navigation Graph"]
+    "fakeOptions": [
+      "Intent extras",
+      "Bundle",
+      "Safe Args",
+      "SharedPreferences",
+      "Navigation Graph"
+    ]
   },
   {
     "id": 76,
     "question": "Which component is lifecycle-aware and cancels coroutines when the lifecycle is destroyed?",
     "answer": "lifecycleScope",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["GlobalScope", "viewModelScope", "lifecycleScope", "runBlocking", "CoroutineScope"]
+    "fakeOptions": [
+      "GlobalScope",
+      "viewModelScope",
+      "lifecycleScope",
+      "runBlocking",
+      "CoroutineScope"
+    ]
   },
   {
     "id": 77,
     "question": "Which Jetpack component is recommended for background work that must survive app restarts?",
     "answer": "WorkManager",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Service", "IntentService", "WorkManager", "Thread", "CoroutineScope"]
+    "fakeOptions": [
+      "Service",
+      "IntentService",
+      "WorkManager",
+      "Thread",
+      "CoroutineScope"
+    ]
   },
   {
     "id": 78,
     "question": "Which annotation is used to provide a dependency in Hilt?",
     "answer": "@Provides",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Provides", "@Inject", "@Module", "@Singleton", "@Component"]
+    "fakeOptions": [
+      "@Provides",
+      "@Inject",
+      "@Module",
+      "@Singleton",
+      "@Component"
+    ]
   },
   {
     "id": 79,
     "question": "Which component provides a single source of truth for app data?",
     "answer": "Repository",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["ViewModel", "LiveData", "Repository", "Service", "DataStore"]
+    "fakeOptions": [
+      "ViewModel",
+      "LiveData",
+      "Repository",
+      "Service",
+      "DataStore"
+    ]
   },
   {
     "id": 80,
     "question": "Which Jetpack library is used to observe and manage lifecycle-aware components in UI?",
     "answer": "Lifecycle",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Navigation", "Paging", "Lifecycle", "DataStore", "WorkManager"]
+    "fakeOptions": [
+      "Navigation",
+      "Paging",
+      "Lifecycle",
+      "DataStore",
+      "WorkManager"
+    ]
   },
   {
     "id": 81,
     "question": "Which class provides a reactive, read-only state for UI in Jetpack?",
     "answer": "StateFlow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData", "StateFlow", "SharedFlow", "Flow", "MutableStateFlow"]
+    "fakeOptions": [
+      "LiveData",
+      "StateFlow",
+      "SharedFlow",
+      "Flow",
+      "MutableStateFlow"
+    ]
   },
   {
     "id": 82,
     "question": "Which Jetpack component allows scheduling one-time or periodic background tasks easily?",
     "answer": "WorkManager",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Handler", "Service", "WorkManager", "BroadcastReceiver", "ThreadPoolExecutor"]
+    "fakeOptions": [
+      "Handler",
+      "Service",
+      "WorkManager",
+      "BroadcastReceiver",
+      "ThreadPoolExecutor"
+    ]
   },
   {
     "id": 83,
     "question": "Which annotation is used in Room to define SQL queries in a DAO?",
     "answer": "@Query",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Query", "@Insert", "@Update", "@Delete", "@Dao"]
+    "fakeOptions": [
+      "@Query",
+      "@Insert",
+      "@Update",
+      "@Delete",
+      "@Dao"
+    ]
   },
   {
     "id": 84,
     "question": "Which Jetpack component handles safe and efficient pagination of data?",
     "answer": "Paging",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["DataStore", "Paging", "Room", "WorkManager", "LiveData"]
+    "fakeOptions": [
+      "DataStore",
+      "Paging",
+      "Room",
+      "WorkManager",
+      "LiveData"
+    ]
   },
   {
     "id": 85,
     "question": "Which component allows storing simple key-value pairs asynchronously?",
     "answer": "DataStore",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["SharedPreferences", "Room", "DataStore", "SQLiteDatabase", "Repository"]
+    "fakeOptions": [
+      "SharedPreferences",
+      "Room",
+      "DataStore",
+      "SQLiteDatabase",
+      "Repository"
+    ]
   },
   {
     "id": 86,
     "question": "Which Jetpack component observes lifecycle changes and performs actions accordingly?",
     "answer": "LifecycleObserver",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LifecycleOwner", "ViewModel", "LifecycleObserver", "LiveData", "Service"]
+    "fakeOptions": [
+      "LifecycleOwner",
+      "ViewModel",
+      "LifecycleObserver",
+      "LiveData",
+      "Service"
+    ]
   },
   {
     "id": 87,
@@ -830,266 +1148,494 @@
     "question": "Which annotation is used to mark a Hilt component interface?",
     "answer": "@Component",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Inject", "@Module", "@Provides", "@Singleton", "@Component"]
+    "fakeOptions": [
+      "@Inject",
+      "@Module",
+      "@Provides",
+      "@Singleton",
+      "@Component"
+    ]
   },
   {
     "id": 90,
     "question": "Which Jetpack library allows observing changes to a data stream in UI?",
     "answer": "LiveData or StateFlow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Flow only", "LiveData or StateFlow", "Repository only", "DataStore only", "Paging only"]
+    "fakeOptions": [
+      "Flow only",
+      "LiveData or StateFlow",
+      "Repository only",
+      "DataStore only",
+      "Paging only"
+    ]
   },
   {
     "id": 91,
     "question": "Which Jetpack component is responsible for handling arguments passed to a Fragment safely?",
     "answer": "Safe Args",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Bundle", "Intent", "Safe Args", "SharedPreferences", "ViewModel"]
+    "fakeOptions": [
+      "Bundle",
+      "Intent",
+      "Safe Args",
+      "SharedPreferences",
+      "ViewModel"
+    ]
   },
   {
     "id": 92,
     "question": "Which Jetpack library allows type-safe navigation using NavController?",
     "answer": "Navigation Component",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Navigation Component", "LiveData", "ViewModel", "WorkManager", "DataStore"]
+    "fakeOptions": [
+      "Navigation Component",
+      "LiveData",
+      "ViewModel",
+      "WorkManager",
+      "DataStore"
+    ]
   },
   {
     "id": 93,
     "question": "Which component is recommended for handling periodic background tasks that must survive process death?",
     "answer": "WorkManager",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Handler", "Service", "WorkManager", "AlarmManager", "CoroutineScope"]
+    "fakeOptions": [
+      "Handler",
+      "Service",
+      "WorkManager",
+      "AlarmManager",
+      "CoroutineScope"
+    ]
   },
   {
     "id": 94,
     "question": "Which class in Jetpack stores reactive state for UI that can be collected using collectAsState() in Compose?",
     "answer": "StateFlow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData", "StateFlow", "SharedFlow", "MutableState", "Flow"]
+    "fakeOptions": [
+      "LiveData",
+      "StateFlow",
+      "SharedFlow",
+      "MutableState",
+      "Flow"
+    ]
   },
   {
     "id": 95,
     "question": "Which annotation in Hilt marks a constructor to be injected?",
     "answer": "@Inject",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Provides", "@Inject", "@Module", "@Singleton", "@Component"]
+    "fakeOptions": [
+      "@Provides",
+      "@Inject",
+      "@Module",
+      "@Singleton",
+      "@Component"
+    ]
   },
   {
     "id": 96,
     "question": "Which component is recommended as a single source of truth for app data?",
     "answer": "Repository",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["ViewModel", "Repository", "LiveData", "Service", "DataStore"]
+    "fakeOptions": [
+      "ViewModel",
+      "Repository",
+      "LiveData",
+      "Service",
+      "DataStore"
+    ]
   },
   {
     "id": 97,
     "question": "Which annotation in Hilt defines reusable provider functions?",
     "answer": "@Provides",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Module", "@Provides", "@Singleton", "@Inject", "@Component"]
+    "fakeOptions": [
+      "@Module",
+      "@Provides",
+      "@Singleton",
+      "@Inject",
+      "@Component"
+    ]
   },
   {
     "id": 98,
     "question": "Which Jetpack component cancels coroutines automatically when the lifecycle is destroyed?",
     "answer": "lifecycleScope",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["viewModelScope", "lifecycleScope", "GlobalScope", "runBlocking", "CoroutineScope"]
+    "fakeOptions": [
+      "viewModelScope",
+      "lifecycleScope",
+      "GlobalScope",
+      "runBlocking",
+      "CoroutineScope"
+    ]
   },
   {
     "id": 99,
     "question": "Which annotation defines a database entity in Room?",
     "answer": "@Entity",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Entity", "@Database", "@Dao", "@Module", "@Provides"]
+    "fakeOptions": [
+      "@Entity",
+      "@Database",
+      "@Dao",
+      "@Module",
+      "@Provides"
+    ]
   },
   {
     "id": 100,
     "question": "Which annotation defines a DAO in Room?",
     "answer": "@Dao",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Dao", "@Entity", "@Database", "@Repository", "@Inject"]
+    "fakeOptions": [
+      "@Dao",
+      "@Entity",
+      "@Database",
+      "@Repository",
+      "@Inject"
+    ]
   },
   {
     "id": 101,
     "question": "Which Compose layout arranges its children vertically?",
     "answer": "Column",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Row", "Column", "Box", "LazyColumn", "ConstraintLayout"]
+    "fakeOptions": [
+      "Row",
+      "Column",
+      "Box",
+      "LazyColumn",
+      "ConstraintLayout"
+    ]
   },
   {
     "id": 102,
     "question": "Which Compose layout arranges its children horizontally?",
     "answer": "Row",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Row", "Column", "Box", "LazyRow", "ConstraintLayout"]
+    "fakeOptions": [
+      "Row",
+      "Column",
+      "Box",
+      "LazyRow",
+      "ConstraintLayout"
+    ]
   },
   {
     "id": 103,
     "question": "Which Compose layout allows stacking children on top of each other?",
     "answer": "Box",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Column", "Row", "Box", "LazyColumn", "Stack"]
+    "fakeOptions": [
+      "Column",
+      "Row",
+      "Box",
+      "LazyColumn",
+      "Stack"
+    ]
   },
   {
     "id": 104,
     "question": "Which Compose layout efficiently displays a vertically scrolling list?",
     "answer": "LazyColumn",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Column", "Row", "LazyColumn", "Box", "ScrollView"]
+    "fakeOptions": [
+      "Column",
+      "Row",
+      "LazyColumn",
+      "Box",
+      "ScrollView"
+    ]
   },
   {
     "id": 105,
     "question": "Which Compose layout efficiently displays a horizontally scrolling list?",
     "answer": "LazyRow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Row", "LazyRow", "Column", "Box", "ScrollView"]
+    "fakeOptions": [
+      "Row",
+      "LazyRow",
+      "Column",
+      "Box",
+      "ScrollView"
+    ]
   },
   {
     "id": 106,
     "question": "Which function allows remembering a state across recompositions?",
     "answer": "remember",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["mutableStateOf", "remember", "derivedStateOf", "rememberCoroutineScope", "stateOf"]
+    "fakeOptions": [
+      "mutableStateOf",
+      "remember",
+      "derivedStateOf",
+      "rememberCoroutineScope",
+      "stateOf"
+    ]
   },
   {
     "id": 107,
     "question": "Which function creates a mutable state in Compose?",
     "answer": "mutableStateOf",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["mutableStateOf", "remember", "stateFlowOf", "collectAsState", "derivedStateOf"]
+    "fakeOptions": [
+      "mutableStateOf",
+      "remember",
+      "stateFlowOf",
+      "collectAsState",
+      "derivedStateOf"
+    ]
   },
   {
     "id": 108,
     "question": "Which function derives a state from other states without creating recomposition loops?",
     "answer": "derivedStateOf",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["mutableStateOf", "remember", "derivedStateOf", "collectAsState", "snapshotFlow"]
+    "fakeOptions": [
+      "mutableStateOf",
+      "remember",
+      "derivedStateOf",
+      "collectAsState",
+      "snapshotFlow"
+    ]
   },
   {
     "id": 109,
     "question": "Which function converts a Flow into Compose state?",
     "answer": "collectAsState()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["collect()", "collectAsState()", "stateFlowOf()", "rememberFlow()", "launchIn()"]
+    "fakeOptions": [
+      "collect()",
+      "collectAsState()",
+      "stateFlowOf()",
+      "rememberFlow()",
+      "launchIn()"
+    ]
   },
   {
     "id": 110,
     "question": "Which annotation allows previewing a Composable in Android Studio?",
     "answer": "@Preview",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Composable", "@Preview", "@DesignTime", "@ShowPreview", "@Render"]
+    "fakeOptions": [
+      "@Composable",
+      "@Preview",
+      "@DesignTime",
+      "@ShowPreview",
+      "@Render"
+    ]
   },
   {
     "id": 111,
     "question": "Which Compose component provides a standard top app bar?",
     "answer": "TopAppBar",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["TopAppBar", "AppBar", "Scaffold", "Toolbar", "Surface"]
+    "fakeOptions": [
+      "TopAppBar",
+      "AppBar",
+      "Scaffold",
+      "Toolbar",
+      "Surface"
+    ]
   },
   {
     "id": 112,
     "question": "Which Compose component provides a structure with top bar, bottom bar, floating action button, and content slot?",
     "answer": "Scaffold",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Surface", "Scaffold", "Box", "Column", "TopAppBar"]
+    "fakeOptions": [
+      "Surface",
+      "Scaffold",
+      "Box",
+      "Column",
+      "TopAppBar"
+    ]
   },
   {
     "id": 113,
     "question": "Which Compose function is used for simple animations of values?",
     "answer": "animate*AsState",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["animate*AsState", "rememberInfiniteTransition", "Animatable", "LaunchedEffect", "Transition"]
+    "fakeOptions": [
+      "animate*AsState",
+      "rememberInfiniteTransition",
+      "Animatable",
+      "LaunchedEffect",
+      "Transition"
+    ]
   },
   {
     "id": 114,
     "question": "Which Compose function creates an infinite repeating animation?",
     "answer": "rememberInfiniteTransition",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["animate*AsState", "rememberInfiniteTransition", "Animatable", "updateTransition", "LaunchedEffect"]
+    "fakeOptions": [
+      "animate*AsState",
+      "rememberInfiniteTransition",
+      "Animatable",
+      "updateTransition",
+      "LaunchedEffect"
+    ]
   },
   {
     "id": 115,
     "question": "Which Compose function allows launching side-effects that depend on specific keys?",
     "answer": "LaunchedEffect",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["SideEffect", "remember", "LaunchedEffect", "DisposableEffect", "produceState"]
+    "fakeOptions": [
+      "SideEffect",
+      "remember",
+      "LaunchedEffect",
+      "DisposableEffect",
+      "produceState"
+    ]
   },
   {
     "id": 116,
     "question": "Which Compose function is called after every successful recomposition?",
     "answer": "SideEffect",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["SideEffect", "LaunchedEffect", "DisposableEffect", "remember", "derivedStateOf"]
+    "fakeOptions": [
+      "SideEffect",
+      "LaunchedEffect",
+      "DisposableEffect",
+      "remember",
+      "derivedStateOf"
+    ]
   },
   {
     "id": 117,
     "question": "Which Compose function handles clean-up when keys change or Composable leaves composition?",
     "answer": "DisposableEffect",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["DisposableEffect", "LaunchedEffect", "SideEffect", "remember", "derivedStateOf"]
+    "fakeOptions": [
+      "DisposableEffect",
+      "LaunchedEffect",
+      "SideEffect",
+      "remember",
+      "derivedStateOf"
+    ]
   },
   {
     "id": 118,
     "question": "Which Compose function allows producing state from a suspending block?",
     "answer": "produceState",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["produceState", "LaunchedEffect", "remember", "mutableStateOf", "derivedStateOf"]
+    "fakeOptions": [
+      "produceState",
+      "LaunchedEffect",
+      "remember",
+      "mutableStateOf",
+      "derivedStateOf"
+    ]
   },
   {
     "id": 119,
     "question": "Which Compose principle ensures UI updates automatically when state changes?",
     "answer": "Recomposition",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["SideEffect", "Snapshot", "Recomposition", "Coroutine", "DerivedState"]
+    "fakeOptions": [
+      "SideEffect",
+      "Snapshot",
+      "Recomposition",
+      "Coroutine",
+      "DerivedState"
+    ]
   },
   {
     "id": 120,
     "question": "Which function in Compose can be used to collect a StateFlow as state for UI?",
     "answer": "collectAsState()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["collect()", "collectAsState()", "remember", "derivedStateOf", "snapshotFlow()"]
+    "fakeOptions": [
+      "collect()",
+      "collectAsState()",
+      "remember",
+      "derivedStateOf",
+      "snapshotFlow()"
+    ]
   },
   {
     "id": 121,
     "question": "Which Compose modifier sets padding around a Composable?",
     "answer": "Modifier.padding()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.margin()", "Modifier.padding()", "Modifier.size()", "Modifier.fillMaxSize()", "Modifier.offset()"]
+    "fakeOptions": [
+      "Modifier.margin()",
+      "Modifier.padding()",
+      "Modifier.size()",
+      "Modifier.fillMaxSize()",
+      "Modifier.offset()"
+    ]
   },
   {
     "id": 122,
     "question": "Which Compose modifier makes a Composable fill maximum available width?",
     "answer": "Modifier.fillMaxWidth()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.fillMaxHeight()", "Modifier.fillMaxSize()", "Modifier.fillMaxWidth()", "Modifier.wrapContentWidth()", "Modifier.wrapContentSize()"]
+    "fakeOptions": [
+      "Modifier.fillMaxHeight()",
+      "Modifier.fillMaxSize()",
+      "Modifier.fillMaxWidth()",
+      "Modifier.wrapContentWidth()",
+      "Modifier.wrapContentSize()"
+    ]
   },
   {
     "id": 123,
     "question": "Which Compose modifier makes a Composable fill maximum available height?",
     "answer": "Modifier.fillMaxHeight()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.fillMaxHeight()", "Modifier.fillMaxWidth()", "Modifier.fillMaxSize()", "Modifier.wrapContentHeight()", "Modifier.wrapContentSize()"]
+    "fakeOptions": [
+      "Modifier.fillMaxHeight()",
+      "Modifier.fillMaxWidth()",
+      "Modifier.fillMaxSize()",
+      "Modifier.wrapContentHeight()",
+      "Modifier.wrapContentSize()"
+    ]
   },
   {
     "id": 124,
     "question": "Which Compose modifier makes a Composable fill both width and height?",
     "answer": "Modifier.fillMaxSize()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.fillMaxWidth()", "Modifier.fillMaxHeight()", "Modifier.fillMaxSize()", "Modifier.wrapContentSize()", "Modifier.size()"]
+    "fakeOptions": [
+      "Modifier.fillMaxWidth()",
+      "Modifier.fillMaxHeight()",
+      "Modifier.fillMaxSize()",
+      "Modifier.wrapContentSize()",
+      "Modifier.size()"
+    ]
   },
   {
     "id": 125,
-    "question": "Which Compose modifier adds space between composables inside a layout?",
-    "answer": "Modifier.padding() or Spacer",
+    "question": "Which composable is used to add space between other composables inside a layout?",
+    "answer": "Spacer()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.spacing()", "Modifier.padding() or Spacer", "Modifier.offset()", "Modifier.margin()", "Modifier.gap()"]
+    "fakeOptions": [
+      "Modifier.spacing()",
+      "Spacer()",
+      "Modifier.offset()",
+      "Margin()",
+      "Modifier.gap()"
+    ]
   },
   {
     "id": 126,
     "question": "Which Compose layout arranges items in a staggered scrolling vertical list?",
-    "answer": "LazyVerticalGrid",
+    "answer": "LazyVerticalStaggeredGrid",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LazyColumn", "LazyRow", "LazyVerticalGrid", "Column", "Box"]
+    "fakeOptions": [
+      "LazyColumn",
+      "LazyRow",
+      "LazyVerticalGrid",
+      "Column",
+      "LazyVerticalStaggeredGrid"
+    ]
   },
   {
     "id": 127,
@@ -1109,42 +1655,78 @@
     "question": "Which Compose function allows defining a custom scrollable container?",
     "answer": "verticalScroll()/horizontalScroll()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["scrollable()", "verticalScroll()/horizontalScroll()", "LazyColumn", "BoxScroll", "ScrollContainer()"]
+    "fakeOptions": [
+      "scrollable()",
+      "verticalScroll()/horizontalScroll()",
+      "LazyColumn",
+      "BoxScroll",
+      "ScrollContainer()"
+    ]
   },
   {
     "id": 129,
     "question": "Which Compose function is used to observe a StateFlow in a Composable and trigger recomposition?",
     "answer": "collectAsState()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["collect()", "collectAsState()", "remember", "snapshotFlow()", "derivedStateOf"]
+    "fakeOptions": [
+      "collect()",
+      "collectAsState()",
+      "remember",
+      "snapshotFlow()",
+      "derivedStateOf"
+    ]
   },
   {
     "id": 130,
     "question": "Which Compose function allows creating gesture-detectable elements like drag and tap?",
     "answer": "Modifier.pointerInput()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.gesture()", "Modifier.pointerInput()", "Modifier.clickable()", "Modifier.touch()", "Modifier.detectTap()"]
+    "fakeOptions": [
+      "Modifier.gesture()",
+      "Modifier.pointerInput()",
+      "Modifier.clickable()",
+      "Modifier.touch()",
+      "Modifier.detectTap()"
+    ]
   },
   {
     "id": 131,
     "question": "Which Compose function animates a color or size value based on state change?",
     "answer": "animate*AsState",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["transition()", "animate*AsState", "updateTransition()", "rememberInfiniteTransition", "Animatable"]
+    "fakeOptions": [
+      "transition()",
+      "animate*AsState",
+      "updateTransition()",
+      "rememberInfiniteTransition",
+      "Animatable"
+    ]
   },
   {
     "id": 132,
     "question": "Which Compose function is used for creating animated visibility transitions?",
     "answer": "AnimatedVisibility",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["AnimatedContent", "AnimatedVisibility", "updateTransition", "rememberInfiniteTransition", "Animatable"]
+    "fakeOptions": [
+      "AnimatedContent",
+      "AnimatedVisibility",
+      "updateTransition",
+      "rememberInfiniteTransition",
+      "Animatable"
+    ]
   },
   {
     "id": 133,
     "question": "Which Compose function creates a custom animation specification?",
     "answer": "tween(), spring(), keyframes()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["tween(), spring(), keyframes()", "animate()", "animateValue()", "AnimSpec()", "transitionSpec()"]
+    "fakeOptions": [
+      "tween(), spring(), keyframes()",
+      "animate()",
+      "animateValue()",
+      "AnimSpec()",
+      "transitionSpec()"
+    ]
   },
   {
     "id": 134,
@@ -1164,203 +1746,377 @@
     "question": "Which Compose layout aligns children relative to each other using constraints?",
     "answer": "ConstraintLayout",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Box", "Column", "Row", "ConstraintLayout", "Scaffold"]
+    "fakeOptions": [
+      "Box",
+      "Column",
+      "Row",
+      "ConstraintLayout",
+      "Scaffold"
+    ]
   },
   {
     "id": 136,
     "question": "Which Compose function allows creating a horizontally scrolling container of items with fixed spacing?",
     "answer": "LazyRow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LazyColumn", "LazyRow", "Column", "Row", "Box"]
+    "fakeOptions": [
+      "LazyColumn",
+      "LazyRow",
+      "Column",
+      "Row",
+      "Box"
+    ]
   },
   {
     "id": 137,
     "question": "Which Compose function is used for side-effects that should run on every recomposition?",
     "answer": "SideEffect",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["SideEffect", "LaunchedEffect", "DisposableEffect", "remember", "derivedStateOf"]
+    "fakeOptions": [
+      "SideEffect",
+      "LaunchedEffect",
+      "DisposableEffect",
+      "remember",
+      "derivedStateOf"
+    ]
   },
   {
     "id": 138,
     "question": "Which Compose function cancels work and cleans up when keys change?",
     "answer": "DisposableEffect",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["DisposableEffect", "LaunchedEffect", "SideEffect", "remember", "produceState"]
+    "fakeOptions": [
+      "DisposableEffect",
+      "LaunchedEffect",
+      "SideEffect",
+      "remember",
+      "produceState"
+    ]
   },
   {
     "id": 139,
     "question": "Which Compose principle ensures a composable is recomposed when the observed state changes?",
     "answer": "State-driven UI / Recomposition",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Manual refresh", "State-driven UI / Recomposition", "Coroutines", "SideEffects", "SnapshotFlow"]
+    "fakeOptions": [
+      "Manual refresh",
+      "State-driven UI / Recomposition",
+      "Coroutines",
+      "SideEffects",
+      "SnapshotFlow"
+    ]
   },
   {
     "id": 140,
     "question": "Which Compose function can be used to animate multiple values simultaneously?",
     "answer": "updateTransition()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["animate*AsState", "updateTransition()", "rememberInfiniteTransition", "Animatable", "LaunchedEffect"]
+    "fakeOptions": [
+      "animate*AsState",
+      "updateTransition()",
+      "rememberInfiniteTransition",
+      "Animatable",
+      "LaunchedEffect"
+    ]
   },
   {
     "id": 141,
     "question": "Which Compose function allows converting a Flow into a state object?",
     "answer": "collectAsState()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["collect()", "collectAsState()", "rememberFlow()", "derivedStateOf", "snapshotFlow()"]
+    "fakeOptions": [
+      "collect()",
+      "collectAsState()",
+      "rememberFlow()",
+      "derivedStateOf",
+      "snapshotFlow()"
+    ]
   },
   {
     "id": 142,
     "question": "Which Compose function allows launching coroutines scoped to Composable lifecycle?",
     "answer": "rememberCoroutineScope()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["rememberCoroutineScope()", "LaunchedEffect", "DisposableEffect", "SideEffect", "produceState"]
+    "fakeOptions": [
+      "rememberCoroutineScope()",
+      "LaunchedEffect",
+      "DisposableEffect",
+      "SideEffect",
+      "produceState"
+    ]
   },
   {
     "id": 143,
     "question": "Which Compose component is used for scrollable tabs?",
     "answer": "ScrollableTabRow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["TabRow", "ScrollableTabRow", "LazyRow", "Column", "Row"]
+    "fakeOptions": [
+      "TabRow",
+      "ScrollableTabRow",
+      "LazyRow",
+      "Column",
+      "Row"
+    ]
   },
   {
     "id": 144,
     "question": "Which Compose function allows observing LiveData as state?",
     "answer": "observeAsState()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["collectAsState()", "observeAsState()", "rememberLiveData()", "derivedStateOf", "snapshotFlow()"]
+    "fakeOptions": [
+      "collectAsState()",
+      "observeAsState()",
+      "rememberLiveData()",
+      "derivedStateOf",
+      "snapshotFlow()"
+    ]
   },
   {
     "id": 145,
     "question": "Which Compose modifier allows applying a background color?",
     "answer": "Modifier.background()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.background()", "Modifier.color()", "Modifier.fillMaxSize()", "Modifier.surface()", "Modifier.themeColor()"]
+    "fakeOptions": [
+      "Modifier.background()",
+      "Modifier.color()",
+      "Modifier.fillMaxSize()",
+      "Modifier.surface()",
+      "Modifier.themeColor()"
+    ]
   },
   {
     "id": 146,
     "question": "Which Compose modifier adds clickable behavior to a Composable?",
     "answer": "Modifier.clickable()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.pointerInput()", "Modifier.clickable()", "Modifier.touchable()", "Modifier.gesture()", "Modifier.tap()"]
+    "fakeOptions": [
+      "Modifier.pointerInput()",
+      "Modifier.clickable()",
+      "Modifier.touchable()",
+      "Modifier.gesture()",
+      "Modifier.tap()"
+    ]
   },
   {
     "id": 147,
     "question": "Which Compose modifier allows applying padding around a Composable?",
     "answer": "Modifier.padding()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Modifier.padding()", "Modifier.margin()", "Modifier.gap()", "Modifier.spacing()", "Modifier.offset()"]
+    "fakeOptions": [
+      "Modifier.padding()",
+      "Modifier.margin()",
+      "Modifier.gap()",
+      "Modifier.spacing()",
+      "Modifier.offset()"
+    ]
   },
   {
     "id": 148,
     "question": "Which Compose function provides a slot for a bottom navigation bar in Scaffold?",
     "answer": "bottomBar",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["bottomBar", "topBar", "floatingActionButton", "content", "drawerContent"]
+    "fakeOptions": [
+      "bottomBar",
+      "topBar",
+      "floatingActionButton",
+      "content",
+      "drawerContent"
+    ]
   },
   {
     "id": 149,
     "question": "Which Compose function is used to animate the placement of items in a LazyColumn?",
     "answer": "animateItemPlacement()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["animateItemPlacement()", "animateContentSize()", "animate*AsState", "updateTransition()", "Animatable"]
+    "fakeOptions": [
+      "animateItemPlacement()",
+      "animateContentSize()",
+      "animate*AsState",
+      "updateTransition()",
+      "Animatable"
+    ]
   },
   {
     "id": 150,
     "question": "Which Compose function allows applying a custom layout modifier for positioning?",
     "answer": "layout()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["layout()", "Modifier.position()", "Modifier.offset()", "Modifier.align()", "Modifier.zIndex()"]
+    "fakeOptions": [
+      "layout()",
+      "Modifier.position()",
+      "Modifier.offset()",
+      "Modifier.align()",
+      "Modifier.zIndex()"
+    ]
   },
   {
     "id": 151,
     "question": "In MVVM, which component holds UI-related data and survives configuration changes?",
     "answer": "ViewModel",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Activity", "Fragment", "Repository", "ViewModel", "LiveData"]
+    "fakeOptions": [
+      "Activity",
+      "Fragment",
+      "Repository",
+      "ViewModel",
+      "LiveData"
+    ]
   },
   {
     "id": 152,
     "question": "Which layer in MVVM is responsible for providing data from network or database?",
     "answer": "Repository",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["ViewModel", "Repository", "UI", "UseCase", "Service"]
+    "fakeOptions": [
+      "ViewModel",
+      "Repository",
+      "UI",
+      "UseCase",
+      "Service"
+    ]
   },
   {
     "id": 153,
     "question": "Which component in MVVM observes data changes and updates the UI automatically?",
     "answer": "LiveData / StateFlow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData / StateFlow", "ViewModel", "Repository", "Activity", "Fragment"]
+    "fakeOptions": [
+      "LiveData / StateFlow",
+      "ViewModel",
+      "Repository",
+      "Activity",
+      "Fragment"
+    ]
   },
   {
     "id": 154,
     "question": "Which dependency injection library is officially supported by Android for MVVM projects?",
     "answer": "Hilt",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Dagger", "Hilt", "Koin", "Kodein", "Guice"]
+    "fakeOptions": [
+      "Dagger",
+      "Hilt",
+      "Koin",
+      "Kodein",
+      "Guice"
+    ]
   },
   {
     "id": 155,
     "question": "Which annotation in Hilt marks a class for constructor injection?",
     "answer": "@Inject",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Provide", "@Module", "@Inject", "@Singleton", "@Bind"]
+    "fakeOptions": [
+      "@Provide",
+      "@Module",
+      "@Inject",
+      "@Singleton",
+      "@Bind"
+    ]
   },
   {
     "id": 156,
     "question": "Which Hilt annotation provides a singleton instance of a dependency?",
     "answer": "@Singleton",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Singleton", "@Inject", "@Module", "@Provides", "@Scoped"]
+    "fakeOptions": [
+      "@Singleton",
+      "@Inject",
+      "@Module",
+      "@Provides",
+      "@Scoped"
+    ]
   },
   {
     "id": 157,
     "question": "Which Hilt annotation defines a module that provides dependencies?",
     "answer": "@Module",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Provides", "@Singleton", "@Module", "@Inject", "@Component"]
+    "fakeOptions": [
+      "@Provides",
+      "@Singleton",
+      "@Module",
+      "@Inject",
+      "@Component"
+    ]
   },
   {
     "id": 158,
     "question": "Which Hilt annotation defines a function that provides a dependency instance?",
     "answer": "@Provides",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Module", "@Singleton", "@Provides", "@Inject", "@Bind"]
+    "fakeOptions": [
+      "@Module",
+      "@Singleton",
+      "@Provides",
+      "@Inject",
+      "@Bind"
+    ]
   },
   {
     "id": 159,
     "question": "Which pattern ensures a single source of truth for data?",
     "answer": "Repository pattern",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["MVVM", "MVI", "Repository pattern", "Singleton", "Service Locator"]
+    "fakeOptions": [
+      "MVVM",
+      "MVI",
+      "Repository pattern",
+      "Singleton",
+      "Service Locator"
+    ]
   },
   {
     "id": 160,
     "question": "In MVI, what does 'Intent' represent?",
     "answer": "User actions or events",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["UI state", "Side-effects", "User actions or events", "Repositories", "ViewModel functions"]
+    "fakeOptions": [
+      "UI state",
+      "Side-effects",
+      "User actions or events",
+      "Repositories",
+      "ViewModel functions"
+    ]
   },
   {
     "id": 161,
     "question": "In MVI, what does 'State' represent?",
     "answer": "UI representation at a given time",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Intent", "UI representation at a given time", "Actions", "Side-effects", "Repository data"]
+    "fakeOptions": [
+      "Intent",
+      "UI representation at a given time",
+      "Actions",
+      "Side-effects",
+      "Repository data"
+    ]
   },
   {
     "id": 162,
     "question": "In MVI, what does 'Effect' represent?",
     "answer": "One-time events like navigation or Toasts",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["UI state", "Repository updates", "One-time events like navigation or Toasts", "User actions", "ViewModel data"]
+    "fakeOptions": [
+      "UI state",
+      "Repository updates",
+      "One-time events like navigation or Toasts",
+      "User actions",
+      "ViewModel data"
+    ]
   },
   {
     "id": 163,
     "question": "Which principle is core to MVVM regarding data flow?",
     "answer": "Unidirectional data flow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Bidirectional data flow", "Unidirectional data flow", "Random data flow", "Two-way binding only", "Event-driven flow"]
+    "fakeOptions": [
+      "Bidirectional data flow",
+      "Unidirectional data flow",
+      "Random data flow",
+      "Two-way binding only",
+      "Event-driven flow"
+    ]
   },
   {
     "id": 164,
@@ -1380,28 +2136,52 @@
     "question": "Which component in MVVM should not hold Android context?",
     "answer": "ViewModel",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Activity", "Fragment", "ViewModel", "Repository", "Service"]
+    "fakeOptions": [
+      "Activity",
+      "Fragment",
+      "ViewModel",
+      "Repository",
+      "Service"
+    ]
   },
   {
     "id": 166,
     "question": "Which testing library is commonly used for mocking dependencies in ViewModel tests?",
     "answer": "Mockito / MockK",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Espresso", "JUnit", "Mockito / MockK", "Robolectric", "Truth"]
+    "fakeOptions": [
+      "Espresso",
+      "JUnit",
+      "Mockito / MockK",
+      "Robolectric",
+      "Truth"
+    ]
   },
   {
     "id": 167,
     "question": "Which annotation allows Hilt to inject dependencies into an Android Activity?",
     "answer": "@AndroidEntryPoint",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Inject", "@AndroidEntryPoint", "@HiltActivity", "@Provide", "@Module"]
+    "fakeOptions": [
+      "@Inject",
+      "@AndroidEntryPoint",
+      "@HiltActivity",
+      "@Provide",
+      "@Module"
+    ]
   },
   {
     "id": 168,
     "question": "Which scope is commonly used for dependencies that should live as long as the application?",
     "answer": "Singleton / Application scope",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Activity scope", "Fragment scope", "Singleton / Application scope", "ViewModel scope", "Session scope"]
+    "fakeOptions": [
+      "Activity scope",
+      "Fragment scope",
+      "Singleton / Application scope",
+      "ViewModel scope",
+      "Session scope"
+    ]
   },
   {
     "id": 169,
@@ -1421,14 +2201,26 @@
     "question": "Which principle recommends that repositories provide data as Flow or LiveData?",
     "answer": "Reactive programming / Observables",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Imperative programming", "Reactive programming / Observables", "Synchronous calls", "Callback hell", "Singleton pattern"]
+    "fakeOptions": [
+      "Imperative programming",
+      "Reactive programming / Observables",
+      "Synchronous calls",
+      "Callback hell",
+      "Singleton pattern"
+    ]
   },
   {
     "id": 171,
     "question": "Which testing technique verifies that repository functions return expected results?",
     "answer": "Unit testing",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Unit testing", "UI testing", "Integration testing", "Instrumentation testing", "Snapshot testing"]
+    "fakeOptions": [
+      "Unit testing",
+      "UI testing",
+      "Integration testing",
+      "Instrumentation testing",
+      "Snapshot testing"
+    ]
   },
   {
     "id": 172,
@@ -1461,35 +2253,65 @@
     "question": "Which principle suggests that data should flow in one direction from Repository -> ViewModel -> UI?",
     "answer": "Unidirectional data flow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Bidirectional binding", "Unidirectional data flow", "Two-way binding only", "Event-driven", "Reactive streams only"]
+    "fakeOptions": [
+      "Bidirectional binding",
+      "Unidirectional data flow",
+      "Two-way binding only",
+      "Event-driven",
+      "Reactive streams only"
+    ]
   },
   {
     "id": 175,
     "question": "Which Hilt component scope is tied to a ViewModel's lifecycle?",
     "answer": "ViewModelComponent",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["ActivityComponent", "FragmentComponent", "ViewModelComponent", "SingletonComponent", "ServiceComponent"]
+    "fakeOptions": [
+      "ActivityComponent",
+      "FragmentComponent",
+      "ViewModelComponent",
+      "SingletonComponent",
+      "ServiceComponent"
+    ]
   },
   {
     "id": 176,
     "question": "Which test library allows asserting LiveData values?",
     "answer": "Turbine / LiveData Test Observer",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Espresso", "Turbine / LiveData Test Observer", "Mockito", "JUnit", "UIAutomator"]
+    "fakeOptions": [
+      "Espresso",
+      "Turbine / LiveData Test Observer",
+      "Mockito",
+      "JUnit",
+      "UIAutomator"
+    ]
   },
   {
     "id": 177,
     "question": "Which Hilt annotation allows injecting a dependency into a constructor?",
     "answer": "@Inject",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Module", "@Provides", "@Singleton", "@Inject", "@EntryPoint"]
+    "fakeOptions": [
+      "@Module",
+      "@Provides",
+      "@Singleton",
+      "@Inject",
+      "@EntryPoint"
+    ]
   },
   {
     "id": 178,
     "question": "Which pattern is used to isolate data sources behind a single interface?",
     "answer": "Repository pattern",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["MVVM", "Repository pattern", "MVI", "Singleton", "Service Locator"]
+    "fakeOptions": [
+      "MVVM",
+      "Repository pattern",
+      "MVI",
+      "Singleton",
+      "Service Locator"
+    ]
   },
   {
     "id": 179,
@@ -1509,119 +2331,221 @@
     "question": "Which MVI component transforms Intent into State?",
     "answer": "Reducer",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["IntentHandler", "Reducer", "Repository", "ViewModel", "StateObserver"]
+    "fakeOptions": [
+      "IntentHandler",
+      "Reducer",
+      "Repository",
+      "ViewModel",
+      "StateObserver"
+    ]
   },
   {
     "id": 181,
     "question": "Which testing strategy is used to test multiple repository layers together?",
     "answer": "Integration testing",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Unit testing", "Integration testing", "UI testing", "Snapshot testing", "End-to-end testing"]
+    "fakeOptions": [
+      "Unit testing",
+      "Integration testing",
+      "UI testing",
+      "Snapshot testing",
+      "End-to-end testing"
+    ]
   },
   {
     "id": 182,
     "question": "Which component in MVVM holds references to multiple repositories?",
     "answer": "ViewModel",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Activity", "Fragment", "ViewModel", "Repository", "Service"]
+    "fakeOptions": [
+      "Activity",
+      "Fragment",
+      "ViewModel",
+      "Repository",
+      "Service"
+    ]
   },
   {
     "id": 183,
     "question": "Which Hilt annotation allows defining bindings without exposing a module class?",
     "answer": "@Binds",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Provides", "@Binds", "@Module", "@Inject", "@Singleton"]
+    "fakeOptions": [
+      "@Provides",
+      "@Binds",
+      "@Module",
+      "@Inject",
+      "@Singleton"
+    ]
   },
   {
     "id": 184,
     "question": "Which principle helps keeping Android app modular and testable?",
     "answer": "Separation of concerns",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Singleton pattern", "Separation of concerns", "Event-driven", "Observer pattern", "Direct coupling"]
+    "fakeOptions": [
+      "Singleton pattern",
+      "Separation of concerns",
+      "Event-driven",
+      "Observer pattern",
+      "Direct coupling"
+    ]
   },
   {
     "id": 185,
     "question": "Which component is responsible for mapping network responses to domain models?",
     "answer": "Repository",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["ViewModel", "Repository", "Activity", "UseCase", "UI layer"]
+    "fakeOptions": [
+      "ViewModel",
+      "Repository",
+      "Activity",
+      "UseCase",
+      "UI layer"
+    ]
   },
   {
     "id": 186,
     "question": "Which Hilt scope should be used for dependencies tied to Activity lifecycle?",
-    "answer": "ActivityRetainedComponent / Activity scope",
+    "answer": "ActivityComponent",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["FragmentComponent", "ActivityRetainedComponent / Activity scope", "ViewModelComponent", "SingletonComponent", "ServiceComponent"]
+    "fakeOptions": [
+      "FragmentComponent",
+      "ActivityComponent",
+      "ViewModelComponent",
+      "SingletonComponent",
+      "ServiceComponent"
+    ]
   },
   {
     "id": 187,
-    "question": "Which annotation allows injecting ViewModel into an Activity using Hilt?",
+    "question": "What annotation should mark the ViewModel class with so that Hilt can provide its dependencies?",
     "answer": "@HiltViewModel",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Inject", "@HiltViewModel", "@Module", "@AndroidEntryPoint", "@Provides"]
+    "fakeOptions": [
+      "@Inject",
+      "@HiltViewModel",
+      "@Module",
+      "@AndroidEntryPoint",
+      "@Provides"
+    ]
   },
   {
     "id": 188,
     "question": "Which design principle recommends that each layer has only one responsibility?",
     "answer": "Single Responsibility Principle (SRP)",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Open/Closed Principle", "Dependency Inversion", "Single Responsibility Principle (SRP)", "Liskov Substitution", "Interface Segregation"]
+    "fakeOptions": [
+      "Open/Closed Principle",
+      "Dependency Inversion",
+      "Single Responsibility Principle (SRP)",
+      "Liskov Substitution",
+      "Interface Segregation"
+    ]
   },
   {
     "id": 189,
     "question": "Which tool helps testing coroutine flows in ViewModel?",
     "answer": "Turbine",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Espresso", "JUnit", "Turbine", "Mockito", "UIAutomator"]
+    "fakeOptions": [
+      "Espresso",
+      "JUnit",
+      "Turbine",
+      "Mockito",
+      "UIAutomator"
+    ]
   },
   {
     "id": 190,
     "question": "Which MVI component holds the immutable UI state?",
     "answer": "State",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Intent", "Reducer", "State", "Effect", "ViewModel"]
+    "fakeOptions": [
+      "Intent",
+      "Reducer",
+      "State",
+      "Effect",
+      "ViewModel"
+    ]
   },
   {
     "id": 191,
     "question": "Which Hilt annotation allows scoping a module to a specific Android component?",
     "answer": "@InstallIn",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@InstallIn", "@Module", "@Provides", "@Singleton", "@Binds"]
+    "fakeOptions": [
+      "@InstallIn",
+      "@Module",
+      "@Provides",
+      "@Singleton",
+      "@Binds"
+    ]
   },
   {
     "id": 192,
     "question": "Which principle ensures repositories provide one source of truth and decoupled UI?",
     "answer": "Single Source of Truth",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["MVVM", "Unidirectional Flow", "Single Source of Truth", "Dependency Injection", "MVI"]
+    "fakeOptions": [
+      "MVVM",
+      "Unidirectional Flow",
+      "Single Source of Truth",
+      "Dependency Injection",
+      "MVI"
+    ]
   },
   {
     "id": 193,
     "question": "Which Hilt annotation allows providing multiple implementations of an interface?",
     "answer": "@Binds / @Qualifier",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Provides", "@Binds / @Qualifier", "@Singleton", "@Module", "@Inject"]
+    "fakeOptions": [
+      "@Provides",
+      "@Binds / @Qualifier",
+      "@Singleton",
+      "@Module",
+      "@Inject"
+    ]
   },
   {
     "id": 194,
     "question": "Which testing type verifies UI and ViewModel interactions together?",
     "answer": "Instrumented / UI tests",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Unit testing", "Integration testing", "Instrumented / UI tests", "Snapshot tests", "End-to-end tests"]
+    "fakeOptions": [
+      "Unit testing",
+      "Integration testing",
+      "Instrumented / UI tests",
+      "Snapshot tests",
+      "End-to-end tests"
+    ]
   },
   {
     "id": 195,
     "question": "Which MVI component handles side-effects like navigation or Toasts?",
     "answer": "Effect",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["State", "Reducer", "Effect", "Intent", "Repository"]
+    "fakeOptions": [
+      "State",
+      "Reducer",
+      "Effect",
+      "Intent",
+      "Repository"
+    ]
   },
   {
     "id": 196,
     "question": "Which Hilt component handles dependencies tied to Fragment lifecycle?",
     "answer": "FragmentComponent",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["ActivityComponent", "ViewModelComponent", "FragmentComponent", "SingletonComponent", "ServiceComponent"]
+    "fakeOptions": [
+      "ActivityComponent",
+      "ViewModelComponent",
+      "FragmentComponent",
+      "SingletonComponent",
+      "ServiceComponent"
+    ]
   },
   {
     "id": 197,
@@ -1641,84 +2565,156 @@
     "question": "Which principle suggests that changes in state should trigger UI updates automatically?",
     "answer": "Reactive / Observables",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Imperative", "Reactive / Observables", "Manual refresh", "Polling", "Thread.sleep()"]
+    "fakeOptions": [
+      "Imperative",
+      "Reactive / Observables",
+      "Manual refresh",
+      "Polling",
+      "Thread.sleep()"
+    ]
   },
   {
     "id": 199,
     "question": "Which Hilt scope is tied to the lifetime of the Application?",
     "answer": "SingletonComponent",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["ViewModelComponent", "ActivityComponent", "FragmentComponent", "SingletonComponent", "ServiceComponent"]
+    "fakeOptions": [
+      "ViewModelComponent",
+      "ActivityComponent",
+      "FragmentComponent",
+      "SingletonComponent",
+      "ServiceComponent"
+    ]
   },
   {
     "id": 200,
     "question": "Which pattern ensures clear separation between UI, business logic, and data sources?",
     "answer": "MVVM",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["MVI", "MVVM", "MVP", "Singleton", "Repository pattern"]
+    "fakeOptions": [
+      "MVI",
+      "MVVM",
+      "MVP",
+      "Singleton",
+      "Repository pattern"
+    ]
   },
   {
     "id": 201,
     "question": "Which annotation marks a Kotlin data class as a Room database entity?",
     "answer": "@Entity",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Table", "@Entity", "@DataClass", "@Database", "@Dao"]
+    "fakeOptions": [
+      "@Table",
+      "@Entity",
+      "@DataClass",
+      "@Database",
+      "@Dao"
+    ]
   },
   {
     "id": 202,
     "question": "Which annotation marks a DAO interface in Room?",
     "answer": "@Dao",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Dao", "@Repository", "@Database", "@Entity", "@Inject"]
+    "fakeOptions": [
+      "@Dao",
+      "@Repository",
+      "@Database",
+      "@Entity",
+      "@Inject"
+    ]
   },
   {
     "id": 203,
     "question": "Which annotation defines the Room database class?",
     "answer": "@Database",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Database", "@Entity", "@Dao", "@RoomDB", "@Module"]
+    "fakeOptions": [
+      "@Database",
+      "@Entity",
+      "@Dao",
+      "@RoomDB",
+      "@Module"
+    ]
   },
   {
     "id": 204,
     "question": "Which annotation is used to write SQL select queries in Room DAO?",
     "answer": "@Query",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Insert", "@Select", "@Query", "@Update", "@Delete"]
+    "fakeOptions": [
+      "@Insert",
+      "@Select",
+      "@Query",
+      "@Update",
+      "@Delete"
+    ]
   },
   {
     "id": 205,
     "question": "Which annotation is used to insert data in Room?",
     "answer": "@Insert",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Query", "@Update", "@Insert", "@Delete", "@Put"]
+    "fakeOptions": [
+      "@Query",
+      "@Update",
+      "@Insert",
+      "@Delete",
+      "@Put"
+    ]
   },
   {
     "id": 206,
     "question": "Which annotation is used to update data in Room?",
     "answer": "@Update",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Query", "@Update", "@Insert", "@Delete", "@Patch"]
+    "fakeOptions": [
+      "@Query",
+      "@Update",
+      "@Insert",
+      "@Delete",
+      "@Patch"
+    ]
   },
   {
     "id": 207,
     "question": "Which annotation is used to delete data in Room?",
     "answer": "@Delete",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Delete", "@Remove", "@Update", "@Query", "@Insert"]
+    "fakeOptions": [
+      "@Delete",
+      "@Remove",
+      "@Update",
+      "@Query",
+      "@Insert"
+    ]
   },
   {
     "id": 208,
     "question": "Which function type allows observing Room database changes reactively?",
     "answer": "Flow / LiveData",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Flow / LiveData", "List", "ObservableField", "StateFlow", "MutableMap"]
+    "fakeOptions": [
+      "Flow / LiveData",
+      "List",
+      "ObservableField",
+      "StateFlow",
+      "MutableMap"
+    ]
   },
   {
     "id": 209,
     "question": "Which annotation allows defining a primary key in Room?",
     "answer": "@PrimaryKey",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Key", "@Primary", "@PrimaryKey", "@Id", "@Unique"]
+    "fakeOptions": [
+      "@Key",
+      "@Primary",
+      "@PrimaryKey",
+      "@Id",
+      "@Unique"
+    ]
   },
   {
     "id": 210,
@@ -1738,28 +2734,52 @@
     "question": "Which annotation allows indexing a column in Room for faster queries?",
     "answer": "@Index",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Index", "@ColumnIndex", "@Indexed", "@ForeignKey", "@QueryIndex"]
+    "fakeOptions": [
+      "@Index",
+      "@ColumnIndex",
+      "@Indexed",
+      "@ForeignKey",
+      "@QueryIndex"
+    ]
   },
   {
     "id": 212,
     "question": "Which annotation defines a foreign key in Room?",
     "answer": "@ForeignKey",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Relation", "@ForeignKey", "@Reference", "@ParentKey", "@ChildKey"]
+    "fakeOptions": [
+      "@Relation",
+      "@ForeignKey",
+      "@Reference",
+      "@ParentKey",
+      "@ChildKey"
+    ]
   },
   {
     "id": 213,
     "question": "Which annotation is used to define a one-to-many relationship in Room?",
     "answer": "@Relation",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@OneToMany", "@ForeignKey", "@Relation", "@Embedded", "@JoinColumn"]
+    "fakeOptions": [
+      "@OneToMany",
+      "@ForeignKey",
+      "@Relation",
+      "@Embedded",
+      "@JoinColumn"
+    ]
   },
   {
     "id": 214,
     "question": "Which annotation embeds one data class into another in Room?",
     "answer": "@Embedded",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Embedded", "@Relation", "@Include", "@Compose", "@Nested"]
+    "fakeOptions": [
+      "@Embedded",
+      "@Relation",
+      "@Include",
+      "@Compose",
+      "@Nested"
+    ]
   },
   {
     "id": 215,
@@ -1779,42 +2799,78 @@
     "question": "Which type of query can return a Flow to observe changes automatically?",
     "answer": "Flow<List<Entity>>",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["List<Entity>", "LiveData<Entity>", "Flow<List<Entity>>", "Entity", "Observable<List<Entity>>"]
+    "fakeOptions": [
+      "List<Entity>",
+      "LiveData<Entity>",
+      "Flow<List<Entity>>",
+      "Entity",
+      "Observable<List<Entity>>"
+    ]
   },
   {
     "id": 217,
     "question": "Which annotation can mark a column as non-null in Room?",
     "answer": "@NonNull",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@NotNull", "@NonNull", "@Nullable", "@PrimaryKey", "@Required"]
+    "fakeOptions": [
+      "@NotNull",
+      "@NonNull",
+      "@Nullable",
+      "@PrimaryKey",
+      "@Required"
+    ]
   },
   {
     "id": 218,
     "question": "Which annotation allows defining a default value for a Room column?",
     "answer": "defaultValue in @ColumnInfo",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Default", "defaultValue in @ColumnInfo", "@ColumnDefault", "@InitialValue", "@DefaultValue"]
+    "fakeOptions": [
+      "@Default",
+      "defaultValue in @ColumnInfo",
+      "@ColumnDefault",
+      "@InitialValue",
+      "@DefaultValue"
+    ]
   },
   {
     "id": 219,
     "question": "Which function is used to run multiple database operations atomically in Room?",
     "answer": "@Transaction",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Atomic", "@Transaction", "@Synchronized", "@Batch", "@AllOrNothing"]
+    "fakeOptions": [
+      "@Atomic",
+      "@Transaction",
+      "@Synchronized",
+      "@Batch",
+      "@AllOrNothing"
+    ]
   },
   {
     "id": 220,
     "question": "Which type is recommended for storing large binary data in Room?",
     "answer": "ByteArray",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Blob", "ByteArray", "String", "IntArray", "Bitmap"]
+    "fakeOptions": [
+      "Blob",
+      "ByteArray",
+      "String",
+      "IntArray",
+      "Bitmap"
+    ]
   },
   {
     "id": 221,
     "question": "Which annotation allows ignoring a field from being persisted in Room?",
     "answer": "@Ignore",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Transient", "@Ignore", "@Exclude", "@NotPersisted", "@Skip"]
+    "fakeOptions": [
+      "@Transient",
+      "@Ignore",
+      "@Exclude",
+      "@NotPersisted",
+      "@Skip"
+    ]
   },
   {
     "id": 222,
@@ -1834,63 +2890,117 @@
     "question": "Which type should you use in Room for reactive streams?",
     "answer": "Flow",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LiveData", "Flow", "ObservableField", "StateFlow", "List"]
+    "fakeOptions": [
+      "LiveData",
+      "Flow",
+      "ObservableField",
+      "StateFlow",
+      "List"
+    ]
   },
   {
     "id": 224,
     "question": "Which annotation allows embedding multiple objects as columns in a Room entity?",
     "answer": "@Embedded",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Embedded", "@Relation", "@Include", "@ColumnInfo", "@Nested"]
+    "fakeOptions": [
+      "@Embedded",
+      "@Relation",
+      "@Include",
+      "@ColumnInfo",
+      "@Nested"
+    ]
   },
   {
     "id": 225,
     "question": "Which method allows running Room queries on a background thread?",
     "answer": "suspend functions / coroutines",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["AsyncTask", "Threads", "suspend functions / coroutines", "runBlocking", "ExecutorService"]
+    "fakeOptions": [
+      "AsyncTask",
+      "Threads",
+      "suspend functions / coroutines",
+      "runBlocking",
+      "ExecutorService"
+    ]
   },
   {
     "id": 226,
     "question": "Which annotation can mark a DAO method as a suspend function?",
     "answer": "suspend",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Suspend", "suspend", "@Async", "@Background", "@Coroutine"]
+    "fakeOptions": [
+      "@Suspend",
+      "suspend",
+      "@Async",
+      "@Background",
+      "@Coroutine"
+    ]
   },
   {
     "id": 227,
     "question": "Which type is recommended for a primary key that is auto-generated?",
     "answer": "Int / Long",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["String", "UUID", "Int / Long", "Boolean", "Double"]
+    "fakeOptions": [
+      "String",
+      "UUID",
+      "Int / Long",
+      "Boolean",
+      "Double"
+    ]
   },
   {
     "id": 228,
     "question": "Which annotation allows Room to handle database versioning?",
     "answer": "@Database(version = X)",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Version", "@SchemaVersion", "@Database(version = X)", "@Migration", "@DbVersion"]
+    "fakeOptions": [
+      "@Version",
+      "@SchemaVersion",
+      "@Database(version = X)",
+      "@Migration",
+      "@DbVersion"
+    ]
   },
   {
     "id": 229,
     "question": "Which annotation can be used to create a composite primary key?",
     "answer": "primaryKeys in @Entity",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@PrimaryKey(composite = true)", "primaryKeys in @Entity", "@CompositeKey", "@MultiKey", "@KeySet"]
+    "fakeOptions": [
+      "@PrimaryKey(composite = true)",
+      "primaryKeys in @Entity",
+      "@CompositeKey",
+      "@MultiKey",
+      "@KeySet"
+    ]
   },
   {
     "id": 230,
     "question": "Which annotation allows creating indexes on multiple columns in Room?",
     "answer": "indices in @Entity",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Index(columns = ...)", "indices in @Entity", "@IndexedColumns", "@ColumnIndex", "@MultiIndex"]
+    "fakeOptions": [
+      "@Index(columns = ...)",
+      "indices in @Entity",
+      "@IndexedColumns",
+      "@ColumnIndex",
+      "@MultiIndex"
+    ]
   },
   {
     "id": 231,
     "question": "Which annotation allows defining a one-to-one relationship in Room?",
     "answer": "@Relation",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@OneToOne", "@Relation", "@Embedded", "@ForeignKey", "@JoinColumn"]
+    "fakeOptions": [
+      "@OneToOne",
+      "@Relation",
+      "@Embedded",
+      "@ForeignKey",
+      "@JoinColumn"
+    ]
   },
   {
     "id": 232,
@@ -1949,28 +3059,52 @@
     "question": "Which annotation allows Room to ignore a field in a data class?",
     "answer": "@Ignore",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Transient", "@Ignore", "@NotPersisted", "@Exclude", "@Skip"]
+    "fakeOptions": [
+      "@Transient",
+      "@Ignore",
+      "@NotPersisted",
+      "@Exclude",
+      "@Skip"
+    ]
   },
   {
     "id": 237,
     "question": "Which Room annotation allows defining the database version number?",
     "answer": "version in @Database",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["version in @Database", "@Version", "@SchemaVersion", "@DbVersion", "@Migration"]
+    "fakeOptions": [
+      "version in @Database",
+      "@Version",
+      "@SchemaVersion",
+      "@DbVersion",
+      "@Migration"
+    ]
   },
   {
     "id": 238,
     "question": "Which type is recommended for storing JSON strings in Room?",
     "answer": "String",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Blob", "ByteArray", "String", "Text", "JsonObject"]
+    "fakeOptions": [
+      "Blob",
+      "ByteArray",
+      "String",
+      "Text",
+      "JsonObject"
+    ]
   },
   {
     "id": 239,
     "question": "Which annotation allows embedding multiple fields from another data class?",
     "answer": "@Embedded",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Embedded", "@Include", "@Compose", "@Nested", "@Relation"]
+    "fakeOptions": [
+      "@Embedded",
+      "@Include",
+      "@Compose",
+      "@Nested",
+      "@Relation"
+    ]
   },
   {
     "id": 240,
@@ -1988,11 +3122,11 @@
   {
     "id": 241,
     "question": "Which annotation can mark an entity's field as unique?",
-    "answer": "unique in @ColumnInfo",
+    "answer": "@ColumnInfo(unique = true)",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
       "@Unique",
-      "unique in @ColumnInfo",
+      "@ColumnInfo(unique = true)",
       "@ColumnUnique",
       "@UniqueKey",
       "@PrimaryKey(unique=true)"
@@ -2029,7 +3163,13 @@
     "question": "Which annotation allows setting a default value for a column in Room?",
     "answer": "defaultValue in @ColumnInfo",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Default", "defaultValue in @ColumnInfo", "@ColumnDefault", "@InitialValue", "@DefaultValue"]
+    "fakeOptions": [
+      "@Default",
+      "defaultValue in @ColumnInfo",
+      "@ColumnDefault",
+      "@InitialValue",
+      "@DefaultValue"
+    ]
   },
   {
     "id": 245,
@@ -2062,15 +3202,21 @@
     "question": "Which type should you use for storing timestamps in Room?",
     "answer": "Long",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Date", "String", "Long", "Instant", "Calendar"]
+    "fakeOptions": [
+      "Date",
+      "String",
+      "Long",
+      "Instant",
+      "Calendar"
+    ]
   },
   {
     "id": 248,
-    "question": "Which annotation allows defining a column's nullability in Room?",
-    "answer": "nullable in @ColumnInfo",
+    "question": "How do you define a column as nullable in Room?",
+    "answer": "Use a nullable type (e.g., String?)",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
-      "nullable in @ColumnInfo",
+      "Use a nullable type (e.g., String?)",
       "@Nullable",
       "@NotNull",
       "@ColumnNullable",
@@ -2095,63 +3241,117 @@
     "question": "Which annotation can mark a field to be ignored in database queries but still available in entity?",
     "answer": "@Ignore",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Transient", "@Ignore", "@Exclude", "@NotPersisted", "@Skip"]
+    "fakeOptions": [
+      "@Transient",
+      "@Ignore",
+      "@Exclude",
+      "@NotPersisted",
+      "@Skip"
+    ]
   },
   {
     "id": 251,
     "question": "Which library is used for type-safe HTTP networking in Android?",
     "answer": "Retrofit",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["OkHttp", "Volley", "Retrofit", "HttpClient", "Fuel"]
+    "fakeOptions": [
+      "OkHttp",
+      "Volley",
+      "Retrofit",
+      "HttpClient",
+      "Fuel"
+    ]
   },
   {
     "id": 252,
     "question": "Which class in OkHttp is used to make HTTP requests?",
     "answer": "OkHttpClient",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["HttpClient", "OkHttpClient", "RequestBuilder", "HttpConnection", "RequestManager"]
+    "fakeOptions": [
+      "HttpClient",
+      "OkHttpClient",
+      "RequestBuilder",
+      "HttpConnection",
+      "RequestManager"
+    ]
   },
   {
     "id": 253,
     "question": "Which annotation in Retrofit specifies the HTTP GET method?",
     "answer": "@GET",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@GET", "@POST", "@PUT", "@HTTPGET", "@Fetch"]
+    "fakeOptions": [
+      "@GET",
+      "@POST",
+      "@PUT",
+      "@HTTPGET",
+      "@Fetch"
+    ]
   },
   {
     "id": 254,
     "question": "Which annotation in Retrofit is used for query parameters?",
     "answer": "@Query",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Param", "@Query", "@Field", "@Body", "@RequestParam"]
+    "fakeOptions": [
+      "@Param",
+      "@Query",
+      "@Field",
+      "@Body",
+      "@RequestParam"
+    ]
   },
   {
     "id": 255,
     "question": "Which annotation in Retrofit is used for request body?",
     "answer": "@Body",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Body", "@Field", "@Query", "@RequestBody", "@Form"]
+    "fakeOptions": [
+      "@Body",
+      "@Field",
+      "@Query",
+      "@RequestBody",
+      "@Form"
+    ]
   },
   {
     "id": 256,
     "question": "Which function in OkHttp is used to execute a request synchronously?",
     "answer": "Call.execute()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Call.run()", "Call.execute()", "Call.start()", "Call.enqueue()", "Call.request()"]
+    "fakeOptions": [
+      "Call.run()",
+      "Call.execute()",
+      "Call.start()",
+      "Call.enqueue()",
+      "Call.request()"
+    ]
   },
   {
     "id": 257,
     "question": "Which function in OkHttp executes a request asynchronously?",
     "answer": "Call.enqueue()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Call.executeAsync()", "Call.enqueue()", "Call.runAsync()", "Call.start()", "Call.launch()"]
+    "fakeOptions": [
+      "Call.executeAsync()",
+      "Call.enqueue()",
+      "Call.runAsync()",
+      "Call.start()",
+      "Call.launch()"
+    ]
   },
   {
     "id": 258,
     "question": "Which library is commonly used for JSON serialization in Retrofit?",
     "answer": "Gson",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Moshi", "Jackson", "Gson", "Kotlinx.serialization", "FastJson"]
+    "fakeOptions": [
+      "Moshi",
+      "Jackson",
+      "Gson",
+      "Kotlinx.serialization",
+      "FastJson"
+    ]
   },
   {
     "id": 259,
@@ -2181,7 +3381,7 @@
   },
   {
     "id": 261,
-    "question": "Which type in Retrofit allows observing network call results as a Kotlin Flow?",
+    "question": "Which Kotlin type is typically used to observe the results of a Retrofit network call in a reactive way?",
     "answer": "Flow<Response<Type>>",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -2197,28 +3397,52 @@
     "question": "Which OkHttp interceptor can modify requests before sending?",
     "answer": "Interceptor",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Interceptor", "Callback", "RequestFilter", "Authenticator", "Handler"]
+    "fakeOptions": [
+      "Interceptor",
+      "Callback",
+      "RequestFilter",
+      "Authenticator",
+      "Handler"
+    ]
   },
   {
     "id": 263,
     "question": "Which OkHttp class is used for adding logging of HTTP requests/responses?",
     "answer": "HttpLoggingInterceptor",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["LoggingClient", "HttpLogger", "HttpLoggingInterceptor", "InterceptorLogger", "RequestLogger"]
+    "fakeOptions": [
+      "LoggingClient",
+      "HttpLogger",
+      "HttpLoggingInterceptor",
+      "InterceptorLogger",
+      "RequestLogger"
+    ]
   },
   {
     "id": 264,
     "question": "Which exception indicates network failure in Retrofit?",
     "answer": "IOException",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["HttpException", "IOException", "NetworkError", "SocketException", "TimeoutException"]
+    "fakeOptions": [
+      "HttpException",
+      "IOException",
+      "NetworkError",
+      "SocketException",
+      "TimeoutException"
+    ]
   },
   {
     "id": 265,
     "question": "Which Retrofit exception indicates non-2xx HTTP response?",
     "answer": "HttpException",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["IOException", "HttpException", "NetworkException", "ResponseError", "ApiException"]
+    "fakeOptions": [
+      "IOException",
+      "HttpException",
+      "NetworkException",
+      "ResponseError",
+      "ApiException"
+    ]
   },
   {
     "id": 266,
@@ -2238,35 +3462,65 @@
     "question": "Which Retrofit converter is used to parse JSON using Moshi?",
     "answer": "MoshiConverterFactory",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["GsonConverterFactory", "MoshiConverterFactory", "JacksonConverterFactory", "KotlinxConverterFactory", "JsonConverter"]
+    "fakeOptions": [
+      "GsonConverterFactory",
+      "MoshiConverterFactory",
+      "JacksonConverterFactory",
+      "KotlinxConverterFactory",
+      "JsonConverter"
+    ]
   },
   {
     "id": 268,
     "question": "Which operator in Kotlin Flow handles errors gracefully?",
     "answer": "catch",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["onError", "catch", "handleError", "tryCatch", "recover"]
+    "fakeOptions": [
+      "onError",
+      "catch",
+      "handleError",
+      "tryCatch",
+      "recover"
+    ]
   },
   {
     "id": 269,
     "question": "Which operator in Flow emits elements on a specified dispatcher?",
     "answer": "flowOn",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["flowOn", "onDispatcher", "launchOn", "dispatchOn", "emitOn"]
+    "fakeOptions": [
+      "flowOn",
+      "onDispatcher",
+      "launchOn",
+      "dispatchOn",
+      "emitOn"
+    ]
   },
   {
     "id": 270,
     "question": "Which operator in Flow transforms elements asynchronously?",
-    "answer": "map",
+    "answer": "flatMapMerge",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["map", "flatMap", "transform", "collect", "filter"]
+    "fakeOptions": [
+      "map",
+      "flatMap",
+      "flatMapMerge",
+      "collect",
+      "filter"
+    ]
   },
   {
     "id": 271,
     "question": "Which function starts collecting a Flow?",
     "answer": "collect",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["collect", "launch", "subscribe", "flowCollect", "observe"]
+    "fakeOptions": [
+      "collect",
+      "launch",
+      "subscribe",
+      "flowCollect",
+      "observe"
+    ]
   },
   {
     "id": 272,
@@ -2286,7 +3540,13 @@
     "question": "Which function allows retrying failed network requests in Flow?",
     "answer": "retry",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["repeat", "retry", "catch", "onError", "recover"]
+    "fakeOptions": [
+      "repeat",
+      "retry",
+      "catch",
+      "onError",
+      "recover"
+    ]
   },
   {
     "id": 274,
@@ -2306,21 +3566,39 @@
     "question": "Which annotation specifies a field in a form-encoded request?",
     "answer": "@Field",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Field", "@FormField", "@BodyField", "@FormParam", "@Param"]
+    "fakeOptions": [
+      "@Field",
+      "@FormField",
+      "@BodyField",
+      "@FormParam",
+      "@Param"
+    ]
   },
   {
     "id": 276,
     "question": "Which operator converts a cold Flow into a hot SharedFlow?",
     "answer": "shareIn",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["shareIn", "stateIn", "publishIn", "hotFlow", "broadcastIn"]
+    "fakeOptions": [
+      "shareIn",
+      "stateIn",
+      "publishIn",
+      "hotFlow",
+      "broadcastIn"
+    ]
   },
   {
     "id": 277,
     "question": "Which operator exposes the current value of a StateFlow?",
     "answer": "value",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["current", "emit", "value", "collect", "getValue()"]
+    "fakeOptions": [
+      "current",
+      "emit",
+      "value",
+      "collect",
+      "getValue()"
+    ]
   },
   {
     "id": 278,
@@ -2340,98 +3618,182 @@
     "question": "Which operator in Flow can limit the number of emitted items?",
     "answer": "take(n)",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["limit(n)", "take(n)", "first(n)", "count(n)", "slice(n)"]
+    "fakeOptions": [
+      "limit(n)",
+      "take(n)",
+      "first(n)",
+      "count(n)",
+      "slice(n)"
+    ]
   },
   {
     "id": 280,
     "question": "Which exception type is used to handle HTTP errors with Retrofit?",
     "answer": "HttpException",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["IOException", "HttpException", "NetworkException", "ApiError", "ResponseError"]
+    "fakeOptions": [
+      "IOException",
+      "HttpException",
+      "NetworkException",
+      "ApiError",
+      "ResponseError"
+    ]
   },
   {
     "id": 281,
     "question": "Which Retrofit annotation is used for dynamic URLs?",
     "answer": "@Url",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Url", "@DynamicUrl", "@GETUrl", "@Endpoint", "@Path"]
+    "fakeOptions": [
+      "@Url",
+      "@DynamicUrl",
+      "@GETUrl",
+      "@Endpoint",
+      "@Path"
+    ]
   },
   {
     "id": 282,
     "question": "Which annotation is used for path parameters in Retrofit?",
     "answer": "@Path",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Param", "@Path", "@Query", "@Url", "@Body"]
+    "fakeOptions": [
+      "@Param",
+      "@Path",
+      "@Query",
+      "@Url",
+      "@Body"
+    ]
   },
   {
     "id": 283,
     "question": "Which OkHttp class is used to cancel ongoing HTTP requests?",
     "answer": "Call.cancel()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Call.stop()", "Call.abort()", "Call.cancel()", "OkHttpClient.cancel()", "Request.cancel()"]
+    "fakeOptions": [
+      "Call.stop()",
+      "Call.abort()",
+      "Call.cancel()",
+      "OkHttpClient.cancel()",
+      "Request.cancel()"
+    ]
   },
   {
     "id": 284,
     "question": "Which operator in Flow collects only the latest value and cancels previous?",
     "answer": "collectLatest",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["collectLatest", "collect", "mapLatest", "latest", "takeLatest"]
+    "fakeOptions": [
+      "collectLatest",
+      "collect",
+      "mapLatest",
+      "latest",
+      "takeLatest"
+    ]
   },
   {
     "id": 285,
     "question": "Which coroutine builder is used for concurrent execution with deferred result?",
     "answer": "async",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["launch", "async", "runBlocking", "withContext", "concurrent"]
+    "fakeOptions": [
+      "launch",
+      "async",
+      "runBlocking",
+      "withContext",
+      "concurrent"
+    ]
   },
   {
     "id": 286,
     "question": "Which dispatcher is optimized for IO operations in coroutines?",
     "answer": "Dispatchers.IO",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Dispatchers.Default", "Dispatchers.Main", "Dispatchers.IO", "Dispatchers.Unconfined", "Dispatchers.Background"]
+    "fakeOptions": [
+      "Dispatchers.Default",
+      "Dispatchers.Main",
+      "Dispatchers.IO",
+      "Dispatchers.Unconfined",
+      "Dispatchers.Background"
+    ]
   },
   {
     "id": 287,
     "question": "Which operator transforms emitted values in Flow?",
     "answer": "map",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["map", "filter", "collect", "flatMap", "transform"]
+    "fakeOptions": [
+      "map",
+      "filter",
+      "collect",
+      "flatMap",
+      "transform"
+    ]
   },
   {
     "id": 288,
     "question": "Which Flow operator allows combining emissions from multiple Flows?",
     "answer": "combine",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["zip", "merge", "combine", "concat", "flatCombine"]
+    "fakeOptions": [
+      "zip",
+      "merge",
+      "combine",
+      "concat",
+      "flatCombine"
+    ]
   },
   {
     "id": 289,
     "question": "Which Retrofit annotation is used for multipart requests?",
     "answer": "@Multipart",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@Multipart", "@FormData", "@MultiPartRequest", "@BodyPart", "@MultiRequest"]
+    "fakeOptions": [
+      "@Multipart",
+      "@FormData",
+      "@MultiPartRequest",
+      "@BodyPart",
+      "@MultiRequest"
+    ]
   },
   {
     "id": 290,
     "question": "Which annotation is used for sending file parts in Retrofit?",
     "answer": "@Part",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["@File", "@Part", "@Body", "@MultipartFile", "@Upload"]
+    "fakeOptions": [
+      "@File",
+      "@Part",
+      "@Body",
+      "@MultipartFile",
+      "@Upload"
+    ]
   },
   {
     "id": 291,
     "question": "Which operator collects Flow emissions on a different dispatcher than flow creation?",
     "answer": "flowOn",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["collectOn", "observeOn", "flowOn", "emitOn", "runOn"]
+    "fakeOptions": [
+      "collectOn",
+      "observeOn",
+      "flowOn",
+      "emitOn",
+      "runOn"
+    ]
   },
   {
     "id": 292,
     "question": "Which Flow operator skips the first n elements?",
     "answer": "drop(n)",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["skip(n)", "drop(n)", "ignore(n)", "firstDrop(n)", "filter(n)"]
+    "fakeOptions": [
+      "skip(n)",
+      "drop(n)",
+      "ignore(n)",
+      "firstDrop(n)",
+      "filter(n)"
+    ]
   },
   {
     "id": 293,
@@ -2451,36 +3813,60 @@
     "question": "Which operator in Flow combines emissions sequentially?",
     "answer": "flatMapConcat",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["flatMapMerge", "flatMapConcat", "combine", "zip", "merge"]
+    "fakeOptions": [
+      "flatMapMerge",
+      "flatMapConcat",
+      "combine",
+      "zip",
+      "merge"
+    ]
   },
   {
     "id": 295,
     "question": "Which function converts a Flow to LiveData?",
     "answer": "asLiveData()",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["toLiveData()", "asLiveData()", "flowToLiveData()", "collectAsLiveData()", "toLive()"]
+    "fakeOptions": [
+      "toLiveData()",
+      "asLiveData()",
+      "flowToLiveData()",
+      "collectAsLiveData()",
+      "toLive()"
+    ]
   },
   {
     "id": 296,
     "question": "Which operator in Flow allows filtering emitted values?",
     "answer": "filter",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["filter", "map", "collect", "take", "distinct"]
+    "fakeOptions": [
+      "filter",
+      "map",
+      "collect",
+      "take",
+      "distinct"
+    ]
   },
   {
     "id": 297,
     "question": "Which OkHttp class handles HTTP authentication challenges?",
     "answer": "Authenticator",
     "type": "MULTIPLE_CHOICE",
-    "fakeOptions": ["Authenticator", "Interceptor", "Credentials", "AuthenticatorClient", "RequestHandler"]
+    "fakeOptions": [
+      "Authenticator",
+      "Interceptor",
+      "Credentials",
+      "AuthenticatorClient",
+      "RequestHandler"
+    ]
   },
   {
     "id": 298,
-    "question": "Which function allows observing network response as a Kotlin Flow?",
-    "answer": "suspend fun fetchData(): Flow<Response<Type>>",
+    "question": "How can you expose a Retrofit suspend function as a Kotlin Flow in your repository?",
+    "answer": "fun fetchDataFlow(): Flow<Response<Type>> = flow { emit(api.fetchData()) }",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
-      "fun fetchData(): Flow<Response<Type>>",
+      "fun fetchDataFlow(): Flow<Response<Type>> = flow { emit(api.fetchData()) }",
       "suspend fun fetchData(): Flow<Response<Type>>",
       "fun fetchDataAsync(): Flow<Response<Type>>",
       "fun fetchData(): LiveData<Response<Type>>",

@@ -41,8 +41,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _streakActive = MutableStateFlow(false)
     val streakActive: StateFlow<Boolean> = _streakActive
 
+    private val _maxConsecutive = MutableStateFlow(0)
+    val maxConsecutive: StateFlow<Int> = _maxConsecutive
+
     init {
         loadQuestions()
+
         viewModelScope.launch {
             dataStore.correctFlow.collectLatest { _correctAnswers.value = it }
         }
@@ -58,6 +62,9 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                     .format(java.util.Calendar.getInstance().time)
                 _streakActive.value = (lastDate == today)
             }
+        }
+        viewModelScope.launch {
+            dataStore.maxConsecutiveFlow.collectLatest { _maxConsecutive.value = it }
         }
     }
 
@@ -85,8 +92,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         val isCorrect = userInput.trim().equals(correct.trim(), ignoreCase = true)
 
         viewModelScope.launch {
-            if (isCorrect) dataStore.incrementCorrect()
-            else dataStore.incrementIncorrect()
+            if (isCorrect) dataStore.incrementCorrect() else dataStore.incrementIncorrect()
             dataStore.updateStreak()
         }
 
