@@ -20,6 +20,8 @@ fun QuizScreen(
     val currentIndex by viewModel.currentIndex.observeAsState(0)
     val currentQuestion = questions.getOrNull(currentIndex)
 
+    var hasAnswered by remember(currentQuestion?.id) { mutableStateOf(false) }
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -31,6 +33,7 @@ fun QuizScreen(
             BlankWithOptionsQuestion(
                 question = currentQuestion,
                 onCheckAnswer = { answer ->
+                    hasAnswered = true
                     viewModel.checkAnswer(answer)
                 }
             )
@@ -49,8 +52,12 @@ fun QuizScreen(
                 }
 
                 Button(
-                    onClick = { viewModel.nextQuestion() },
-                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+                    onClick = {
+                        viewModel.nextQuestion()
+                        hasAnswered = false
+                    },
+                    colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
+                    enabled = hasAnswered
                 ) {
                     Text("Next Question", color = MaterialTheme.colorScheme.onPrimary)
                 }
