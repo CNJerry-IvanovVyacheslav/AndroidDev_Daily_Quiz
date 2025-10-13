@@ -68,11 +68,10 @@ class MainActivity : ComponentActivity() {
 
     private fun setupDailyNotification() {
         val constraints = Constraints.Builder()
-            .setRequiresBatteryNotLow(true)
             .build()
 
         val now = Calendar.getInstance()
-        val targetHour = 11
+        val targetHour = 10
         val initialDelay = calculateInitialDelay(now, targetHour)
 
         val dailyWork = PeriodicWorkRequestBuilder<DailyQuizWorker>(1, TimeUnit.DAYS)
