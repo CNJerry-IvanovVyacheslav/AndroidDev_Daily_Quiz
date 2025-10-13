@@ -3898,5 +3898,850 @@
       "NetworkException",
       "IllegalStateException"
     ]
+  },
+  {
+    "id": 301,
+    "question": "What is the key difference between `supervisorScope` and `coroutineScope`?",
+    "answer": "A failure in a child coroutine within a `supervisorScope` does not affect other children, while in `coroutineScope` it cancels all siblings.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A failure in a child coroutine within a `supervisorScope` does not affect other children, while in `coroutineScope` it cancels all siblings.",
+      "`supervisorScope` cancels all children if one fails, whereas `coroutineScope` allows them to fail independently.",
+      "`supervisorScope` is used for UI-related coroutines, and `coroutineScope` is for background work.",
+      "There is no difference; `supervisorScope` is a deprecated name for `coroutineScope`.",
+      "`supervisorScope` must be used with `Dispatchers.IO`, while `coroutineScope` works with any dispatcher."
+    ]
+  },
+  {
+    "id": 302,
+    "question": "What is the primary difference between `StateFlow` and `SharedFlow`?",
+    "answer": "`StateFlow` always has a value and only emits the latest state to new collectors, while `SharedFlow` is stateless and can be configured to replay multiple old values.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`StateFlow` is a 'cold' flow, and `SharedFlow` is a 'hot' flow.",
+      "`SharedFlow` is designed for representing UI state, while `StateFlow` is for one-time events.",
+      "`StateFlow` always has a value and only emits the latest state to new collectors, while `SharedFlow` is stateless and can be configured to replay multiple old values.",
+      "`StateFlow` must be collected within `viewModelScope`, but `SharedFlow` can be collected anywhere.",
+      "You cannot update the value of a `SharedFlow`, only a `StateFlow`."
+    ]
+  },
+  {
+    "id": 303,
+    "question": "What is the purpose of the `@JvmOverloads` annotation in Kotlin?",
+    "answer": "It instructs the Kotlin compiler to generate overloaded versions of a function for Java consumers, based on default parameter values.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It allows a Kotlin function to be called from Java with a different name.",
+      "It instructs the Kotlin compiler to generate overloaded versions of a function for Java consumers, based on default parameter values.",
+      "It marks a function as being thread-safe for calls from both Java and Kotlin.",
+      "It automatically converts Java types to Kotlin types in the function signature.",
+      "It is used to expose a top-level function as a static method in Java."
+    ]
+  },
+  {
+    "id": 304,
+    "question": "In Jetpack Compose, which modifier should be used to make a composable fill all available space within a `Row` or `Column` after its siblings have been measured?",
+    "answer": "Modifier.weight(1f)",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Modifier.fillMaxSize()",
+      "Modifier.weight(1f)",
+      "Modifier.layoutId(\"fill\")",
+      "Modifier.wrapContentSize(align = Alignment.Center, unbounded = true)",
+      "Modifier.requiredSize(Size.Max)"
+    ]
+  },
+  {
+    "id": 305,
+    "question": "What is the difference between `implementation`, `api`, and `compileOnly` dependency configurations in Gradle?",
+    "answer": "`implementation` hides a dependency from consumers of a module, `api` exposes it transitively, and `compileOnly` makes it available only at compile time.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`api` is for local modules, `implementation` is for remote libraries, and `compileOnly` is for test dependencies.",
+      "`implementation` hides a dependency from consumers of a module, `api` exposes it transitively, and `compileOnly` makes it available only at compile time.",
+      "`implementation` and `api` are identical, but `api` provides better build performance.",
+      "`compileOnly` includes the dependency in the final APK, while `implementation` does not.",
+      "`api` should be used for all dependencies to ensure they are available to other modules."
+    ]
+  },
+  {
+    "id": 306,
+    "question": "What is the behavior of an Activity with the `singleTop` launch mode?",
+    "answer": "If an instance of the Activity is already at the top of the back stack, a new instance will not be created; instead, its `onNewIntent()` method will be called.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It ensures that only one instance of the Activity can ever exist in the entire system.",
+      "If an instance of the Activity is already at the top of the back stack, a new instance will not be created; instead, its `onNewIntent()` method will be called.",
+      "It creates a new task and makes the Activity the root of that new task.",
+      "It clears the entire task stack above it before creating a new instance.",
+      "This launch mode is deprecated and should not be used in modern Android development."
+    ]
+  },
+  {
+    "id": 307,
+    "question": "When should you use the Application Context instead of an Activity Context?",
+    "answer": "When you need a context that is tied to the lifecycle of the entire application, such as for creating singletons or for tasks that outlive an Activity.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Always, because it prevents all types of memory leaks.",
+      "When inflating UI layouts or accessing UI-related resources.",
+      "When you need a context that is tied to the lifecycle of the entire application, such as for creating singletons or for tasks that outlive an Activity.",
+      "Only in BroadcastReceivers and Services.",
+      "There is no functional difference; they can be used interchangeably."
+    ]
+  },
+  {
+    "id": 308,
+    "question": "What is the primary purpose of `DiffUtil` in the context of a `RecyclerView`?",
+    "answer": "To calculate the difference between two lists and provide a set of update operations that allows the `RecyclerView.Adapter` to perform efficient and animated updates.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To load data into the adapter from a remote or local data source.",
+      "To handle item click and long-press events in a type-safe way.",
+      "To create different view types within the same `RecyclerView`.",
+      "To calculate the difference between two lists and provide a set of update operations that allows the `RecyclerView.Adapter` to perform efficient and animated updates.",
+      "To define the layout and decoration of items, such as dividers and spacing."
+    ]
+  },
+  {
+    "id": 309,
+    "question": "In Jetpack Compose, what problem does `CompositionLocal` solve?",
+    "answer": "It allows data to be passed down the composable tree implicitly, without having to pass it as a parameter through every intermediate composable function.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is used to store state that survives configuration changes, replacing `ViewModel`.",
+      "It helps in creating complex animations between different composables.",
+      "It allows data to be passed down the composable tree implicitly, without having to pass it as a parameter through every intermediate composable function.",
+      "It defines the local position and size of a composable on the screen.",
+      "It is a tool for debugging recomposition issues in Android Studio."
+    ]
+  },
+  {
+    "id": 310,
+    "question": "For what purpose would you use a `callbackFlow` in Kotlin Coroutines?",
+    "answer": "To convert callback-based APIs into a Flow, allowing them to be used in a reactive, coroutine-native way.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To handle UI click event callbacks in Jetpack Compose.",
+      "To create a simple flow that emits a fixed set of values.",
+      "To ensure that a callback is always executed on the main thread.",
+      "To convert callback-based APIs into a Flow, allowing them to be used in a reactive, coroutine-native way.",
+      "It is a specialized flow for making network request callbacks with Retrofit."
+    ]
+  },
+  {
+    "id": 311,
+    "question": "What is the role of Product Flavors in a Gradle build configuration?",
+    "answer": "They are used to create different versions of your app (e.g., free vs. paid, or different branding) from the same codebase, allowing for different resources and code.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "They define the build process for debug and release versions of the app.",
+      "They are used to manage different versions of dependencies for testing and production.",
+      "They are used to create different versions of your app (e.g., free vs. paid, or different branding) from the same codebase, allowing for different resources and code.",
+      "They control the ProGuard/R8 settings for code shrinking and obfuscation.",
+      "They automatically generate different flavor icons for the app."
+    ]
+  },
+  {
+    "id": 312,
+    "question": "What is a `BroadcastReceiver` and what is a common use case for it?",
+    "answer": "It is an Android component that can listen for and respond to system-wide broadcast messages (e.g., network state change, battery low) or custom application events.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a long-running background process for tasks like playing music.",
+      "It is a UI component used to receive input from the user.",
+      "It is an Android component that can listen for and respond to system-wide broadcast messages (e.g., network state change, battery low) or custom application events.",
+      "It is a networking client for receiving data from a server via broadcasts.",
+      "It is used exclusively for receiving push notifications from Firebase."
+    ]
+  },
+  {
+    "id": 313,
+    "question": "What distinguishes a Foreground Service from other types of Services?",
+    "answer": "A Foreground Service must display a persistent notification to the user, and it is given higher priority by the system, making it less likely to be killed when memory is low.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It can only run when the application's UI is in the foreground.",
+      "It runs on the main thread to perform quick UI-related background tasks.",
+      "A Foreground Service must display a persistent notification to the user, and it is given higher priority by the system, making it less likely to be killed when memory is low.",
+      "It is a special type of service that binds directly to an Activity's lifecycle.",
+      "It does not require the `FOREGROUND_SERVICE` permission in the manifest."
+    ]
+  },
+  {
+    "id": 314,
+    "question": "When testing coroutines, what is the main advantage of using `runTest` over `runBlocking`?",
+    "answer": "`runTest` executes tests in a virtual-time environment, allowing delays and asynchronous operations to complete almost instantly, making tests faster and more reliable.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`runTest` can only be used for testing UI-related coroutines, while `runBlocking` is for background logic.",
+      "`runBlocking` blocks the main thread, while `runTest` does not.",
+      "`runTest` executes tests in a virtual-time environment, allowing delays and asynchronous operations to complete almost instantly, making tests faster and more reliable.",
+      "`runTest` is part of the JUnit 4 framework, whereas `runBlocking` is from JUnit 5.",
+      "There is no advantage; they are interchangeable for testing purposes."
+    ]
+  },
+  {
+    "id": 315,
+    "question": "In Jetpack Compose, what makes a class 'unstable' and why can it be a performance problem?",
+    "answer": "A class is unstable if its properties are `var` or if it contains references to other unstable types. Unstable classes can cause composables that use them to be recomposed unnecessarily, even when the data hasn't actually changed.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "An unstable class is one that does not implement the `Parcelable` interface.",
+      "A class is unstable if its properties are `var` or if it contains references to other unstable types. Unstable classes can cause composables that use them to be recomposed unnecessarily, even when the data hasn't actually changed.",
+      "Unstable classes are those with more than five public methods, leading to slower compilation.",
+      "A class is considered unstable if it is not annotated with `@Stable` or `@Immutable`.",
+      "It refers to a class that is likely to cause runtime crashes due to its complexity."
+    ]
+  },
+  {
+    "id": 316,
+    "question": "What is the Liskov Substitution Principle (LSP) and how can it apply to custom Android Views?",
+    "answer": "Subtypes must be substitutable for their base types. For example, a custom `MyButton` subclassing `AppCompatButton` should function correctly wherever an `AppCompatButton` is expected, without causing unexpected behavior.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Subtypes must be substitutable for their base types. For example, a custom `MyButton` subclassing `AppCompatButton` should function correctly wherever an `AppCompatButton` is expected, without causing unexpected behavior.",
+      "A class should only have one reason to change. For example, a custom View should only handle rendering, not business logic.",
+      "High-level modules should depend on abstractions. For example, an Activity should depend on a `View` interface, not a concrete `MyButton`.",
+      "Clients should not be forced to depend on interfaces they do not use.",
+      "It is a principle for making classes open for extension but closed for modification."
+    ]
+  },
+  {
+    "id": 317,
+    "question": "How does the Dependency Inversion Principle (DIP) relate to using Dependency Injection (DI) frameworks like Hilt?",
+    "answer": "DIP states high-level modules should depend on abstractions, not concretions. DI frameworks like Hilt implement this by providing concrete implementations of these abstractions (e.g., a `UserRepositoryImpl` for a `UserRepository` interface) at runtime.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "DIP is about inverting control flow, while DI is about providing objects.",
+      "DIP states high-level modules should depend on abstractions, not concretions. DI frameworks like Hilt implement this by providing concrete implementations of these abstractions (e.g., a `UserRepositoryImpl` for a `UserRepository` interface) at runtime.",
+      "They are unrelated; DIP is an architectural principle while Hilt is just a library for reducing boilerplate.",
+      "DIP is only applicable for inverting dependencies between UI layers, which Hilt does not manage.",
+      "Hilt violates DIP by creating a direct dependency on the Dagger-Hilt framework."
+    ]
+  },
+  {
+    "id": 318,
+    "question": "What is the Builder pattern and where is it commonly used in the Android SDK?",
+    "answer": "It is a pattern for constructing complex objects step-by-step. It is used extensively in classes like `AlertDialog.Builder`, `NotificationCompat.Builder`, and `OkHttpClient.Builder`.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a pattern for constructing complex objects step-by-step. It is used extensively in classes like `AlertDialog.Builder`, `NotificationCompat.Builder`, and `OkHttpClient.Builder`.",
+      "It is a pattern that ensures only one instance of a class exists, like a `Retrofit` singleton.",
+      "It is a pattern for creating different types of objects from a single factory method, like in `ViewModelProvider.Factory`.",
+      "It is a pattern for observing state changes, used in `LiveData`.",
+      "It is a structural pattern for adapting one interface to another, like `RecyclerView.Adapter`."
+    ]
+  },
+  {
+    "id": 319,
+    "question": "What is the Observer pattern and which Android Architecture Components are prime examples of it?",
+    "answer": "It is a behavioral pattern where a subject notifies a list of observers about state changes. `LiveData` and Kotlin's `Flow` are prime examples.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a pattern where an object's behavior changes when its state changes. `ViewModel` is a prime example.",
+      "It is a pattern to encapsulate a request as an object. `WorkManager` is a prime example.",
+      "It is a behavioral pattern where a subject notifies a list of observers about state changes. `LiveData` and Kotlin's `Flow` are prime examples.",
+      "It is a creational pattern for building objects step-by-step, like `NotificationCompat.Builder`.",
+      "It is a pattern for ensuring a class has only one instance, like `RoomDatabase`."
+    ]
+  },
+  {
+    "id": 320,
+    "question": "What is an 'ANR' (Application Not Responding) error, and what is its most common cause?",
+    "answer": "A system dialog shown when the UI thread has been blocked for too long (e.g., 5 seconds for an input event). The most common cause is performing long-running work like networking or heavy database I/O on the main thread.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A type of crash that occurs when a background thread throws an unhandled exception.",
+      "A system dialog shown when the UI thread has been blocked for too long (e.g., 5 seconds for an input event). The most common cause is performing long-running work like networking or heavy database I/O on the main thread.",
+      "A warning from StrictMode that you are leaking memory.",
+      "An error that occurs when an application uses too much battery in the background.",
+      "A lint error indicating that a layout is too complex and will perform poorly."
+    ]
+  },
+  {
+    "id": 321,
+    "question": "How can you diagnose a memory leak in an Android app using modern tools?",
+    "answer": "Using the Android Studio Memory Profiler to capture a heap dump and analyze it for detached objects, or by integrating the LeakCanary library in debug builds for automatic detection.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "By repeatedly opening and closing the app and seeing if it gets slower.",
+      "Using the Android Studio Memory Profiler to capture a heap dump and analyze it for detached objects, or by integrating the LeakCanary library in debug builds for automatic detection.",
+      "By using the Layout Inspector to check for deep view hierarchies.",
+      "By adding `Thread.sleep()` calls to see where the application hangs.",
+      "By reading Logcat for messages that explicitly say 'memory leak detected'."
+    ]
+  },
+  {
+    "id": 322,
+    "question": "What is `StrictMode` and in which build type should it be enabled?",
+    "answer": "A developer tool that detects accidental disk or network access on the main thread. It should only be enabled in debug builds to avoid crashing the app for release users.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A security feature that enforces strict permissions. It should be enabled in all build types.",
+      "A developer tool that detects accidental disk or network access on the main thread. It should only be enabled in debug builds to avoid crashing the app for release users.",
+      "A code shrinker like R8 that makes the app more secure. It should only be enabled in release builds.",
+      "A linter that enforces strict coding styles. It runs during the build process.",
+      "A tool for profiling CPU usage. It should be used with the Android Studio Profiler."
+    ]
+  },
+  {
+    "id": 323,
+    "question": "What is 'overdraw' and how can you visualize it?",
+    "answer": "It's when the app draws the same pixel multiple times in a single frame. It can be visualized using the 'Debug GPU Overdraw' option in Developer Options, which colors pixels based on how many times they've been drawn.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It's when the app draws outside the screen bounds. It can be visualized with 'Show layout bounds'.",
+      "It's when the app uses too much GPU memory. It can be visualized in the Memory Profiler.",
+      "It's when the app draws the same pixel multiple times in a single frame. It can be visualized using the 'Debug GPU Overdraw' option in Developer Options, which colors pixels based on how many times they've been drawn.",
+      "It's a delay in drawing the first frame of the app. It can be measured with Macrobenchmark.",
+      "It's a visual glitch where UI elements overlap incorrectly. It must be found through manual testing."
+    ]
+  },
+  {
+    "id": 324,
+    "question": "What is the primary function of R8 in the Android build process?",
+    "answer": "To shrink (remove unused code), obfuscate (rename classes and members), and optimize the application's code to reduce APK size and make it harder to reverse-engineer.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To compile Kotlin code into Java bytecode.",
+      "To shrink (remove unused code), obfuscate (rename classes and members), and optimize the application's code to reduce APK size and make it harder to reverse-engineer.",
+      "To manage dependencies and resolve version conflicts.",
+      "To automatically generate Android Manifest files for different product flavors.",
+      "To sign the final release APK with a keystore certificate."
+    ]
+  },
+  {
+    "id": 325,
+    "question": "When and why should you use the Android Keystore system?",
+    "answer": "To store and manage cryptographic keys in a hardware-backed container, making them very difficult to extract. It should be used for sensitive data like encryption keys or user authentication tokens.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To store simple key-value pairs like user settings, as a replacement for SharedPreferences.",
+      "To store API keys that are needed at build time in `build.gradle`.",
+      "To store and manage cryptographic keys in a hardware-backed container, making them very difficult to extract. It should be used for sensitive data like encryption keys or user authentication tokens.",
+      "To store the signing certificate used to sign your release APK.",
+      "To cache large files like images and videos securely on disk."
+    ]
+  },
+  {
+    "id": 326,
+    "question": "What is certificate pinning?",
+    "answer": "A security mechanism where an app is configured to trust only a specific, predefined set of server certificates or public keys, preventing man-in-the-middle attacks even if a device's trusted CA is compromised.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The process of pinning a specific version of a dependency in `build.gradle`.",
+      "A security mechanism where an app is configured to trust only a specific, predefined set of server certificates or public keys, preventing man-in-the-middle attacks even if a device's trusted CA is compromised.",
+      "The practice of storing the app signing certificate in the Android Keystore.",
+      "A way to pin a notification to the top of the notification shade so it cannot be dismissed.",
+      "A performance optimization where you pin a background thread to a specific CPU core."
+    ]
+  },
+  {
+    "id": 327,
+    "question": "Why is storing sensitive keys in `build.gradle` or `strings.xml` considered insecure?",
+    "answer": "Because these values are compiled directly into the APK and can be easily extracted by anyone who decompiles the application.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Because it can significantly slow down the build process.",
+      "Because these files are publicly visible if the source code is on GitHub.",
+      "Because these values are compiled directly into the APK and can be easily extracted by anyone who decompiles the application.",
+      "Because there is a strict size limit on the values that can be stored there.",
+      "Because it violates the Single Responsibility Principle by mixing configuration with code/resources."
+    ]
+  },
+  {
+    "id": 328,
+    "question": "What is the difference between an Android App Bundle (AAB) and an APK?",
+    "answer": "An AAB is a publishing format you upload to Google Play. Play then uses the AAB to generate and serve optimized APKs for each user's specific device configuration (e.g., screen density, CPU architecture).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "An AAB is just a compressed folder of multiple APKs.",
+      "An AAB is a publishing format you upload to Google Play. Play then uses the AAB to generate and serve optimized APKs for each user's specific device configuration (e.g., screen density, CPU architecture).",
+      "An APK is for debug builds and an AAB is for release builds.",
+      "You can install an AAB directly on a device, but you cannot install an APK.",
+      "AAB is an older, deprecated format replaced by universal APKs."
+    ]
+  },
+  {
+    "id": 329,
+    "question": "What is the purpose of the `buildSrc` directory in a Gradle project?",
+    "answer": "It's a special directory for organizing build logic. Custom tasks, plugins, and dependencies defined here can be easily shared across all modules in the project, promoting build logic reuse.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is where the application's main source code is stored.",
+      "It is a directory for storing test-only source code and resources.",
+      "It's a special directory for organizing build logic. Custom tasks, plugins, and dependencies defined here can be easily shared across all modules in the project, promoting build logic reuse.",
+      "It is where Gradle caches downloaded dependencies.",
+      "It is a deprecated feature and has been replaced by Version Catalogs."
+    ]
+  },
+  {
+    "id": 330,
+    "question": "What are `buildConfigField` and `resValue` in `build.gradle` used for?",
+    "answer": "`buildConfigField` generates a constant in the `BuildConfig.java` class, while `resValue` generates a resource value (e.g., a string). This allows for build-time configuration of code and resources.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "They are both used to define dependencies for different product flavors.",
+      "`buildConfigField` generates a constant in the `BuildConfig.java` class, while `resValue` generates a resource value (e.g., a string). This allows for build-time configuration of code and resources.",
+      "`buildConfigField` is for defining ProGuard rules, and `resValue` is for defining resource shrinking rules.",
+      "They are interchangeable ways to add metadata to the `AndroidManifest.xml`.",
+      "`buildConfigField` adds a value to `SharedPreferences`, while `resValue` adds it to the Room database."
+    ]
+  },
+  {
+    "id": 331,
+    "question": "What is Continuous Integration (CI) in the context of Android development?",
+    "answer": "The automated practice of merging all developer code changes into a central repository, after which automated builds and tests are run to detect integration issues early.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The process of manually testing the app before every release.",
+      "The automated practice of releasing a new version of the app to the Play Store every day.",
+      "The automated practice of merging all developer code changes into a central repository, after which automated builds and tests are run to detect integration issues early.",
+      "The practice of integrating multiple third-party SDKs into an application.",
+      "A feature in Android Studio that continuously compiles your code as you type."
+    ]
+  },
+  {
+    "id": 332,
+    "question": "What is a Gradle Version Catalog?",
+    "answer": "A centralized, type-safe way to define and share dependencies and their versions across all modules in a project, improving maintainability and reducing errors.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A log file that catalogs all the Gradle versions used to build a project.",
+      "A plugin that automatically updates dependencies to their latest versions.",
+      "A centralized, type-safe way to define and share dependencies and their versions across all modules in a project, improving maintainability and reducing errors.",
+      "A feature in `buildSrc` for defining project-wide variables.",
+      "A list of approved dependencies for a project, for security purposes."
+    ]
+  },
+  {
+    "id": 333,
+    "question": "What are the main benefits of modularizing an Android application?",
+    "answer": "Faster build times (due to parallel builds and caching), improved code organization and ownership, better scalability, and the ability to enable dynamic feature delivery.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is required by Google Play for all new apps.",
+      "It makes the final installed app run significantly faster on the user's device.",
+      "Faster build times (due to parallel builds and caching), improved code organization and ownership, better scalability, and the ability to enable dynamic feature delivery.",
+      "It automatically makes the application more secure by isolating features.",
+      "The main benefit is reducing the final APK size to under 10MB."
+    ]
+  },
+  {
+    "id": 334,
+    "question": "What is the difference between a library module and a dynamic feature module?",
+    "answer": "A library module is always included in the base APK. A dynamic feature module can be downloaded on-demand after the initial app install, reducing the initial download size.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "There is no difference; the terms are used interchangeably.",
+      "A library module is for Kotlin code, and a dynamic feature module is for Java code.",
+      "A library module can be published to Maven Central, while a dynamic feature module cannot.",
+      "A library module is always included in the base APK. A dynamic feature module can be downloaded on-demand after the initial app install, reducing the initial download size.",
+      "Dynamic feature modules are deprecated in favor of Android App Bundles."
+    ]
+  },
+  {
+    "id": 335,
+    "question": "What is the purpose of `IdlingResource` in Espresso tests?",
+    "answer": "To signal to Espresso when the app is busy with asynchronous work (e.g., network calls). Espresso waits for the resource to become idle before performing UI actions and assertions, preventing flaky tests.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To provide mock data to the UI during a test.",
+      "To make tests run faster by idling the CPU between operations.",
+      "To signal to Espresso when the app is busy with asynchronous work (e.g., network calls). Espresso waits for the resource to become idle before performing UI actions and assertions, preventing flaky tests.",
+      "To identify UI resources like Views and Buttons by their ID.",
+      "A resource used for managing the lifecycle of the test itself."
+    ]
+  },
+  {
+    "id": 336,
+    "question": "What is the key difference between a local unit test (in `/test`) and an instrumented test (in `/androidTest`)?",
+    "answer": "Local tests run on your computer's JVM and are fast, ideal for logic (e.g., in a ViewModel). Instrumented tests run on an Android device or emulator, which is required for testing code that uses Android Framework APIs.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Local tests are written in Java, while instrumented tests must be written in Kotlin.",
+      "Local tests run on your computer's JVM and are fast, ideal for logic (e.g., in a ViewModel). Instrumented tests run on an Android device or emulator, which is required for testing code that uses Android Framework APIs.",
+      "Local tests are for testing UI, while instrumented tests are for testing business logic.",
+      "Local tests do not require JUnit, but instrumented tests do.",
+      "Only instrumented tests can use mocking libraries like MockK or Mockito."
+    ]
+  },
+  {
+    "id": 337,
+    "question": "When would you use UI Automator instead of Espresso for UI testing?",
+    "answer": "When you need to test user flows that interact with the system UI or other apps (e.g., verifying a notification appears or interacting with the Settings app), as Espresso is limited to your app's process.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "UI Automator is a simpler, lightweight version of Espresso for basic tests.",
+      "When you need to test user flows that interact with the system UI or other apps (e.g., verifying a notification appears or interacting with the Settings app), as Espresso is limited to your app's process.",
+      "Espresso is for testing Views, and UI Automator is for testing Jetpack Compose.",
+      "UI Automator is used for automating unit tests, not UI tests.",
+      "You should always use UI Automator because it is more powerful than Espresso."
+    ]
+  },
+  {
+    "id": 338,
+    "question": "In MockK, what is the difference between `mockk()` and `spyk()`?",
+    "answer": "`mockk()` creates a pure mock where all functions do nothing unless explicitly stubbed. `spyk()` wraps a real object, so it will call the real methods by default unless a specific method is stubbed.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`mockk()` is for classes, and `spyk()` is for interfaces.",
+      "`mockk()` creates a pure mock where all functions do nothing unless explicitly stubbed. `spyk()` wraps a real object, so it will call the real methods by default unless a specific method is stubbed.",
+      "`spyk()` is a 'strict' mock that throws an error for unstubbed calls, while `mockk()` is 'relaxed'.",
+      "`mockk()` can be used in local tests, but `spyk()` can only be used in instrumented tests.",
+      "There is no difference; `spyk()` is an alias for `mockk()`."
+    ]
+  },
+  {
+    "id": 339,
+    "question": "What is a 'flaky test'?",
+    "answer": "A test that passes and fails intermittently without any code changes. This is often caused by race conditions, reliance on timings, or unhandled asynchronous operations.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A test that is written with incomplete assertions.",
+      "A test that always fails and indicates a bug in the application code.",
+      "A test that passes and fails intermittently without any code changes. This is often caused by race conditions, reliance on timings, or unhandled asynchronous operations.",
+      "A test that runs very slowly and slows down the CI pipeline.",
+      "A test that tests a trivial or unimportant part of the codebase."
+    ]
+  },
+  {
+    "id": 340,
+    "question": "What is the relationship between `Handler`, `Looper`, and `MessageQueue`?",
+    "answer": "Each thread can have one `Looper` that continuously processes a `MessageQueue`. A `Handler` is used to post messages or Runnables to that queue from any thread, which will then be executed on the Looper's thread.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A `Handler` loops through a `MessageQueue` managed by a `Looper`.",
+      "A `Looper` is a message, a `Handler` is the queue, and `MessageQueue` is the thread.",
+      "Each thread can have one `Looper` that continuously processes a `MessageQueue`. A `Handler` is used to post messages or Runnables to that queue from any thread, which will then be executed on the Looper's thread.",
+      "They are deprecated components replaced by Kotlin Coroutines.",
+      "They are all part of the Binder IPC mechanism for cross-process communication."
+    ]
+  },
+  {
+    "id": 341,
+    "question": "What is Binder in the context of the Android OS?",
+    "answer": "The primary Inter-Process Communication (IPC) mechanism in Android. It allows different processes (e.g., an app and a system service) to communicate efficiently and securely.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A UI data binding library for connecting layouts to data sources.",
+      "A component used for binding an Activity to a background Service.",
+      "The primary Inter-Process Communication (IPC) mechanism in Android. It allows different processes (e.g., an app and a system service) to communicate efficiently and securely.",
+      "A security tool for binding an app's permissions to its signing key.",
+      "A type of `RecyclerView.Adapter` for binding complex data models to views."
+    ]
+  },
+  {
+    "id": 342,
+    "question": "What happens to an Activity during a configuration change (e.g., screen rotation), and how does a `ViewModel` survive it?",
+    "answer": "The original Activity instance is destroyed and a new one is created. A `ViewModel` survives because its lifecycle is scoped to a `ViewModelStoreOwner` that is retained across this recreation, not to the Activity instance itself.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The Activity is just paused and then resumed, and the `ViewModel` does nothing special.",
+      "The Activity is destroyed and the `ViewModel` is saved to disk and then reloaded.",
+      "The original Activity instance is destroyed and a new one is created. A `ViewModel` survives because its lifecycle is scoped to a `ViewModelStoreOwner` that is retained across this recreation, not to the Activity instance itself.",
+      "The `ViewModel` is automatically saved in the `onSaveInstanceState` bundle.",
+      "The Android OS prevents the `ViewModel` from being garbage collected using a static reference."
+    ]
+  },
+  {
+    "id": 343,
+    "question": "What is the purpose of the `baseline-prof.txt` file?",
+    "answer": "It contains a list of classes and methods used during critical user journeys (like app startup) that should be pre-compiled (AOT) to improve performance, especially reducing startup time.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It defines the baseline styles and themes for the application.",
+      "It is a ProGuard/R8 configuration file for keeping certain classes during obfuscation.",
+      "It contains a list of classes and methods used during critical user journeys (like app startup) that should be pre-compiled (AOT) to improve performance, especially reducing startup time.",
+      "It is a text file that lists all baseline permissions the app requires.",
+      "It is a report generated by the linter showing baseline code quality metrics."
+    ]
+  },
+  {
+    "id": 344,
+    "question": "What is the role of the `SavedStateHandle` in a `ViewModel`?",
+    "answer": "It is a key-value map that allows a `ViewModel` to save and restore its state, ensuring it can survive not just configuration changes but also system-initiated process death.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is used to handle the saved state of UI widgets in a custom View.",
+      "It provides a handle to the `onSaveInstanceState` Bundle from an Activity.",
+      "It is a key-value map that allows a `ViewModel` to save and restore its state, ensuring it can survive not just configuration changes but also system-initiated process death.",
+      "It is a mechanism for handling state within Jetpack Compose exclusively.",
+      "It is a reference to a `Handler` on the main thread for saving state asynchronously."
+    ]
+  },
+  {
+    "id": 345,
+    "question": "In Jetpack Compose, what is the difference between `remember` and `rememberSaveable`?",
+    "answer": "`remember` keeps state across recompositions, but the state is lost on configuration change or process death. `rememberSaveable` also keeps state across recompositions but additionally saves and restores it across configuration changes and process death.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`remember` is for mutable state, while `rememberSaveable` is for immutable state.",
+      "`remember` keeps state across recompositions, but the state is lost on configuration change or process death. `rememberSaveable` also keeps state across recompositions but additionally saves and restores it across configuration changes and process death.",
+      "`rememberSaveable` is a deprecated name for `remember`.",
+      "`remember` is used in Activities, and `rememberSaveable` is used in Fragments.",
+      "`rememberSaveable` stores the state in a `ViewModel`, while `remember` stores it in the composition."
+    ]
+  },
+  {
+    "id": 346,
+    "question": "What is the primary goal of the `FLAG_ACTIVITY_REORDER_TO_FRONT` Intent flag?",
+    "answer": "If an instance of the target Activity already exists in the task's back stack, this flag will bring that instance to the foreground instead of creating a new one, reordering the stack.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It clears the entire task stack and starts the new Activity as the root.",
+      "It ensures the Activity is always launched at the front of a new task.",
+      "If an instance of the target Activity already exists in the task's back stack, this flag will bring that instance to the foreground instead of creating a new one, reordering the stack.",
+      "It reorders all activities in the stack alphabetically.",
+      "It is used to bring a background app's task to the foreground."
+    ]
+  },
+  {
+    "id": 347,
+    "question": "Why would you use a `ContentProvider`?",
+    "answer": "To securely share a structured set of your app's data with other applications, managing access through a standard interface with permissions.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To provide static content like images and strings within your own app.",
+      "To provide a direct-access, high-performance database for your app's UI.",
+      "To securely share a structured set of your app's data with other applications, managing access through a standard interface with permissions.",
+      "It is the only way to store content on an SD card.",
+      "It is a modern replacement for `SharedPreferences`."
+    ]
+  },
+  {
+    "id": 348,
+    "question": "What is the purpose of an `AndroidManifest.xml` file?",
+    "answer": "It is a required file that presents essential information about the app to the Android build tools, the Android OS, and Google Play, such as the app's components, permissions, and hardware/software features.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a file that contains all the string resources for the application.",
+      "It is a build script, similar to `build.gradle`, for configuring the app.",
+      "It is an optional file for providing metadata to Android Studio's editor.",
+      "It is a required file that presents essential information about the app to the Android build tools, the Android OS, and Google Play, such as the app's components, permissions, and hardware/software features.",
+      "It is where you declare all of your app's dependencies."
+    ]
+  },
+  {
+    "id": 349,
+    "question": "What is the main difference between `LiveData.observe()` and `LiveData.observeForever()`?",
+    "answer": "`observe()` is lifecycle-aware and automatically removes the observer when the provided `LifecycleOwner` is destroyed. `observeForever()` is not lifecycle-aware and requires manual removal of the observer via `removeObserver()` to prevent leaks.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`observeForever()` receives updates even when the app is in the background, while `observe()` does not.",
+      "`observe()` is for Activities and `observeForever()` is for Services.",
+      "`observeForever()` is a deprecated method.",
+      "`observe()` is lifecycle-aware and automatically removes the observer when the provided `LifecycleOwner` is destroyed. `observeForever()` is not lifecycle-aware and requires manual removal of the observer via `removeObserver()` to prevent leaks.",
+      "`observe()` can only have one observer, while `observeForever()` allows multiple observers."
+    ]
+  },
+  {
+    "id": 350,
+    "question": "What is the purpose of the `invalidate()` and `requestLayout()` methods on a View?",
+    "answer": "`invalidate()` tells the system that the View's content needs to be redrawn (triggers `onDraw()`). `requestLayout()` indicates that the View's bounds have changed and it needs to be remeasured and redrawn (triggers `onMeasure()`, `onLayout()`, `onDraw()`).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`invalidate()` redraws the view, and `requestLayout()` re-inflates it from XML.",
+      "They are identical methods; one is just an alias for the other.",
+      "`requestLayout()` should be called from a background thread, while `invalidate()` must be called from the UI thread.",
+      "`invalidate()` tells the system that the View's content needs to be redrawn (triggers `onDraw()`). `requestLayout()` indicates that the View's bounds have changed and it needs to be remeasured and redrawn (triggers `onMeasure()`, `onLayout()`, `onDraw()`).",
+      "`invalidate()` is for custom views, while `requestLayout()` is for standard Android widgets."
+    ]
+  },
+  {
+    "id": 351,
+    "question": "What are the three main phases of rendering a Jetpack Compose frame?",
+    "answer": "Composition, Layout, and Drawing.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Initialization, Rendering, and Updating.",
+      "Building, Measuring, and Displaying.",
+      "State Calculation, UI Construction, and Event Handling.",
+      "Composition, Layout, and Drawing.",
+      "Inflation, Measurement, and Painting."
+    ]
+  },
+  {
+    "id": 352,
+    "question": "What is the primary role of the Jetpack Compose compiler plugin?",
+    "answer": "It transforms `@Composable` functions at compile time, adding extra parameters to track state and manage recomposition, making the declarative UI system possible.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It converts Kotlin code into the old Android View system for backward compatibility.",
+      "It is only responsible for enabling the `@Preview` annotation in Android Studio.",
+      "It transforms `@Composable` functions at compile time, adding extra parameters to track state and manage recomposition, making the declarative UI system possible.",
+      "It optimizes layout performance at runtime by analyzing the UI tree.",
+      "It is a linter that enforces Compose-specific coding conventions."
+    ]
+  },
+  {
+    "id": 353,
+    "question": "Under what condition does Jetpack Compose decide to 'skip' the recomposition of a composable function?",
+    "answer": "When the function's inputs are determined to be 'stable' and their values have not changed since the last composition.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It never skips recomposition; it always re-runs every function in the tree.",
+      "When the composable is off-screen, regardless of its inputs.",
+      "When the function is marked with a special `@Skip` annotation.",
+      "When the function's inputs are determined to be 'stable' and their values have not changed since the last composition.",
+      "Only when the data is provided by a `StateFlow` from a ViewModel."
+    ]
+  },
+  {
+    "id": 354,
+    "question": "What is the purpose of the `snapshotFlow` function in Jetpack Compose?",
+    "answer": "To convert one or more Compose `State<T>` objects into a cold Kotlin Flow, bridging the reactive Compose state system with the world of coroutines.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To take a screenshot of the current composable and save it as a `Flow<Bitmap>`.",
+      "To create a `StateFlow` directly from a composable function.",
+      "To convert a `LiveData` object into a Flow within a composable's lifecycle.",
+      "To create a snapshot of the current UI hierarchy for testing purposes.",
+      "To convert one or more Compose `State<T>` objects into a cold Kotlin Flow, bridging the reactive Compose state system with the world of coroutines."
+    ]
+  },
+  {
+    "id": 355,
+    "question": "What is the difference between a 'cold' and a 'warm' app startup?",
+    "answer": "A cold start is when the app's process has not been created yet. A warm start is when the process is already running, but the Activity needs to be recreated (e.g., from the background).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A cold start is the very first time an app is launched after installation; all others are warm starts.",
+      "A cold start is when the app is launched on a device with a cold CPU, and a warm start is on a device that has been running for a while.",
+      "A cold start is when the app's process has not been created yet. A warm start is when the process is already running, but the Activity needs to be recreated (e.g., from the background).",
+      "Cold starts are for debug builds, and warm starts are for release builds.",
+      "There is no difference; the terms describe the same process of launching an app."
+    ]
+  },
+  {
+    "id": 356,
+    "question": "For what kind of performance analysis are tools like Perfetto or Systrace used?",
+    "answer": "For capturing and analyzing detailed, system-wide performance traces to diagnose complex issues like UI jank, threading problems, or slow app startup.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "For detecting memory leaks by analyzing heap dumps.",
+      "For logging network requests and responses in detail.",
+      "For analyzing the complexity of a Jetpack Compose UI hierarchy.",
+      "For capturing and analyzing detailed, system-wide performance traces to diagnose complex issues like UI jank, threading problems, or slow app startup.",
+      "For running automated UI tests and measuring their execution time."
+    ]
+  },
+  {
+    "id": 357,
+    "question": "What is the recommended dependency direction between feature, data, and domain modules in a multi-module architecture?",
+    "answer": "Feature modules depend on domain/data modules, but domain/data modules must not depend on feature modules. This creates a one-way dependency flow towards the core business logic.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "All modules should depend on each other to facilitate communication.",
+      "Data modules should depend on feature modules to know where the data is displayed.",
+      "Feature modules depend on domain/data modules, but domain/data modules must not depend on feature modules. This creates a one-way dependency flow towards the core business logic.",
+      "Feature modules should only depend on other feature modules.",
+      "The dependency direction does not matter as long as the code compiles."
+    ]
+  },
+  {
+    "id": 358,
+    "question": "How does a `CoroutineExceptionHandler` work and in which coroutine builder is it effective?",
+    "answer": "It's an element in a `CoroutineContext` that catches uncaught exceptions from top-level coroutines. It is effective for coroutines started with `launch`, but not with `async` (where exceptions are held in the `Deferred` result).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a global handler that catches all exceptions in any coroutine.",
+      "It is a replacement for a `try-catch` block inside a suspend function.",
+      "It's an element in a `CoroutineContext` that catches uncaught exceptions from top-level coroutines. It is effective for coroutines started with `launch`, but not with `async` (where exceptions are held in the `Deferred` result).",
+      "It only works with `supervisorScope` and is ignored otherwise.",
+      "It is automatically installed by `viewModelScope` to prevent all crashes."
+    ]
+  },
+  {
+    "id": 359,
+    "question": "What is a key conceptual difference between a Kotlin `Flow` and a `Channel`?",
+    "answer": "A `Flow` is a cold stream representing a sequence of values over time, designed for a single collector. A `Channel` is a hot communication primitive (like a queue) that can be used for communication between multiple coroutines.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`Flow` is for reactive UI updates, while `Channel` is for background threading.",
+      "`Channel` is a deprecated component that has been fully replaced by `SharedFlow`.",
+      "A `Flow` is synchronous, while a `Channel` is always asynchronous.",
+      "A `Flow` can only emit one value, while a `Channel` can emit multiple values.",
+      "A `Flow` is a cold stream representing a sequence of values over time, designed for a single collector. A `Channel` is a hot communication primitive (like a queue) that can be used for communication between multiple coroutines."
+    ]
+  },
+  {
+    "id": 360,
+    "question": "What is the main advantage of using Robolectric for tests?",
+    "answer": "It allows you to run tests that use Android Framework APIs on the local JVM without needing a device or emulator, making them significantly faster than instrumented tests.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is the only framework that can test Jetpack Compose UI.",
+      "It allows you to write UI tests in pure Java instead of Kotlin.",
+      "It provides more powerful mocking capabilities than MockK or Mockito.",
+      "It runs tests on a real device, providing higher fidelity than Espresso.",
+      "It allows you to run tests that use Android Framework APIs on the local JVM without needing a device or emulator, making them significantly faster than instrumented tests."
+    ]
+  },
+  {
+    "id": 361,
+    "question": "What is the purpose of a `-keep` rule in a ProGuard or R8 configuration file?",
+    "answer": "To specify classes, methods, or fields that must not be removed (shrunk) or renamed (obfuscated) during the build process, which is essential for code that is accessed via reflection or JNI.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To keep a specific version of a library and prevent Gradle from updating it.",
+      "To keep a file or resource from being compressed in the final APK.",
+      "To specify classes, methods, or fields that must not be removed (shrunk) or renamed (obfuscated) during the build process, which is essential for code that is accessed via reflection or JNI.",
+      "To keep a background service running even when the app is closed.",
+      "To keep the build cache from being cleared between builds."
+    ]
+  },
+  {
+    "id": 362,
+    "question": "What is VSYNC and what is its role in the Android rendering pipeline?",
+    "answer": "VSYNC is a timing signal from the display hardware (e.g., every 16.6ms for a 60Hz display) that synchronizes the app's frame rendering loop. The app aims to produce a frame in time for each VSYNC signal to achieve smooth animation without tearing.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a protocol for synchronizing data between a client and a server.",
+      "It is a Gradle task for syncing project dependencies.",
+      "VSYNC is a timing signal from the display hardware (e.g., every 16.6ms for a 60Hz display) that synchronizes the app's frame rendering loop. The app aims to produce a frame in time for each VSYNC signal to achieve smooth animation without tearing.",
+      "It is a security feature that verifies the integrity of the vertical layout of an app.",
+      "It is an API in `RecyclerView` for vertically synchronizing scroll positions."
+    ]
+  },
+  {
+    "id": 363,
+    "question": "What is the primary benefit of using Gradle Convention Plugins (e.g., in `buildSrc` or included builds)?",
+    "answer": "To centralize and share common build configuration logic (like applying plugins, setting up Android SDK versions, or configuring libraries) across multiple modules in a type-safe way, reducing boilerplate and errors in `build.gradle` files.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "They are required to enable product flavors and build types.",
+      "They allow you to write Gradle scripts in Java instead of Groovy or Kotlin.",
+      "To centralize and share common build configuration logic (like applying plugins, setting up Android SDK versions, or configuring libraries) across multiple modules in a type-safe way, reducing boilerplate and errors in `build.gradle` files.",
+      "Their only purpose is to make the build process faster.",
+      "They are a way to download plugins from sources other than the Gradle Plugin Portal."
+    ]
+  },
+  {
+    "id": 364,
+    "question": "What is 'State Hoisting' in Jetpack Compose?",
+    "answer": "It is the pattern of moving state from a composable to its caller. This makes the original composable stateless, more reusable, and easier to test, following the principle of 'state flows down, events flow up'.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Lifting state from a Composable directly into a global singleton object.",
+      "Automatically saving Composable state to the `SavedStateHandle`.",
+      "It is the pattern of moving state from a composable to its caller. This makes the original composable stateless, more reusable, and easier to test, following the principle of 'state flows down, events flow up'.",
+      "Hoisting a composable function higher up in the UI tree to give it more priority.",
+      "The process by which the Compose compiler 'hoists' state variables into the composition tree."
+    ]
+  },
+  {
+    "id": 365,
+    "question": "What is the purpose of the `key` composable in Jetpack Compose?",
+    "answer": "To provide a stable and unique identifier for a composable or group of composables. This helps Compose understand how items have moved, been added, or been removed in a list, allowing it to correctly preserve `remember`ed state across recompositions.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is used to store a cryptographic key for encrypting the composable's state.",
+      "It is the primary key used when storing composable state in a Room database.",
+      "It is a unique identifier used by UI testing frameworks like Espresso to find a specific composable.",
+      "To provide a stable and unique identifier for a composable or group of composables. This helps Compose understand how items have moved, been added, or been removed in a list, allowing it to correctly preserve `remember`ed state across recompositions.",
+      "It is used to listen for specific key presses from a physical keyboard."
+    ]
   }
 ]
