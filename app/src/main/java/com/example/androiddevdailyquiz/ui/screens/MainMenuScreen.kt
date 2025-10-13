@@ -74,7 +74,11 @@ fun MainMenuScreen(
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
             ) {
-                Text("Start Quiz", color = MaterialTheme.colorScheme.onPrimary)
+                Text(
+                    "Start Quiz",
+                    color = MaterialTheme.colorScheme.onPrimary,
+                    style = MaterialTheme.typography.headlineSmall
+                )
             }
 
             Spacer(Modifier.height(16.dp))
@@ -84,7 +88,11 @@ fun MainMenuScreen(
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.secondary)
             ) {
-                Text("Statistics", color = MaterialTheme.colorScheme.onSecondary)
+                Text(
+                    "Statistics",
+                    color = MaterialTheme.colorScheme.onSecondary,
+                    style = MaterialTheme.typography.headlineSmall
+                )
             }
         }
     }
