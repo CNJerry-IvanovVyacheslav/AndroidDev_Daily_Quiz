@@ -30,7 +30,7 @@ object NotificationHelper {
         }
 
         val notification = NotificationCompat.Builder(context, CHANNEL_ID)
-            .setSmallIcon(R.drawable.ic_launcher_foreground)
+            .setSmallIcon(R.mipmap.ic_launcher_round)
             .setContentTitle("AndroidDev Daily Quiz")
             .setContentText("It's time to solve the daily test!")
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
