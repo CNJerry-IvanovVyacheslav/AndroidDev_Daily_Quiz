@@ -63,7 +63,7 @@ fun MainMenuScreen(
             }
 
             Text(
-                text = "Android Dev Daily Quiz",
+                text = "AndroidDev Daily Quiz",
                 style = MaterialTheme.typography.headlineLarge,
                 color = MaterialTheme.colorScheme.onBackground,
                 modifier = Modifier.padding(bottom = 32.dp)
