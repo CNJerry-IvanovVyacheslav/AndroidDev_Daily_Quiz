@@ -20,7 +20,8 @@ class DailyQuizWorker(
 
         val lastDate = dataStore.lastStreakDateFlow.first()
 
-        val today = java.text.SimpleDateFormat("yyyy-MM-dd").format(java.util.Calendar.getInstance().time)
+        val today =
+            java.text.SimpleDateFormat("yyyy-MM-dd").format(java.util.Calendar.getInstance().time)
 
         if (lastDate != today) {
             NotificationHelper.showNotification(context)

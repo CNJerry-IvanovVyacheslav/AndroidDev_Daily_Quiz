@@ -48,12 +48,16 @@ fun BlankWithOptionsQuestion(
 
             options.forEach { option ->
                 val isSelected = selectedOption == option
-                val isAnswerCorrect = option.trim().equals(question.answer.trim(), ignoreCase = true)
+                val isAnswerCorrect =
+                    option.trim().equals(question.answer.trim(), ignoreCase = true)
 
                 val containerColor = when {
                     isSelected && isAnswerCorrect -> MaterialTheme.colorScheme.primary
                     isSelected && !isAnswerCorrect -> MaterialTheme.colorScheme.errorContainer
-                    selectedOption != null && isAnswerCorrect -> MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
+                    selectedOption != null && isAnswerCorrect -> MaterialTheme.colorScheme.primary.copy(
+                        alpha = 0.5f
+                    )
+
                     else -> MaterialTheme.colorScheme.surfaceVariant
                 }
 

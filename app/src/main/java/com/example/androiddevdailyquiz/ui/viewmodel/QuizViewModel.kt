@@ -21,7 +21,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _selectedCategory = MutableLiveData<QuestionCategory>(QuestionCategory.ALL)
     val selectedCategory: LiveData<QuestionCategory> get() = _selectedCategory
 
-    private val _maxErrorsCategory = MutableStateFlow<Pair<QuestionCategory, Int>>(QuestionCategory.OTHER to 0)
+    private val _maxErrorsCategory =
+        MutableStateFlow<Pair<QuestionCategory, Int>>(QuestionCategory.OTHER to 0)
     val maxErrorsCategory: StateFlow<Pair<QuestionCategory, Int>> = _maxErrorsCategory
 
     private val _questions = MutableLiveData<List<Question>>(emptyList())
@@ -90,7 +91,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         }
         viewModelScope.launch {
             dataStore.incorrectByCategoryFlow.collectLatest { map ->
-                val maxPair = map.maxByOrNull { it.value }?.toPair() ?: (QuestionCategory.OTHER to 0)
+                val maxPair =
+                    map.maxByOrNull { it.value }?.toPair() ?: (QuestionCategory.OTHER to 0)
                 _maxErrorsCategory.value = maxPair
             }
         }
@@ -144,6 +146,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
         return isCorrect
     }
+
     private fun recalcAccuracy() {
         val total = _correctAnswers.value + _incorrectAnswers.value
         _accuracy.value = if (total == 0) 0f else (_correctAnswers.value * 100f / total)
