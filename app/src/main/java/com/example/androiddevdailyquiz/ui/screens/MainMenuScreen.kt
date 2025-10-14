@@ -59,7 +59,9 @@ fun MainMenuScreen(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Box(modifier = Modifier.weight(1f).fillMaxWidth(0.7f)) {
+                Box(modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth(0.7f)) {
                     CategorySelector(
                         categories = QuestionCategory.values().toList(),
                         questionCounts = questionCounts,

@@ -92,7 +92,8 @@ fun StatisticsScreen(viewModel: QuizViewModel, onBack: () -> Unit) {
             Spacer(Modifier.height(8.dp))
 
             // Accuracy — красный если <50%, зеленый если >=50%
-            val accuracyColor = if (accuracy < 50f) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary
+            val accuracyColor =
+                if (accuracy < 50f) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary
             StatItem(
                 title = "Accuracy Rate",
                 value = "${"%.1f".format(accuracy)}%",

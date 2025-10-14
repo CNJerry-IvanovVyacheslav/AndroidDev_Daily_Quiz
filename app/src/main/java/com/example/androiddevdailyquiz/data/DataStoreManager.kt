@@ -24,24 +24,28 @@ class DataStoreManager(private val context: Context) {
         private val MAX_CONSECUTIVE_KEY = intPreferencesKey("max_consecutive")
 
         // Ключ для категорий
-        fun categoryIncorrectKey(category: QuestionCategory) = intPreferencesKey("incorrect_${category.name.lowercase()}")
+        fun categoryIncorrectKey(category: QuestionCategory) =
+            intPreferencesKey("incorrect_${category.name.lowercase()}")
     }
 
     val correctFlow: Flow<Int> = context.dataStore.data.map { it[CORRECT_KEY] ?: 0 }
     val incorrectFlow: Flow<Int> = context.dataStore.data.map { it[INCORRECT_KEY] ?: 0 }
     val streakFlow: Flow<Int> = context.dataStore.data.map { it[STREAK_COUNT_KEY] ?: 0 }
-    val lastStreakDateFlow: Flow<String> = context.dataStore.data.map { it[LAST_STREAK_DATE_KEY] ?: "" }
+    val lastStreakDateFlow: Flow<String> =
+        context.dataStore.data.map { it[LAST_STREAK_DATE_KEY] ?: "" }
 
-    val currentConsecutiveFlow: Flow<Int> = context.dataStore.data.map { it[CURRENT_CONSECUTIVE_KEY] ?: 0 }
+    val currentConsecutiveFlow: Flow<Int> =
+        context.dataStore.data.map { it[CURRENT_CONSECUTIVE_KEY] ?: 0 }
     val maxConsecutiveFlow: Flow<Int> = context.dataStore.data.map { it[MAX_CONSECUTIVE_KEY] ?: 0 }
 
     private val allCategories = QuestionCategory.values()
 
-    val incorrectByCategoryFlow: Flow<Map<QuestionCategory, Int>> = context.dataStore.data.map { prefs ->
-        allCategories.associateWith { category ->
-            prefs[categoryIncorrectKey(category)] ?: 0
+    val incorrectByCategoryFlow: Flow<Map<QuestionCategory, Int>> =
+        context.dataStore.data.map { prefs ->
+            allCategories.associateWith { category ->
+                prefs[categoryIncorrectKey(category)] ?: 0
+            }
         }
-    }
 
     suspend fun incrementCorrect() = context.dataStore.edit { prefs ->
         prefs[CORRECT_KEY] = (prefs[CORRECT_KEY] ?: 0) + 1

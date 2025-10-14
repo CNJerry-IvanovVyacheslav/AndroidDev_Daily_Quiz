@@ -46,7 +46,8 @@ object NotificationHelper {
             ).apply {
                 description = CHANNEL_DESC
             }
-            val manager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            val manager =
+                context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             manager.createNotificationChannel(channel)
         }
     }
