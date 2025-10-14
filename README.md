@@ -19,10 +19,11 @@ The app is intended to serve as a **personal learning companion**, helping users
 
 In the future, the application will evolve to include:  
 
-- 🌟 **New question sets** covering advanced Android topics
-- 🌟 **Customizable themes** and UI improvements for better usability  
-- 🌟 **Offline mode** to allow practice without an internet connection  
-- 🌟 **Community contribution** so users can submit questions and share learning materials
+- 🌟 **New question sets** covering advanced Android topics.
+- 🌟 **Grouping of tests** by topic. The ability to select a specific topic for the test. 
+- 🌟 A system of **levels and experience**.
+- 🌟 **Sync and save** progress in the cloud.
+- 🌟 Questions related to **code execution** (what is the result/what will be displayed in the console?).
 
 ## Purpose
 
