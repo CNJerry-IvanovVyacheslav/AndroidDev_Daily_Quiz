@@ -13,7 +13,7 @@ The app is intended to serve as a **personal learning companion**, helping users
 - ✅ Track progress and maintain daily streaks to build a consistent learning habit 
 - ✅ Track your progress over time and increase your confidence in Android programming with a personal statistics system.
 
-<img src="https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/blob/1e3eead4b6419ef07bb5530439afdcee7ce59875/screenshots/photo_1_2025-10-14_13-30-50.jpg" width="220"> <img src="https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/blob/1e3eead4b6419ef07bb5530439afdcee7ce59875/screenshots/photo_2_2025-10-14_13-30-50.jpg" width="220"> <img src="https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/blob/4705d2749dff34c1298ae2467e3596fed008b1da/screenshots/photo_2025-10-14_13-37-20.jpg" width="220"> <img src="https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/blob/1e3eead4b6419ef07bb5530439afdcee7ce59875/screenshots/photo_3_2025-10-14_13-30-50.jpg" width="220">
+<img src="https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/blob/1e3eead4b6419ef07bb5530439afdcee7ce59875/screenshots/photo_1_2025-10-14_13-30-50.jpg" width="300"> <img src="https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/blob/1e3eead4b6419ef07bb5530439afdcee7ce59875/screenshots/photo_2_2025-10-14_13-30-50.jpg" width="300"> <img src="https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/blob/4705d2749dff34c1298ae2467e3596fed008b1da/screenshots/photo_2025-10-14_13-37-20.jpg" width="300"> <img src="https://github.com/CNJerry-IvanovVyacheslav/AndroidDev_Daily_Quiz/blob/1e3eead4b6419ef07bb5530439afdcee7ce59875/screenshots/photo_3_2025-10-14_13-30-50.jpg" width="300">
 
 ## Vision
 
