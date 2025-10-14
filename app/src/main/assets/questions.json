@@ -10,7 +10,8 @@
       "let",
       "readonly",
       "val"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
       "protected",
       "default",
       "public"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
       "fun sum(a: Int, b: Int): Int { return a + b }",
       "func sum(a, b) -> Int { return a + b }",
       "fun sum(a: Int, b: Int) a + b"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 4,
@@ -49,7 +52,8 @@
       "var name: String?",
       "var name nullable String",
       "var name: nullable String"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 5,
@@ -62,7 +66,8 @@
       "?:",
       "?.",
       "safeCall()"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 6,
@@ -75,7 +80,8 @@
       "Marks a variable as immutable",
       "Declares a nullable variable",
       "Forces immediate initialization"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 7,
@@ -88,7 +94,8 @@
       "singleton DatabaseManager",
       "DatabaseManager.getInstance()",
       "val DatabaseManager = singleton()"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 8,
@@ -101,7 +108,8 @@
       "To define a data class",
       "To implement an interface",
       "To define extension functions"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 9,
@@ -114,7 +122,8 @@
       "abstract",
       "open",
       "extends"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 10,
@@ -127,7 +136,8 @@
       "open",
       "final",
       "sealed"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 11,
@@ -140,7 +150,8 @@
       "They are interchangeable",
       "'==' is for numbers, '===' is for objects",
       "None of the above"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 12,
@@ -153,7 +164,8 @@
       "data User(val name: String, val age: Int)",
       "User data class(val name: String, val age: Int)",
       "class User data(val name: String, val age: Int)"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 13,
@@ -166,7 +178,8 @@
       "abstract",
       "final",
       "interface"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 14,
@@ -179,7 +192,8 @@
       "[2,3]",
       "[1,3]",
       "Error"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 15,
@@ -192,7 +206,8 @@
       "MutableList",
       "Set",
       "Map"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 16,
@@ -205,7 +220,8 @@
       "Marks a variable as immutable",
       "Creates a nullable variable",
       "None of the above"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 17,
@@ -218,7 +234,8 @@
       "fun isPalindrome(str: String): Boolean { ... }",
       "String.fun isPalindrome(): Boolean { ... }",
       "fun String.isPalindrome { ... }"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 18,
@@ -231,7 +248,8 @@
       "Both are mutable",
       "Both are immutable",
       "None of the above"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 19,
@@ -244,7 +262,8 @@
       "singleton Logger { fun log(msg: String) {} }",
       "Logger.getInstance()",
       "val Logger = singleton()"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 20,
@@ -257,7 +276,8 @@
       "Casts type",
       "Creates a new instance",
       "None of the above"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 21,
@@ -270,7 +290,8 @@
       "launch",
       "asyncBlock",
       "delay"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 22,
@@ -283,7 +304,8 @@
       "Map(\"a\" -> 1, \"b\" -> 2)",
       "HashMap(\"a\",1,\"b\",2)",
       "mutableMap(\"a\" to 1, \"b\" to 2)"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 23,
@@ -296,7 +318,8 @@
       "by",
       "with",
       "implements"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 24,
@@ -309,7 +332,8 @@
       "Sequence<Int>",
       "Array<Int>",
       "IntArray"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 25,
@@ -322,7 +346,8 @@
       "fun operate(a: Int, b: Int, op: Int -> Int) = op(a, b)",
       "fun operate(a: Int, b: Int) op: (Int, Int) -> Int = op(a, b)",
       "operate(a: Int, b: Int, op: (Int, Int) -> Int)"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 26,
@@ -335,7 +360,8 @@
       "asSequence()",
       "toSeq()",
       "seq()"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 27,
@@ -348,7 +374,8 @@
       "Assigns a default value",
       "Converts it to zero",
       "No effect"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 28,
@@ -361,7 +388,8 @@
       "func inline myFunc() { }",
       "inline function myFunc() { }",
       "myFunc inline fun() { }"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 29,
@@ -374,7 +402,8 @@
       "listOf(1,2,3).forEach(it * 2)",
       "listOf(1,2,3).lambda(it * 2)",
       "listOf(1,2,3).apply { it * 2 }"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 30,
@@ -387,7 +416,8 @@
       "implements",
       "trait",
       "class"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 31,
@@ -400,7 +430,8 @@
       "fun greet(default name: \"Guest\") { ... }",
       "fun greet(name: String? = \"Guest\") { ... }",
       "fun greet(name = \"Guest\") { ... }"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 32,
@@ -413,7 +444,8 @@
       "range(1,10)",
       "1->10",
       "1-10"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 33,
@@ -426,7 +458,8 @@
       "async",
       "delay",
       "suspend"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 34,
@@ -439,7 +472,8 @@
       "class Expr; sealed class Const(val number: Int) : Expr()",
       "sealed interface Expr; class Const(val number: Int) : Expr()",
       "sealed class Expr(val number: Int)"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 35,
@@ -452,7 +486,8 @@
       "Unit",
       "A lambda result",
       "Nothing"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 36,
@@ -465,7 +500,8 @@
       "?:",
       "??",
       "?."
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 37,
@@ -478,7 +514,8 @@
       "fun singletonList(item: T): List<T> = listOf(item)",
       "fun <T> singletonList(item): List<T> = listOf(item)",
       "fun singletonList<T>(item: T) = listOf(item)"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 38,
@@ -491,7 +528,8 @@
       "enum class Direction(NORTH, SOUTH, EAST, WEST)",
       "enum Direction(NORTH, SOUTH)",
       "Direction.enum { NORTH, SOUTH }"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 39,
@@ -504,7 +542,8 @@
       "Function is deprecated",
       "Function runs on background thread",
       "Function is inline"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 40,
@@ -517,7 +556,8 @@
       "delay",
       "runBlocking",
       "withContext"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 41,
@@ -530,7 +570,8 @@
       "Filtering a list",
       "Sorting a list",
       "Mapping a list"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 42,
@@ -543,7 +584,8 @@
       "val result = { this.append(\"Hello\") }",
       "val result = lambda { append(\"Hello\") }",
       "val result = run { append(\"Hello\") }"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 43,
@@ -556,7 +598,8 @@
       "?:",
       "?.",
       "ifnull"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 44,
@@ -569,7 +612,8 @@
       "typedef UserMap = Map<String, User>",
       "using UserMap = Map<String, User>",
       "type UserMap = Map<String, User>"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 45,
@@ -582,7 +626,8 @@
       "with",
       "run",
       "also"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 46,
@@ -595,7 +640,8 @@
       "async(IO) { ... }",
       "withContext(Dispatchers.IO) { ... }",
       "launch { Dispatchers.IO }"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 47,
@@ -608,7 +654,8 @@
       "list.orderByDescending()",
       "list.sortedByDescending()",
       "list.descending()"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 48,
@@ -621,7 +668,8 @@
       "val name = user.name, age = user.age",
       "val (user.name, user.age)",
       "destructure(user)"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 49,
@@ -634,7 +682,8 @@
       "listOf(1,2,3)",
       "List(1,2,3)",
       "ImmutableList(1,2,3)"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 50,
@@ -647,7 +696,8 @@
       "when(x) { case 1 -> print(\"One\") default -> print(\"Other\") }",
       "when x { 1 -> print(\"One\") else -> print(\"Other\") }",
       "when { x==1 -> print(\"One\") else -> print(\"Other\") }"
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 51,
@@ -660,7 +710,8 @@
       "Activity",
       "ViewModel",
       "Service"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 52,
@@ -673,7 +724,8 @@
       "Flow",
       "SharedFlow",
       "MutableLiveData"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 53,
@@ -686,7 +738,8 @@
       "WorkManager",
       "DataStore",
       "Room"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 54,
@@ -699,7 +752,8 @@
       "Networking",
       "Dependency Injection",
       "UI testing"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 55,
@@ -712,7 +766,8 @@
       "WorkManager",
       "Thread",
       "Handler"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 56,
@@ -725,7 +780,8 @@
       "LifecycleObserver",
       "CoroutineScope",
       "Repository"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 57,
@@ -738,7 +794,8 @@
       "MutableState",
       "Flow",
       "ViewModel"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 58,
@@ -751,7 +808,8 @@
       "DataStore",
       "WorkManager",
       "Navigation"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 59,
@@ -764,7 +822,8 @@
       "Room",
       "SQLiteDatabase",
       "ContentProvider"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 60,
@@ -777,7 +836,8 @@
       "@Dao",
       "@Module",
       "@Provides"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 61,
@@ -790,7 +850,8 @@
       "@Database",
       "@Repository",
       "@Inject"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 62,
@@ -803,7 +864,8 @@
       "viewModelScope",
       "runBlocking",
       "CoroutineScope"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 63,
@@ -816,7 +878,8 @@
       "@Dao",
       "@Module",
       "@Provides"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 64,
@@ -829,7 +892,8 @@
       "PagingSource",
       "WorkManager",
       "ViewModel"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 65,
@@ -842,7 +906,8 @@
       "Activity",
       "BroadcastReceiver",
       "Service"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 66,
@@ -855,7 +920,8 @@
       "Singleton Repository",
       "WorkManager",
       "Service"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 67,
@@ -868,7 +934,8 @@
       "Handler",
       "WorkManager",
       "Coroutine"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 68,
@@ -881,7 +948,8 @@
       "ViewModel",
       "LiveData",
       "Service"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 69,
@@ -894,7 +962,8 @@
       "LiveData",
       "StateFlow",
       "Channel"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 70,
@@ -907,7 +976,8 @@
       "@Singleton",
       "@Inject",
       "@Component"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 71,
@@ -920,7 +990,8 @@
       "@Inject",
       "@Singleton",
       "@Component"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 72,
@@ -933,7 +1004,8 @@
       "@Inject",
       "@Provides",
       "@Component"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 73,
@@ -946,7 +1018,8 @@
       "ViewModel",
       "Service",
       "Repository"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 74,
@@ -959,7 +1032,8 @@
       "Service",
       "Handler",
       "BroadcastReceiver"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 75,
@@ -972,7 +1046,8 @@
       "Safe Args",
       "SharedPreferences",
       "Navigation Graph"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 76,
@@ -985,7 +1060,8 @@
       "lifecycleScope",
       "runBlocking",
       "CoroutineScope"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 77,
@@ -998,7 +1074,8 @@
       "WorkManager",
       "Thread",
       "CoroutineScope"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 78,
@@ -1011,7 +1088,8 @@
       "@Module",
       "@Singleton",
       "@Component"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 79,
@@ -1024,7 +1102,8 @@
       "Repository",
       "Service",
       "DataStore"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 80,
@@ -1037,7 +1116,8 @@
       "Lifecycle",
       "DataStore",
       "WorkManager"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 81,
@@ -1050,7 +1130,8 @@
       "SharedFlow",
       "Flow",
       "MutableStateFlow"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 82,
@@ -1063,7 +1144,8 @@
       "WorkManager",
       "BroadcastReceiver",
       "ThreadPoolExecutor"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 83,
@@ -1076,7 +1158,8 @@
       "@Update",
       "@Delete",
       "@Dao"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 84,
@@ -1089,7 +1172,8 @@
       "Room",
       "WorkManager",
       "LiveData"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 85,
@@ -1102,7 +1186,8 @@
       "DataStore",
       "SQLiteDatabase",
       "Repository"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 86,
@@ -1115,7 +1200,8 @@
       "LifecycleObserver",
       "LiveData",
       "Service"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 87,
@@ -1128,7 +1214,8 @@
       "viewModelScope.launch { ... }",
       "runBlocking { ... }",
       "CoroutineScope.launch { ... }"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 88,
@@ -1141,7 +1228,8 @@
       "PagingSource",
       "Repository",
       "ViewModel"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 89,
@@ -1154,7 +1242,8 @@
       "@Provides",
       "@Singleton",
       "@Component"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 90,
@@ -1167,7 +1256,8 @@
       "Repository only",
       "DataStore only",
       "Paging only"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 91,
@@ -1180,7 +1270,8 @@
       "Safe Args",
       "SharedPreferences",
       "ViewModel"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 92,
@@ -1193,7 +1284,8 @@
       "ViewModel",
       "WorkManager",
       "DataStore"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 93,
@@ -1206,7 +1298,8 @@
       "WorkManager",
       "AlarmManager",
       "CoroutineScope"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 94,
@@ -1219,7 +1312,8 @@
       "SharedFlow",
       "MutableState",
       "Flow"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 95,
@@ -1232,7 +1326,8 @@
       "@Module",
       "@Singleton",
       "@Component"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 96,
@@ -1245,7 +1340,8 @@
       "LiveData",
       "Service",
       "DataStore"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 97,
@@ -1258,7 +1354,8 @@
       "@Singleton",
       "@Inject",
       "@Component"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 98,
@@ -1271,7 +1368,8 @@
       "GlobalScope",
       "runBlocking",
       "CoroutineScope"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 99,
@@ -1284,7 +1382,8 @@
       "@Dao",
       "@Module",
       "@Provides"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 100,
@@ -1297,7 +1396,8 @@
       "@Database",
       "@Repository",
       "@Inject"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 101,
@@ -1310,7 +1410,8 @@
       "Box",
       "LazyColumn",
       "ConstraintLayout"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 102,
@@ -1323,7 +1424,8 @@
       "Box",
       "LazyRow",
       "ConstraintLayout"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 103,
@@ -1336,7 +1438,8 @@
       "Box",
       "LazyColumn",
       "Stack"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 104,
@@ -1349,7 +1452,8 @@
       "LazyColumn",
       "Box",
       "ScrollView"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 105,
@@ -1362,7 +1466,8 @@
       "Column",
       "Box",
       "ScrollView"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 106,
@@ -1375,7 +1480,8 @@
       "derivedStateOf",
       "rememberCoroutineScope",
       "stateOf"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 107,
@@ -1388,7 +1494,8 @@
       "stateFlowOf",
       "collectAsState",
       "derivedStateOf"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 108,
@@ -1401,7 +1508,8 @@
       "derivedStateOf",
       "collectAsState",
       "snapshotFlow"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 109,
@@ -1414,7 +1522,8 @@
       "stateFlowOf()",
       "rememberFlow()",
       "launchIn()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 110,
@@ -1427,7 +1536,8 @@
       "@DesignTime",
       "@ShowPreview",
       "@Render"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 111,
@@ -1440,7 +1550,8 @@
       "Scaffold",
       "Toolbar",
       "Surface"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 112,
@@ -1453,7 +1564,8 @@
       "Box",
       "Column",
       "TopAppBar"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 113,
@@ -1466,7 +1578,8 @@
       "Animatable",
       "LaunchedEffect",
       "Transition"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 114,
@@ -1479,7 +1592,8 @@
       "Animatable",
       "updateTransition",
       "LaunchedEffect"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 115,
@@ -1492,7 +1606,8 @@
       "LaunchedEffect",
       "DisposableEffect",
       "produceState"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 116,
@@ -1505,7 +1620,8 @@
       "DisposableEffect",
       "remember",
       "derivedStateOf"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 117,
@@ -1518,7 +1634,8 @@
       "SideEffect",
       "remember",
       "derivedStateOf"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 118,
@@ -1531,7 +1648,8 @@
       "remember",
       "mutableStateOf",
       "derivedStateOf"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 119,
@@ -1544,7 +1662,8 @@
       "Recomposition",
       "Coroutine",
       "DerivedState"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 120,
@@ -1557,7 +1676,8 @@
       "remember",
       "derivedStateOf",
       "snapshotFlow()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 121,
@@ -1570,7 +1690,8 @@
       "Modifier.size()",
       "Modifier.fillMaxSize()",
       "Modifier.offset()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 122,
@@ -1583,7 +1704,8 @@
       "Modifier.fillMaxWidth()",
       "Modifier.wrapContentWidth()",
       "Modifier.wrapContentSize()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 123,
@@ -1596,7 +1718,8 @@
       "Modifier.fillMaxSize()",
       "Modifier.wrapContentHeight()",
       "Modifier.wrapContentSize()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 124,
@@ -1609,7 +1732,8 @@
       "Modifier.fillMaxSize()",
       "Modifier.wrapContentSize()",
       "Modifier.size()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 125,
@@ -1622,7 +1746,8 @@
       "Modifier.offset()",
       "Margin()",
       "Modifier.gap()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 126,
@@ -1635,7 +1760,8 @@
       "LazyVerticalGrid",
       "Column",
       "LazyVerticalStaggeredGrid"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 127,
@@ -1648,7 +1774,8 @@
       "@Preview(theme = DarkTheme)",
       "@Preview(isDark = true)",
       "@Preview(theme = Night)"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 128,
@@ -1661,7 +1788,8 @@
       "LazyColumn",
       "BoxScroll",
       "ScrollContainer()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 129,
@@ -1674,7 +1802,8 @@
       "remember",
       "snapshotFlow()",
       "derivedStateOf"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 130,
@@ -1687,7 +1816,8 @@
       "Modifier.clickable()",
       "Modifier.touch()",
       "Modifier.detectTap()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 131,
@@ -1700,7 +1830,8 @@
       "updateTransition()",
       "rememberInfiniteTransition",
       "Animatable"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 132,
@@ -1713,7 +1844,8 @@
       "updateTransition",
       "rememberInfiniteTransition",
       "Animatable"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 133,
@@ -1726,7 +1858,8 @@
       "animateValue()",
       "AnimSpec()",
       "transitionSpec()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 134,
@@ -1739,7 +1872,8 @@
       "derivedStateOf()",
       "collectAsState()",
       "snapshotFlow()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 135,
@@ -1752,7 +1886,8 @@
       "Row",
       "ConstraintLayout",
       "Scaffold"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 136,
@@ -1765,7 +1900,8 @@
       "Column",
       "Row",
       "Box"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 137,
@@ -1778,7 +1914,8 @@
       "DisposableEffect",
       "remember",
       "derivedStateOf"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 138,
@@ -1791,7 +1928,8 @@
       "SideEffect",
       "remember",
       "produceState"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 139,
@@ -1804,7 +1942,8 @@
       "Coroutines",
       "SideEffects",
       "SnapshotFlow"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 140,
@@ -1817,7 +1956,8 @@
       "rememberInfiniteTransition",
       "Animatable",
       "LaunchedEffect"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 141,
@@ -1830,7 +1970,8 @@
       "rememberFlow()",
       "derivedStateOf",
       "snapshotFlow()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 142,
@@ -1843,7 +1984,8 @@
       "DisposableEffect",
       "SideEffect",
       "produceState"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 143,
@@ -1856,7 +1998,8 @@
       "LazyRow",
       "Column",
       "Row"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 144,
@@ -1869,7 +2012,8 @@
       "rememberLiveData()",
       "derivedStateOf",
       "snapshotFlow()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 145,
@@ -1882,7 +2026,8 @@
       "Modifier.fillMaxSize()",
       "Modifier.surface()",
       "Modifier.themeColor()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 146,
@@ -1895,7 +2040,8 @@
       "Modifier.touchable()",
       "Modifier.gesture()",
       "Modifier.tap()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 147,
@@ -1908,7 +2054,8 @@
       "Modifier.gap()",
       "Modifier.spacing()",
       "Modifier.offset()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 148,
@@ -1921,7 +2068,8 @@
       "floatingActionButton",
       "content",
       "drawerContent"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 149,
@@ -1934,7 +2082,8 @@
       "animate*AsState",
       "updateTransition()",
       "Animatable"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 150,
@@ -1947,7 +2096,8 @@
       "Modifier.offset()",
       "Modifier.align()",
       "Modifier.zIndex()"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 151,
@@ -1960,7 +2110,8 @@
       "Repository",
       "ViewModel",
       "LiveData"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 152,
@@ -1973,7 +2124,8 @@
       "UI",
       "UseCase",
       "Service"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 153,
@@ -1986,7 +2138,8 @@
       "Repository",
       "Activity",
       "Fragment"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 154,
@@ -1999,7 +2152,8 @@
       "Koin",
       "Kodein",
       "Guice"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 155,
@@ -2012,7 +2166,8 @@
       "@Inject",
       "@Singleton",
       "@Bind"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 156,
@@ -2025,7 +2180,8 @@
       "@Module",
       "@Provides",
       "@Scoped"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 157,
@@ -2038,7 +2194,8 @@
       "@Module",
       "@Inject",
       "@Component"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 158,
@@ -2051,7 +2208,8 @@
       "@Provides",
       "@Inject",
       "@Bind"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 159,
@@ -2064,7 +2222,8 @@
       "Repository pattern",
       "Singleton",
       "Service Locator"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 160,
@@ -2077,7 +2236,8 @@
       "User actions or events",
       "Repositories",
       "ViewModel functions"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 161,
@@ -2090,7 +2250,8 @@
       "Actions",
       "Side-effects",
       "Repository data"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 162,
@@ -2103,7 +2264,8 @@
       "One-time events like navigation or Toasts",
       "User actions",
       "ViewModel data"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 163,
@@ -2116,7 +2278,8 @@
       "Random data flow",
       "Two-way binding only",
       "Event-driven flow"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 164,
@@ -2129,7 +2292,8 @@
       "Using ActivityScenario",
       "Using UIAutomator",
       "Manual testing"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 165,
@@ -2142,7 +2306,8 @@
       "ViewModel",
       "Repository",
       "Service"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 166,
@@ -2155,7 +2320,8 @@
       "Mockito / MockK",
       "Robolectric",
       "Truth"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 167,
@@ -2168,7 +2334,8 @@
       "@HiltActivity",
       "@Provide",
       "@Module"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 168,
@@ -2181,7 +2348,8 @@
       "Singleton / Application scope",
       "ViewModel scope",
       "Session scope"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 169,
@@ -2194,7 +2362,8 @@
       "@AndroidEntryPoint annotated Fragment",
       "@InjectFragment",
       "FragmentComponent.inject()"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 170,
@@ -2207,7 +2376,8 @@
       "Synchronous calls",
       "Callback hell",
       "Singleton pattern"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 171,
@@ -2220,7 +2390,8 @@
       "Integration testing",
       "Instrumentation testing",
       "Snapshot testing"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 172,
@@ -2233,7 +2404,8 @@
       "@Singleton",
       "@Provides",
       "@EntryPoint"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 173,
@@ -2246,7 +2418,8 @@
       "Direct UI references",
       "Access Resources directly",
       "Use Activity inside ViewModel"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 174,
@@ -2259,7 +2432,8 @@
       "Two-way binding only",
       "Event-driven",
       "Reactive streams only"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 175,
@@ -2272,7 +2446,8 @@
       "ViewModelComponent",
       "SingletonComponent",
       "ServiceComponent"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 176,
@@ -2285,7 +2460,8 @@
       "Mockito",
       "JUnit",
       "UIAutomator"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 177,
@@ -2298,7 +2474,8 @@
       "@Singleton",
       "@Inject",
       "@EntryPoint"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 178,
@@ -2311,7 +2488,8 @@
       "MVI",
       "Singleton",
       "Service Locator"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 179,
@@ -2324,7 +2502,8 @@
       "Use ActivityScenario",
       "Use Mockito only",
       "Use Thread.sleep()"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 180,
@@ -2337,7 +2516,8 @@
       "Repository",
       "ViewModel",
       "StateObserver"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 181,
@@ -2350,7 +2530,8 @@
       "UI testing",
       "Snapshot testing",
       "End-to-end testing"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 182,
@@ -2363,7 +2544,8 @@
       "ViewModel",
       "Repository",
       "Service"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 183,
@@ -2376,7 +2558,8 @@
       "@Module",
       "@Inject",
       "@Singleton"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 184,
@@ -2389,7 +2572,8 @@
       "Event-driven",
       "Observer pattern",
       "Direct coupling"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 185,
@@ -2402,7 +2586,8 @@
       "Activity",
       "UseCase",
       "UI layer"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 186,
@@ -2415,7 +2600,8 @@
       "ViewModelComponent",
       "SingletonComponent",
       "ServiceComponent"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 187,
@@ -2428,7 +2614,8 @@
       "@Module",
       "@AndroidEntryPoint",
       "@Provides"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 188,
@@ -2441,7 +2628,8 @@
       "Single Responsibility Principle (SRP)",
       "Liskov Substitution",
       "Interface Segregation"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 189,
@@ -2454,7 +2642,8 @@
       "Turbine",
       "Mockito",
       "UIAutomator"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 190,
@@ -2467,7 +2656,8 @@
       "State",
       "Effect",
       "ViewModel"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 191,
@@ -2480,7 +2670,8 @@
       "@Provides",
       "@Singleton",
       "@Binds"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 192,
@@ -2493,7 +2684,8 @@
       "Single Source of Truth",
       "Dependency Injection",
       "MVI"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 193,
@@ -2506,7 +2698,8 @@
       "@Singleton",
       "@Module",
       "@Inject"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 194,
@@ -2519,7 +2712,8 @@
       "Instrumented / UI tests",
       "Snapshot tests",
       "End-to-end tests"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 195,
@@ -2532,7 +2726,8 @@
       "Effect",
       "Intent",
       "Repository"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 196,
@@ -2545,7 +2740,8 @@
       "FragmentComponent",
       "SingletonComponent",
       "ServiceComponent"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 197,
@@ -2558,7 +2754,8 @@
       "Access Resources",
       "Use Context",
       "Use LiveData only"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 198,
@@ -2571,7 +2768,8 @@
       "Manual refresh",
       "Polling",
       "Thread.sleep()"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 199,
@@ -2584,7 +2782,8 @@
       "FragmentComponent",
       "SingletonComponent",
       "ServiceComponent"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 200,
@@ -2597,7 +2796,8 @@
       "MVP",
       "Singleton",
       "Repository pattern"
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 201,
@@ -2610,7 +2810,8 @@
       "@DataClass",
       "@Database",
       "@Dao"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 202,
@@ -2623,7 +2824,8 @@
       "@Database",
       "@Entity",
       "@Inject"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 203,
@@ -2636,7 +2838,8 @@
       "@Dao",
       "@RoomDB",
       "@Module"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 204,
@@ -2649,7 +2852,8 @@
       "@Query",
       "@Update",
       "@Delete"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 205,
@@ -2662,7 +2866,8 @@
       "@Insert",
       "@Delete",
       "@Put"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 206,
@@ -2675,7 +2880,8 @@
       "@Insert",
       "@Delete",
       "@Patch"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 207,
@@ -2688,7 +2894,8 @@
       "@Update",
       "@Query",
       "@Insert"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 208,
@@ -2701,7 +2908,8 @@
       "ObservableField",
       "StateFlow",
       "MutableMap"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 209,
@@ -2714,7 +2922,8 @@
       "@PrimaryKey",
       "@Id",
       "@Unique"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 210,
@@ -2727,7 +2936,8 @@
       "@AutoKey",
       "@Id(autoGenerate = true)",
       "@Generated"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 211,
@@ -2740,7 +2950,8 @@
       "@Indexed",
       "@ForeignKey",
       "@QueryIndex"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 212,
@@ -2753,7 +2964,8 @@
       "@Reference",
       "@ParentKey",
       "@ChildKey"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 213,
@@ -2766,7 +2978,8 @@
       "@Relation",
       "@Embedded",
       "@JoinColumn"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 214,
@@ -2779,7 +2992,8 @@
       "@Include",
       "@Compose",
       "@Nested"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 215,
@@ -2792,7 +3006,8 @@
       "@UpdateSchema",
       "@DbVersion",
       "@SchemaMigration"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 216,
@@ -2805,7 +3020,8 @@
       "Flow<List<Entity>>",
       "Entity",
       "Observable<List<Entity>>"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 217,
@@ -2818,7 +3034,8 @@
       "@Nullable",
       "@PrimaryKey",
       "@Required"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 218,
@@ -2831,7 +3048,8 @@
       "@ColumnDefault",
       "@InitialValue",
       "@DefaultValue"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 219,
@@ -2844,7 +3062,8 @@
       "@Synchronized",
       "@Batch",
       "@AllOrNothing"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 220,
@@ -2857,7 +3076,8 @@
       "String",
       "IntArray",
       "Bitmap"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 221,
@@ -2870,7 +3090,8 @@
       "@Exclude",
       "@NotPersisted",
       "@Skip"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 222,
@@ -2883,7 +3104,8 @@
       "@CustomColumn(\"custom_name\")",
       "@FieldName(\"custom_name\")",
       "@ColumnAlias(\"custom_name\")"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 223,
@@ -2896,7 +3118,8 @@
       "ObservableField",
       "StateFlow",
       "List"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 224,
@@ -2909,7 +3132,8 @@
       "@Include",
       "@ColumnInfo",
       "@Nested"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 225,
@@ -2922,7 +3146,8 @@
       "suspend functions / coroutines",
       "runBlocking",
       "ExecutorService"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 226,
@@ -2935,7 +3160,8 @@
       "@Async",
       "@Background",
       "@Coroutine"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 227,
@@ -2948,7 +3174,8 @@
       "Int / Long",
       "Boolean",
       "Double"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 228,
@@ -2961,7 +3188,8 @@
       "@Database(version = X)",
       "@Migration",
       "@DbVersion"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 229,
@@ -2974,7 +3202,8 @@
       "@CompositeKey",
       "@MultiKey",
       "@KeySet"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 230,
@@ -2987,7 +3216,8 @@
       "@IndexedColumns",
       "@ColumnIndex",
       "@MultiIndex"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 231,
@@ -3000,7 +3230,8 @@
       "@Embedded",
       "@ForeignKey",
       "@JoinColumn"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 232,
@@ -3013,7 +3244,8 @@
       "@Relation(manyToMany = true)",
       "@ForeignKey(manyToMany = true)",
       "@Embedded(manyToMany = true)"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 233,
@@ -3026,7 +3258,8 @@
       "fun getAll(): LiveData<List<Entity>>",
       "fun getAll(): Observable<List<Entity>>",
       "fun getAll(): StateFlow<List<Entity>>"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 234,
@@ -3039,7 +3272,8 @@
       "@Remove fun delete(entity: Entity)",
       "fun delete(entity: Entity)",
       "@Delete fun deleteById(id: Int)"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 235,
@@ -3052,7 +3286,8 @@
       "@Update fun updateAll(entities: Entity)",
       "@Query fun updateAll(entities: Entity)",
       "@Update fun update(entity: Entity)"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 236,
@@ -3065,7 +3300,8 @@
       "@NotPersisted",
       "@Exclude",
       "@Skip"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 237,
@@ -3078,7 +3314,8 @@
       "@SchemaVersion",
       "@DbVersion",
       "@Migration"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 238,
@@ -3091,7 +3328,8 @@
       "String",
       "Text",
       "JsonObject"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 239,
@@ -3104,7 +3342,8 @@
       "@Compose",
       "@Nested",
       "@Relation"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 240,
@@ -3117,7 +3356,8 @@
       "mainThreadQuery()",
       "executeMainThread()",
       "runBlockingMain()"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 241,
@@ -3130,7 +3370,8 @@
       "@ColumnUnique",
       "@UniqueKey",
       "@PrimaryKey(unique=true)"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 242,
@@ -3143,7 +3384,8 @@
       "@Select(id) fun getById(id: Int): Entity",
       "@FindById fun getById(id: Int): Entity",
       "@QueryById fun getById(id: Int): Entity"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 243,
@@ -3156,7 +3398,8 @@
       "fun getById(id: Int): Flow<Entity>",
       "fun getById(id: Int): StateFlow<Entity>",
       "fun getById(id: Int): Observable<Entity>"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 244,
@@ -3169,7 +3412,8 @@
       "@ColumnDefault",
       "@InitialValue",
       "@DefaultValue"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 245,
@@ -3182,7 +3426,8 @@
       "@CompositeIndex",
       "@MultiIndex",
       "@ColumnIndex"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 246,
@@ -3195,7 +3440,8 @@
       "@Query(\"DELETE FROM table\") fun deleteAll()",
       "@Delete fun deleteAll(entities: Entity)",
       "fun deleteAll(entities: List<Entity>)"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 247,
@@ -3208,7 +3454,8 @@
       "Long",
       "Instant",
       "Calendar"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 248,
@@ -3221,7 +3468,8 @@
       "@NotNull",
       "@ColumnNullable",
       "allowNull = true"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 249,
@@ -3234,7 +3482,8 @@
       "migrateTo(version)",
       "runMigration()",
       "applyMigration()"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 250,
@@ -3247,7 +3496,8 @@
       "@Exclude",
       "@NotPersisted",
       "@Skip"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 251,
@@ -3260,7 +3510,8 @@
       "Retrofit",
       "HttpClient",
       "Fuel"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 252,
@@ -3273,7 +3524,8 @@
       "RequestBuilder",
       "HttpConnection",
       "RequestManager"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 253,
@@ -3286,7 +3538,8 @@
       "@PUT",
       "@HTTPGET",
       "@Fetch"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 254,
@@ -3299,7 +3552,8 @@
       "@Field",
       "@Body",
       "@RequestParam"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 255,
@@ -3312,7 +3566,8 @@
       "@Query",
       "@RequestBody",
       "@Form"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 256,
@@ -3325,7 +3580,8 @@
       "Call.start()",
       "Call.enqueue()",
       "Call.request()"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 257,
@@ -3338,7 +3594,8 @@
       "Call.runAsync()",
       "Call.start()",
       "Call.launch()"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 258,
@@ -3351,7 +3608,8 @@
       "Gson",
       "Kotlinx.serialization",
       "FastJson"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 259,
@@ -3364,7 +3622,8 @@
       "@Url",
       "setBaseUrl()",
       "@Endpoint"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 260,
@@ -3377,7 +3636,8 @@
       "fun getDataAsync(): Response<Type>",
       "fun getData(): Deferred<Type>",
       "fun getData(): Call<Type>"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 261,
@@ -3390,7 +3650,8 @@
       "Deferred<Response<Type>>",
       "Observable<Response<Type>>",
       "Call<Response<Type>>"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 262,
@@ -3403,7 +3664,8 @@
       "RequestFilter",
       "Authenticator",
       "Handler"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 263,
@@ -3416,7 +3678,8 @@
       "HttpLoggingInterceptor",
       "InterceptorLogger",
       "RequestLogger"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 264,
@@ -3429,7 +3692,8 @@
       "NetworkError",
       "SocketException",
       "TimeoutException"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 265,
@@ -3442,7 +3706,8 @@
       "NetworkException",
       "ResponseError",
       "ApiException"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 266,
@@ -3455,7 +3720,8 @@
       "LiveData CallAdapter",
       "Observable CallAdapter",
       "Deferred CallAdapter"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 267,
@@ -3468,7 +3734,8 @@
       "JacksonConverterFactory",
       "KotlinxConverterFactory",
       "JsonConverter"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 268,
@@ -3481,7 +3748,8 @@
       "handleError",
       "tryCatch",
       "recover"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 269,
@@ -3494,7 +3762,8 @@
       "launchOn",
       "dispatchOn",
       "emitOn"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 270,
@@ -3507,7 +3776,8 @@
       "flatMapMerge",
       "collect",
       "filter"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 271,
@@ -3520,7 +3790,8 @@
       "subscribe",
       "flowCollect",
       "observe"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 272,
@@ -3533,7 +3804,8 @@
       "lifecycleScope.launch { ... }",
       "CoroutineScope.launch { ... }",
       "MainScope.launch { ... }"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 273,
@@ -3546,7 +3818,8 @@
       "catch",
       "onError",
       "recover"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 274,
@@ -3559,7 +3832,8 @@
       "@Body",
       "@PostForm",
       "@POST with form()"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 275,
@@ -3572,7 +3846,8 @@
       "@BodyField",
       "@FormParam",
       "@Param"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 276,
@@ -3585,7 +3860,8 @@
       "publishIn",
       "hotFlow",
       "broadcastIn"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 277,
@@ -3598,7 +3874,8 @@
       "value",
       "collect",
       "getValue()"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 278,
@@ -3611,7 +3888,8 @@
       "asFlow()",
       "toFlow()",
       "emitFlow(suspendFunction())"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 279,
@@ -3624,7 +3902,8 @@
       "first(n)",
       "count(n)",
       "slice(n)"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 280,
@@ -3637,7 +3916,8 @@
       "NetworkException",
       "ApiError",
       "ResponseError"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 281,
@@ -3650,7 +3930,8 @@
       "@GETUrl",
       "@Endpoint",
       "@Path"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 282,
@@ -3663,7 +3944,8 @@
       "@Query",
       "@Url",
       "@Body"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 283,
@@ -3676,7 +3958,8 @@
       "Call.cancel()",
       "OkHttpClient.cancel()",
       "Request.cancel()"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 284,
@@ -3689,7 +3972,8 @@
       "mapLatest",
       "latest",
       "takeLatest"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 285,
@@ -3702,7 +3986,8 @@
       "runBlocking",
       "withContext",
       "concurrent"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 286,
@@ -3715,7 +4000,8 @@
       "Dispatchers.IO",
       "Dispatchers.Unconfined",
       "Dispatchers.Background"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 287,
@@ -3728,7 +4014,8 @@
       "collect",
       "flatMap",
       "transform"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 288,
@@ -3741,7 +4028,8 @@
       "combine",
       "concat",
       "flatCombine"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 289,
@@ -3754,7 +4042,8 @@
       "@MultiPartRequest",
       "@BodyPart",
       "@MultiRequest"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 290,
@@ -3767,7 +4056,8 @@
       "@Body",
       "@MultipartFile",
       "@Upload"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 291,
@@ -3780,7 +4070,8 @@
       "flowOn",
       "emitOn",
       "runOn"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 292,
@@ -3793,7 +4084,8 @@
       "ignore(n)",
       "firstDrop(n)",
       "filter(n)"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 293,
@@ -3806,7 +4098,8 @@
       "Retrofit.new(Service::class.java)",
       "Retrofit.generate(Service::class.java)",
       "Retrofit.service(Service::class.java)"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 294,
@@ -3819,7 +4112,8 @@
       "combine",
       "zip",
       "merge"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 295,
@@ -3832,7 +4126,8 @@
       "flowToLiveData()",
       "collectAsLiveData()",
       "toLive()"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 296,
@@ -3845,7 +4140,8 @@
       "collect",
       "take",
       "distinct"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 297,
@@ -3858,7 +4154,8 @@
       "Credentials",
       "AuthenticatorClient",
       "RequestHandler"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 298,
@@ -3871,7 +4168,8 @@
       "fun fetchDataAsync(): Flow<Response<Type>>",
       "fun fetchData(): LiveData<Response<Type>>",
       "fun fetchData(): Deferred<Response<Type>>"
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 299,
@@ -3884,7 +4182,8 @@
       "fun getDataAsync(): Deferred<Type>",
       "fun getData(): Flow<Type>",
       "fun getData(): Observable<Type>"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 300,
@@ -3897,7 +4196,8 @@
       "JsonDataException or JsonParseException",
       "NetworkException",
       "IllegalStateException"
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 301,
@@ -3910,7 +4210,8 @@
       "`supervisorScope` is used for UI-related coroutines, and `coroutineScope` is for background work.",
       "There is no difference; `supervisorScope` is a deprecated name for `coroutineScope`.",
       "`supervisorScope` must be used with `Dispatchers.IO`, while `coroutineScope` works with any dispatcher."
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 302,
@@ -3923,7 +4224,8 @@
       "`StateFlow` always has a value and only emits the latest state to new collectors, while `SharedFlow` is stateless and can be configured to replay multiple old values.",
       "`StateFlow` must be collected within `viewModelScope`, but `SharedFlow` can be collected anywhere.",
       "You cannot update the value of a `SharedFlow`, only a `StateFlow`."
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 303,
@@ -3936,7 +4238,8 @@
       "It marks a function as being thread-safe for calls from both Java and Kotlin.",
       "It automatically converts Java types to Kotlin types in the function signature.",
       "It is used to expose a top-level function as a static method in Java."
-    ]
+    ],
+    "category": "KOTLIN"
   },
   {
     "id": 304,
@@ -3949,7 +4252,8 @@
       "Modifier.layoutId(\"fill\")",
       "Modifier.wrapContentSize(align = Alignment.Center, unbounded = true)",
       "Modifier.requiredSize(Size.Max)"
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 305,
@@ -3962,7 +4266,8 @@
       "`implementation` and `api` are identical, but `api` provides better build performance.",
       "`compileOnly` includes the dependency in the final APK, while `implementation` does not.",
       "`api` should be used for all dependencies to ensure they are available to other modules."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 306,
@@ -3975,7 +4280,8 @@
       "It creates a new task and makes the Activity the root of that new task.",
       "It clears the entire task stack above it before creating a new instance.",
       "This launch mode is deprecated and should not be used in modern Android development."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 307,
@@ -3988,7 +4294,8 @@
       "When you need a context that is tied to the lifecycle of the entire application, such as for creating singletons or for tasks that outlive an Activity.",
       "Only in BroadcastReceivers and Services.",
       "There is no functional difference; they can be used interchangeably."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 308,
@@ -4001,7 +4308,8 @@
       "To create different view types within the same `RecyclerView`.",
       "To calculate the difference between two lists and provide a set of update operations that allows the `RecyclerView.Adapter` to perform efficient and animated updates.",
       "To define the layout and decoration of items, such as dividers and spacing."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 309,
@@ -4014,7 +4322,8 @@
       "It allows data to be passed down the composable tree implicitly, without having to pass it as a parameter through every intermediate composable function.",
       "It defines the local position and size of a composable on the screen.",
       "It is a tool for debugging recomposition issues in Android Studio."
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 310,
@@ -4027,7 +4336,8 @@
       "To ensure that a callback is always executed on the main thread.",
       "To convert callback-based APIs into a Flow, allowing them to be used in a reactive, coroutine-native way.",
       "It is a specialized flow for making network request callbacks with Retrofit."
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 311,
@@ -4040,7 +4350,8 @@
       "They are used to create different versions of your app (e.g., free vs. paid, or different branding) from the same codebase, allowing for different resources and code.",
       "They control the ProGuard/R8 settings for code shrinking and obfuscation.",
       "They automatically generate different flavor icons for the app."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 312,
@@ -4053,7 +4364,8 @@
       "It is an Android component that can listen for and respond to system-wide broadcast messages (e.g., network state change, battery low) or custom application events.",
       "It is a networking client for receiving data from a server via broadcasts.",
       "It is used exclusively for receiving push notifications from Firebase."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 313,
@@ -4066,7 +4378,8 @@
       "A Foreground Service must display a persistent notification to the user, and it is given higher priority by the system, making it less likely to be killed when memory is low.",
       "It is a special type of service that binds directly to an Activity's lifecycle.",
       "It does not require the `FOREGROUND_SERVICE` permission in the manifest."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 314,
@@ -4079,7 +4392,8 @@
       "`runTest` executes tests in a virtual-time environment, allowing delays and asynchronous operations to complete almost instantly, making tests faster and more reliable.",
       "`runTest` is part of the JUnit 4 framework, whereas `runBlocking` is from JUnit 5.",
       "There is no advantage; they are interchangeable for testing purposes."
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 315,
@@ -4092,7 +4406,8 @@
       "Unstable classes are those with more than five public methods, leading to slower compilation.",
       "A class is considered unstable if it is not annotated with `@Stable` or `@Immutable`.",
       "It refers to a class that is likely to cause runtime crashes due to its complexity."
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 316,
@@ -4105,7 +4420,8 @@
       "High-level modules should depend on abstractions. For example, an Activity should depend on a `View` interface, not a concrete `MyButton`.",
       "Clients should not be forced to depend on interfaces they do not use.",
       "It is a principle for making classes open for extension but closed for modification."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 317,
@@ -4118,7 +4434,8 @@
       "They are unrelated; DIP is an architectural principle while Hilt is just a library for reducing boilerplate.",
       "DIP is only applicable for inverting dependencies between UI layers, which Hilt does not manage.",
       "Hilt violates DIP by creating a direct dependency on the Dagger-Hilt framework."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 318,
@@ -4131,7 +4448,8 @@
       "It is a pattern for creating different types of objects from a single factory method, like in `ViewModelProvider.Factory`.",
       "It is a pattern for observing state changes, used in `LiveData`.",
       "It is a structural pattern for adapting one interface to another, like `RecyclerView.Adapter`."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 319,
@@ -4144,7 +4462,8 @@
       "It is a behavioral pattern where a subject notifies a list of observers about state changes. `LiveData` and Kotlin's `Flow` are prime examples.",
       "It is a creational pattern for building objects step-by-step, like `NotificationCompat.Builder`.",
       "It is a pattern for ensuring a class has only one instance, like `RoomDatabase`."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 320,
@@ -4157,7 +4476,8 @@
       "A warning from StrictMode that you are leaking memory.",
       "An error that occurs when an application uses too much battery in the background.",
       "A lint error indicating that a layout is too complex and will perform poorly."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 321,
@@ -4170,7 +4490,8 @@
       "By using the Layout Inspector to check for deep view hierarchies.",
       "By adding `Thread.sleep()` calls to see where the application hangs.",
       "By reading Logcat for messages that explicitly say 'memory leak detected'."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 322,
@@ -4183,7 +4504,8 @@
       "A code shrinker like R8 that makes the app more secure. It should only be enabled in release builds.",
       "A linter that enforces strict coding styles. It runs during the build process.",
       "A tool for profiling CPU usage. It should be used with the Android Studio Profiler."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 323,
@@ -4196,7 +4518,8 @@
       "It's when the app draws the same pixel multiple times in a single frame. It can be visualized using the 'Debug GPU Overdraw' option in Developer Options, which colors pixels based on how many times they've been drawn.",
       "It's a delay in drawing the first frame of the app. It can be measured with Macrobenchmark.",
       "It's a visual glitch where UI elements overlap incorrectly. It must be found through manual testing."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 324,
@@ -4209,7 +4532,8 @@
       "To manage dependencies and resolve version conflicts.",
       "To automatically generate Android Manifest files for different product flavors.",
       "To sign the final release APK with a keystore certificate."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 325,
@@ -4222,7 +4546,8 @@
       "To store and manage cryptographic keys in a hardware-backed container, making them very difficult to extract. It should be used for sensitive data like encryption keys or user authentication tokens.",
       "To store the signing certificate used to sign your release APK.",
       "To cache large files like images and videos securely on disk."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 326,
@@ -4235,7 +4560,8 @@
       "The practice of storing the app signing certificate in the Android Keystore.",
       "A way to pin a notification to the top of the notification shade so it cannot be dismissed.",
       "A performance optimization where you pin a background thread to a specific CPU core."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 327,
@@ -4248,7 +4574,8 @@
       "Because these values are compiled directly into the APK and can be easily extracted by anyone who decompiles the application.",
       "Because there is a strict size limit on the values that can be stored there.",
       "Because it violates the Single Responsibility Principle by mixing configuration with code/resources."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 328,
@@ -4261,7 +4588,8 @@
       "An APK is for debug builds and an AAB is for release builds.",
       "You can install an AAB directly on a device, but you cannot install an APK.",
       "AAB is an older, deprecated format replaced by universal APKs."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 329,
@@ -4274,7 +4602,8 @@
       "It's a special directory for organizing build logic. Custom tasks, plugins, and dependencies defined here can be easily shared across all modules in the project, promoting build logic reuse.",
       "It is where Gradle caches downloaded dependencies.",
       "It is a deprecated feature and has been replaced by Version Catalogs."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 330,
@@ -4287,7 +4616,8 @@
       "`buildConfigField` is for defining ProGuard rules, and `resValue` is for defining resource shrinking rules.",
       "They are interchangeable ways to add metadata to the `AndroidManifest.xml`.",
       "`buildConfigField` adds a value to `SharedPreferences`, while `resValue` adds it to the Room database."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 331,
@@ -4300,7 +4630,8 @@
       "The automated practice of merging all developer code changes into a central repository, after which automated builds and tests are run to detect integration issues early.",
       "The practice of integrating multiple third-party SDKs into an application.",
       "A feature in Android Studio that continuously compiles your code as you type."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 332,
@@ -4313,7 +4644,8 @@
       "A centralized, type-safe way to define and share dependencies and their versions across all modules in a project, improving maintainability and reducing errors.",
       "A feature in `buildSrc` for defining project-wide variables.",
       "A list of approved dependencies for a project, for security purposes."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 333,
@@ -4326,7 +4658,8 @@
       "Faster build times (due to parallel builds and caching), improved code organization and ownership, better scalability, and the ability to enable dynamic feature delivery.",
       "It automatically makes the application more secure by isolating features.",
       "The main benefit is reducing the final APK size to under 10MB."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 334,
@@ -4339,7 +4672,8 @@
       "A library module can be published to Maven Central, while a dynamic feature module cannot.",
       "A library module is always included in the base APK. A dynamic feature module can be downloaded on-demand after the initial app install, reducing the initial download size.",
       "Dynamic feature modules are deprecated in favor of Android App Bundles."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 335,
@@ -4352,7 +4686,8 @@
       "To signal to Espresso when the app is busy with asynchronous work (e.g., network calls). Espresso waits for the resource to become idle before performing UI actions and assertions, preventing flaky tests.",
       "To identify UI resources like Views and Buttons by their ID.",
       "A resource used for managing the lifecycle of the test itself."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 336,
@@ -4365,7 +4700,8 @@
       "Local tests are for testing UI, while instrumented tests are for testing business logic.",
       "Local tests do not require JUnit, but instrumented tests do.",
       "Only instrumented tests can use mocking libraries like MockK or Mockito."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 337,
@@ -4378,7 +4714,8 @@
       "Espresso is for testing Views, and UI Automator is for testing Jetpack Compose.",
       "UI Automator is used for automating unit tests, not UI tests.",
       "You should always use UI Automator because it is more powerful than Espresso."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 338,
@@ -4391,7 +4728,8 @@
       "`spyk()` is a 'strict' mock that throws an error for unstubbed calls, while `mockk()` is 'relaxed'.",
       "`mockk()` can be used in local tests, but `spyk()` can only be used in instrumented tests.",
       "There is no difference; `spyk()` is an alias for `mockk()`."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 339,
@@ -4404,7 +4742,8 @@
       "A test that passes and fails intermittently without any code changes. This is often caused by race conditions, reliance on timings, or unhandled asynchronous operations.",
       "A test that runs very slowly and slows down the CI pipeline.",
       "A test that tests a trivial or unimportant part of the codebase."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 340,
@@ -4417,7 +4756,8 @@
       "Each thread can have one `Looper` that continuously processes a `MessageQueue`. A `Handler` is used to post messages or Runnables to that queue from any thread, which will then be executed on the Looper's thread.",
       "They are deprecated components replaced by Kotlin Coroutines.",
       "They are all part of the Binder IPC mechanism for cross-process communication."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 341,
@@ -4430,7 +4770,8 @@
       "The primary Inter-Process Communication (IPC) mechanism in Android. It allows different processes (e.g., an app and a system service) to communicate efficiently and securely.",
       "A security tool for binding an app's permissions to its signing key.",
       "A type of `RecyclerView.Adapter` for binding complex data models to views."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 342,
@@ -4443,7 +4784,8 @@
       "The original Activity instance is destroyed and a new one is created. A `ViewModel` survives because its lifecycle is scoped to a `ViewModelStoreOwner` that is retained across this recreation, not to the Activity instance itself.",
       "The `ViewModel` is automatically saved in the `onSaveInstanceState` bundle.",
       "The Android OS prevents the `ViewModel` from being garbage collected using a static reference."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 343,
@@ -4456,7 +4798,8 @@
       "It contains a list of classes and methods used during critical user journeys (like app startup) that should be pre-compiled (AOT) to improve performance, especially reducing startup time.",
       "It is a text file that lists all baseline permissions the app requires.",
       "It is a report generated by the linter showing baseline code quality metrics."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 344,
@@ -4469,7 +4812,8 @@
       "It is a key-value map that allows a `ViewModel` to save and restore its state, ensuring it can survive not just configuration changes but also system-initiated process death.",
       "It is a mechanism for handling state within Jetpack Compose exclusively.",
       "It is a reference to a `Handler` on the main thread for saving state asynchronously."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 345,
@@ -4482,7 +4826,8 @@
       "`rememberSaveable` is a deprecated name for `remember`.",
       "`remember` is used in Activities, and `rememberSaveable` is used in Fragments.",
       "`rememberSaveable` stores the state in a `ViewModel`, while `remember` stores it in the composition."
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 346,
@@ -4495,7 +4840,8 @@
       "If an instance of the target Activity already exists in the task's back stack, this flag will bring that instance to the foreground instead of creating a new one, reordering the stack.",
       "It reorders all activities in the stack alphabetically.",
       "It is used to bring a background app's task to the foreground."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 347,
@@ -4508,7 +4854,8 @@
       "To securely share a structured set of your app's data with other applications, managing access through a standard interface with permissions.",
       "It is the only way to store content on an SD card.",
       "It is a modern replacement for `SharedPreferences`."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 348,
@@ -4521,7 +4868,8 @@
       "It is an optional file for providing metadata to Android Studio's editor.",
       "It is a required file that presents essential information about the app to the Android build tools, the Android OS, and Google Play, such as the app's components, permissions, and hardware/software features.",
       "It is where you declare all of your app's dependencies."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 349,
@@ -4534,7 +4882,8 @@
       "`observeForever()` is a deprecated method.",
       "`observe()` is lifecycle-aware and automatically removes the observer when the provided `LifecycleOwner` is destroyed. `observeForever()` is not lifecycle-aware and requires manual removal of the observer via `removeObserver()` to prevent leaks.",
       "`observe()` can only have one observer, while `observeForever()` allows multiple observers."
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 350,
@@ -4547,7 +4896,8 @@
       "`requestLayout()` should be called from a background thread, while `invalidate()` must be called from the UI thread.",
       "`invalidate()` tells the system that the View's content needs to be redrawn (triggers `onDraw()`). `requestLayout()` indicates that the View's bounds have changed and it needs to be remeasured and redrawn (triggers `onMeasure()`, `onLayout()`, `onDraw()`).",
       "`invalidate()` is for custom views, while `requestLayout()` is for standard Android widgets."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 351,
@@ -4560,7 +4910,8 @@
       "State Calculation, UI Construction, and Event Handling.",
       "Composition, Layout, and Drawing.",
       "Inflation, Measurement, and Painting."
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 352,
@@ -4573,7 +4924,8 @@
       "It transforms `@Composable` functions at compile time, adding extra parameters to track state and manage recomposition, making the declarative UI system possible.",
       "It optimizes layout performance at runtime by analyzing the UI tree.",
       "It is a linter that enforces Compose-specific coding conventions."
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 353,
@@ -4586,7 +4938,8 @@
       "When the function is marked with a special `@Skip` annotation.",
       "When the function's inputs are determined to be 'stable' and their values have not changed since the last composition.",
       "Only when the data is provided by a `StateFlow` from a ViewModel."
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 354,
@@ -4599,7 +4952,8 @@
       "To convert a `LiveData` object into a Flow within a composable's lifecycle.",
       "To create a snapshot of the current UI hierarchy for testing purposes.",
       "To convert one or more Compose `State<T>` objects into a cold Kotlin Flow, bridging the reactive Compose state system with the world of coroutines."
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 355,
@@ -4612,7 +4966,8 @@
       "A cold start is when the app's process has not been created yet. A warm start is when the process is already running, but the Activity needs to be recreated (e.g., from the background).",
       "Cold starts are for debug builds, and warm starts are for release builds.",
       "There is no difference; the terms describe the same process of launching an app."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 356,
@@ -4625,7 +4980,8 @@
       "For analyzing the complexity of a Jetpack Compose UI hierarchy.",
       "For capturing and analyzing detailed, system-wide performance traces to diagnose complex issues like UI jank, threading problems, or slow app startup.",
       "For running automated UI tests and measuring their execution time."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 357,
@@ -4638,7 +4994,8 @@
       "Feature modules depend on domain/data modules, but domain/data modules must not depend on feature modules. This creates a one-way dependency flow towards the core business logic.",
       "Feature modules should only depend on other feature modules.",
       "The dependency direction does not matter as long as the code compiles."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 358,
@@ -4651,7 +5008,8 @@
       "It's an element in a `CoroutineContext` that catches uncaught exceptions from top-level coroutines. It is effective for coroutines started with `launch`, but not with `async` (where exceptions are held in the `Deferred` result).",
       "It only works with `supervisorScope` and is ignored otherwise.",
       "It is automatically installed by `viewModelScope` to prevent all crashes."
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 359,
@@ -4664,7 +5022,8 @@
       "A `Flow` is synchronous, while a `Channel` is always asynchronous.",
       "A `Flow` can only emit one value, while a `Channel` can emit multiple values.",
       "A `Flow` is a cold stream representing a sequence of values over time, designed for a single collector. A `Channel` is a hot communication primitive (like a queue) that can be used for communication between multiple coroutines."
-    ]
+    ],
+    "category": "COROUTINES"
   },
   {
     "id": 360,
@@ -4677,7 +5036,8 @@
       "It provides more powerful mocking capabilities than MockK or Mockito.",
       "It runs tests on a real device, providing higher fidelity than Espresso.",
       "It allows you to run tests that use Android Framework APIs on the local JVM without needing a device or emulator, making them significantly faster than instrumented tests."
-    ]
+    ],
+    "category": "ARCHITECTURE"
   },
   {
     "id": 361,
@@ -4690,7 +5050,8 @@
       "To specify classes, methods, or fields that must not be removed (shrunk) or renamed (obfuscated) during the build process, which is essential for code that is accessed via reflection or JNI.",
       "To keep a background service running even when the app is closed.",
       "To keep the build cache from being cleared between builds."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 362,
@@ -4703,7 +5064,8 @@
       "VSYNC is a timing signal from the display hardware (e.g., every 16.6ms for a 60Hz display) that synchronizes the app's frame rendering loop. The app aims to produce a frame in time for each VSYNC signal to achieve smooth animation without tearing.",
       "It is a security feature that verifies the integrity of the vertical layout of an app.",
       "It is an API in `RecyclerView` for vertically synchronizing scroll positions."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 363,
@@ -4716,7 +5078,8 @@
       "To centralize and share common build configuration logic (like applying plugins, setting up Android SDK versions, or configuring libraries) across multiple modules in a type-safe way, reducing boilerplate and errors in `build.gradle` files.",
       "Their only purpose is to make the build process faster.",
       "They are a way to download plugins from sources other than the Gradle Plugin Portal."
-    ]
+    ],
+    "category": "ANDROID_SDK"
   },
   {
     "id": 364,
@@ -4729,7 +5092,8 @@
       "It is the pattern of moving state from a composable to its caller. This makes the original composable stateless, more reusable, and easier to test, following the principle of 'state flows down, events flow up'.",
       "Hoisting a composable function higher up in the UI tree to give it more priority.",
       "The process by which the Compose compiler 'hoists' state variables into the composition tree."
-    ]
+    ],
+    "category": "COMPOSE"
   },
   {
     "id": 365,
@@ -4742,6 +5106,707 @@
       "It is a unique identifier used by UI testing frameworks like Espresso to find a specific composable.",
       "To provide a stable and unique identifier for a composable or group of composables. This helps Compose understand how items have moved, been added, or been removed in a list, allowing it to correctly preserve `remember`ed state across recompositions.",
       "It is used to listen for specific key presses from a physical keyboard."
-    ]
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 366,
+    "question": "What is the primary difference between `git merge` and `git rebase`?",
+    "answer": "`git merge` creates a new merge commit, preserving the history of both branches. `git rebase` rewrites the commit history by placing commits from one branch onto the tip of another, creating a linear history.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`git merge` is for combining remote branches, while `git rebase` is for local branches.",
+      "`git rebase` is a safer option as it prevents all merge conflicts.",
+      "`git merge` creates a new merge commit, preserving the history of both branches. `git rebase` rewrites the commit history by placing commits from one branch onto the tip of another, creating a linear history.",
+      "`git merge` rewrites history, while `git rebase` preserves it.",
+      "They are identical commands with different names."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 367,
+    "question": "What does the `git stash` command do?",
+    "answer": "It temporarily saves your uncommitted local changes (both staged and unstaged) so you can switch branches or work on something else, and then re-apply them later.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It permanently deletes your uncommitted changes.",
+      "It commits your current changes with a temporary message.",
+      "It pushes your changes directly to the remote repository, bypassing the staging area.",
+      "It temporarily saves your uncommitted local changes (both staged and unstaged) so you can switch branches or work on something else, and then re-apply them later.",
+      "It creates a new branch with your current changes."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 368,
+    "question": "What is the purpose of a `.gitignore` file?",
+    "answer": "To specify intentionally untracked files and directories that Git should ignore and not include in commits, such as build files, IDE configurations, and local secrets.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To list all the files in the repository for faster indexing.",
+      "To specify intentionally untracked files and directories that Git should ignore and not include in commits, such as build files, IDE configurations, and local secrets.",
+      "A security file that lists which users are allowed to commit.",
+      "A configuration file for setting up Git hooks.",
+      "A log file that records all ignored commits."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 369,
+    "question": "What is the 'DRY' principle in software development?",
+    "answer": "Don't Repeat Yourself. It means reducing the repetition of software patterns and code by replacing them with abstractions or using data normalization to avoid redundancy.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Don't Repeat Yourself. It means reducing the repetition of software patterns and code by replacing them with abstractions or using data normalization to avoid redundancy.",
+      "Do Re-evaluate Yourself. It's a principle about frequently refactoring your code.",
+      "Don't Release Yesterday. A principle about avoiding releases on Fridays.",
+      "Develop Robustly, Y'all. A principle focused on writing resilient code.",
+      "Data Rules You. A principle that emphasizes data-driven development."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 370,
+    "question": "What is 'technical debt'?",
+    "answer": "The implied cost of rework caused by choosing an easy, limited solution now instead of using a better approach that would take longer. It can slow down future development if not addressed.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The monetary cost of the software licenses and tools used in a project.",
+      "The time developers spend in meetings instead of coding.",
+      "The implied cost of rework caused by choosing an easy, limited solution now instead of using a better approach that would take longer. It can slow down future development if not addressed.",
+      "Bugs that are found in production after a release.",
+      "Outdated documentation for a project."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 371,
+    "question": "What is the primary purpose of a code review?",
+    "answer": "To improve code quality and knowledge sharing within the team by having peers review code for bugs, style adherence, and architectural soundness before it is merged.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To allow senior developers to rewrite junior developers' code.",
+      "A formal process to blame developers for writing bad code.",
+      "To improve code quality and knowledge sharing within the team by having peers review code for bugs, style adherence, and architectural soundness before it is merged.",
+      "Its only purpose is to check for correct code formatting.",
+      "A meeting where the entire team reads code line-by-line."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 372,
+    "question": "In the context of data structures, what is the main performance difference between an `ArrayList` and a `LinkedList` for adding elements to the end of the list?",
+    "answer": "For adding to the end, `ArrayList` is typically faster (amortized constant time O(1)), while `LinkedList` is also constant time O(1) but with higher overhead per element.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`LinkedList` is always faster for adding elements anywhere.",
+      "`ArrayList` is O(n) for adding to the end, `LinkedList` is O(1).",
+      "They have the exact same performance characteristics.",
+      "For adding to the end, `ArrayList` is typically faster (amortized constant time O(1)), while `LinkedList` is also constant time O(1) but with higher overhead per element.",
+      "`ArrayList` is faster for adding to the beginning, `LinkedList` is faster for adding to the end."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 373,
+    "question": "When would you prefer using a `HashMap` over a `TreeMap`?",
+    "answer": "When you need fast key-value lookups (average O(1)) and the order of elements does not matter.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "When you need the elements to be sorted by their natural order or a custom comparator.",
+      "When you need fast key-value lookups (average O(1)) and the order of elements does not matter.",
+      "When you have a very small number of elements, as `TreeMap` is more memory efficient.",
+      "`HashMap` is thread-safe, while `TreeMap` is not.",
+      "You should always use `TreeMap` because it provides predictable iteration order."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 374,
+    "question": "What is the primary role of the Product Owner in a Scrum team?",
+    "answer": "To manage the product backlog, representing the interests of the stakeholders and defining the features and priorities of the product.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To manage the development team and assign daily tasks.",
+      "To facilitate Scrum ceremonies like the daily stand-up and retrospective.",
+      "To write the code for the user stories in the backlog.",
+      "To manage the product backlog, representing the interests of the stakeholders and defining the features and priorities of the product.",
+      "To test the application and approve the final release."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 375,
+    "question": "What is the purpose of a Sprint Retrospective in Scrum?",
+    "answer": "It is a meeting for the Scrum team to reflect on the past sprint and identify opportunities for improvement in their processes, tools, and teamwork for the next sprint.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To plan the work for the upcoming sprint.",
+      "To demonstrate the completed work to stakeholders.",
+      "It is a meeting for the Scrum team to reflect on the past sprint and identify opportunities for improvement in their processes, tools, and teamwork for the next sprint.",
+      "To discuss and refine the items in the product backlog.",
+      "A daily meeting to sync up on progress and impediments."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 376,
+    "question": "What is the key difference between Scrum and Kanban?",
+    "answer": "Scrum is time-boxed (using fixed-length sprints) and prescribes specific roles and ceremonies, while Kanban is a continuous flow model focused on limiting work-in-progress (WIP) without fixed iterations.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Kanban is used for software development, while Scrum is for project management.",
+      "Scrum uses a physical board, while Kanban uses digital tools.",
+      "Scrum is time-boxed (using fixed-length sprints) and prescribes specific roles and ceremonies, while Kanban is a continuous flow model focused on limiting work-in-progress (WIP) without fixed iterations.",
+      "In Kanban, you have a daily stand-up, but in Scrum, you do not.",
+      "There is no difference; they are just different names for the same agile methodology."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 377,
+    "question": "What is the purpose of the app signing key for Android?",
+    "answer": "It serves as a cryptographic signature to verify that you are the authentic developer of the app and its updates, preventing others from distributing malicious updates to your app.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is used to encrypt the source code of the application.",
+      "It serves as a cryptographic signature to verify that you are the authentic developer of the app and its updates, preventing others from distributing malicious updates to your app.",
+      "It is an API key for accessing Google Play Services.",
+      "It is only used to sign debug builds for testing on devices.",
+      "It is a key that users need to enter to unlock the app."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 378,
+    "question": "In the Google Play Console, what is the main difference between the 'alpha' and 'beta' release tracks?",
+    "answer": "The alpha track is typically for smaller, internal or trusted tester groups to test early, potentially unstable versions, while the beta track is for a wider, public audience to test a more stable, release-candidate version.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Alpha releases are for features, and beta releases are for bug fixes.",
+      "There is no difference; they are two separate tracks for A/B testing.",
+      "The alpha track is typically for smaller, internal or trusted tester groups to test early, potentially unstable versions, while the beta track is for a wider, public audience to test a more stable, release-candidate version.",
+      "Apps in the alpha track cannot be published to production, but beta apps can.",
+      "Alpha releases are free, while beta releases require payment from testers."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 379,
+    "question": "What is a 'staged rollout' in the Google Play Console?",
+    "answer": "A method of releasing an app update to a limited percentage of users, which can be gradually increased. This helps in monitoring for crashes and negative feedback before releasing to everyone.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A way to schedule a release for a specific date and time.",
+      "A method of releasing an app update to a limited percentage of users, which can be gradually increased. This helps in monitoring for crashes and negative feedback before releasing to everyone.",
+      "A feature that divides the app into stages for users to unlock.",
+      "Releasing the app in different countries at different times.",
+      "The process of submitting an app for review through multiple stages."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 380,
+    "question": "What is the main accessibility service on Android for users with visual impairments?",
+    "answer": "TalkBack, which provides spoken feedback so users can navigate the device and app UIs without seeing the screen.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Google Assistant",
+      "TalkBack, which provides spoken feedback so users can navigate the device and app UIs without seeing the screen.",
+      "Select to Speak",
+      "Live Caption",
+      "Accessibility Scanner"
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 381,
+    "question": "What does the `git cherry-pick` command do?",
+    "answer": "It allows you to apply the changes introduced by a specific, existing commit from another branch onto your current branch.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It allows you to apply the changes introduced by a specific, existing commit from another branch onto your current branch.",
+      "It deletes a specific commit from the branch history.",
+      "It selects the best commits from a branch to merge.",
+      "It is a tool for visually comparing two branches.",
+      "It is an alias for creating a new branch from a commit."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 382,
+    "question": "What is a 'detached HEAD' state in Git?",
+    "answer": "It occurs when you check out a specific commit, tag, or remote branch directly, instead of a local branch. You are no longer on any branch, and new commits will not belong to any branch until you create one.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A state where your local repository is disconnected from the remote.",
+      "It means the HEAD of the current branch has been deleted.",
+      "It is an error that occurs when a merge conflict cannot be resolved automatically.",
+      "It occurs when you check out a specific commit, tag, or remote branch directly, instead of a local branch. You are no longer on any branch, and new commits will not belong to any branch until you create one.",
+      "It's the default state before you make your first commit."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 383,
+    "question": "What is the primary benefit of squashing commits in a pull request?",
+    "answer": "It combines multiple, smaller, work-in-progress commits into a single, cohesive commit. This makes the project history cleaner, easier to read, and simpler to revert if needed.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is the only way to resolve merge conflicts.",
+      "It makes the pull request smaller in file size.",
+      "It automatically runs tests on each individual commit.",
+      "It breaks a large commit into multiple smaller ones.",
+      "It combines multiple, smaller, work-in-progress commits into a single, cohesive commit. This makes the project history cleaner, easier to read, and simpler to revert if needed."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 384,
+    "question": "In CI/CD, what is an 'artifact'?",
+    "answer": "A file or collection of files produced during a build process, such as a compiled APK or AAB, test reports, or log files, which can be stored for testing or deployment.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A deprecated piece of code that should be removed.",
+      "The source code that is checked out from the repository.",
+      "A file or collection of files produced during a build process, such as a compiled APK or AAB, test reports, or log files, which can be stored for testing or deployment.",
+      "A secret or token used by the CI/CD pipeline.",
+      "A manual approval step in the deployment process."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 385,
+    "question": "What is the 'KISS' principle?",
+    "answer": "Keep It Simple, Stupid. It states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Keep It Simple, Stupid. It states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design.",
+      "Keep Important Stuff Secure. A principle about prioritizing security.",
+      "Know Its Super Set. A principle about understanding the context of your code.",
+      "Keep Interfaces Segregated and Small. An alternative name for the Interface Segregation Principle.",
+      "A methodology for pair programming."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 386,
+    "question": "What is the YAGNI principle?",
+    "answer": "'You Ain't Gonna Need It'. It's the principle of not adding functionality until it is deemed necessary, to avoid over-engineering and adding code that might not be used.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A principle for always using the newest available technology.",
+      "A reminder to always write generic and reusable code.",
+      "'You Ain't Gonna Need It'. It's the principle of not adding functionality until it is deemed necessary, to avoid over-engineering and adding code that might not be used.",
+      "A guideline for writing code that is easy to globalize (internationalize).",
+      "A rule that states you should always ask for help when you need it."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 387,
+    "question": "In the context of Big O notation, what does O(n log n) typically represent?",
+    "answer": "An efficient sorting algorithm, like Merge Sort or Quick Sort.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Linear search through a list.",
+      "Accessing an element in an array by its index.",
+      "An efficient sorting algorithm, like Merge Sort or Quick Sort.",
+      "A nested loop that iterates through every pair of elements in a list.",
+      "Binary search in a sorted array."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 388,
+    "question": "What is a common security risk of storing sensitive data in `SharedPreferences` without encryption?",
+    "answer": "On a rooted device, the underlying XML file containing the data can be easily read by other applications or a malicious user with root access.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The data can be intercepted during a network request.",
+      "It can cause the application to crash if the data is too large.",
+      "The data will be automatically deleted when the app is updated.",
+      "On a rooted device, the underlying XML file containing the data can be easily read by other applications or a malicious user with root access.",
+      "There is no security risk; SharedPreferences is encrypted by default."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 389,
+    "question": "What is a 'man-in-the-middle' (MITM) attack?",
+    "answer": "An attack where the attacker secretly relays and possibly alters the communication between two parties who believe they are directly communicating with each other. Certificate pinning is a defense against this.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "An attack where a developer intentionally inserts a backdoor into the code.",
+      "A physical attack where someone steals a user's device.",
+      "An attack where the attacker secretly relays and possibly alters the communication between two parties who believe they are directly communicating with each other. Certificate pinning is a defense against this.",
+      "A type of malware that runs in the middle of the screen.",
+      "An attack that exploits a buffer overflow vulnerability."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 390,
+    "question": "What is the purpose of the 'Definition of Done' in Scrum?",
+    "answer": "It is a shared understanding within the team of what it means for a piece of work (like a user story) to be complete, ensuring quality and consistency. For example, 'coded, tested, documented, and merged'.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a document that the Product Owner signs at the end of the sprint.",
+      "It is a shared understanding within the team of what it means for a piece of work (like a user story) to be complete, ensuring quality and consistency. For example, 'coded, tested, documented, and merged'.",
+      "It means the app has been released to the Play Store.",
+      "It is the final day of the sprint.",
+      "A list of all the tasks that were not completed during the sprint."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 391,
+    "question": "What is the main difference between Android App Links and Deep Links?",
+    "answer": "App Links are a type of Deep Link that are verified to belong to your website. This allows the app to open them directly without showing the user a disambiguation dialog (chooser) asking which app to use.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "App Links work on all Android versions, while Deep Links only work on the latest.",
+      "App Links are for navigating within the app, while Deep Links are for opening other apps.",
+      "App Links are a type of Deep Link that are verified to belong to your website. This allows the app to open them directly without showing the user a disambiguation dialog (chooser) asking which app to use.",
+      "Deep Links use a custom URI scheme (e.g., `myapp://`), while App Links use standard HTTP/HTTPS URLs.",
+      "There is no difference; they are just different names for the same thing."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 392,
+    "question": "You disagree with a technical decision made by your tech lead. What is the most constructive first step to take?",
+    "answer": "Schedule a private conversation with the lead to respectfully present your alternative solution and the reasoning behind it, focusing on the technical merits and project goals.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Immediately escalate the issue to the lead's manager.",
+      "Implement your own solution without telling anyone.",
+      "Publicly challenge the decision in a team meeting to get others on your side.",
+      "Schedule a private conversation with the lead to respectfully present your alternative solution and the reasoning behind it, focusing on the technical merits and project goals.",
+      "Ignore the decision and wait to see if it causes problems later."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 393,
+    "question": "How would you explain what an API is to a non-technical project manager?",
+    "answer": "It's like a menu in a restaurant. It provides a list of dishes (data or functions) you can order, and it handles the communication with the kitchen (the other system) to get what you requested, without you needing to know how the kitchen works.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It's the user interface of the application that the user interacts with.",
+      "It's the database where all the application's data is stored.",
+      "It's a very complex piece of code that only developers can understand.",
+      "It's like a menu in a restaurant. It provides a list of dishes (data or functions) you can order, and it handles the communication with the kitchen (the other system) to get what you requested, without you needing to know how the kitchen works.",
+      "It's the server that hosts the application."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 394,
+    "question": "Which of these is NOT a core component of Firebase?",
+    "answer": "Firebase Payments",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Firestore",
+      "Authentication",
+      "Cloud Functions",
+      "Firebase Payments",
+      "Crashlytics"
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 395,
+    "question": "What is the purpose of Git Flow branching model?",
+    "answer": "A strict branching model designed around project releases, using long-lived branches like `main` and `develop`, and supporting branches for features, releases, and hotfixes.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A model where all work is done directly on the `main` branch.",
+      "A simpler model than feature branching, used for small projects.",
+      "A strict branching model designed around project releases, using long-lived branches like `main` and `develop`, and supporting branches for features, releases, and hotfixes.",
+      "An outdated model that has been replaced by GitHub Flow.",
+      "A model that does not use pull requests."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 396,
+    "question": "What is the primary role of a YAML file in a CI/CD platform like GitHub Actions?",
+    "answer": "To define the workflow configuration in a structured, human-readable format. It specifies the events that trigger the build, the jobs to run, and the steps within each job.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To store the source code of the application.",
+      "It is a log file that contains the output of the CI/CD pipeline.",
+      "To define the workflow configuration in a structured, human-readable format. It specifies the events that trigger the build, the jobs to run, and the steps within each job.",
+      "To store secret keys and tokens used by the build process.",
+      "It is a binary file used to cache dependencies."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 397,
+    "question": "Why is it important to handle platform fragmentation in Android development?",
+    "answer": "To ensure the app provides a consistent and functional experience across a wide variety of devices with different screen sizes, OS versions, and hardware capabilities.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is not important; modern Android handles this automatically.",
+      "To make the app look identical on every single device.",
+      "To ensure the app only runs on the latest Google Pixel devices.",
+      "To ensure the app provides a consistent and functional experience across a wide variety of devices with different screen sizes, OS versions, and hardware capabilities.",
+      "It is only important for developers who use XML layouts, not Jetpack Compose."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 398,
+    "question": "What is a key benefit of using a `Set` over a `List`?",
+    "answer": "A `Set` guarantees that it will only contain unique elements and provides a very fast (O(1)) way to check for the existence of an element.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A `Set` maintains the insertion order of elements, while a `List` does not.",
+      "A `Set` is always more memory efficient than a `List`.",
+      "A `Set` allows duplicate elements, while a `List` does not.",
+      "A `Set` guarantees that it will only contain unique elements and provides a very fast (O(1)) way to check for the existence of an element.",
+      "Elements in a `Set` can be accessed by an index, which is faster than in a `List`."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 399,
+    "question": "What is reverse engineering in the context of mobile app security?",
+    "answer": "The process of decompiling an application's binary code (APK) back into a more human-readable format to analyze its functionality, find vulnerabilities, or steal intellectual property.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The process of building an app's UI based on a design mockup.",
+      "A testing technique where you test the app's functionality in reverse order.",
+      "The process of decompiling an application's binary code (APK) back into a more human-readable format to analyze its functionality, find vulnerabilities, or steal intellectual property.",
+      "Rewriting an old application using a modern programming language.",
+      "The process of recovering a lost app signing key."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 400,
+    "question": "What is the primary goal of the Daily Stand-up meeting in Scrum?",
+    "answer": "For the development team to synchronize activities and create a plan for the next 24 hours. It is a planning meeting, not a status report for managers.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "For the Product Owner to assign tasks to each developer.",
+      "To demonstrate the work that was completed yesterday.",
+      "A one-hour meeting to discuss architectural decisions.",
+      "For the development team to synchronize activities and create a plan for the next 24 hours. It is a planning meeting, not a status report for managers.",
+      "To provide a detailed status update to the stakeholders."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 401,
+    "question": "What is Material Design?",
+    "answer": "A design system created by Google that provides guidelines, components, and tools to help developers build high-quality, consistent digital experiences for Android, iOS, and the web.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The default theme for all Android applications.",
+      "A library for creating 3D graphics in Android.",
+      "A design system created by Google that provides guidelines, components, and tools to help developers build high-quality, consistent digital experiences for Android, iOS, and the web.",
+      "A strict set of rules that all Android apps must follow to be published on the Play Store.",
+      "An XML layout editor in Android Studio."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 402,
+    "question": "You're asked to estimate a large, unfamiliar feature. What is a good approach?",
+    "answer": "Break the feature down into smaller, more manageable tasks. Estimate each small task, and add a buffer for uncertainty and integration. Consult with other team members if necessary.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Guess a random number of weeks and hope for the best.",
+      "Refuse to estimate until you have a complete and final specification.",
+      "Double the time you think it will take, just to be safe.",
+      "Break the feature down into smaller, more manageable tasks. Estimate each small task, and add a buffer for uncertainty and integration. Consult with other team members if necessary.",
+      "Tell the project manager that estimation is impossible in software development."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 403,
+    "question": "What is the purpose of `HEAD` in Git?",
+    "answer": "It is a reference that points to the currently checked-out commit. Typically, it points to the tip of the current branch.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It always points to the very first commit in the repository's history.",
+      "It is a reference that points to the currently checked-out commit. Typically, it points to the tip of the current branch.",
+      "It is an alias for the `main` branch.",
+      "It is a file that contains the header information for the repository.",
+      "It points to the commit that is currently on the remote `origin`."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 404,
+    "question": "What is the difference between `git pull` and `git fetch`?",
+    "answer": "`git fetch` downloads new data from a remote repository but doesn't integrate any of it into your working files. `git pull` is a combination of `git fetch` followed by `git merge` or `git rebase`.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "They are identical commands.",
+      "`git pull` uploads your changes, while `git fetch` downloads them.",
+      "`git fetch` downloads new data from a remote repository but doesn't integrate any of it into your working files. `git pull` is a combination of `git fetch` followed by `git merge` or `git rebase`.",
+      "`git fetch` only works with the `main` branch, while `git pull` works with all branches.",
+      "`git pull` is a safer command because it prevents merge conflicts."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 405,
+    "question": "In a CI/CD pipeline, what is a 'build trigger'?",
+    "answer": "An event that automatically initiates a build, such as pushing a commit to a specific branch, creating a pull request, or a scheduled time.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A manual button that a developer must click to start a build.",
+      "A piece of hardware that is required to run the CI server.",
+      "An event that automatically initiates a build, such as pushing a commit to a specific branch, creating a pull request, or a scheduled time.",
+      "A script that triggers a notification when a build fails.",
+      "The first step in the build process that compiles the code."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 406,
+    "question": "What is the main benefit of root detection in a mobile app?",
+    "answer": "It's a security measure to detect if the app is running on a compromised (rooted) device, which might allow the app to take protective actions, like disabling sensitive features or logging the user out.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To provide special features only for users with rooted devices.",
+      "It is required by Google Play for all apps.",
+      "To improve the performance of the app on rooted devices.",
+      "It's a security measure to detect if the app is running on a compromised (rooted) device, which might allow the app to take protective actions, like disabling sensitive features or logging the user out.",
+      "To prevent the app from being installed on a rooted device."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 407,
+    "question": "A junior developer on your team submits a pull request with code that works but is very inefficient. What is the best way to provide feedback?",
+    "answer": "Leave constructive comments on the PR, acknowledging that the code works, but suggest a more performant approach with a clear explanation and possibly a code snippet or link to documentation.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Reject the PR without any comments.",
+      "Publicly call them out in the team chat for writing slow code.",
+      "Merge the code as-is to not hurt their feelings.",
+      "Leave constructive comments on the PR, acknowledging that the code works, but suggest a more performant approach with a clear explanation and possibly a code snippet or link to documentation.",
+      "Secretly rewrite the code yourself and push it to their branch."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 408,
+    "question": "What is the main purpose of `git bisect`?",
+    "answer": "To perform a binary search through the commit history to efficiently find the specific commit that introduced a bug.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To split a large commit into two smaller ones.",
+      "To create a new branch that is an exact copy of another.",
+      "To perform a binary search through the commit history to efficiently find the specific commit that introduced a bug.",
+      "A tool for visualizing the Git history as a tree.",
+      "To find the commit where two branches diverged."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 409,
+    "question": "Why would a company choose to automate its release process with CI/CD?",
+    "answer": "To increase speed and reliability. Automation reduces the risk of human error, ensures consistent builds, and allows for faster delivery of new features and bug fixes to users.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Because it is cheaper than hiring a dedicated release manager.",
+      "To make the build process take longer, allowing for more thorough testing.",
+      "To increase speed and reliability. Automation reduces the risk of human error, ensures consistent builds, and allows for faster delivery of new features and bug fixes to users.",
+      "It is a requirement for using Git.",
+      "The only benefit is that it generates pretty reports."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 410,
+    "question": "What is a 'hotfix' in the context of Git Flow?",
+    "answer": "A commit or branch created directly from the `main` branch to quickly patch a critical bug in a production release. It is then merged back into both `main` and `develop`.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A feature that is in high demand by users.",
+      "A commit that significantly improves the performance of the app.",
+      "Any commit that is made when the server room is hot.",
+      "A commit or branch created directly from the `main` branch to quickly patch a critical bug in a production release. It is then merged back into both `main` and `develop`.",
+      "A commit that fixes a typo in the code comments."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 411,
+    "question": "What is the fundamental trade-off that Big O notation helps to analyze?",
+    "answer": "The trade-off between the time an algorithm takes to run and the amount of memory (space) it uses as the input size grows.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The trade-off between writing code quickly and writing code that is easy to read.",
+      "The trade-off between the number of developers on a team and the project deadline.",
+      "The trade-off between the time an algorithm takes to run and the amount of memory (space) it uses as the input size grows.",
+      "The trade-off between using a paid library and writing the functionality yourself.",
+      "The trade-off between supporting older devices and using new features."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 412,
+    "question": "What is a primary difference in UI development philosophy between Android (historically with XML) and iOS (with Storyboards)?",
+    "answer": "Android's XML has historically been more focused on declarative layouts with flexible, powerful attributes, while iOS Storyboards have been more visual and connection-based, representing user flows more directly in a graphical interface.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "There is no difference in philosophy.",
+      "Android XML is for creating logic, while iOS Storyboards are for UI.",
+      "iOS Storyboards are text-based, while Android XML is visual.",
+      "Android's XML has historically been more focused on declarative layouts with flexible, powerful attributes, while iOS Storyboards have been more visual and connection-based, representing user flows more directly in a graphical interface.",
+      "Android uses a proprietary language, while iOS uses standard XML."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 413,
+    "question": "Your app is experiencing a rare crash that you cannot reproduce. What Firebase tool would be most helpful in diagnosing it?",
+    "answer": "Firebase Crashlytics, which automatically captures detailed crash reports from users' devices, including stack traces and device information, allowing you to identify and prioritize fixes for issues in the wild.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Firebase Realtime Database",
+      "Firebase Authentication",
+      "Firebase Cloud Messaging",
+      "Firebase Crashlytics, which automatically captures detailed crash reports from users' devices, including stack traces and device information, allowing you to identify and prioritize fixes for issues in the wild.",
+      "Firebase A/B Testing"
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 414,
+    "question": "What is the purpose of `git reflog`?",
+    "answer": "It shows a log of where `HEAD` has been. It's a safety net that can help you recover commits or branches that were accidentally lost, even if they are no longer in any branch history.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It shows a log of all remote references.",
+      "It is an alias for `git log --graph`.",
+      "It shows a log of where `HEAD` has been. It's a safety net that can help you recover commits or branches that were accidentally lost, even if they are no longer in any branch history.",
+      "It logs all references to a specific file.",
+      "It is a tool for logging performance metrics of Git operations."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 415,
+    "question": "You have two tasks: one is a critical bug fix, the other is a new, non-urgent feature. How do you decide which to work on first?",
+    "answer": "Prioritize the critical bug fix. Fixing issues that impact current users and cause instability should almost always take precedence over developing new functionality.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Work on the new feature first because it is more interesting.",
+      "Work on whichever task is easier to complete first.",
+      "Prioritize the critical bug fix. Fixing issues that impact current users and cause instability should almost always take precedence over developing new functionality.",
+      "Ask the project manager to decide, as it's not a developer's responsibility.",
+      "Try to work on both at the same time by constantly switching between them."
+    ],
+    "category": "OTHER"
   }
 ]

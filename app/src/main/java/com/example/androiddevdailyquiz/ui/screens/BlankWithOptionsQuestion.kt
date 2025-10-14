@@ -1,6 +1,5 @@
 package com.example.androiddevdailyquiz.ui.screens
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -10,7 +9,6 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.example.androiddevdailyquiz.data.model.Question
 
@@ -21,7 +19,6 @@ fun BlankWithOptionsQuestion(
 ) {
     key(question.id) {
         var selectedOption by remember { mutableStateOf<String?>(null) }
-        var isCorrect by remember { mutableStateOf<Boolean?>(null) }
 
         val options = remember(question.id) {
             val all = mutableListOf(question.answer)
@@ -32,9 +29,15 @@ fun BlankWithOptionsQuestion(
         Column(
             modifier = Modifier
                 .fillMaxWidth()
-                .background(MaterialTheme.colorScheme.background)
                 .padding(16.dp)
         ) {
+            Text(
+                text = "#${question.category.displayName}",
+                style = MaterialTheme.typography.bodySmall,
+                color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f),
+                modifier = Modifier.align(Alignment.Start)
+            )
+
             Text(
                 text = question.question,
                 style = MaterialTheme.typography.headlineSmall,
@@ -45,14 +48,12 @@ fun BlankWithOptionsQuestion(
 
             options.forEach { option ->
                 val isSelected = selectedOption == option
-                val isAnswerCorrect = question.answer.trim()
-                    .equals(option.trim(), ignoreCase = true)
+                val isAnswerCorrect = option.trim().equals(question.answer.trim(), ignoreCase = true)
 
                 val containerColor = when {
-                    isSelected && isCorrect == true -> MaterialTheme.colorScheme.primary
-                    isSelected && isCorrect == false -> MaterialTheme.colorScheme.errorContainer
-                    selectedOption != null && isCorrect == false && isAnswerCorrect ->
-                        MaterialTheme.colorScheme.primary
+                    isSelected && isAnswerCorrect -> MaterialTheme.colorScheme.primary
+                    isSelected && !isAnswerCorrect -> MaterialTheme.colorScheme.errorContainer
+                    selectedOption != null && isAnswerCorrect -> MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
                     else -> MaterialTheme.colorScheme.surfaceVariant
                 }
 
@@ -65,7 +66,7 @@ fun BlankWithOptionsQuestion(
                         .padding(vertical = 6.dp)
                         .clickable(enabled = selectedOption == null) {
                             selectedOption = option
-                            isCorrect = onCheckAnswer(option)
+                            onCheckAnswer(option)
                         }
                 ) {
                     Box(
@@ -77,8 +78,7 @@ fun BlankWithOptionsQuestion(
                         Text(
                             text = option,
                             style = MaterialTheme.typography.bodyLarge,
-                            color = MaterialTheme.colorScheme.onSurfaceVariant,
-                            textAlign = TextAlign.Start
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
                     }
                 }

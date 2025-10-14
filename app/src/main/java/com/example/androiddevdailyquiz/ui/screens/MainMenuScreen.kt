@@ -6,13 +6,16 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.androiddevdailyquiz.R
+import com.example.androiddevdailyquiz.data.model.QuestionCategory
 import com.example.androiddevdailyquiz.ui.viewmodel.QuizViewModel
+
 
 @Composable
 fun MainMenuScreen(
@@ -22,6 +25,21 @@ fun MainMenuScreen(
 ) {
     val streakCount by viewModel.streakCount.collectAsState()
     val streakActive by viewModel.streakActive.collectAsState()
+    val selectedCategory by viewModel.selectedCategory.observeAsState(QuestionCategory.ALL)
+
+    val allQuestions = remember(viewModel.questions) {
+        viewModel.questions.value ?: emptyList()
+    }
+
+    val questionCounts = remember(allQuestions) {
+        val counts = allQuestions.groupingBy { it.category }
+            .eachCount()
+            .toMutableMap()
+
+        counts[QuestionCategory.ALL] = counts.filterKeys { it != QuestionCategory.ALL }.values.sum()
+
+        counts.withDefault { 0 }
+    }
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
@@ -38,43 +56,65 @@ fun MainMenuScreen(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(bottom = 32.dp),
-                horizontalArrangement = Arrangement.End,
+                horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Image(
-                    painter = painterResource(
-                        id = if (streakActive) R.drawable.ic_fire_active else R.drawable.ic_fire_inactive
-                    ),
-                    contentDescription = "Streak Icon",
-                    modifier = Modifier.size(28.dp),
-                    colorFilter = if (!streakActive)
-                        ColorFilter.tint(MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f))
-                    else null
-                )
-                Spacer(Modifier.width(6.dp))
-                Text(
-                    text = streakCount.toString(),
-                    style = MaterialTheme.typography.titleMedium,
-                    color = if (streakActive)
-                        MaterialTheme.colorScheme.primary
-                    else
-                        MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
-                )
+                Box(modifier = Modifier.weight(1f).fillMaxWidth(0.7f)) {
+                    CategorySelector(
+                        categories = QuestionCategory.values().toList(),
+                        questionCounts = questionCounts,
+                        selectedCategory = selectedCategory,
+                        onCategorySelected = { viewModel.setCategory(it) },
+                    )
+                }
+
+                Spacer(Modifier.width(16.dp))
+
+                Row(
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Image(
+                        painter = painterResource(
+                            id = if (streakActive) R.drawable.ic_fire_active else R.drawable.ic_fire_inactive
+                        ),
+                        contentDescription = "Streak Icon",
+                        modifier = Modifier.size(28.dp),
+                        colorFilter = if (!streakActive)
+                            ColorFilter.tint(MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f))
+                        else null
+                    )
+                    Spacer(Modifier.width(6.dp))
+                    Text(
+                        text = streakCount.toString(),
+                        style = MaterialTheme.typography.titleMedium,
+                        color = if (streakActive)
+                            MaterialTheme.colorScheme.primary
+                        else
+                            MaterialTheme.colorScheme.onSurface.copy(alpha = 0.4f)
+                    )
+                }
             }
 
             Text(
                 text = "AndroidDev Daily Quiz",
                 style = MaterialTheme.typography.headlineLarge,
                 color = MaterialTheme.colorScheme.onBackground,
-                modifier = Modifier.padding(bottom = 32.dp)
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(bottom = 32.dp),
             )
 
             Button(
                 onClick = onStartQuiz,
                 modifier = Modifier.fillMaxWidth(),
-                colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary)
+                colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
+                enabled = selectedCategory != null
             ) {
-                Text("Start Quiz", color = MaterialTheme.colorScheme.onPrimary)
+                Text(
+                    "Start Quiz",
+                    color = MaterialTheme.colorScheme.onPrimary,
+                    style = MaterialTheme.typography.headlineSmall
+                )
             }
 
             Spacer(Modifier.height(16.dp))
@@ -84,7 +124,11 @@ fun MainMenuScreen(
                 modifier = Modifier.fillMaxWidth(),
                 colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.secondary)
             ) {
-                Text("Statistics", color = MaterialTheme.colorScheme.onSecondary)
+                Text(
+                    "Statistics",
+                    color = MaterialTheme.colorScheme.onSecondary,
+                    style = MaterialTheme.typography.headlineSmall
+                )
             }
         }
     }
