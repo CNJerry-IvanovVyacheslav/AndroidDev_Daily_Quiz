@@ -12,7 +12,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -28,13 +27,8 @@ fun BlankWithOptionsQuestion(
     question: Question,
     onCheckAnswer: (String) -> Boolean
 ) {
-    var selectedOption by remember { mutableStateOf<String?>(null) }
-    var isCorrectAnswer by remember { mutableStateOf<Boolean?>(null) }
-
-    LaunchedEffect(question.id) {
-        selectedOption = null
-        isCorrectAnswer = null
-    }
+    var selectedOption by remember(question.id) { mutableStateOf<String?>(null) }
+    var isCorrectAnswer by remember(question.id) { mutableStateOf<Boolean?>(null) }
 
     val options = remember(question.id) {
         val all = mutableListOf(question.answer)
@@ -69,10 +63,11 @@ fun BlankWithOptionsQuestion(
 
             val containerColor = when {
                 isSelected && isCorrectAnswer == true -> MaterialTheme.colorScheme.primary
+
                 isSelected && isCorrectAnswer == false -> MaterialTheme.colorScheme.errorContainer
-                selectedOption != null && isAnswerCorrect -> MaterialTheme.colorScheme.primary.copy(
-                    alpha = 0.5f
-                )
+
+                selectedOption != null && isCorrectAnswer == false && isAnswerCorrect ->
+                    MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
 
                 else -> MaterialTheme.colorScheme.surfaceVariant
             }
