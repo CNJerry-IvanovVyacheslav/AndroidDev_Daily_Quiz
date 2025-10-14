@@ -7,6 +7,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.androiddevdailyquiz.data.DataStoreManager
 import com.example.androiddevdailyquiz.data.model.Question
+import com.example.androiddevdailyquiz.data.model.QuestionCategory
 import com.example.androiddevdailyquiz.data.repo.QuestionRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -16,6 +17,9 @@ import kotlinx.coroutines.launch
 class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = QuestionRepository(application)
     private val dataStore = DataStoreManager(application)
+
+    private val _selectedCategory = MutableLiveData<QuestionCategory>(QuestionCategory.ALL)
+    val selectedCategory: LiveData<QuestionCategory> get() = _selectedCategory
 
     private val _questions = MutableLiveData<List<Question>>(emptyList())
     val questions: LiveData<List<Question>> get() = _questions
@@ -68,11 +72,27 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    fun loadQuestions() {
-        val loaded = repository.loadQuestions().shuffled()
-        _questions.value = loaded
-        if (loaded.isNotEmpty()) _currentQuestion.value = loaded[0]
+    fun setCategory(category: QuestionCategory?) {
+        _selectedCategory.value = category ?: QuestionCategory.OTHER
+        loadQuestions()
     }
+
+    fun loadQuestions() {
+        val loaded = repository.loadQuestions()
+
+        val filtered = _selectedCategory.value?.let { cat ->
+            when (cat) {
+                QuestionCategory.ALL -> loaded
+                QuestionCategory.OTHER -> loaded.filter { it.category == QuestionCategory.OTHER }
+                else -> loaded.filter { it.category == cat }
+            }
+        } ?: loaded
+
+        _questions.value = filtered.shuffled()
+        if (filtered.isNotEmpty()) _currentQuestion.value = filtered[0]
+        _currentIndex.value = 0
+    }
+
 
     fun nextQuestion() {
         val list = _questions.value ?: return

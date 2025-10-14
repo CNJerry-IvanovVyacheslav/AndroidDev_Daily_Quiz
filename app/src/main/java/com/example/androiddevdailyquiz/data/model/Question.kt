@@ -5,5 +5,6 @@ data class Question(
     val question: String,
     val answer: String,
     val type: QuestionType,
-    val fakeOptions: List<String>? = null
+    val fakeOptions: List<String>? = null,
+    val category: QuestionCategory = QuestionCategory.OTHER
 )
