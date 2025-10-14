@@ -1,7 +1,9 @@
 package com.example.androiddevdailyquiz.data
 
 import android.content.Context
-import androidx.datastore.preferences.core.*
+import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.core.intPreferencesKey
+import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.example.androiddevdailyquiz.data.model.QuestionCategory
 import kotlinx.coroutines.flow.Flow
@@ -23,29 +25,42 @@ class DataStoreManager(private val context: Context) {
         private val CURRENT_CONSECUTIVE_KEY = intPreferencesKey("current_consecutive")
         private val MAX_CONSECUTIVE_KEY = intPreferencesKey("max_consecutive")
 
-        // Ключ для категорий
         fun categoryIncorrectKey(category: QuestionCategory) =
             intPreferencesKey("incorrect_${category.name.lowercase()}")
     }
+
+    private val allCategories = QuestionCategory.values()
 
     val correctFlow: Flow<Int> = context.dataStore.data.map { it[CORRECT_KEY] ?: 0 }
     val incorrectFlow: Flow<Int> = context.dataStore.data.map { it[INCORRECT_KEY] ?: 0 }
     val streakFlow: Flow<Int> = context.dataStore.data.map { it[STREAK_COUNT_KEY] ?: 0 }
     val lastStreakDateFlow: Flow<String> =
         context.dataStore.data.map { it[LAST_STREAK_DATE_KEY] ?: "" }
-
     val currentConsecutiveFlow: Flow<Int> =
         context.dataStore.data.map { it[CURRENT_CONSECUTIVE_KEY] ?: 0 }
     val maxConsecutiveFlow: Flow<Int> = context.dataStore.data.map { it[MAX_CONSECUTIVE_KEY] ?: 0 }
-
-    private val allCategories = QuestionCategory.values()
-
     val incorrectByCategoryFlow: Flow<Map<QuestionCategory, Int>> =
         context.dataStore.data.map { prefs ->
             allCategories.associateWith { category ->
                 prefs[categoryIncorrectKey(category)] ?: 0
             }
         }
+
+    suspend fun initializeIfNeeded() {
+        context.dataStore.edit { prefs ->
+            if (!prefs.contains(CORRECT_KEY)) prefs[CORRECT_KEY] = 0
+            if (!prefs.contains(INCORRECT_KEY)) prefs[INCORRECT_KEY] = 0
+            if (!prefs.contains(STREAK_COUNT_KEY)) prefs[STREAK_COUNT_KEY] = 0
+            if (!prefs.contains(LAST_STREAK_DATE_KEY)) prefs[LAST_STREAK_DATE_KEY] = ""
+            if (!prefs.contains(CURRENT_CONSECUTIVE_KEY)) prefs[CURRENT_CONSECUTIVE_KEY] = 0
+            if (!prefs.contains(MAX_CONSECUTIVE_KEY)) prefs[MAX_CONSECUTIVE_KEY] = 0
+            allCategories.forEach { category ->
+                if (!prefs.contains(categoryIncorrectKey(category))) {
+                    prefs[categoryIncorrectKey(category)] = 0
+                }
+            }
+        }
+    }
 
     suspend fun incrementCorrect() = context.dataStore.edit { prefs ->
         prefs[CORRECT_KEY] = (prefs[CORRECT_KEY] ?: 0) + 1
