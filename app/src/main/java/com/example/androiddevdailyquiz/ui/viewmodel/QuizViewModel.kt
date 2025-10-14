@@ -1,6 +1,7 @@
 package com.example.androiddevdailyquiz.ui.viewmodel
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -18,12 +19,15 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val repository = QuestionRepository(application)
     private val dataStore = DataStoreManager(application)
 
-    private val _selectedCategory = MutableLiveData<QuestionCategory>(QuestionCategory.ALL)
+    private val _selectedCategory = MutableLiveData(QuestionCategory.ALL)
     val selectedCategory: LiveData<QuestionCategory> get() = _selectedCategory
 
     private val _maxErrorsCategory =
         MutableStateFlow<Pair<QuestionCategory, Int>>(QuestionCategory.OTHER to 0)
     val maxErrorsCategory: StateFlow<Pair<QuestionCategory, Int>> = _maxErrorsCategory
+
+    private val _allQuestions = repository.loadQuestions()
+    val allQuestions: List<Question> get() = _allQuestions
 
     private val _questions = MutableLiveData<List<Question>>(emptyList())
     val questions: LiveData<List<Question>> get() = _questions
@@ -55,46 +59,43 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _maxConsecutive = MutableStateFlow(0)
     val maxConsecutive: StateFlow<Int> = _maxConsecutive
 
+    val isDataStoreLoaded = MutableStateFlow(false)
+
     init {
         loadQuestions()
 
         viewModelScope.launch {
-            dataStore.correctFlow.collectLatest { _correctAnswers.value = it }
-        }
-        viewModelScope.launch {
-            dataStore.incorrectFlow.collectLatest { _incorrectAnswers.value = it }
-        }
-        viewModelScope.launch {
-            dataStore.streakFlow.collectLatest { _streakCount.value = it }
-        }
-        viewModelScope.launch {
-            dataStore.correctFlow.collectLatest { correct ->
-                _correctAnswers.value = correct
-                recalcAccuracy()
+            dataStore.initializeIfNeeded()
+
+            launch {
+                dataStore.correctFlow.collectLatest {
+                    _correctAnswers.value = it; recalcAccuracy()
+                }
             }
-        }
-        viewModelScope.launch {
-            dataStore.incorrectFlow.collectLatest { incorrect ->
-                _incorrectAnswers.value = incorrect
-                recalcAccuracy()
+            launch {
+                dataStore.incorrectFlow.collectLatest {
+                    _incorrectAnswers.value = it; recalcAccuracy()
+                }
             }
-        }
-        viewModelScope.launch {
-            dataStore.lastStreakDateFlow.collectLatest { lastDate ->
-                val today = java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault())
-                    .format(java.util.Calendar.getInstance().time)
-                _streakActive.value = (lastDate == today)
+            launch { dataStore.streakFlow.collectLatest { _streakCount.value = it } }
+            launch {
+                dataStore.lastStreakDateFlow.collectLatest { lastDate ->
+                    val today =
+                        java.text.SimpleDateFormat("yyyy-MM-dd", java.util.Locale.getDefault())
+                            .format(java.util.Calendar.getInstance().time)
+                    _streakActive.value = (lastDate == today)
+                }
             }
-        }
-        viewModelScope.launch {
-            dataStore.maxConsecutiveFlow.collectLatest { _maxConsecutive.value = it }
-        }
-        viewModelScope.launch {
-            dataStore.incorrectByCategoryFlow.collectLatest { map ->
-                val maxPair =
-                    map.maxByOrNull { it.value }?.toPair() ?: (QuestionCategory.OTHER to 0)
-                _maxErrorsCategory.value = maxPair
+            launch { dataStore.maxConsecutiveFlow.collectLatest { _maxConsecutive.value = it } }
+            launch {
+                dataStore.incorrectByCategoryFlow.collectLatest { map ->
+                    val maxPair =
+                        map.maxByOrNull { it.value }?.toPair() ?: (QuestionCategory.OTHER to 0)
+                    _maxErrorsCategory.value = maxPair
+                }
             }
+
+            isDataStoreLoaded.value = true
         }
     }
 
@@ -104,18 +105,19 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun loadQuestions() {
-        val loaded = repository.loadQuestions()
         val filtered = _selectedCategory.value?.let { cat ->
             when (cat) {
-                QuestionCategory.ALL -> loaded
-                QuestionCategory.OTHER -> loaded.filter { it.category == QuestionCategory.OTHER }
-                else -> loaded.filter { it.category == cat }
+                QuestionCategory.ALL -> _allQuestions
+                QuestionCategory.OTHER -> _allQuestions.filter { it.category == QuestionCategory.OTHER }
+                else -> _allQuestions.filter { it.category == cat }
             }
-        } ?: loaded
+        } ?: _allQuestions
 
-        _questions.value = filtered.shuffled()
-        if (filtered.isNotEmpty()) _currentQuestion.value = filtered[0]
+        val shuffled = filtered.shuffled()
+        _questions.value = shuffled
         _currentIndex.value = 0
+        _currentQuestion.value =
+            shuffled.firstOrNull()
     }
 
     fun nextQuestion() {
@@ -127,15 +129,37 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
         _showAnswer.value = false
     }
 
-    fun toggleAnswer() {
-        _showAnswer.value = !(_showAnswer.value ?: false)
+    fun checkAnswerSync(userInput: String): Boolean {
+        val currentQuestion = _currentQuestion.value ?: return false
+
+        Log.d("QuizDebug", "--- Comparing responses ---")
+        Log.d("QuizDebug", "User Input: '${userInput}' (Length: ${userInput.length})")
+        Log.d(
+            "QuizDebug",
+            "Right answer:  '${currentQuestion.answer}' (Length: ${currentQuestion.answer.length})"
+        )
+
+        val trimmedUserInput = userInput.trim()
+        val trimmedCorrectAnswer = currentQuestion.answer.trim()
+        Log.d(
+            "QuizDebug",
+            "Cropped input:   '${trimmedUserInput}' (Length: ${trimmedUserInput.length})"
+        )
+        Log.d(
+            "QuizDebug",
+            "Cropped response:  '${trimmedCorrectAnswer}' (Length: ${trimmedCorrectAnswer.length})"
+        )
+
+        val isCorrect = trimmedUserInput.equals(trimmedCorrectAnswer, ignoreCase = true)
+        Log.d("QuizDebug", "Comparison result: $isCorrect")
+        Log.d("QuizDebug", "--------------------------")
+
+        return isCorrect
     }
 
-    fun checkAnswer(userInput: String): Boolean {
-        val currentQuestion = _currentQuestion.value ?: return false
-        val isCorrect = userInput.trim().equals(currentQuestion.answer.trim(), ignoreCase = true)
-
+    fun recordAnswerResult(isCorrect: Boolean) {
         viewModelScope.launch {
+            val currentQuestion = _currentQuestion.value ?: return@launch
             if (isCorrect) {
                 dataStore.incrementCorrect()
             } else {
@@ -143,18 +167,12 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             }
             dataStore.updateStreak()
         }
-
-        return isCorrect
     }
+
 
     private fun recalcAccuracy() {
         val total = _correctAnswers.value + _incorrectAnswers.value
         _accuracy.value = if (total == 0) 0f else (_correctAnswers.value * 100f / total)
-    }
-
-    fun getAccuracy(): Float {
-        val total = _correctAnswers.value + _incorrectAnswers.value
-        return if (total == 0) 0f else (_correctAnswers.value * 100f / total)
     }
 
     fun resetStatistics() {
