@@ -30,7 +30,8 @@ fun StatisticsScreen(viewModel: QuizViewModel, onBack: () -> Unit) {
     val streak by viewModel.streakCount.collectAsState()
     val streakActive by viewModel.streakActive.collectAsState()
     val maxConsecutive by viewModel.maxConsecutive.collectAsState()
-    val accuracy = viewModel.getAccuracy()
+    val maxErrorsPair by viewModel.maxErrorsCategory.collectAsState()
+    val accuracy by viewModel.accuracy.collectAsState()
 
     var showResetDialog by remember { mutableStateOf(false) }
 
@@ -77,14 +78,25 @@ fun StatisticsScreen(viewModel: QuizViewModel, onBack: () -> Unit) {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             StatItem(title = "Total Questions Answered", value = (correct + incorrect).toString())
+
+            // Correct Answers — оставляем зеленым
             StatItem(title = "Correct Answers", value = correct.toString())
-            StatItem(title = "Incorrect Answers", value = incorrect.toString())
+
+            // Incorrect Answers — красным
+            StatItem(
+                title = "Incorrect Answers",
+                value = incorrect.toString(),
+                valueColor = MaterialTheme.colorScheme.error
+            )
 
             Spacer(Modifier.height(8.dp))
 
+            // Accuracy — красный если <50%, зеленый если >=50%
+            val accuracyColor = if (accuracy < 50f) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.primary
             StatItem(
                 title = "Accuracy Rate",
                 value = "${"%.1f".format(accuracy)}%",
+                valueColor = accuracyColor,
                 description = when {
                     accuracy == 0f -> "Everyone starts somewhere — try your first quiz! 💡"
                     accuracy < 50f -> "Don’t worry, mistakes are part of learning 👣"
@@ -92,6 +104,16 @@ fun StatisticsScreen(viewModel: QuizViewModel, onBack: () -> Unit) {
                     accuracy < 90f -> "Strong performance! You’re becoming consistent 🔥"
                     else -> "Outstanding accuracy — true Android pro ⚡"
                 }
+            )
+
+            Spacer(Modifier.height(8.dp))
+
+            // Most of the Wrong Answers — красным
+            StatItem(
+                title = "Most of the Wrong Answers",
+                value = "${maxErrorsPair.second} (${maxErrorsPair.first.displayName})",
+                valueColor = MaterialTheme.colorScheme.error,
+                description = "Focus on this category to improve 💡",
             )
 
             Divider()
@@ -156,7 +178,12 @@ fun StatisticsScreen(viewModel: QuizViewModel, onBack: () -> Unit) {
 }
 
 @Composable
-fun StatItem(title: String, value: String, description: String? = null) {
+fun StatItem(
+    title: String,
+    value: String,
+    description: String? = null,
+    valueColor: androidx.compose.ui.graphics.Color? = null
+) {
     Column(
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.padding(vertical = 6.dp)
@@ -170,7 +197,7 @@ fun StatItem(title: String, value: String, description: String? = null) {
             text = value,
             fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
-            color = MaterialTheme.colorScheme.primary
+            color = valueColor ?: MaterialTheme.colorScheme.primary
         )
         if (description != null) {
             Text(
