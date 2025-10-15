@@ -6,6 +6,7 @@ import androidx.datastore.preferences.core.intPreferencesKey
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.preferencesDataStore
 import com.example.androiddevdailyquiz.data.model.QuestionCategory
+import com.example.androiddevdailyquiz.data.repo.TipRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import java.text.SimpleDateFormat
@@ -17,6 +18,8 @@ private val Context.dataStore by preferencesDataStore("quiz_stats")
 
 class DataStoreManager(private val context: Context) {
 
+    private val tipRepository = TipRepository(context)
+
     companion object {
         private val CORRECT_KEY = intPreferencesKey("correct")
         private val INCORRECT_KEY = intPreferencesKey("incorrect")
@@ -24,6 +27,10 @@ class DataStoreManager(private val context: Context) {
         private val LAST_STREAK_DATE_KEY = stringPreferencesKey("last_streak_date")
         private val CURRENT_CONSECUTIVE_KEY = intPreferencesKey("current_consecutive")
         private val MAX_CONSECUTIVE_KEY = intPreferencesKey("max_consecutive")
+
+        // Keys for Tip of the Day
+        private val LAST_TIP_DATE_KEY = stringPreferencesKey("last_tip_date")
+        private val CURRENT_TIP_KEY = stringPreferencesKey("current_tip")
 
         fun categoryIncorrectKey(category: QuestionCategory) =
             intPreferencesKey("incorrect_${category.name.lowercase()}")
@@ -39,6 +46,10 @@ class DataStoreManager(private val context: Context) {
     val currentConsecutiveFlow: Flow<Int> =
         context.dataStore.data.map { it[CURRENT_CONSECUTIVE_KEY] ?: 0 }
     val maxConsecutiveFlow: Flow<Int> = context.dataStore.data.map { it[MAX_CONSECUTIVE_KEY] ?: 0 }
+
+    val tipOfTheDayFlow: Flow<String> =
+        context.dataStore.data.map { it[CURRENT_TIP_KEY] ?: "Loading tip..." }
+
     val incorrectByCategoryFlow: Flow<Map<QuestionCategory, Int>> =
         context.dataStore.data.map { prefs ->
             allCategories.associateWith { category ->
@@ -54,10 +65,28 @@ class DataStoreManager(private val context: Context) {
             if (!prefs.contains(LAST_STREAK_DATE_KEY)) prefs[LAST_STREAK_DATE_KEY] = ""
             if (!prefs.contains(CURRENT_CONSECUTIVE_KEY)) prefs[CURRENT_CONSECUTIVE_KEY] = 0
             if (!prefs.contains(MAX_CONSECUTIVE_KEY)) prefs[MAX_CONSECUTIVE_KEY] = 0
+
+            if (!prefs.contains(LAST_TIP_DATE_KEY)) prefs[LAST_TIP_DATE_KEY] = ""
+            if (!prefs.contains(CURRENT_TIP_KEY)) prefs[CURRENT_TIP_KEY] = ""
+
             allCategories.forEach { category ->
                 if (!prefs.contains(categoryIncorrectKey(category))) {
                     prefs[categoryIncorrectKey(category)] = 0
                 }
+            }
+        }
+    }
+
+    suspend fun updateTipIfNeeded() {
+        val today = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+            .format(Calendar.getInstance().time)
+
+        context.dataStore.edit { prefs ->
+            val lastTipDate = prefs[LAST_TIP_DATE_KEY] ?: ""
+            if (lastTipDate != today) {
+                val newTip = tipRepository.getTipOfTheDay()
+                prefs[CURRENT_TIP_KEY] = newTip
+                prefs[LAST_TIP_DATE_KEY] = today
             }
         }
     }

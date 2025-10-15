@@ -16,6 +16,8 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -28,6 +30,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.androiddevdailyquiz.R
 import com.example.androiddevdailyquiz.data.model.QuestionCategory
@@ -43,6 +46,8 @@ fun MainMenuScreen(
     val streakCount by viewModel.streakCount.collectAsState()
     val streakActive by viewModel.streakActive.collectAsState()
     val selectedCategory by viewModel.selectedCategory.observeAsState(QuestionCategory.ALL)
+
+    val tipOfTheDay by viewModel.tipOfTheDay.collectAsState()
 
     val allQuestions = viewModel.allQuestions
 
@@ -144,6 +149,32 @@ fun MainMenuScreen(
                     color = MaterialTheme.colorScheme.onSecondary,
                     style = MaterialTheme.typography.headlineSmall
                 )
+            }
+
+            Spacer(Modifier.height(32.dp))
+
+            if (tipOfTheDay.isNotEmpty()) {
+                Card(
+                    modifier = Modifier.fillMaxWidth(),
+                    colors = CardDefaults.cardColors(
+                        containerColor = MaterialTheme.colorScheme.surfaceVariant,
+                    )
+                ) {
+                    Column(modifier = Modifier.padding(16.dp)) {
+                        Text(
+                            text = "💡 Tip of the Day",
+                            style = MaterialTheme.typography.titleMedium,
+                            fontWeight = FontWeight.Bold,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                        Spacer(Modifier.height(8.dp))
+                        Text(
+                            text = tipOfTheDay,
+                            style = MaterialTheme.typography.bodyMedium,
+                            color = MaterialTheme.colorScheme.onSurfaceVariant
+                        )
+                    }
+                }
             }
         }
     }

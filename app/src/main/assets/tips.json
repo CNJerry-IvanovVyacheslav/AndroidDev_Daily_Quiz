@@ -1,0 +1,353 @@
+[
+  {
+    "tip": "Did you know? You can use `val` for immutable variables and `var` for mutable ones in Kotlin. Prefer `val` whenever possible."
+  },
+  {
+    "tip": "Tip: Use `ConstraintLayout` for complex UIs to create flat and efficient view hierarchies."
+  },
+  {
+    "tip": "Android Fact: The first Android version, 1.0, was released in September 2008."
+  },
+  {
+    "tip": "Pro Tip: Use `LiveData` or `StateFlow` to build reactive UIs that automatically update when data changes."
+  },
+  {
+    "tip": "Did you know? An 'ANR' (Application Not Responding) dialog is shown if the UI thread is blocked for too long (usually 5 seconds)."
+  },
+  {
+    "tip": "Tip: Always run time-consuming tasks like network requests or database queries on a background thread using coroutines."
+  },
+  {
+    "tip": "Android Fact: All Android versions since 1.5 'Cupcake' have been named after desserts, until Android 10."
+  },
+  {
+    "tip": "Pro Tip: Use the `ViewModel` component to store and manage UI-related data in a lifecycle-conscious way."
+  },
+  {
+    "tip": "Did you know? The `RecyclerView` is a more advanced and efficient version of `ListView` for displaying large sets of data."
+  },
+  {
+    "tip": "Tip: Define your app's colors and themes in `ui/theme/Color.kt` and `ui/theme/Theme.kt` for a consistent design."
+  },
+  {
+    "tip": "Android Fact: The Android robot mascot is unofficially named 'Bugdroid'."
+  },
+  {
+    "tip": "Pro Tip: Use `DataStore` for simple, asynchronous key-value storage. It's the modern replacement for `SharedPreferences`."
+  },
+  {
+    "tip": "Did you know? You can create previews of your Jetpack Compose components using the `@Preview` annotation."
+  },
+  {
+    "tip": "Tip: Use vector drawables (XML files) for icons instead of multiple PNGs to reduce your app's size."
+  },
+  {
+    "tip": "Android Fact: Android is built on top of the Linux kernel."
+  },
+  {
+    "tip": "Did you know? A `Service` is an application component that can perform long-running operations in the background."
+  },
+  {
+    "tip": "Tip: Use Room as a persistence library to create an abstraction layer over SQLite for more robust database access."
+  },
+  {
+    "tip": "Android Fact: Google acquired Android Inc. in 2005 for an estimated $50 million."
+  },
+  {
+    "tip": "Pro Tip: The `LaunchedEffect` composable is perfect for calling suspend functions safely from within your Compose UI."
+  },
+  {
+    "tip": "Tip: Use Kotlin's scope functions like `let`, `run`, `with`, `apply`, and `also` to execute code within the context of an object."
+  },
+  {
+    "tip": "Did you know? In Jetpack Compose, remember retains state across recompositions, while rememberSaveable retains state across configuration changes (like rotation) and process death by leveraging the saved instance state mechanism."
+  },
+  {
+    "tip": "Pro Tip: Implement the Repository pattern to abstract data sources (network, database) from the rest of your app."
+  },
+  {
+    "tip": "Android Fact: An `Intent` is a messaging object you can use to request an action from another app component."
+  },
+  {
+    "tip": "Tip: Use `ViewBinding` to replace `findViewById` for safer and more concise access to your views in the XML layout system."
+  },
+  {
+    "tip": "Did you know? `Sealed classes` in Kotlin are used for representing restricted class hierarchies, which is very useful for representing states."
+  },
+  {
+    "tip": "Pro Tip: Use `WorkManager` for deferrable, guaranteed background work that needs to run even if the app exits or the device restarts."
+  },
+  {
+    "tip": "Tip: A `Modifier` in Jetpack Compose is an ordered, immutable collection of elements that decorate or add behavior to a composable."
+  },
+  {
+    "tip": "Android Fact: The first commercially available Android phone was the HTC Dream (also known as the T-Mobile G1)."
+  },
+  {
+    "tip": "Pro Tip: Use dependency injection with a framework like Hilt or Koin to manage dependencies and improve your app's testability and scalability."
+  },
+  {
+    "tip": "Did you know? You can use `data class` in Kotlin to automatically generate `equals()`, `hashCode()`, `toString()`, and `copy()` methods."
+  },
+  {
+    "tip": "Tip: Use `Dispatchers.IO` for disk or network I/O operations and `Dispatchers.Default` for CPU-intensive work in coroutines."
+  },
+  {
+    "tip": "Pro Tip: Use Retrofit's `suspend` functions for a clean, coroutine-based way to handle network API calls."
+  },
+  {
+    "tip": "Android Fact: Android's internal codenames for 1.0 and 1.1 were 'Astro Boy' and 'Bender', before the public dessert theme began."
+  },
+  {
+    "tip": "Tip: Use the `android:usesCleartextTraffic` attribute in your manifest to control whether your app can use unencrypted network connections."
+  },
+  {
+    "tip": "Did you know? The `Fragment` lifecycle is more complex than the `Activity` lifecycle, including methods like `onCreateView` and `onViewCreated`."
+  },
+  {
+    "tip": "Pro Tip: Write unit tests with JUnit and MockK/Mockito to verify the logic of individual components like ViewModels and UseCases."
+  },
+  {
+    "tip": "Tip: `LazyColumn` and `LazyRow` in Jetpack Compose are the equivalents of `RecyclerView`, efficiently displaying scrollable lists of items."
+  },
+  {
+    "tip": "Did you know? The `?.` safe call operator in Kotlin allows you to call methods on nullable references, returning `null` if the reference is `null`."
+  },
+  {
+    "tip": "Pro Tip: Use `Baseline Profiles` to improve your app's startup time and rendering performance by pre-compiling critical user journeys."
+  },
+  {
+    "tip": "Android Fact: The maximum size of an APK file that can be uploaded to Google Play is 100MB, but Android App Bundles allow up to 4GB of assets."
+  },
+  {
+    "tip": "Tip: Use `State Hoisting` in Compose to make your components more reusable and stateless by moving state up the component tree."
+  },
+  {
+    "tip": "Did you know? Kotlin `Flow` is a cold asynchronous data stream that sequentially emits values and completes normally or with an exception."
+  },
+  {
+    "tip": "Pro Tip: Use an `Interceptor` in OkHttp to easily modify requests, add headers, or log network activity."
+  },
+  {
+    "tip": "Tip: Use `productFlavors` in your `build.gradle` file to create different versions of your app (e.g., free vs. paid) from the same codebase."
+  },
+  {
+    "tip": "Android Fact: The official IDE for Android development, Android Studio, is based on JetBrains' IntelliJ IDEA."
+  },
+  {
+    "tip": "Did you know? A `BroadcastReceiver` is a component that allows you to register for system or application events, like the battery being low."
+  },
+  {
+    "tip": "Pro Tip: Use Kotlin's extension functions to add new functionality to existing classes without having to inherit from them."
+  },
+  {
+    "tip": "Tip: Use `MaterialTheme` in Jetpack Compose to apply a consistent design system of color, typography, and shapes throughout your app."
+  },
+  {
+    "tip": "Did you know? R8 and ProGuard are tools used to shrink, obfuscate, and optimize your application's code, reducing the APK size."
+  },
+  {
+    "tip": "Pro Tip: Adopt a single-activity architecture where possible. It simplifies navigation and lifecycle management."
+  },
+  {
+    "tip": "Tip: Use `SpannableString` to apply multiple styles (like bold, italic, or different colors) to a single `TextView`."
+  },
+  {
+    "tip": "Android Fact: There are over 3 billion active Android devices worldwide, making it the most popular mobile operating system."
+  },
+  {
+    "tip": "Did you know? The Elvis operator `?:` in Kotlin provides a default value if an expression is `null`."
+  },
+  {
+    "tip": "Tip: Store sensitive information like API keys securely. Avoid hardcoding them directly in your app's code."
+  },
+  {
+    "tip": "Did you know? `SharedFlow` is a hot Flow that allows multiple collectors to receive its emissions."
+  },
+  {
+    "tip": "Pro Tip: Use Room database migrations to preserve user data when you change your database schema in a new app version."
+  },
+  {
+    "tip": "Tip: The `Canvas` API in Compose allows for low-level, custom drawing operations, perfect for creating unique UI elements."
+  },
+  {
+    "tip": "Android Fact: The Android operating system was originally designed for digital cameras, not phones."
+  },
+  {
+    "tip": "Did you know? You can debug your Jetpack Compose layout using the Layout Inspector in Android Studio."
+  },
+  {
+    "tip": "Pro Tip: For complex state management in `ViewModel`, consider using a state-reducing pattern like MVI (Model-View-Intent)."
+  },
+  {
+    "tip": "Tip: Always declare runtime permissions in `AndroidManifest.xml` and request them from the user at runtime for Android 6.0 (API 23) and higher."
+  },
+  {
+    "tip": "Did you know? A `TypeConverter` in Room allows you to persist custom data types that Room doesn't know how to handle by default."
+  },
+  {
+    "tip": "Pro Tip: Write UI tests with Espresso (for Views) or the Compose Test framework to ensure your UI behaves correctly."
+  },
+  {
+    "tip": "Tip: Use `adb shell am broadcast` to send a broadcast intent from your command line, which is great for debugging `BroadcastReceiver`s."
+  },
+  {
+    "tip": "Did you know? Kotlin was created by JetBrains, the same company that makes IntelliJ IDEA and Android Studio."
+  },
+  {
+    "tip": "Pro Tip: The `DisposableEffect` composable is used for side effects that need to be cleaned up when the composable leaves the composition."
+  },
+  {
+    "tip": "Tip: Use `dp` (density-independent pixels) for layout dimensions and `sp` (scale-independent pixels) for text sizes to support different screen densities."
+  },
+  {
+    "tip": "Android Fact: Every Android application runs in its own process with its own instance of the Dalvik or ART virtual machine."
+  },
+  {
+    "tip": "Pro Tip: Use `produceState` in Compose to collect data from suspend functions directly into state."
+  },
+  {
+    "tip": "Did you know? `inline` functions in Kotlin can reduce overhead when passing lambdas, improving performance."
+  },
+  {
+    "tip": "Tip: Use `rememberCoroutineScope` in Compose to safely launch coroutines tied to the composable's lifecycle."
+  },
+  {
+    "tip": "Android Fact: Each app runs inside its own Linux user space for better security and process isolation."
+  },
+  {
+    "tip": "Pro Tip: Combine multiple `Flow`s with `combineTransform` to dynamically process values as they arrive."
+  },
+  {
+    "tip": "Did you know? Kotlin supports default parameter values, eliminating the need for method overloading in many cases."
+  },
+  {
+    "tip": "Tip: Use `collectAsStateWithLifecycle` when observing a Flow in Compose to avoid leaks and handle lifecycle properly."
+  },
+  {
+    "tip": "Android Fact: ART (Android Runtime) compiles bytecode into native instructions ahead of time for faster app performance."
+  },
+  {
+    "tip": "Pro Tip: Use `SnapshotStateList` or `SnapshotStateMap` for mutable collections in Compose that trigger UI updates automatically."
+  },
+  {
+    "tip": "Tip: Use `Modifier.weight()` in `Row` or `Column` to distribute space proportionally between composables."
+  },
+  {
+    "tip": "Did you know? `runBlocking` is mainly for testing or entry points — avoid using it in production code."
+  },
+  {
+    "tip": "Pro Tip: Use `NavHost` and `NavController` in Compose Navigation to manage app screens declaratively."
+  },
+  {
+    "tip": "Tip: Use `LaunchedEffect(key1 = ...)` to restart effects only when a specific key changes, avoiding unnecessary recompositions."
+  },
+  {
+    "tip": "Android Fact: The Android Package Manager (PM) is responsible for installing, updating, and removing apps on the system."
+  },
+  {
+    "tip": "Did you know? The `object` keyword in Kotlin creates a singleton instance automatically."
+  },
+  {
+    "tip": "Pro Tip: For high-performance image loading, use Coil — it’s Kotlin-first and fully compatible with Jetpack Compose."
+  },
+  {
+    "tip": "Did you know? Kotlin `enum classes` can implement interfaces and contain methods, not just constants."
+  },
+  {
+    "tip": "Pro Tip: Use `@Immutable` annotation in Compose to optimize recompositions by marking stable data classes."
+  },
+  {
+    "tip": "Tip: Use `Modifier.padding(horizontal = ..., vertical = ...)` instead of multiple paddings for cleaner code."
+  },
+  {
+    "tip": "Android Fact: The Android build system uses Gradle, allowing modularization and powerful build customization."
+  },
+  {
+    "tip": "Did you know? You can use `Result<T>` in Kotlin to handle success and failure outcomes in a type-safe way."
+  },
+  {
+    "tip": "Pro Tip: Use `Crossfade` in Compose to smoothly animate between UI states without manual animation logic."
+  },
+  {
+    "tip": "Tip: Keep your composables small and focused — it improves reusability, readability, and recomposition performance."
+  },
+  {
+    "tip": "Did you know? You can preview multiple Compose themes at once using `@PreviewGroup` or multiple `@Preview` annotations."
+  },
+  {
+    "tip": "Pro Tip: Separate your UI, domain, and data layers to follow the Clean Architecture principle for better scalability and testability."
+  },
+  {
+    "tip": "Did you know? The `UseCase` pattern helps isolate business logic and makes it easier to test and reuse across different ViewModels."
+  },
+  {
+    "tip": "Tip: Always expose immutable `StateFlow` or `LiveData` from ViewModels — keep mutable versions private."
+  },
+  {
+    "tip": "Pro Tip: Use `Repository` classes to manage data from both remote and local sources, simplifying ViewModel logic."
+  },
+  {
+    "tip": "Did you know? `sealed interface` in Kotlin offers the same benefits as `sealed class` but allows multiple implementations per class hierarchy."
+  },
+  {
+    "tip": "Tip: Structure your ViewModel state as a single immutable data class — it makes UI rendering predictable and easier to debug."
+  },
+  {
+    "tip": "Pro Tip: Use `DiffUtil` in RecyclerView adapters to update only changed items and improve list performance."
+  },
+  {
+    "tip": "Did you know? The MVI (Model–View–Intent) pattern ensures unidirectional data flow, making UI logic easier to reason about."
+  },
+  {
+    "tip": "Tip: Use dependency injection frameworks like Hilt or Koin to provide ViewModel and repository dependencies automatically."
+  },
+  {
+    "tip": "Pro Tip: Keep expensive operations like image decoding or JSON parsing off the main thread using coroutines and Dispatchers.IO."
+  },
+  {
+    "tip": "Did you know? The `rememberUpdatedState` function in Compose helps capture the latest value of a lambda without restarting effects."
+  },
+  {
+    "tip": "Tip: Use `StateFlow` instead of `LiveData` for coroutine-friendly, reactive state handling with clear lifecycle awareness."
+  },
+  {
+    "tip": "Pro Tip: Minimize unnecessary recompositions in Compose by using `derivedStateOf` for derived calculations."
+  },
+  {
+    "tip": "Did you know? `ViewModelScope` automatically cancels coroutines when the ViewModel is cleared, preventing leaks."
+  },
+  {
+    "tip": "Tip: Avoid holding context references in ViewModels to prevent memory leaks."
+  },
+  {
+    "tip": "Pro Tip: Use `Dispatchers.Default` for CPU-heavy tasks like sorting or data transformation, not `Dispatchers.IO`."
+  },
+  {
+    "tip": "Did you know? Clean Architecture improves test coverage by allowing each layer to be tested independently."
+  },
+  {
+    "tip": "Tip: Use structured logging (like Timber) instead of `Log.d` to maintain clean and informative log output."
+  },
+  {
+    "tip": "Pro Tip: Use the Android Studio Profiler (CPU, Memory, Network, Energy) and System Tracing to diagnose performance bottlenecks, including slow rendering and memory leaks (e.g., in combination with LeakCanary)."
+  },
+  {
+    "tip": "Did you know? Memory leaks are often caused by long-lived references to UI components or Context — use LeakCanary to detect them."
+  },
+  {
+    "tip": "Tip: Use Kotlin’s `Result` type to handle network or database errors gracefully and make your code more expressive."
+  },
+  {
+    "tip": "Pro Tip: In Compose, move all side effects like navigation or toasts into `LaunchedEffect` blocks to avoid multiple triggers."
+  },
+  {
+    "tip": "Did you know? Repository classes should depend on interfaces, not concrete implementations, for better testability."
+  },
+  {
+    "tip": "Tip: Use fake or mock repositories in your tests to simulate real data sources without relying on a network connection."
+  },
+  {
+    "tip": "Pro Tip: Split large ViewModels into smaller, feature-specific ones to improve maintainability and separation of concerns."
+  }
+]
