@@ -5808,5 +5808,2105 @@
       "Try to work on both at the same time by constantly switching between them."
     ],
     "category": "OTHER"
+  },
+  {
+    "id": 416,
+    "question": "What is the primary constructor in Kotlin?",
+    "answer": "The one declared in the class header",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The one marked with `constructor` keyword",
+      "The one declared inside a companion object",
+      "The one declared in the class body",
+      "The one declared in the class header",
+      "The one marked with `primary` keyword"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 417,
+    "question": "Which scope function executes the block and returns the context object (`this`)?",
+    "answer": "apply",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "let",
+      "run",
+      "with",
+      "apply",
+      "also"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 418,
+    "question": "What is the difference between `list.map { ... }` and `list.flatMap { ... }`?",
+    "answer": "`map` returns a list of transformed items, `flatMap` returns a flattened list of lists of transformed items.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`map` is for Sequences, `flatMap` is for Lists",
+      "`map` returns a single item, `flatMap` returns a list",
+      "`map` returns a list of transformed items, `flatMap` returns a flattened list of lists of transformed items.",
+      "`flatMap` is an asynchronous version of `map`",
+      "They both transform elements in a list."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 419,
+    "question": "Which keyword is used to explicitly call the setter of a property within its own custom setter?",
+    "answer": "field",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "value",
+      "this",
+      "set",
+      "field",
+      "property"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 420,
+    "question": "What does the `in` keyword mean in a generic declaration like `interface Producer<in T>`?",
+    "answer": "Contravariance (T can only be consumed, not produced)",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Covariance (T can only be produced)",
+      "Invariance (T must be exact type)",
+      "Contravariance (T can only be consumed, not produced)",
+      "It's a reserved keyword for collections",
+      "It means the type is nullable"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 421,
+    "question": "How do you iterate over a map in Kotlin and get both key and value?",
+    "answer": "`for ((key, value) in map) { ... }`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`for (key in map.keys()) { val value = map[key] }`",
+      "`for (mapEntry in map) { ... }`",
+      "`for (map: key, value in map) { ... }`",
+      "`for ((key, value) in map) { ... }`",
+      "`for (entry in map.entries) { ... }`"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 422,
+    "question": "What is the purpose of a primary constructor parameter declared with `val` or `var`?",
+    "answer": "It automatically declares a property with that name in the class",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It only serves as a parameter for the constructor",
+      "It must be initialized with `lateinit`",
+      "It automatically declares a property with that name in the class",
+      "It is only for Java compatibility",
+      "It must be marked as `private`"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 423,
+    "question": "Which of these is used to define a class that can only be subclassed within the same file or module?",
+    "answer": "sealed",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "private",
+      "public",
+      "protected",
+      "internal",
+      "sealed"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 424,
+    "question": "What is the result of using the `take(2)` operator on the list `listOf(1, 2, 3, 4)`?",
+    "answer": "[1, 2]",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "[3, 4]",
+      "[1, 2, 3, 4]",
+      "[1, 2]",
+      "[2, 3]",
+      "[4, 3]"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 425,
+    "question": "What is the type of a function literal with receiver?",
+    "answer": "A function type denoted as `Receiver.(P1, P2) -> R`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A lambda",
+      "A data class",
+      "A suspend function",
+      "A function type denoted as `Receiver.(P1, P2) -> R`",
+      "A higher-order function"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 426,
+    "question": "Which scope function provides the context object as the argument (`it`) and returns the result of the lambda?",
+    "answer": "let",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "apply",
+      "also",
+      "run",
+      "with",
+      "let"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 427,
+    "question": "What is the effect of the 'crossinline' modifier for an inline function?",
+    "answer": "It prevents non-local returns from lambda arguments.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It makes the function private",
+      "It allows the function to be called from Java",
+      "It prevents non-local returns from lambda arguments.",
+      "It makes the function an extension function",
+      "It has no effect."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 428,
+    "question": "Which of the following is true about a `const val`?",
+    "answer": "Must be a top-level or object/companion object member, and its value is known at compile time.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Can be used on local variables",
+      "Its value is initialized lazily at first access",
+      "Must be a top-level or object/companion object member, and its value is known at compile time.",
+      "Can be used on any mutable variable",
+      "Can be null"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 429,
+    "question": "Which collection function should be used for lazy (on-demand) evaluation?",
+    "answer": "Sequence",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "List",
+      "Set",
+      "Array",
+      "Sequence",
+      "MutableList"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 430,
+    "question": "What is the `by` keyword used for in the context of class implementation?",
+    "answer": "Class Delegation",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Property Delegation",
+      "Interface Inheritance",
+      "Object Creation",
+      "Class Delegation",
+      "Lambda Definition"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 431,
+    "question": "What is the primary purpose of `onStart()` in the Activity lifecycle?",
+    "answer": "The Activity is becoming visible to the user.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The Activity is created for the first time",
+      "The Activity is about to be destroyed",
+      "The Activity is becoming visible to the user.",
+      "The Activity is in the foreground and has user focus",
+      "The Activity is no longer visible to the user."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 432,
+    "question": "Which Android component is intended to handle asynchronous background work without a UI, which should be stopped when the user navigates away?",
+    "answer": "Service (often with Coroutines/WorkManager now, but Service is the component)",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Activity",
+      "BroadcastReceiver",
+      "ContentProvider",
+      "Service (often with Coroutines/WorkManager now, but Service is the component)",
+      "Fragment"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 433,
+    "question": "Which intent flag is used to clear the task stack and start the new activity as the root of a new task?",
+    "answer": "`FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TASK`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`FLAG_ACTIVITY_SINGLE_TOP`",
+      "`FLAG_ACTIVITY_REORDER_TO_FRONT`",
+      "`FLAG_ACTIVITY_NEW_TASK`",
+      "`FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_CLEAR_TASK`",
+      "`FLAG_ACTIVITY_NO_HISTORY`"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 434,
+    "question": "What is the main function of the `android:process` attribute in the `AndroidManifest.xml`?",
+    "answer": "It allows an application component to run in a separate, named process.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It sets the priority of the application",
+      "It defines the main entry point of the application",
+      "It allows an application component to run in a separate, named process.",
+      "It is used to define permissions",
+      "It sets the default theme for the application."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 435,
+    "question": "In runtime permissions (Android 6.0+), which method should you call to check if the app already has a specific permission?",
+    "answer": "`ContextCompat.checkSelfPermission(context, permission)`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`checkPermission(permission)`",
+      "`Context.hasPermission(permission)`",
+      "`PermissionManager.isGranted(permission)`",
+      "`ContextCompat.checkSelfPermission(context, permission)`",
+      "`checkSelfPermission(permission)`"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 436,
+    "question": "Which function is used in a `Fragment` to launch a Fragment-specific coroutine and cancel it when the `Fragment`'s view is destroyed?",
+    "answer": "`viewLifecycleOwner.lifecycleScope.launch { ... }`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`lifecycleScope.launch { ... }`",
+      "`GlobalScope.launch { ... }`",
+      "`viewLifecycleOwner.lifecycleScope.launch { ... }`",
+      "`viewModelScope.launch { ... }`",
+      "`runBlocking { ... }`"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 437,
+    "question": "Which build configuration is used to exclude sensitive information or temporary files from being packaged into the final APK/AAB?",
+    "answer": "`exclude` in Gradle or `.gitignore`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`minifyEnabled` in `build.gradle`",
+      "`release` build type",
+      "`exclude` in Gradle or `.gitignore`",
+      "`debuggable` in manifest",
+      "`buildConfigField`"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 438,
+    "question": "What is the main benefit of using a `Fragment` over an `Activity` for UI screens?",
+    "answer": "Reusability and modularity of UI components across multiple activities or different device screen sizes/orientations.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Fragments are faster to load",
+      "Fragments don't have a lifecycle",
+      "Fragments can run in a separate process",
+      "Reusability and modularity of UI components across multiple activities or different device screen sizes/orientations.",
+      "Fragments are not affected by configuration changes."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 439,
+    "question": "Which Android SDK tool is primarily used to analyze and reduce the size of the final APK/AAB by shrinking and optimizing code?",
+    "answer": "R8 / ProGuard",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "AAPT",
+      "ADB",
+      "Gradle",
+      "R8 / ProGuard",
+      "Lint"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 440,
+    "question": "What is the role of a `ContentResolver`?",
+    "answer": "To communicate with a `ContentProvider` from an application's process.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To resolve deep links",
+      "To resolve resource IDs",
+      "To manage content downloaded from the internet",
+      "To communicate with a `ContentProvider` from an application's process.",
+      "To store encrypted local data."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 441,
+    "question": "Which component is responsible for receiving and handling implicit or explicit Intents broadcast by the system or other apps?",
+    "answer": "BroadcastReceiver",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Activity",
+      "Service",
+      "ContentProvider",
+      "BroadcastReceiver",
+      "Handler"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 442,
+    "question": "What is the main purpose of a `PendingIntent`?",
+    "answer": "To grant another application permission to execute a piece of code with the original application's identity and permissions at a later time.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To schedule a network request",
+      "To store temporary data during configuration changes",
+      "To define a set of actions that can be reversed",
+      "To grant another application permission to execute a piece of code with the original application's identity and permissions at a later time.",
+      "To block the main thread until an Intent is received."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 443,
+    "question": "Which of the following is NOT a default part of the `ViewModel`'s purpose?",
+    "answer": "Managing View inflation and layout",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Surfacing data to the UI",
+      "Surviving configuration changes",
+      "Holding UI-related data",
+      "Managing View inflation and layout",
+      "Providing a communication hub between the UI and the Repository."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 444,
+    "question": "Which annotation should be used in Room to define a relationship between two entities?",
+    "answer": "`@Relation` (often combined with `@Embedded`)",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`@Join`",
+      "`@ForeignKey`",
+      "`@Link`",
+      "`@Relation` (often combined with `@Embedded`)",
+      "`@Reference`"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 445,
+    "question": "What is the primary use of `onSaveInstanceState()` in an Activity?",
+    "answer": "To store small amounts of dynamic state data that can be restored in `onCreate()` or `onRestoreInstanceState()` if the system kills the app's process.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To permanently save all application data",
+      "To store large files before the app is closed",
+      "To store small amounts of dynamic state data that can be restored in `onCreate()` or `onRestoreInstanceState()` if the system kills the app's process.",
+      "To perform final cleanup before the activity is destroyed",
+      "To save the state in the ViewModel."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 446,
+    "question": "What is the purpose of the `await()` function on a `Deferred` object?",
+    "answer": "To suspend the coroutine until the `async` operation completes and return its result.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To start the `async` operation",
+      "To cancel the `async` operation",
+      "To suspend the coroutine until the `async` operation completes and return its result.",
+      "To check if the `async` operation is complete",
+      "To run the `async` operation on the main thread."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 447,
+    "question": "What is the recommended way to perform heavy computations in a coroutine?",
+    "answer": "`withContext(Dispatchers.Default) { ... }`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`withContext(Dispatchers.Main) { ... }`",
+      "`launch(Dispatchers.IO) { ... }`",
+      "`runBlocking { ... }`",
+      "`GlobalScope.launch { ... }`",
+      "`withContext(Dispatchers.Default) { ... }`"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 448,
+    "question": "In Kotlin Flow, which operator is used to apply a side effect (e.g., logging) without consuming the values?",
+    "answer": "onEach",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "map",
+      "filter",
+      "collect",
+      "onEach",
+      "flatMap"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 449,
+    "question": "How does `SupervisorJob` differ from a regular `Job` in coroutine cancellation?",
+    "answer": "A child failure does not automatically cause the supervisor to fail or cancel its other children.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`SupervisorJob` is always tied to `Dispatchers.Main`",
+      "It can only be used with `launch`",
+      "A child failure causes all other children to cancel",
+      "A child failure does not automatically cause the supervisor to fail or cancel its other children.",
+      "It is used only for UI coroutines."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 450,
+    "question": "What is the role of `CoroutineScope`?",
+    "answer": "It defines the context for new coroutines and allows managing their lifecycle (cancellation).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It runs all coroutines on the main thread",
+      "It prevents crashes",
+      "It defines the context for new coroutines and allows managing their lifecycle (cancellation).",
+      "It is a deprecated class",
+      "It is only used for suspending functions."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 451,
+    "question": "These operators return a flattened flow after transforming each emitted value.",
+    "answer": "flatMapConcat / flatMapLatest / flatMapMerge",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "map / mapNotNull",
+      "merge / mergeIn",
+      "combine / zip",
+      "collectLatest / collectConcat",
+      "flatMapConcat / flatMapLatest / flatMapMerge"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 452,
+    "question": "What is the purpose of the `Channel` primitive in coroutines?",
+    "answer": "It is a non-blocking queue that allows sending a stream of values from one coroutine (sender) to another (receiver).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a replacement for `LiveData`",
+      "It is a type of `Flow` with built-in backpressure",
+      "It is a non-blocking queue that allows sending a stream of values from one coroutine (sender) to another (receiver).",
+      "It is a way to define a global scope",
+      "It allows running blocking code on the main thread."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 453,
+    "question": "When switching between `Dispatchers.Main` and `Dispatchers.IO`, which function is used to ensure the continuation happens in the desired context and *after* the suspend call completes?",
+    "answer": "`withContext`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`runBlocking`",
+      "`launch`",
+      "`async`",
+      "`withContext`",
+      "`delay`"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 454,
+    "question": "What is the output of the following Flow: `flowOf(1, 2, 3).filter { it > 1 }.map { it * 2 }.toList()`?",
+    "answer": "[4, 6]",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "[1, 2, 3]",
+      "[2, 3, 4, 6]",
+      "[4, 6]",
+      "[2, 3]",
+      "[1, 4, 6]"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 455,
+    "question": "How can you convert a Flow to a `StateFlow` and ensure it is collected when the `Lifecycle` is at least `STARTED`?",
+    "answer": "`flow.stateIn(scope, SharingStarted.WhileSubscribed(5000), initialValue)`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`flow.toStateFlow()`",
+      "`flow.shareIn(scope, SharingStarted.Eagerly, 1)`",
+      "`flow.stateIn(scope, SharingStarted.WhileSubscribed(5000), initialValue)`",
+      "`flow.collectAsState(initialValue)`",
+      "`flow.asStateFlow()`"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 456,
+    "question": "What is the primary responsibility of the `Repository` component in the Google-recommended Android Architecture (MVVM)?",
+    "answer": "To abstract the data layer, providing a clean API to the rest of the app and acting as a single source of truth for the data.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To manage the UI lifecycle and data presentation",
+      "To abstract the data layer, providing a clean API to the rest of the app and acting as a single source of truth for the data.",
+      "To hold UI state during configuration changes",
+      "To execute background tasks with constraints",
+      "To handle navigation between fragments."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 457,
+    "question": "Which Hilt annotation is used to mark the main application class for dependency injection setup?",
+    "answer": "`@HiltAndroidApp`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`@Module`",
+      "`@Provides`",
+      "`@InstallIn(ApplicationComponent::class)`",
+      "`@HiltApplication`",
+      "`@HiltAndroidApp`"
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 458,
+    "question": "What is the main advantage of using *Constructor Injection* over *Field Injection* in Dagger/Hilt?",
+    "answer": "It makes the object's dependencies explicit, making the class easier to test and enforcing dependency immutability.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is the only way to inject objects into Fragments",
+      "It is faster at runtime",
+      "It makes the object's dependencies explicit, making the class easier to test and enforcing dependency immutability.",
+      "It allows injecting private fields",
+      "It is an older, deprecated method."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 459,
+    "question": "Which testing framework is generally used for local unit tests that *do not* require an Android device or emulator?",
+    "answer": "JUnit",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Espresso",
+      "Robolectric",
+      "UI Automator",
+      "JUnit",
+      "Monkey"
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 460,
+    "question": "In MVVM, what does the term **Unidirectional Data Flow (UDF)** mean?",
+    "answer": "Data flows in one direction (e.g., UI Event -> ViewModel -> Model), and State flows back in the opposite direction (Model -> ViewModel -> UI State).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Data can flow freely between all components",
+      "Data flows in only one direction and UI is read-only",
+      "Data flows in one direction (e.g., UI Event -> ViewModel -> Model), and State flows back in the opposite direction (Model -> ViewModel -> UI State).",
+      "Data must only be passed via Bundles",
+      "Data should only be updated in the `Repository`."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 461,
+    "question": "What is the key characteristic of a Composable function that makes it an efficient element of the UI tree?",
+    "answer": "It is skippable and restartable.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It always runs on the background thread",
+      "It can only be called from an Activity",
+      "It is skippable and restartable.",
+      "It must always return a value",
+      "It can only be called once."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 462,
+    "question": "Which side-effect handler is recommended for performing clean-up when the Composable leaves the composition (e.g., stopping a timer)?",
+    "answer": "`DisposableEffect`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`LaunchedEffect`",
+      "`rememberCoroutineScope`",
+      "`SideEffect`",
+      "`DisposableEffect`",
+      "`DerivedStateOf`"
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 463,
+    "question": "In Jetpack Compose, what is the purpose of `Modifier.clickable { ... }`?",
+    "answer": "It adds semantic information, handles click input, and provides ripple/press visual feedback to a Composable.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a replacement for `onClick` in XML",
+      "It only handles touch events",
+      "It must be the first modifier in the chain",
+      "It adds semantic information, handles click input, and provides ripple/press visual feedback to a Composable.",
+      "It creates a new thread for the click handler."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 464,
+    "question": "Which function should be used to create a piece of state whose value is derived from one or more other `State` objects?",
+    "answer": "`derivedStateOf { ... }`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`remember { ... }`",
+      "`rememberSaveable { ... }`",
+      "`mutableStateOf { ... }`",
+      "`derivedStateOf { ... }`",
+      "`remembered { ... }`"
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 465,
+    "question": "What is a 'Slot API' in Jetpack Compose?",
+    "answer": "A design pattern where a Composable takes other Composable functions as parameters (slots), allowing the parent to customize specific areas of the child's layout (e.g., a `TopAppBar` taking a `leadingIcon` slot).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "An API for accessing system slots like battery and network",
+      "An API for defining UI constraints",
+      "An API for controlling the layout of a `Row` or `Column`",
+      "A design pattern where a Composable takes other Composable functions as parameters (slots), allowing the parent to customize specific areas of the child's layout (e.g., a `TopAppBar` taking a `leadingIcon` slot).",
+      "A way to save state automatically."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 466,
+    "question": "Which Kotlin function is best suited for executing a block of code with a nullable receiver only if it is not null, and returning the result of the lambda?",
+    "answer": "let",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "apply",
+      "also",
+      "run",
+      "takeIf",
+      "let"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 467,
+    "question": "What is the purpose of the `expect` and `actual` keywords in Kotlin?",
+    "answer": "To implement multiplatform programming, defining expected declarations in common code and platform-specific implementations.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To handle asynchronous operations",
+      "To define and implement sealed interfaces",
+      "To implement multiplatform programming, defining expected declarations in common code and platform-specific implementations.",
+      "To define abstract classes",
+      "To enforce type checking at runtime."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 468,
+    "question": "What is the purpose of the `companion object` in a Kotlin class?",
+    "answer": "To provide a place for factory methods, static constants, and other members that belong to the class rather than to any specific instance of the class.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To define an inner class",
+      "To provide a place for factory methods, static constants, and other members that belong to the class rather than to any specific instance of the class.",
+      "To enable multiple inheritance",
+      "To define extension functions",
+      "To allow object creation without constructors"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 469,
+    "question": "What is a major difference between a Kotlin `class` and a `data class`?",
+    "answer": "A `data class` automatically provides `equals()`, `hashCode()`, `toString()`, `copy()`, and `componentN()` functions.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A `data class` cannot have functions",
+      "A `data class` is always a singleton",
+      "A `data class` automatically provides `equals()`, `hashCode()`, `toString()`, `copy()`, and `componentN()` functions.",
+      "A `data class` cannot inherit from other classes",
+      "A `data class` must have at least two properties."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 470,
+    "question": "In Kotlin, how do you correctly override a getter and a setter for a property?",
+    "answer": "By using the `override` keyword and defining custom `get()` and `set(value)` blocks after the property declaration.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "By using the `override` keyword before `val` or `var`",
+      "By defining new methods named `getProperty()` and `setProperty()`",
+      "By using the `override` keyword and defining custom `get()` and `set(value)` blocks after the property declaration.",
+      "By declaring property accessors inside the class body only",
+      "Only possible inside a `data class`."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 471,
+    "question": "What is the key difference between `==` and `===` in Kotlin?",
+    "answer": "`==` checks for structural equality (calls `equals()`), and `===` checks for referential equality (same object in memory).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`==` is for primitive types, `===` is for objects",
+      "`===` is faster than `==`",
+      "`==` checks for structural equality (calls `equals()`), and `===` checks for referential equality (same object in memory).",
+      "There is no difference in Kotlin",
+      "`==` is for nullable types, `===` is for non-nullable types."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 472,
+    "question": "What is a `Sequence` in Kotlin and what is its main benefit over a `List` for collection operations?",
+    "answer": "A `Sequence` performs operations lazily, applying each operation to one element at a time, which is more efficient for long chains of operations on large collections.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A `Sequence` is mutable, unlike a `List`",
+      "A `Sequence` is synchronized for multi-threaded use",
+      "A `Sequence` is faster for single operations",
+      "A `Sequence` performs operations lazily, applying each operation to one element at a time, which is more efficient for long chains of operations on large collections.",
+      "A `Sequence` can only hold unique elements."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 473,
+    "question": "Which scope function executes the block of code and returns the result of the lambda, providing the context object as `this`?",
+    "answer": "run",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "let",
+      "apply",
+      "also",
+      "with",
+      "run"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 474,
+    "question": "How do you create an array of non-null integers in Kotlin?",
+    "answer": "`arrayOf(1, 2, 3)` or `IntArray(3) { index -> index + 1 }`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`listOf(1, 2, 3)`",
+      "`Array(3) { 0 }`",
+      "`arrayOf(1, 2, 3)` or `IntArray(3) { index -> index + 1 }`",
+      "`Collection<Int>(1, 2, 3)`",
+      "`array[1, 2, 3]`"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 475,
+    "question": "Which property delegate is used to initialize a value only upon the first access and is thread-safe by default?",
+    "answer": "lazy",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "lateinit",
+      "Delegates.observable",
+      "by",
+      "lazy",
+      "Delegates.notNull"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 476,
+    "question": "What is the primary function of `ContentProvider` in Android?",
+    "answer": "To manage access to a structured set of data, providing a standard interface to share data between different applications.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To display the application's UI",
+      "To execute long-running background tasks",
+      "To manage access to a structured set of data, providing a standard interface to share data between different applications.",
+      "To receive system broadcasts",
+      "To cache network responses."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 477,
+    "question": "Which Activity lifecycle method is usually called before the Activity is destroyed (if the process is not killed abruptly)?",
+    "answer": "`onDestroy()`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`onAnnihilate()`",
+      "`onStop()`",
+      "`onRestart()`",
+      "`onKill()`",
+      "`onDestroy()`"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 478,
+    "question": "When does the system call the `onAttachedToWindow()` method of a custom `View`?",
+    "answer": "When the view is attached to a window and has a surface for drawing.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "When the view is inflated from XML",
+      "When the user clicks the view",
+      "When the view is attached to a window and has a surface for drawing.",
+      "After `onDraw()` is called for the first time",
+      "Only when the activity is created."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 479,
+    "question": "What is the purpose of the `android:exported=\"true\"` attribute for a component in `AndroidManifest.xml`?",
+    "answer": "It allows other applications to start or interact with this component.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It makes the app available on Google Play",
+      "It allows the component to access external storage",
+      "It ensures the component runs on the main thread",
+      "It allows other applications to start or interact with this component.",
+      "It specifies that the component supports deep linking."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 480,
+    "question": "Which of these is the most appropriate way to schedule a non-immediate task that must run even if the app process is killed and potentially requires network access?",
+    "answer": "WorkManager",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "AsyncTask",
+      "Thread",
+      "Service (Started Service)",
+      "Handler",
+      "WorkManager"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 481,
+    "question": "What is the recommended approach for implementing a `Snackbar` in a Fragment, ensuring it is shown over the appropriate UI container?",
+    "answer": "Use `Snackbar.make(view, message, duration)` where `view` is the root view of the Fragment's layout or a coordinator layout.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Call `Toast.makeText(getContext(), ...)`",
+      "Create a custom dialog box",
+      "Use `Snackbar.make(view, message, duration)` where `view` is the root view of the Fragment's layout or a coordinator layout.",
+      "Use `GlobalScope.launch { ... }`",
+      "It can only be done in the Activity."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 482,
+    "question": "What is a main benefit of using **Build Variants** (product flavors and build types) in Gradle?",
+    "answer": "To create different versions of an application from a single project codebase (e.g., free vs. paid, different environments, etc.).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To automatically generate Javadocs",
+      "To reduce the size of the APK by always minifying the code",
+      "To create different versions of an application from a single project codebase (e.g., free vs. paid, different environments, etc.).",
+      "To manage all external dependencies",
+      "To run all unit tests automatically."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 483,
+    "question": "Which method is the correct place to instantiate data-bound variables in a Fragment when using **View Binding**?",
+    "answer": "Between `onCreateView()` and `onDestroyView()` (usually in `onCreateView()` right after inflating, and nullifying in `onDestroyView()`).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`onAttach()`",
+      "`onResume()`",
+      "Between `onCreateView()` and `onDestroyView()` (usually in `onCreateView()` right after inflating, and nullifying in `onDestroyView()`).",
+      "`onActivityCreated()`",
+      "`onStop()`"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 484,
+    "question": "What is the primary role of `LiveData.observe()` and why is it lifecycle-aware?",
+    "answer": "It registers an observer that receives updates only when the associated `LifecycleOwner` is in an active state (`STARTED` or `RESUMED`), preventing memory leaks and crashes.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is a blocking call to get the latest value",
+      "It updates the UI every time a new value is posted, regardless of lifecycle",
+      "It registers an observer that receives updates only when the associated `LifecycleOwner` is in an active state (`STARTED` or `RESUMED`), preventing memory leaks and crashes.",
+      "It is used for synchronous database queries",
+      "It automatically fetches data from the network."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 485,
+    "question": "In Jetpack Room, what does an `@Update` annotated method do?",
+    "answer": "It finds entities that match the primary keys of the passed entities and modifies all their columns in the database.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It inserts a new entity only if it does not exist",
+      "It deletes the specified entities",
+      "It finds entities that match the primary keys of the passed entities and modifies all their columns in the database.",
+      "It creates a new database table",
+      "It updates the UI."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 486,
+    "question": "Which Jetpack component should you use to manage temporary UI-related data that needs to survive configuration changes (like screen rotation)?",
+    "answer": "ViewModel",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "SavedStateHandle",
+      "Bundle in `onSaveInstanceState`",
+      "WorkManager",
+      "ViewModel",
+      "SharedPreferences"
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 487,
+    "question": "What is the purpose of `SavedStateHandle` in the context of `ViewModel`?",
+    "answer": "It allows `ViewModel` to save and restore a small amount of UI state, surviving both configuration changes *and* system-initiated process death.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It replaces the entire `ViewModel`",
+      "It is only used for network caching",
+      "It allows `ViewModel` to save and restore a small amount of UI state, surviving both configuration changes *and* system-initiated process death.",
+      "It is a tool for debugging",
+      "It is used for large database operations."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 488,
+    "question": "What is the main benefit of using the Navigation component's `Safe Args`?",
+    "answer": "It generates simple object and builder classes for type-safe navigation and argument passing.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It allows navigating between Activities only",
+      "It allows sending intents safely between activities.",
+      "It generates simple object and builder classes for type-safe navigation and argument passing.",
+      "It automatically handles deep links without configuration",
+      "It makes all navigation fragments singletons."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 489,
+    "question": "In WorkManager, what does the **Expedited** type of work primarily indicate?",
+    "answer": "It indicates important tasks that should be started immediately and completed within a short window, even if the system is restricting background execution.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The work must run on the main thread",
+      "The work is cancelled if the app is closed",
+      "It indicates important tasks that should be started immediately and completed within a short window, even if the system is restricting background execution.",
+      "The work requires a permanent notification",
+      "The work has a very low priority."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 490,
+    "question": "In a coroutine, how does structured concurrency handle exception propagation from a failing child coroutine?",
+    "answer": "A child coroutine's failure cancels its parent, which in turn cancels all its other children, thus propagating the failure upwards.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The child's exception is always silently ignored",
+      "The exception is automatically caught by `try-catch` blocks in the parent",
+      "A child coroutine's failure cancels its parent, which in turn cancels all its other children, thus propagating the failure upwards.",
+      "The exception is reported only to the main thread",
+      "It immediately crashes the whole application."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 491,
+    "question": "What is a `suspend` function allowed to do that a regular function is not?",
+    "answer": "Call other `suspend` functions and yield execution without blocking the current thread.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Run on the main thread",
+      "Return a `Flow`",
+      "Call other `suspend` functions and yield execution without blocking the current thread.",
+      "Be defined as an extension function",
+      "Access private members of a class."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 492,
+    "question": "In Kotlin Flow, what is the role of the `buffer()` operator?",
+    "answer": "It buffers emissions from the upstream flow, allowing the emitter to produce elements faster than the collector can process them, increasing throughput.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It converts a Flow to a List",
+      "It ensures that the Flow runs on the main thread",
+      "It buffers emissions from the upstream flow, allowing the emitter to produce elements faster than the collector can process them, increasing throughput.",
+      "It automatically handles backpressure by dropping values",
+      "It slows down the emitter."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 493,
+    "question": "Which coroutine builder is used to start a new coroutine that calculates a result concurrently and can be cancelled?",
+    "answer": "`async`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`launch`",
+      "`runBlocking`",
+      "`withContext`",
+      "`async`",
+      "`GlobalScope`"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 494,
+    "question": "How do you handle exceptions within a coroutine scope that should not cancel the parent job (like independent UI tasks)?",
+    "answer": "Use a `SupervisorJob` or wrap the coroutine body with a `try-catch` block.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "By using `Dispatchers.Unconfined`",
+      "By using `GlobalScope`",
+      "Use a `SupervisorJob` or wrap the coroutine body with a `try-catch` block.",
+      "By marking the function with `@Throws`",
+      "Coroutines do not throw exceptions."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 495,
+    "question": "What is the key difference between `SharedFlow` and `StateFlow`?",
+    "answer": "`StateFlow` always holds one state value and emits the current value immediately upon collection, while `SharedFlow` is a hot stream that can be configured to replay a certain number of previous emissions to new collectors.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`SharedFlow` is a cold stream, `StateFlow` is a hot stream",
+      "`StateFlow` is for IO operations, `SharedFlow` is for UI updates",
+      "`StateFlow` always holds one state value and emits the current value immediately upon collection, while `SharedFlow` is a hot stream that can be configured to replay a certain number of previous emissions to new collectors.",
+      "They are interchangeable",
+      "`SharedFlow` is mutable, `StateFlow` is read-only."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 496,
+    "question": "What happens if you try to call a `suspend` function from a regular, non-suspending function?",
+    "answer": "It results in a compile-time error, as `suspend` functions can only be called from other `suspend` functions or within a coroutine builder.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It runs the function on a new background thread",
+      "It results in a compile-time error, as `suspend` functions can only be called from other `suspend` functions or within a coroutine builder.",
+      "It causes a runtime crash",
+      "It automatically converts the regular function to a `suspend` function",
+      "It blocks the calling thread."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 497,
+    "question": "Which dispatcher is suitable for running coroutines that need to block the thread, such as reading or writing large files, or making synchronous network calls?",
+    "answer": "`Dispatchers.IO`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`Dispatchers.Main`",
+      "`Dispatchers.Default`",
+      "`Dispatchers.Unconfined`",
+      "`Dispatchers.IO`",
+      "`Dispatchers.Main.immediate`"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 498,
+    "question": "In a `Flow`, what is the effect of using the `conflate()` operator?",
+    "answer": "If the collector is slower than the emitter, it drops the intermediate emitted values, keeping only the latest one to be sent to the collector.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It merges two different flows into one",
+      "It converts the flow to a `SharedFlow`",
+      "It ensures that all values are processed in parallel",
+      "If the collector is slower than the emitter, it drops the intermediate emitted values, keeping only the latest one to be sent to the collector.",
+      "It collects the flow on the main thread."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 499,
+    "question": "How do you implement the Dependency Inversion Principle (DIP) in Android using DI frameworks like Hilt/Dagger?",
+    "answer": "By defining dependencies as interfaces/abstractions in the high-level modules and injecting concrete implementations from the low-level DI module.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "By using only `Fragment`s and no `Activity`s",
+      "By defining all classes as singletons",
+      "By defining dependencies as interfaces/abstractions in the high-level modules and injecting concrete implementations from the low-level DI module.",
+      "By avoiding all use of third-party libraries",
+      "By making all classes internal."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 500,
+    "question": "In Clean Architecture, what is the primary role of the **Domain** layer?",
+    "answer": "To contain the application's business rules and entities, independent of any UI, database, or external framework.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To handle network requests",
+      "To display data to the user",
+      "To contain the application's business rules and entities, independent of any UI, database, or external framework.",
+      "To manage application resources",
+      "To define the database schema."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 501,
+    "question": "Which architecture principle states that modules should be open for extension but closed for modification?",
+    "answer": "Open-Closed Principle (OCP)",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Single Responsibility Principle (SRP)",
+      "Liskov Substitution Principle (LSP)",
+      "Interface Segregation Principle (ISP)",
+      "Dependency Inversion Principle (DIP)",
+      "Open-Closed Principle (OCP)"
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 502,
+    "question": "What is the purpose of the `ApplicationComponent` (or `SingletonComponent`) in Hilt/Dagger?",
+    "answer": "It holds bindings that should live for the entire duration of the application's process lifetime (singleton scope).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is used only for testing",
+      "It holds bindings that should live for the entire duration of the application's process lifetime (singleton scope).",
+      "It is created every time a new Activity starts",
+      "It defines all the Fragment-scoped dependencies",
+      "It is a deprecated component."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 503,
+    "question": "In a well-structured MVVM app, who is responsible for deciding whether to fetch data from the network or the local database?",
+    "answer": "The Repository",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The Activity/Fragment",
+      "The ViewModel",
+      "The Data Source (e.g., Retrofit or Room)",
+      "The Repository",
+      "The Application class"
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 504,
+    "question": "What is the primary role of **Robolectric** in Android testing?",
+    "answer": "It allows local unit tests to run on a development machine (JVM) by providing a simulated Android environment, enabling testing of code that depends on the Android framework without an emulator.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To perform end-to-end testing of the application UI",
+      "To generate mock objects automatically",
+      "To measure application performance",
+      "It allows local unit tests to run on a development machine (JVM) by providing a simulated Android environment, enabling testing of code that depends on the Android framework without an emulator.",
+      "To manage all network connectivity tests."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 505,
+    "question": "Which Compose function is used to convert a Kotlin `StateFlow` into a Compose `State<T>`?",
+    "answer": "`collectAsState()`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`remember { ... }`",
+      "`observeAsState()`",
+      "`toState()`",
+      "`State<T>()`",
+      "`collectAsState()`"
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 506,
+    "question": "What is **Recomposition** in Jetpack Compose?",
+    "answer": "The process of re-executing Composable functions when their input data (state) changes, to update the UI.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The process of creating a new Activity",
+      "The process of cleaning up memory",
+      "The process of re-executing Composable functions when their input data (state) changes, to update the UI.",
+      "The initial rendering of the UI",
+      "The process of saving state before process death."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 507,
+    "question": "What is the purpose of the `rememberSaveable` composable?",
+    "answer": "It retains state across Recomposition and also across Activity/process recreation (system process death) by integrating with Android's `SavedStateHandle`.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It only retains state across screen rotation",
+      "It retains state across Recomposition and also across Activity/process recreation (system process death) by integrating with Android's `SavedStateHandle`.",
+      "It saves state to the database",
+      "It is a replacement for `ViewModel`",
+      "It is used for persistent storage."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 508,
+    "question": "In Compose Navigation, what is a primary benefit of using **nested navigation graphs**?",
+    "answer": "To modularize the application's navigation, allowing a smaller, self-contained set of destinations to be grouped and reused.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "They allow deep linking from the web only",
+      "They replace the need for Fragments",
+      "They are the only way to pass arguments",
+      "To modularize the application's navigation, allowing a smaller, self-contained set of destinations to be grouped and reused.",
+      "They only work with `ViewModel`."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 509,
+    "question": "Which layout composable is specifically designed for placing items relative to each other or to the edges of the screen, similar to an XML `ConstraintLayout`?",
+    "answer": "`ConstraintLayout` (from the Compose library)",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`Row`",
+      "`Column`",
+      "`Box`",
+      "`LazyColumn`",
+      "`ConstraintLayout` (from the Compose library)"
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 510,
+    "question": "What is the difference between `mutableStateOf()` and `MutableStateFlow` in Android development?",
+    "answer": "`mutableStateOf` is part of Compose Runtime for managing UI state within Composables, while `MutableStateFlow` is part of Coroutines/Flow for managing data stream state outside of the UI layer (e.g., in a ViewModel).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "They are interchangeable and perform the same function",
+      "`mutableStateOf` is thread-safe, `MutableStateFlow` is not",
+      "`mutableStateOf` is for Fragments, `MutableStateFlow` is for Activities",
+      "`mutableStateOf` is part of Compose Runtime for managing UI state within Composables, while `MutableStateFlow` is part of Coroutines/Flow for managing data stream state outside of the UI layer (e.g., in a ViewModel).",
+      "`MutableStateFlow` can only hold String values."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 511,
+    "question": "What is the recommended way to retrieve context within a Composable function?",
+    "answer": "`LocalContext.current`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Pass it as a parameter from the Activity",
+      "`Context.getCurrent()`",
+      "`LocalContext.current`",
+      "By using a `val context = this` inside the composable",
+      "It is not possible to access context."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 512,
+    "question": "Which function should be used to launch a coroutine whose execution needs to be managed (started/cancelled) according to the `LifecycleOwner` of a Composable, and which cancels on Recomposition if its key changes?",
+    "answer": "`LaunchedEffect`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`rememberCoroutineScope`",
+      "`runBlocking`",
+      "`SideEffect`",
+      "`LaunchedEffect`",
+      "`DisposableEffect`"
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 513,
+    "question": "What is the correct way to specify a `Spacer` in Compose to take up all available remaining width in a `Row`?",
+    "answer": "`Spacer(Modifier.weight(1f))`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`Spacer(Modifier.fillMaxSize())`",
+      "`Spacer(Modifier.fillMaxWidth())`",
+      "`Spacer(Modifier.weight(1f))`",
+      "`Spacer(Modifier.expand())`",
+      "`Spacer(Modifier.padding(all = Dp.Infinity))`"
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 514,
+    "question": "What does the `getLayoutDirection()` method in Android primarily determine?",
+    "answer": "Whether the layout should be rendered in Left-to-Right (LTR) or Right-to-Left (RTL) mode, based on the device's locale settings.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The orientation of a `LinearLayout`",
+      "The color scheme (light/dark mode)",
+      "The DPI density of the screen",
+      "Whether the layout should be rendered in Left-to-Right (LTR) or Right-to-Left (RTL) mode, based on the device's locale settings.",
+      "The current language setting only."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 515,
+    "question": "What is the primary purpose of **Kotlin Symbol Processing (KSP)**?",
+    "answer": "A processor API that replaces Kotlin Annotation Processing (KAPT) for faster and more type-safe code generation, widely used by libraries like Room and Hilt.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To run Kotlin code on non-Android platforms",
+      "A tool for debugging memory leaks in Kotlin",
+      "A processor API that replaces Kotlin Annotation Processing (KAPT) for faster and more type-safe code generation, widely used by libraries like Room and Hilt.",
+      "A library for functional programming",
+      "A tool for converting Java code to Kotlin."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 516,
+    "question": "What is the result of applying the Elvis operator (`?:`) on a nullable type `String?` when the value is null?",
+    "answer": "It returns the expression on the right-hand side of the operator.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It throws a `NullPointerException`.",
+      "It returns an empty string (`\"\"`).",
+      "It returns the expression on the right-hand side of the operator.",
+      "It calls the function with a default value.",
+      "It converts the type to non-nullable."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 517,
+    "question": "Which of these is a valid reason to use a **`typealias`** in Kotlin?",
+    "answer": "To provide a shorter or more meaningful name for an existing type, especially for complex generic types or function types.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To create a new class that can inherit from multiple other classes.",
+      "To define a type that is accessible only within the current file.",
+      "To provide a shorter or more meaningful name for an existing type, especially for complex generic types or function types.",
+      "To restrict the mutability of a variable.",
+      "To define a compile-time constant."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 518,
+    "question": "What is a major limitation of the **`lateinit`** modifier in Kotlin?",
+    "answer": "It can only be used on non-nullable `var` properties that are not of a primitive type.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It can only be used on `val` properties.",
+      "It must be initialized immediately in the constructor.",
+      "It can only be used on non-nullable `var` properties that are not of a primitive type.",
+      "It is only for delegation properties.",
+      "It is only available in data classes."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 519,
+    "question": "What is the primary role of an **`operator`** function in Kotlin?",
+    "answer": "To allow a class to use conventional notations (like +, -, *, or []) for certain operations, often resulting in cleaner code.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To define a function that must be implemented by subclasses.",
+      "To mark a function as asynchronous.",
+      "To allow a class to use conventional notations (like +, -, *, or []) for certain operations, often resulting in cleaner code.",
+      "To make a function private.",
+      "To enable runtime reflection."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 520,
+    "question": "How is the **`when`** expression different from the Java `switch` statement in Kotlin?",
+    "answer": "'when' can be used as an expression (returning a value), supports multiple and custom conditions, works with any type, and doesn’t require a default case when exhaustive.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The `when` statement is faster, works only with primitives and Enums, but can return a value.",
+      "`when` supports custom conditions and all types, but still requires a mandatory `else` block to compile successfully.",
+      "'when' can be used as an expression (returning a value), supports multiple and custom conditions, works with any type, and doesn’t require a default case when exhaustive.",
+      "The `when` expression can check for equality and custom conditions, but only works with primitive types (like the Java `switch`).",
+      "`when` is a replacement for `if/else` that must be exhaustive (always needs an `else` block) but cannot return a value."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 521,
+    "question": "What is the purpose of the **`@JvmStatic`** annotation in a Kotlin `companion object`?",
+    "answer": "It exposes a member of the `companion object` as a static method in the generated Java bytecode, making it easier to call from Java code.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It ensures the function runs on a background thread.",
+      "It makes the member a singleton.",
+      "It is used to define a constant value.",
+      "It exposes a member of the `companion object` as a static method in the generated Java bytecode, making it easier to call from Java code.",
+      "It marks the member as thread-safe."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 522,
+    "question": "Which modifier should be used on an interface function if you want to provide a default implementation that can be overridden by a class?",
+    "answer": "default implementation is allowed without a specific modifier",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`default`",
+      "`open`",
+      "`abstract`",
+      "default implementation is allowed without a specific modifier",
+      "`override`"
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 523,
+    "question": "How does an **`object`** declaration in Kotlin guarantee a singleton instance?",
+    "answer": "The initialization block runs lazily and thread-safely upon first access, and the compiler ensures only a single instance is created.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is initialized eagerly at compile time.",
+      "It runs on the main thread only.",
+      "The initialization block runs lazily and thread-safely upon first access, and the compiler ensures only a single instance is created.",
+      "It relies on the developer to manage the single instance.",
+      "It is the same as a private constructor."
+    ],
+    "category": "KOTLIN"
+  },
+  {
+    "id": 524,
+    "question": "What is the primary role of the `Application` class in an Android app?",
+    "answer": "To hold global application state and provide the root context for components that need to live for the duration of the entire app process.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To display the main UI screen.",
+      "To manage all network requests.",
+      "To hold global application state and provide the root context for components that need to live for the duration of the entire app process.",
+      "To define the app's permissions.",
+      "To handle background tasks only."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 525,
+    "question": "In the Fragment lifecycle, when is it safe to interact with the Fragment's views (i.e., when is the view hierarchy created)?",
+    "answer": "After `onCreateView()` returns, typically in `onViewCreated()`.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "In `onCreate()`.",
+      "In `onAttach()`.",
+      "After `onCreateView()` returns, typically in `onViewCreated()`.",
+      "In `onResume()`.",
+      "In `onStart()`."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 526,
+    "question": "Which of these is the most appropriate way to pass complex, structured data between an Activity and a Fragment?",
+    "answer": "Using a `ViewModel` that is scoped to the `Activity` or the `NavGraph` and holds a data model (or using `Parcelable` with `Bundle` for arguments).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Passing it as a global static variable.",
+      "Saving it to `SharedPreferences` before navigation.",
+      "Using a `ViewModel` that is scoped to the `Activity` or the `NavGraph` and holds a data model (or using `Parcelable` with `Bundle` for arguments).",
+      "Using a custom `Intent` action.",
+      "Using `EventBus`."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 527,
+    "question": "What is the main purpose of the `onTrimMemory()` callback in an Android component?",
+    "answer": "To notify the application that the system is running low on memory, allowing it to release resources based on the specified level to improve overall system performance.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To save the UI state before destruction.",
+      "To handle configuration changes.",
+      "To notify the application that the system is running low on memory, allowing it to release resources based on the specified level to improve overall system performance.",
+      "To initiate network data synchronization.",
+      "To manage deep links."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 528,
+    "question": "Which mechanism does Android use to communicate between processes (IPC)?",
+    "answer": "Binder",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Intent",
+      "SharedPreferences",
+      "ContentProvider",
+      "BroadcastReceiver",
+      "Binder"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 529,
+    "question": "What is the purpose of the **`android:allowBackup=\"false\"`** attribute in the manifest?",
+    "answer": "It disables the automatic backup and restore of app data to Google Drive for the app.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It prevents the app from accessing external storage.",
+      "It disables the ability to install the app on new devices.",
+      "It prevents the user from manually uninstalling the app.",
+      "It disables the automatic backup and restore of app data to Google Drive for the app.",
+      "It forces the app to only use local resources."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 530,
+    "question": "In the context of coroutines, what is the effect of using `runBlocking`?",
+    "answer": "It blocks the current thread until the coroutine inside it completes, and it is primarily used for bridging non-suspending code with suspending code (e.g., in `main()` or tests).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It ensures the code runs on the main thread without blocking.",
+      "It runs the code in parallel with other coroutines.",
+      "It blocks the current thread until the coroutine inside it completes, and it is primarily used for bridging non-suspending code with suspending code (e.g., in `main()` or tests).",
+      "It automatically cancels the coroutine after a timeout.",
+      "It is a recommended way to perform background work in a production app."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 531,
+    "question": "Which **terminal operator** on a Kotlin `Flow` collects all values and **returns only the last emitted value** (throwing an exception if the flow is empty)?",
+    "answer": "`last()`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`collect()`",
+      "`toList().last()`",
+      "`first()`",
+      "`last()`",
+      "`reduce { ... }`"
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 532,
+    "question": "How do you manage to switch between two different dispatchers inside a single `suspend` function while maintaining structured concurrency?",
+    "answer": "By calling `withContext(NewDispatcher) { ... }` which suspends the current coroutine until the block completes, then resumes in the original dispatcher.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "By starting a new `launch(NewDispatcher) { ... }` block.",
+      "By using `GlobalScope.launch { ... }`.",
+      "By calling `withContext(NewDispatcher) { ... }` which suspends the current coroutine until the block completes, then resumes in the original dispatcher.",
+      "By calling `Thread.sleep()`.",
+      "It is not possible to change dispatchers."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 533,
+    "question": "What is the primary characteristic of the **`Dispatchers.Unconfined`** dispatcher?",
+    "answer": "It starts the coroutine on the calling thread, but after the first suspension, it resumes in the dispatcher determined by the suspend function that was called.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It always runs on the main thread.",
+      "It always runs on a new background thread.",
+      "It starts the coroutine on the calling thread, but after the first suspension, it resumes in the dispatcher determined by the suspend function that was called.",
+      "It guarantees execution in parallel.",
+      "It is only for testing purposes."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 534,
+    "question": "What mechanism in Kotlin Flow is used to avoid crashing when an operation throws an exception mid-stream?",
+    "answer": "The `catch { ... }` operator, which can catch the exception and either emit a value, throw a different exception, or re-throw the original exception.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A global `try-catch` block.",
+      "Using the `buffer()` operator.",
+      "The `catch { ... }` operator, which can catch the exception and either emit a value, throw a different exception, or re-throw the original exception.",
+      "Using a `SupervisorJob`.",
+      "Marking the flow as `cancellable`."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 535,
+    "question": "In the context of `SharedFlow` and `StateFlow`, what does the **`replay`** parameter define?",
+    "answer": "The number of the most recently emitted values that should be sent to any new collector immediately upon subscription.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "The number of times the flow will restart on failure.",
+      "The minimum number of collectors required to keep the flow active.",
+      "The maximum number of values the collector can process at once.",
+      "The number of the most recently emitted values that should be sent to any new collector immediately upon subscription.",
+      "The maximum buffer size."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 536,
+    "question": "Which coroutine scope is the recommended approach for managing long-running operations (like background data synchronization) that must **outlive the UI** (Activity/Fragment) but must **terminate** when the application process is killed?",
+    "answer": "A custom CoroutineScope instance tied to the Application lifecycle (often managed by a Dependency Injection component).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Using `GlobalScope.launch { ... }` because it automatically survives the lifecycle of all UI components.",
+      "Using WorkManager to schedule the work, as it is guaranteed to execute even if the application process is killed.",
+      "A custom CoroutineScope instance tied to the Application lifecycle (often managed by a Dependency Injection component).",
+      "The `lifecycleScope` of the main Activity, since it is the root of the UI tree.",
+      "A `ViewModelScope` created in the Application class and shared, as it is designed to survive configuration changes."
+    ],
+    "category": "COROUTINES"
+  },
+  {
+    "id": 537,
+    "question": "What is the primary function of `MutableLiveData.setValue(T)`?",
+    "answer": "To update the value on the main (UI) thread.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To update the value on a background thread.",
+      "To post an event to all observers.",
+      "To update the value on the main (UI) thread.",
+      "To observe the data from the ViewModel.",
+      "To clear the data."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 538,
+    "question": "In Room, what is the advantage of using a **`PagingSource`** return type in a DAO query?",
+    "answer": "It allows Room to work with the Jetpack Paging library, efficiently loading and displaying large lists of data incrementally.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It makes the query run on the main thread.",
+      "It caches all query results in memory.",
+      "It allows Room to work with the Jetpack Paging library, efficiently loading and displaying large lists of data incrementally.",
+      "It defines a relationship between two entities.",
+      "It only allows synchronous queries."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 539,
+    "question": "Which WorkManager constraint ensures that the device's screen is on before the work can run?",
+    "answer": "No built-in constraint for screen-on status exists; only RequiresCharging or RequiresDeviceIdle, which don’t control screen state.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`RequiresScreenOn`",
+      "`RequiresDeviceActive`",
+      "`RequiresScreenUnlocked`",
+      "`RequiresDeviceIdle`",
+      "No built-in constraint for screen-on status exists; only RequiresCharging or RequiresDeviceIdle, which don’t control screen state."
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 540,
+    "question": "What is the primary use case for Jetpack Compose's **`LaunchedEffect(key1)`** with a key?",
+    "answer": "To launch a coroutine when the Composable first enters the composition and restart/re-run the coroutine if the `key1` parameter changes.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To define a mutable state variable.",
+      "To launch a coroutine that must run indefinitely.",
+      "To launch a coroutine when the Composable first enters the composition and restart/re-run the coroutine if the `key1` parameter changes.",
+      "To execute a piece of non-suspending code.",
+      "To handle UI gestures."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 541,
+    "question": "In Compose, how do you correctly pass an external `ViewModel` instance to a Composable function using Hilt?",
+    "answer": "By calling val viewModel: MyViewModel = hiltViewModel() inside the Composable, which retrieves the Hilt-provided instance.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "By manually instantiating it with the `ViewModelProvider`.",
+      "By calling val viewModel: MyViewModel = hiltViewModel() inside the Composable, which retrieves the Hilt-provided instance.",
+      "By making the ViewModel a singleton.",
+      "By passing it as an explicit parameter from the Activity/Fragment.",
+      "By using `LocalViewModel.current`."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 542,
+    "question": "What is the key difference between a Composable function marked with **`@Stable`** and one that is unmarked?",
+    "answer": "A type marked as @Stable tells the Compose compiler that its public properties don’t change unexpectedly, allowing recomposition to be skipped when parameters remain equal.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A `@Stable` Composable is only for preview.",
+      "A `@Stable` Composable runs on a background thread.",
+      "A type marked as @Stable tells the Compose compiler that its public properties don’t change unexpectedly, allowing recomposition to be skipped when parameters remain equal.",
+      "A `@Stable` Composable cannot hold state.",
+      "It must be used with a `remember` block."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 543,
+    "question": "In Compose, which component is used to display a potentially infinite list of items with performance optimization by composing and laying out only the visible items?",
+    "answer": "`LazyColumn` / `LazyRow`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`Column` / `Row`",
+      "`Box`",
+      "`RecyclerView`",
+      "`LazyColumn` / `LazyRow`",
+      "`Scaffold`"
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 544,
+    "question": "How does `Modifier.fillMaxSize()` differ from `Modifier.wrapContentSize()`?",
+    "answer": "`fillMaxSize()` forces the composable to take all available space, while `wrapContentSize()` makes it only as large as its children require.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "They are equivalent.",
+      "`fillMaxSize()` is for width, `wrapContentSize()` is for height.",
+      "`fillMaxSize()` forces the composable to take all available space, while `wrapContentSize()` makes it only as large as its children require.",
+      "`wrapContentSize()` is deprecated.",
+      "`fillMaxSize()` only works inside a `Box`."
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 545,
+    "question": "Which Composable should be used to define the overall structure of a screen, including a `TopAppBar`, `BottomBar`, and `FloatingActionButton`?",
+    "answer": "`Scaffold`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`Box`",
+      "`Column`",
+      "`Surface`",
+      "`ModalDrawer`",
+      "`Scaffold`"
+    ],
+    "category": "COMPOSE"
+  },
+  {
+    "id": 546,
+    "question": "What is the purpose of the **`@EntryPoint`** annotation in Hilt?",
+    "answer": "It allows Hilt to provide dependencies to classes that Hilt cannot inject directly (e.g., system-instantiated classes or classes that require context).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It marks the main entry point of the application.",
+      "It is a deprecated feature.",
+      "It allows Hilt to provide dependencies to classes that Hilt cannot inject directly (e.g., system-instantiated classes or classes that require context).",
+      "It is used for multi-module setup only.",
+      "It defines a factory for ViewModels."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 547,
+    "question": "In MVVM, what is the key difference between **UI State (Data)** and **UI Events (Actions)**?",
+    "answer": "UI State describes *what to show* on the screen and is observable (e.g., `loading: Boolean`), while UI Events describe *what happened* (e.g., `userClickedLogin`) and are usually one-time actions.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "UI State is always mutable, UI Events are not.",
+      "UI State is managed by the Repository, UI Events by the ViewModel.",
+      "UI State describes *what to show* on the screen and is observable (e.g., `loading: Boolean`), while UI Events describe *what happened* (e.g., `userClickedLogin`) and are usually one-time actions.",
+      "UI Events are only for network calls, UI State is for local data.",
+      "They are two different names for the same concept."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 548,
+    "question": "What is a **Use Case** (or Interactor) in Clean Architecture?",
+    "answer": "A class that encapsulates a single, specific business rule or application logic interaction, residing in the Domain layer.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A class that handles all network I/O operations.",
+      "A class that displays the UI.",
+      "A class that encapsulates a single, specific business rule or application logic interaction, residing in the Domain layer.",
+      "A class that manages the `ViewModel` factory.",
+      "A configuration file for dependencies."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 549,
+    "question": "In test doubles, what is the difference between a **Stub** and a **Mock**?",
+    "answer": "A Stub provides canned answers to calls (state-based verification), while a Mock is used to verify that specific methods were called (behavior-based verification).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A Stub is used for UI tests, a Mock for unit tests.",
+      "A Stub simulates the real object, a Mock is a placeholder.",
+      "A Stub provides canned answers to calls (state-based verification), while a Mock is used to verify that specific methods were called (behavior-based verification).",
+      "A Mock is always thread-safe, a Stub is not.",
+      "A Stub can only be used on interfaces."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 550,
+    "question": "Which principle suggests that clients should not be forced to depend on methods they do not use (i.e., prefer many smaller, specialized interfaces over one large general-purpose interface)?",
+    "answer": "Interface Segregation Principle (ISP)",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Single Responsibility Principle (SRP)",
+      "Open-Closed Principle (OCP)",
+      "Liskov Substitution Principle (LSP)",
+      "Dependency Inversion Principle (DIP)",
+      "Interface Segregation Principle (ISP)"
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 551,
+    "question": "What is the primary function of **BuildSrc** in a Gradle multi-module project?",
+    "answer": "To define and centralize dependencies, versions, and build logic using Kotlin DSL, making them type-safe and easily shareable across all modules.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To store all the application's Java code.",
+      "To define and centralize dependencies, versions, and build logic using Kotlin DSL, making them type-safe and easily shareable across all modules.",
+      "To contain all the UI layout files.",
+      "To run all integration tests.",
+      "To manage all asset files."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 552,
+    "question": "Which Android build type is optimized for size and performance and is used to create the final application package uploaded to the stores?",
+    "answer": "release",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "debug",
+      "staging",
+      "test",
+      "production",
+      "release"
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 553,
+    "question": "What is the main purpose of the **`adb logcat`** command?",
+    "answer": "To view the system log buffer in real time, which contains system messages, stack traces, and messages printed by the app using `Log` calls.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To install an APK on the device.",
+      "To transfer files to the device.",
+      "To view the system log buffer in real time, which contains system messages, stack traces, and messages printed by the app using `Log` calls.",
+      "To capture a screenshot.",
+      "To get a list of all installed apps."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 554,
+    "question": "What is the key advantage of using a **`VectorDrawable`** over a standard PNG image in Android?",
+    "answer": "It is an XML-based graphic that can be scaled without loss of quality, leading to smaller APK size and one asset file for all screen densities.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It is always faster to draw than a PNG.",
+      "It is an XML-based graphic that can be scaled without loss of quality, leading to smaller APK size and one asset file for all screen densities.",
+      "It is used only for animations.",
+      "It is easier to edit than a PNG.",
+      "It supports 3D rendering."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 555,
+    "question": "When debugging a performance issue, what does the term **'jank'** refer to in Android UI development?",
+    "answer": "Visible stuttering or choppiness in the UI (dropping frames) due to the main thread being blocked or overloaded, causing the frame rate to drop below 60fps/16ms.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "A type of memory leak.",
+      "A network connectivity error.",
+      "Visible stuttering or choppiness in the UI (dropping frames) due to the main thread being blocked or overloaded, causing the frame rate to drop below 60fps/16ms.",
+      "An unexpected application crash.",
+      "A problem with the Gradle build system."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 556,
+    "question": "What is the significance of the **Android App Bundle (AAB)** format compared to the traditional APK?",
+    "answer": "AAB is a publishing format that defers final APK generation to Google Play, allowing for optimized, smaller APKs (via dynamic delivery) tailored to the user's specific device configuration.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "AAB is only for testing purposes.",
+      "AAB is fully compatible with all versions of Android.",
+      "AAB is a publishing format that defers final APK generation to Google Play, allowing for optimized, smaller APKs (via dynamic delivery) tailored to the user's specific device configuration.",
+      "AAB is only used for Wear OS apps.",
+      "AAB removes the need for signing the application."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 557,
+    "question": "Which of these is the **BEST** practice for handling a large bitmap image before displaying it in an `ImageView`?",
+    "answer": "Load a downsampled version of the bitmap that matches the display size of the `ImageView` to conserve memory.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "Load the full-resolution bitmap directly, as Android handles scaling.",
+      "Save the bitmap to SharedPreferences first.",
+      "Load a downsampled version of the bitmap that matches the display size of the `ImageView` to conserve memory.",
+      "Force garbage collection before loading the bitmap.",
+      "Use an `AsyncTask` to load the full image on the main thread."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 558,
+    "question": "What is the primary difference between **`git merge`** and **`git rebase`**?",
+    "answer": "`merge` creates a new merge commit, preserving the branch history; `rebase` rewrites the project history by moving/reapplying commits from one branch onto another, creating a linear history.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`merge` is only for remote branches, `rebase` is for local.",
+      "`rebase` is a destructive operation that cannot be undone.",
+      "`merge` creates a new merge commit, preserving the branch history; `rebase` rewrites the project history by moving/reapplying commits from one branch onto another, creating a linear history.",
+      "They are two aliases for the same command.",
+      "`merge` is only for fast-forward commits."
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 559,
+    "question": "Which Git command is used to record a snapshot of your repository for easy reference, often used to mark release points?",
+    "answer": "`git tag`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`git stash`",
+      "`git log`",
+      "`git commit`",
+      "`git branch`",
+      "`git tag`"
+    ],
+    "category": "OTHER"
+  },
+  {
+    "id": 560,
+    "question": "In the context of the SOLID principles, what is the **Single Responsibility Principle (SRP)**?",
+    "answer": "A module, class, or function should have only one reason to change, meaning it should have only one job or responsibility.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "All classes should be singletons.",
+      "A class should only extend one interface.",
+      "A module, class, or function should have only one reason to change, meaning it should have only one job or responsibility.",
+      "All dependencies must be inverted.",
+      "Code should be open for modification."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 561,
+    "question": "In a custom View, which method is typically overridden to specify the view's desired size, often based on its content and MeasureSpec constraints?",
+    "answer": "`onMeasure(int widthMeasureSpec, int heightMeasureSpec)`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`onDraw(Canvas canvas)`",
+      "`onLayout(boolean changed, int left, int top, int right, int bottom)`",
+      "`onSizeChanged(int w, int h, int oldw, int oldh)`",
+      "`onMeasure(int widthMeasureSpec, int heightMeasureSpec)`",
+      "`onAttachedToWindow()`"
+    ],
+    "category": "ANDROID_SDK"
+  },
+  {
+    "id": 562,
+    "question": "Which `MutableLiveData` method should be used when updating the value from a **background thread**?",
+    "answer": "`postValue(T value)`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`setValue(T value)`",
+      "`updateValue(T value)`",
+      "`postValue(T value)`",
+      "`applyValue(T value)`",
+      "Both `setValue` and `postValue` can be used."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 563,
+    "question": "When defining an **`@Entity`** in Room, what attribute is used to specify a column name in the database that is different from the field name in the Kotlin class?",
+    "answer": "`@ColumnInfo(name = \"new_name\")`",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "`@FieldName(\"new_name\")`",
+      "`@PrimaryKey(columnName = \"new_name\")`",
+      "`@Ignore`",
+      "`@Column(name = \"new_name\")`",
+      "`@ColumnInfo(name = \"new_name\")`"
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 564,
+    "question": "What is a **`TypeConverter`** in Jetpack Room used for?",
+    "answer": "To tell Room how to convert custom, non-primitive data types (like `Date` or a complex object) into types that can be stored in the SQLite database (like `Long` or `String`).",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "To convert Java types to Kotlin types.",
+      "To handle database migrations automatically.",
+      "To define relationships between entities.",
+      "To tell Room how to convert custom, non-primitive data types (like `Date` or a complex object) into types that can be stored in the SQLite database (like `Long` or `String`).",
+      "To convert Room entities to JSON."
+    ],
+    "category": "ARCHITECTURE"
+  },
+  {
+    "id": 565,
+    "question": "In Compose, what is the effect of using the **`key`** function within a loop (e.g., inside a `LazyColumn` or `Column`)?",
+    "answer": "It provides a stable identity for items in the list, allowing Compose to correctly reuse, move, and skip recomposing composables when the list changes or is scrolled.",
+    "type": "MULTIPLE_CHOICE",
+    "fakeOptions": [
+      "It makes the items clickable.",
+      "It forces the items to be recomposed every time.",
+      "It provides a stable identity for items in the list, allowing Compose to correctly reuse, move, and skip recomposing composables when the list changes or is scrolled.",
+      "It is used for accessibility purposes only.",
+      "It defines the unique primary key of the item."
+    ],
+    "category": "COMPOSE"
   }
 ]
