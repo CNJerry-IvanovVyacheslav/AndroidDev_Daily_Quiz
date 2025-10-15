@@ -59,6 +59,9 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
     private val _maxConsecutive = MutableStateFlow(0)
     val maxConsecutive: StateFlow<Int> = _maxConsecutive
 
+    private val _tipOfTheDay = MutableStateFlow("")
+    val tipOfTheDay: StateFlow<String> = _tipOfTheDay
+
     val isDataStoreLoaded = MutableStateFlow(false)
 
     init {
@@ -66,6 +69,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
 
         viewModelScope.launch {
             dataStore.initializeIfNeeded()
+            dataStore.updateTipIfNeeded()
 
             launch {
                 dataStore.correctFlow.collectLatest {
@@ -94,6 +98,7 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
                     _maxErrorsCategory.value = maxPair
                 }
             }
+            launch { dataStore.tipOfTheDayFlow.collectLatest { _tipOfTheDay.value = it } }
 
             isDataStoreLoaded.value = true
         }
@@ -168,7 +173,6 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             dataStore.updateStreak()
         }
     }
-
 
     private fun recalcAccuracy() {
         val total = _correctAnswers.value + _incorrectAnswers.value
