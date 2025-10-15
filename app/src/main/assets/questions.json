@@ -6427,7 +6427,7 @@
   },
   {
     "id": 460,
-    "question": "In MVVM, what does the term **Unidirectional Data Flow (UDF)** mean?",
+    "question": "In MVVM, what does the term 'Unidirectional Data Flow (UDF)' mean?",
     "answer": "Data flows in one direction (e.g., UI Event -> ViewModel -> Model), and State flows back in the opposite direction (Model -> ViewModel -> UI State).",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -6735,7 +6735,7 @@
   },
   {
     "id": 482,
-    "question": "What is a main benefit of using **Build Variants** (product flavors and build types) in Gradle?",
+    "question": "What is a main benefit of using 'Build Variants' (product flavors and build types) in Gradle?",
     "answer": "To create different versions of an application from a single project codebase (e.g., free vs. paid, different environments, etc.).",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -6749,7 +6749,7 @@
   },
   {
     "id": 483,
-    "question": "Which method is the correct place to instantiate data-bound variables in a Fragment when using **View Binding**?",
+    "question": "Which method is the correct place to instantiate data-bound variables in a Fragment when using 'View Binding'?",
     "answer": "Between `onCreateView()` and `onDestroyView()` (usually in `onCreateView()` right after inflating, and nullifying in `onDestroyView()`).",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -6833,7 +6833,7 @@
   },
   {
     "id": 489,
-    "question": "In WorkManager, what does the **Expedited** type of work primarily indicate?",
+    "question": "In WorkManager, what does the 'Expedited' type of work primarily indicate?",
     "answer": "It indicates important tasks that should be started immediately and completed within a short window, even if the system is restricting background execution.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -6987,7 +6987,7 @@
   },
   {
     "id": 500,
-    "question": "In Clean Architecture, what is the primary role of the **Domain** layer?",
+    "question": "In Clean Architecture, what is the primary role of the 'Domain' layer?",
     "answer": "To contain the application's business rules and entities, independent of any UI, database, or external framework.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7043,7 +7043,7 @@
   },
   {
     "id": 504,
-    "question": "What is the primary role of **Robolectric** in Android testing?",
+    "question": "What is the primary role of 'Robolectric' in Android testing?",
     "answer": "It allows local unit tests to run on a development machine (JVM) by providing a simulated Android environment, enabling testing of code that depends on the Android framework without an emulator.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7071,7 +7071,7 @@
   },
   {
     "id": 506,
-    "question": "What is **Recomposition** in Jetpack Compose?",
+    "question": "What is 'Recomposition' in Jetpack Compose?",
     "answer": "The process of re-executing Composable functions when their input data (state) changes, to update the UI.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7099,7 +7099,7 @@
   },
   {
     "id": 508,
-    "question": "In Compose Navigation, what is a primary benefit of using **nested navigation graphs**?",
+    "question": "In Compose Navigation, what is a primary benefit of using 'nested navigation graphs'?",
     "answer": "To modularize the application's navigation, allowing a smaller, self-contained set of destinations to be grouped and reused.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7197,7 +7197,7 @@
   },
   {
     "id": 515,
-    "question": "What is the primary purpose of **Kotlin Symbol Processing (KSP)**?",
+    "question": "What is the primary purpose of 'Kotlin Symbol Processing (KSP)'?",
     "answer": "A processor API that replaces Kotlin Annotation Processing (KAPT) for faster and more type-safe code generation, widely used by libraries like Room and Hilt.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7225,7 +7225,7 @@
   },
   {
     "id": 517,
-    "question": "Which of these is a valid reason to use a **`typealias`** in Kotlin?",
+    "question": "Which of these is a valid reason to use a `typealias` in Kotlin?",
     "answer": "To provide a shorter or more meaningful name for an existing type, especially for complex generic types or function types.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7239,7 +7239,7 @@
   },
   {
     "id": 518,
-    "question": "What is a major limitation of the **`lateinit`** modifier in Kotlin?",
+    "question": "What is a major limitation of the `lateinit` modifier in Kotlin?",
     "answer": "It can only be used on non-nullable `var` properties that are not of a primitive type.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7253,7 +7253,7 @@
   },
   {
     "id": 519,
-    "question": "What is the primary role of an **`operator`** function in Kotlin?",
+    "question": "What is the primary role of an `operator` function in Kotlin?",
     "answer": "To allow a class to use conventional notations (like +, -, *, or []) for certain operations, often resulting in cleaner code.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7267,7 +7267,7 @@
   },
   {
     "id": 520,
-    "question": "How is the **`when`** expression different from the Java `switch` statement in Kotlin?",
+    "question": "How is the `when` expression different from the Java `switch` statement in Kotlin?",
     "answer": "'when' can be used as an expression (returning a value), supports multiple and custom conditions, works with any type, and doesn’t require a default case when exhaustive.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7281,7 +7281,7 @@
   },
   {
     "id": 521,
-    "question": "What is the purpose of the **`@JvmStatic`** annotation in a Kotlin `companion object`?",
+    "question": "What is the purpose of the `@JvmStatic` annotation in a Kotlin `companion object`?",
     "answer": "It exposes a member of the `companion object` as a static method in the generated Java bytecode, making it easier to call from Java code.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7309,7 +7309,7 @@
   },
   {
     "id": 523,
-    "question": "How does an **`object`** declaration in Kotlin guarantee a singleton instance?",
+    "question": "How does an `object` declaration in Kotlin guarantee a singleton instance?",
     "answer": "The initialization block runs lazily and thread-safely upon first access, and the compiler ensures only a single instance is created.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7393,7 +7393,7 @@
   },
   {
     "id": 529,
-    "question": "What is the purpose of the **`android:allowBackup=\"false\"`** attribute in the manifest?",
+    "question": "What is the purpose of the `android:allowBackup=\"false\"` attribute in the manifest?",
     "answer": "It disables the automatic backup and restore of app data to Google Drive for the app.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7421,7 +7421,7 @@
   },
   {
     "id": 531,
-    "question": "Which **terminal operator** on a Kotlin `Flow` collects all values and **returns only the last emitted value** (throwing an exception if the flow is empty)?",
+    "question": "Which terminal operator on a Kotlin `Flow` collects all values and returns only the last emitted value (throwing an exception if the flow is empty)?",
     "answer": "`last()`",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7449,7 +7449,7 @@
   },
   {
     "id": 533,
-    "question": "What is the primary characteristic of the **`Dispatchers.Unconfined`** dispatcher?",
+    "question": "What is the primary characteristic of the `Dispatchers.Unconfined` dispatcher?",
     "answer": "It starts the coroutine on the calling thread, but after the first suspension, it resumes in the dispatcher determined by the suspend function that was called.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7477,7 +7477,7 @@
   },
   {
     "id": 535,
-    "question": "In the context of `SharedFlow` and `StateFlow`, what does the **`replay`** parameter define?",
+    "question": "In the context of `SharedFlow` and `StateFlow`, what does the `replay` parameter define?",
     "answer": "The number of the most recently emitted values that should be sent to any new collector immediately upon subscription.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7491,7 +7491,7 @@
   },
   {
     "id": 536,
-    "question": "Which coroutine scope is the recommended approach for managing long-running operations (like background data synchronization) that must **outlive the UI** (Activity/Fragment) but must **terminate** when the application process is killed?",
+    "question": "Which coroutine scope is the recommended approach for managing long-running operations (like background data synchronization) that must outlive the UI (Activity/Fragment) but must terminate when the application process is killed?",
     "answer": "A custom CoroutineScope instance tied to the Application lifecycle (often managed by a Dependency Injection component).",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7519,7 +7519,7 @@
   },
   {
     "id": 538,
-    "question": "In Room, what is the advantage of using a **`PagingSource`** return type in a DAO query?",
+    "question": "In Room, what is the advantage of using a `PagingSource` return type in a DAO query?",
     "answer": "It allows Room to work with the Jetpack Paging library, efficiently loading and displaying large lists of data incrementally.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7547,7 +7547,7 @@
   },
   {
     "id": 540,
-    "question": "What is the primary use case for Jetpack Compose's **`LaunchedEffect(key1)`** with a key?",
+    "question": "What is the primary use case for Jetpack Compose's `LaunchedEffect(key1)` with a key?",
     "answer": "To launch a coroutine when the Composable first enters the composition and restart/re-run the coroutine if the `key1` parameter changes.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7575,7 +7575,7 @@
   },
   {
     "id": 542,
-    "question": "What is the key difference between a Composable function marked with **`@Stable`** and one that is unmarked?",
+    "question": "What is the key difference between a Composable function marked with `@Stable` and one that is unmarked?",
     "answer": "A type marked as @Stable tells the Compose compiler that its public properties don’t change unexpectedly, allowing recomposition to be skipped when parameters remain equal.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7631,7 +7631,7 @@
   },
   {
     "id": 546,
-    "question": "What is the purpose of the **`@EntryPoint`** annotation in Hilt?",
+    "question": "What is the purpose of the `@EntryPoint` annotation in Hilt?",
     "answer": "It allows Hilt to provide dependencies to classes that Hilt cannot inject directly (e.g., system-instantiated classes or classes that require context).",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7645,7 +7645,7 @@
   },
   {
     "id": 547,
-    "question": "In MVVM, what is the key difference between **UI State (Data)** and **UI Events (Actions)**?",
+    "question": "In MVVM, what is the key difference between UI State (Data) and UI Events (Actions)?",
     "answer": "UI State describes *what to show* on the screen and is observable (e.g., `loading: Boolean`), while UI Events describe *what happened* (e.g., `userClickedLogin`) and are usually one-time actions.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7659,7 +7659,7 @@
   },
   {
     "id": 548,
-    "question": "What is a **Use Case** (or Interactor) in Clean Architecture?",
+    "question": "What is a Use Case (or Interactor) in Clean Architecture?",
     "answer": "A class that encapsulates a single, specific business rule or application logic interaction, residing in the Domain layer.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7673,7 +7673,7 @@
   },
   {
     "id": 549,
-    "question": "In test doubles, what is the difference between a **Stub** and a **Mock**?",
+    "question": "In test doubles, what is the difference between a Stub and a Mock?",
     "answer": "A Stub provides canned answers to calls (state-based verification), while a Mock is used to verify that specific methods were called (behavior-based verification).",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7701,7 +7701,7 @@
   },
   {
     "id": 551,
-    "question": "What is the primary function of **BuildSrc** in a Gradle multi-module project?",
+    "question": "What is the primary function of BuildSrc in a Gradle multi-module project?",
     "answer": "To define and centralize dependencies, versions, and build logic using Kotlin DSL, making them type-safe and easily shareable across all modules.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7729,7 +7729,7 @@
   },
   {
     "id": 553,
-    "question": "What is the main purpose of the **`adb logcat`** command?",
+    "question": "What is the main purpose of the `adb logcat` command?",
     "answer": "To view the system log buffer in real time, which contains system messages, stack traces, and messages printed by the app using `Log` calls.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7743,7 +7743,7 @@
   },
   {
     "id": 554,
-    "question": "What is the key advantage of using a **`VectorDrawable`** over a standard PNG image in Android?",
+    "question": "What is the key advantage of using a `VectorDrawable` over a standard PNG image in Android?",
     "answer": "It is an XML-based graphic that can be scaled without loss of quality, leading to smaller APK size and one asset file for all screen densities.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7757,7 +7757,7 @@
   },
   {
     "id": 555,
-    "question": "When debugging a performance issue, what does the term **'jank'** refer to in Android UI development?",
+    "question": "When debugging a performance issue, what does the term 'jank' refer to in Android UI development?",
     "answer": "Visible stuttering or choppiness in the UI (dropping frames) due to the main thread being blocked or overloaded, causing the frame rate to drop below 60fps/16ms.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7771,7 +7771,7 @@
   },
   {
     "id": 556,
-    "question": "What is the significance of the **Android App Bundle (AAB)** format compared to the traditional APK?",
+    "question": "What is the significance of the Android App Bundle (AAB) format compared to the traditional APK?",
     "answer": "AAB is a publishing format that defers final APK generation to Google Play, allowing for optimized, smaller APKs (via dynamic delivery) tailored to the user's specific device configuration.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7785,7 +7785,7 @@
   },
   {
     "id": 557,
-    "question": "Which of these is the **BEST** practice for handling a large bitmap image before displaying it in an `ImageView`?",
+    "question": "Which of these is the BEST practice for handling a large bitmap image before displaying it in an `ImageView`?",
     "answer": "Load a downsampled version of the bitmap that matches the display size of the `ImageView` to conserve memory.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7799,7 +7799,7 @@
   },
   {
     "id": 558,
-    "question": "What is the primary difference between **`git merge`** and **`git rebase`**?",
+    "question": "What is the primary difference between `git merge` and `git rebase`?",
     "answer": "`merge` creates a new merge commit, preserving the branch history; `rebase` rewrites the project history by moving/reapplying commits from one branch onto another, creating a linear history.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7827,7 +7827,7 @@
   },
   {
     "id": 560,
-    "question": "In the context of the SOLID principles, what is the **Single Responsibility Principle (SRP)**?",
+    "question": "In the context of the SOLID principles, what is the Single Responsibility Principle (SRP)?",
     "answer": "A module, class, or function should have only one reason to change, meaning it should have only one job or responsibility.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7855,7 +7855,7 @@
   },
   {
     "id": 562,
-    "question": "Which `MutableLiveData` method should be used when updating the value from a **background thread**?",
+    "question": "Which `MutableLiveData` method should be used when updating the value from a background thread?",
     "answer": "`postValue(T value)`",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7869,7 +7869,7 @@
   },
   {
     "id": 563,
-    "question": "When defining an **`@Entity`** in Room, what attribute is used to specify a column name in the database that is different from the field name in the Kotlin class?",
+    "question": "When defining an `@Entity` in Room, what attribute is used to specify a column name in the database that is different from the field name in the Kotlin class?",
     "answer": "`@ColumnInfo(name = \"new_name\")`",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7883,7 +7883,7 @@
   },
   {
     "id": 564,
-    "question": "What is a **`TypeConverter`** in Jetpack Room used for?",
+    "question": "What is a `TypeConverter` in Jetpack Room used for?",
     "answer": "To tell Room how to convert custom, non-primitive data types (like `Date` or a complex object) into types that can be stored in the SQLite database (like `Long` or `String`).",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
@@ -7897,7 +7897,7 @@
   },
   {
     "id": 565,
-    "question": "In Compose, what is the effect of using the **`key`** function within a loop (e.g., inside a `LazyColumn` or `Column`)?",
+    "question": "In Compose, what is the effect of using the `key` function within a loop (e.g., inside a `LazyColumn` or `Column`)?",
     "answer": "It provides a stable identity for items in the list, allowing Compose to correctly reuse, move, and skip recomposing composables when the list changes or is scrolled.",
     "type": "MULTIPLE_CHOICE",
     "fakeOptions": [
