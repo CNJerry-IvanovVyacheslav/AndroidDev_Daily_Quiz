@@ -28,7 +28,6 @@ class DataStoreManager(private val context: Context) {
         private val CURRENT_CONSECUTIVE_KEY = intPreferencesKey("current_consecutive")
         private val MAX_CONSECUTIVE_KEY = intPreferencesKey("max_consecutive")
 
-        // Keys for Tip of the Day
         private val LAST_TIP_DATE_KEY = stringPreferencesKey("last_tip_date")
         private val CURRENT_TIP_KEY = stringPreferencesKey("current_tip")
 
@@ -77,6 +76,34 @@ class DataStoreManager(private val context: Context) {
         }
     }
 
+    suspend fun checkAndResetStreakIfMissed(): Boolean {
+        var wasReset = false
+        context.dataStore.edit { prefs ->
+            val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+            val today = dateFormat.format(Calendar.getInstance().time)
+
+            val lastDate = prefs[LAST_STREAK_DATE_KEY] ?: ""
+
+            if (lastDate.isNotEmpty() && lastDate != today) {
+                val lastCalendar = Calendar.getInstance()
+                lastCalendar.time = dateFormat.parse(lastDate) ?: lastCalendar.time
+
+                val nextDay = lastCalendar.clone() as Calendar
+                nextDay.add(Calendar.DAY_OF_YEAR, 1)
+                val nextDayString = dateFormat.format(nextDay.time)
+
+                if (today != nextDayString) {
+                    // Сбрасываем стрик
+                    prefs[STREAK_COUNT_KEY] = 0
+                    prefs[LAST_STREAK_DATE_KEY] =
+                        ""
+                    wasReset = true
+                }
+            }
+        }
+        return wasReset
+    }
+
     suspend fun updateTipIfNeeded() {
         val today = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
             .format(Calendar.getInstance().time)
@@ -110,10 +137,10 @@ class DataStoreManager(private val context: Context) {
     }
 
     suspend fun updateStreak() = context.dataStore.edit { prefs ->
-        val today = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-            .format(Calendar.getInstance().time)
-
+        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+        val today = dateFormat.format(Calendar.getInstance().time)
         val lastDate = prefs[LAST_STREAK_DATE_KEY] ?: ""
+
         if (lastDate != today) {
             prefs[STREAK_COUNT_KEY] = (prefs[STREAK_COUNT_KEY] ?: 0) + 1
             prefs[LAST_STREAK_DATE_KEY] = today

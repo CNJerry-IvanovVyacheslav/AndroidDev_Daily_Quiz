@@ -71,6 +71,8 @@ class QuizViewModel(application: Application) : AndroidViewModel(application) {
             dataStore.initializeIfNeeded()
             dataStore.updateTipIfNeeded()
 
+            dataStore.checkAndResetStreakIfMissed()
+
             launch {
                 dataStore.correctFlow.collectLatest {
                     _correctAnswers.value = it; recalcAccuracy()
