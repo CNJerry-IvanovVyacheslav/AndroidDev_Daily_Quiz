@@ -7,5 +7,7 @@ enum class QuestionCategory(val displayName: String) {
     ANDROID_SDK("Android SDK"),
     ARCHITECTURE("Architecture"),
     COROUTINES("Coroutines"),
+    KOTLIN_CODE("Kotlin Code"),
+    JAVA_CODE("Java Code"),
     OTHER("Other")
 }

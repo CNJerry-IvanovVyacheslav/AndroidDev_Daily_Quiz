@@ -7,14 +7,16 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.viewModels
-import androidx.compose.runtime.*
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.work.Constraints
 import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
-import com.example.androiddevdailyquiz.data.model.QuestionType
 import com.example.androiddevdailyquiz.ui.theme.DailyQuizTheme
 import com.example.androiddevdailyquiz.ui.viewmodel.QuizViewModel
 import com.example.androiddevdailyquiz.utils.DailyQuizWorker
@@ -57,7 +59,6 @@ class MainActivity : ComponentActivity() {
                         BackHandler { currentScreen = "menu" }
                         QuizScreen(
                             viewModel = quizViewModel,
-                            mode = QuestionType.MULTIPLE_CHOICE,
                             onBackToMenu = { currentScreen = "menu" }
                         )
                     }
