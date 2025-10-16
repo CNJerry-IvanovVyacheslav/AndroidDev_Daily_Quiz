@@ -7908,5 +7908,1961 @@
       "It defines the unique primary key of the item."
     ],
     "category": "COMPOSE"
+  },
+  {
+    "id": 566,
+    "question": "```kotlin\nfun main() {\n  var x = 1\n  if (x == 1) {\n    x = 0\n  }\n  println(x)\n}\n```\n\n",
+    "answer": "0",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "0",
+      "2",
+      "Compilation error",
+      "NullPointerException"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 567,
+    "question": "```kotlin\nval list = listOf(\"a\", \"b\", \"c\")\nval result = list.getOrElse(5) { \"d\" }\nprintln(result)\n```\n\n",
+    "answer": "d",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "c",
+      "IndexOutOfBoundsException",
+      "d",
+      "a",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 568,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    int a = 5;\n    int b = 2;\n    System.out.println(a / b);\n  }\n}\n```\n\n",
+    "answer": "2",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2.5",
+      "2",
+      "2.0",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 569,
+    "question": "```kotlin\nfun main() {\n  val x = 5\n  val y = 10\n  println(x + y)\n}\n```\n\n",
+    "answer": "15",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "10",
+      "15",
+      "510",
+      "Compilation error",
+      "NullPointerException"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 570,
+    "question": "```kotlin\nval list = mutableListOf(1, 2, 3)\nlist.add(4)\nprintln(list.size)\n```\n\n",
+    "answer": "4",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "4",
+      "5",
+      "IndexOutOfBoundsException"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 571,
+    "question": "```kotlin\nfun main() {\n  val str: String? = null\n  println(str?.length ?: 5)\n}\n```\n\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "null",
+      "0",
+      "5",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 572,
+    "question": "```kotlin\nval numbers = listOf(1, 2, 3)\nprintln(numbers.first())\n```\n\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "IndexOutOfBoundsException"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 573,
+    "question": "```kotlin\nval map = mapOf(\"a\" to 1, \"b\" to 2)\nprintln(map[\"c\"] ?: 0)\n```\n\n",
+    "answer": "0",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "null",
+      "2",
+      "0",
+      "1"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 574,
+    "question": "```kotlin\nfun main() {\n  val a = 3\n  val b = 4\n  println(a * b)\n}\n```\n\n",
+    "answer": "12",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "7",
+      "12",
+      "34",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 575,
+    "question": "```kotlin\nval nums = listOf(1, 2, 3)\nprintln(nums.sum())\n```\n\n",
+    "answer": "6",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "5",
+      "6",
+      "9"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 576,
+    "question": "```kotlin\nval str = \"Kotlin\"\nprintln(str.lowercase())\n```\n\n",
+    "answer": "kotlin",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "Kotlin",
+      "KOTLIN",
+      "kotlin",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 577,
+    "question": "```kotlin\nval items = listOf(\"a\", \"b\", \"c\")\nprintln(items.joinToString(\"-\"))\n```\n\n",
+    "answer": "a-b-c",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "abc",
+      "a-b-c",
+      "a, b, c",
+      "a|b|c"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 578,
+    "question": "```kotlin\nfun greet(name: String = \"User\") {\n  println(\"Hello, $name!\")\n}\n\ngreet()\n```\n\n",
+    "answer": "Hello, User!",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "Hello, null!",
+      "Hello!",
+      "Hello, User!",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 579,
+    "question": "```kotlin\nval text = \"Android\"\nprintln(text[0])\n```\n\n",
+    "answer": "A",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "n",
+      "A",
+      "a",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 580,
+    "question": "```kotlin\nval range = 1..5\nprintln(range.count())\n```\n\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "4",
+      "5",
+      "6",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 581,
+    "question": "```kotlin\nfun main() {\n  val numbers = listOf(1, 2, 3, 4)\n  println(numbers.filter { it % 2 == 0 })\n}\n```\n\n",
+    "answer": "[2, 4]",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "[1, 3]",
+      "[2, 4]",
+      "[1, 2, 3, 4]",
+      "[4, 2]"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 582,
+    "question": "```kotlin\nval str = \"abc\"\nprintln(str.reversed())\n```\n\n",
+    "answer": "cba",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "abc",
+      "cba",
+      "acb",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 583,
+    "question": "```kotlin\nval nums = listOf(3, 1, 2)\nprintln(nums.sorted())\n```\n\n",
+    "answer": "[1, 2, 3]",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "[3, 2, 1]",
+      "[1, 2, 3]",
+      "[2, 3, 1]",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 584,
+    "question": "```kotlin\nval text = \"kotlin\"\nprintln(text.capitalize())\n```\n\n",
+    "answer": "Kotlin",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "kotlin",
+      "Kotlin",
+      "KOTLIN",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 585,
+    "question": "```kotlin\nfun square(x: Int) = x * x\nprintln(square(3))\n```\n\n",
+    "answer": "9",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "6",
+      "9",
+      "3",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 586,
+    "question": "```kotlin\nval x = 10\nval y = 3\nprintln(x % y)\n```\n\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0",
+      "1",
+      "3",
+      "10"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 587,
+    "question": "```kotlin\nval list = listOf(1, 2, 3)\nprintln(list.contains(2))\n```\n\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "false",
+      "true",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 588,
+    "question": "```kotlin\nval str = \"Hello\"\nprintln(str.substring(1, 4))\n```\n\n",
+    "answer": "ell",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "Hel",
+      "ell",
+      "llo",
+      "ello"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 589,
+    "question": "```java\npublic class Main {\n  public static void main(String[] args) {\n    String s = \"Java\";\n    System.out.println(s.length());\n  }\n}\n```\n\n",
+    "answer": "4",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "4",
+      "5",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 590,
+    "question": "```java\nint[] arr = {1, 2, 3};\nSystem.out.println(arr[1]);\n```\n\n",
+    "answer": "2",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "2",
+      "3",
+      "IndexOutOfBoundsException"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 591,
+    "question": "```java\nint x = 10;\nint y = 0;\nSystem.out.println(x / (y + 1));\n```\n\n",
+    "answer": "10",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0",
+      "10",
+      "ArithmeticException",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 592,
+    "question": "```java\nString s = null;\nSystem.out.println(s == null);\n```\n\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "false",
+      "true",
+      "NullPointerException"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 593,
+    "question": "```java\nfor (int i = 0; i < 3; i++) {\n  System.out.print(i);\n}\n```\n\n",
+    "answer": "012",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "123",
+      "012",
+      "0 1 2",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 594,
+    "question": "```java\nString s = \"abc\";\nSystem.out.println(s.toUpperCase());\n```\n\n",
+    "answer": "ABC",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "abc",
+      "ABC",
+      "Abc",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 595,
+    "question": "```java\nint a = 3;\nint b = 4;\nSystem.out.println(a * b);\n```\n\n",
+    "answer": "12",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "7",
+      "12",
+      "34",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 596,
+    "question": "```java\nint[] arr = {10, 20, 30};\nSystem.out.println(arr.length);\n```\n\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2",
+      "3",
+      "4",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 597,
+    "question": "```kotlin\nfun main() {\n  val a = 2\n  val b = 3\n  println(a + b)\n}\n```\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "6",
+      "5",
+      "23",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 598,
+    "question": "```kotlin\nfun main() {\n  val s = \"Hello\"\n  println(s.length)\n}\n```\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "4",
+      "5",
+      "6",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 599,
+    "question": "```kotlin\nfun main() {\n  val nums = listOf(1, 2, 3)\n  println(nums.sum())\n}\n```\n",
+    "answer": "6",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "5",
+      "6",
+      "3",
+      "NullPointerException"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 600,
+    "question": "```kotlin\nfun main() {\n  var x: Int? = null\n  println(x ?: 10)\n}\n```\n",
+    "answer": "10",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "null",
+      "0",
+      "10",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 601,
+    "question": "```kotlin\nfun main() {\n  val s = \"abc\"\n  println(s.reversed())\n}\n```\n",
+    "answer": "cba",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "abc",
+      "cba",
+      "Compilation error",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 602,
+    "question": "```kotlin\nfun main() {\n  val range = 1..3\n  println(range.joinToString())\n}\n```\n",
+    "answer": "1, 2, 3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1 2 3",
+      "1,2,3",
+      "1, 2, 3",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 603,
+    "question": "```kotlin\nfun main() {\n  val list = mutableListOf(1,2)\n  list += 3\n  println(list.last())\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2",
+      "3",
+      "Compilation error",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 604,
+    "question": "```kotlin\nfun inc(i: Int) = i + 1\nfun main() {\n  println(inc(4))\n}\n```\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "4",
+      "5",
+      "6",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 605,
+    "question": "```kotlin\nfun main() {\n  val s: String? = \"k\"\n  println(s?.toUpperCase())\n}\n```\n",
+    "answer": "K",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "k",
+      "K",
+      "null",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 606,
+    "question": "```kotlin\nfun main() {\n  val map = mapOf(\"a\" to 1, \"b\" to 2)\n  println(map[\"b\"])\n}\n```\n",
+    "answer": "2",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "2",
+      "null",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 607,
+    "question": "```kotlin\nfun main() {\n  val arr = arrayOf(1,2,3)\n  println(arr.size)\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2",
+      "3",
+      "Compilation error",
+      "0"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 608,
+    "question": "```kotlin\nfun main() {\n  val s = \"x\"\n  println(\"$s$s\")\n}\n```\n",
+    "answer": "xx",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "x",
+      "xx",
+      "$s$s",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 609,
+    "question": "```kotlin\nfun main() {\n  val nums = listOf(1,2,3,4)\n  println(nums.filter { it % 2 == 0 }.joinToString())\n}\n```\n",
+    "answer": "2, 4",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1, 3",
+      "2, 4",
+      "1, 2, 3, 4",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 610,
+    "question": "```kotlin\nfun main() {\n  val s = \"␣␣a␣␣\"\n  println(s.trim())\n}\n```\n",
+    "answer": "a",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "␣␣a␣␣",
+      "a",
+      "\"a\"",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 611,
+    "question": "```kotlin\ndata class P(val x: Int)\nfun main() {\n  val p1 = P(1)\n  val p2 = P(1)\n  println(p1 == p2)\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 612,
+    "question": "```kotlin\nfun main() {\n  val s = \"a,b,c\"\n  println(s.split(\",\")[1])\n}\n```\n",
+    "answer": "b",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "a",
+      "b",
+      "c",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 613,
+    "question": "```kotlin\nfun main() {\n  val x = if (true) \"yes\" else \"no\"\n  println(x)\n}\n```\n",
+    "answer": "yes",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "yes",
+      "no",
+      "Compilation error",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 614,
+    "question": "```kotlin\nfun main() {\n  val set = setOf(1,1,2)\n  println(set.size)\n}\n```\n",
+    "answer": "2",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "2",
+      "1",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 615,
+    "question": "```kotlin\nfun main(){\n  val f: (Int)->Int = { it * 2 }\n  println(f(3))\n}\n```\n",
+    "answer": "6",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "6",
+      "9",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 616,
+    "question": "```kotlin\nclass A { override fun toString() = \"A\" }\nfun main(){\n  println(A())\n}\n```\n",
+    "answer": "A",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "A",
+      "class A",
+      "Compilation error",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 617,
+    "question": "```kotlin\nfun main(){\n  val x = listOf(1,2,3).map{ it * it }\n  println(x.joinToString())\n}\n```\n",
+    "answer": "1, 4, 9",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1,4,9",
+      "1, 4, 9",
+      "1 4 9",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 618,
+    "question": "```kotlin\nfun main(){\n  val r = (1..5).count { it > 3 }\n  println(r)\n}\n```\n",
+    "answer": "2",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "2",
+      "5",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 619,
+    "question": "```kotlin\nfun main(){\n  val x = mutableListOf(\"a\")\n  x.add(0, \"b\")\n  println(x.joinToString())\n}\n```\n",
+    "answer": "b, a",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "a, b",
+      "b, a",
+      "Compilation error",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 620,
+    "question": "```kotlin\nfun main(){\n  val a = 5\n  println(a in 1..5)\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "1..5"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 621,
+    "question": "```kotlin\nfun main(){\n  val t = Pair(1, \"x\")\n  println(t.second)\n}\n```\n",
+    "answer": "x",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "x",
+      "Pair(1, x)",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 622,
+    "question": "```kotlin\nfun main(){\n  val s = \"Kotlin\"\n  println(s.substring(0,3))\n}\n```\n",
+    "answer": "Kot",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "Kot",
+      "Kotlin",
+      "Kin",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 623,
+    "question": "```kotlin\nfun main(){\n  val x = listOf(1,2,3).reduce { acc, v -> acc + v }\n  println(x)\n}\n```\n",
+    "answer": "6",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "6",
+      "123",
+      "0",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 624,
+    "question": "```kotlin\nfun main(){\n  val nums = (1..3).flatMap { listOf(it, it*10) }\n  println(nums.joinToString())\n}\n```\n",
+    "answer": "1, 10, 2, 20, 3, 30",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1,10,2,20,3,30",
+      "1, 10, 2, 20, 3, 30",
+      "1 10 2 20 3 30",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 625,
+    "question": "```kotlin\nfun main(){\n  val s = \"\".isEmpty()\n  println(s)\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 626,
+    "question": "```kotlin\nfun main(){\n  val x = IntArray(3) { it + 1 }\n  println(x.joinToString())\n}\n```\n",
+    "answer": "1, 2, 3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1,2,3",
+      "1, 2, 3",
+      "0, 1, 2",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 627,
+    "question": "```kotlin\nfun main(){\n  val s = listOf(\"a\",\"b\").joinToString(separator = \":\")\n  println(s)\n}\n```\n",
+    "answer": "a:b",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "a,b",
+      "a:b",
+      "ab",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 628,
+    "question": "```kotlin\nfun main(){\n  val x = 10\n  println(x % 3)\n}\n```\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "0",
+      "3",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 629,
+    "question": "```kotlin\nfun main(){\n  println(listOf(1,2,3).contains(2))\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "2"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 630,
+    "question": "```kotlin\nfun main(){\n  val s = \"a\"\n  println(s == \"a\")\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "null"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 631,
+    "question": "```kotlin\nfun main(){\n  val x = 1\n  when(x){\n    0 -> println(\"zero\")\n    1 -> println(\"one\")\n    else -> println(\"other\")\n  }\n}\n```\n",
+    "answer": "one",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "zero",
+      "one",
+      "other",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 632,
+    "question": "```kotlin\nfun main(){\n  val a = arrayOf(\"a\",\"b\")\n  for (i in a) print(i)\n}\n```\n",
+    "answer": "ab",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "ab",
+      "a b",
+      "a\nb",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 633,
+    "question": "```kotlin\nfun main(){\n  val x = listOf(1,2,3).indexOf(2)\n  println(x)\n}\n```\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0",
+      "1",
+      "2",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 634,
+    "question": "```kotlin\nfun main(){\n  val s = \"Hi\".padStart(4)\n  println(s)\n}\n```\n",
+    "answer": "  Hi",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "Hi",
+      "  Hi",
+      "Hi  ",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 635,
+    "question": "```kotlin\nfun main(){\n  val res = sequenceOf(1,2,3).map { it * 2 }.toList()\n  println(res.joinToString())\n}\n```\n",
+    "answer": "2, 4, 6",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2,4,6",
+      "2, 4, 6",
+      "1,2,3",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 636,
+    "question": "```kotlin\nfun greet(name: String = \"Guest\") = \"Hi, $name\"\nfun main(){\n  println(greet())\n}\n```\n",
+    "answer": "Hi, Guest",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "Hi, Guest",
+      "Hi,",
+      "Guest",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 637,
+    "question": "```kotlin\nfun main(){\n  val x = \"1\".toInt() + 2\n  println(x)\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "12",
+      "3",
+      "Compilation error",
+      "1"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 638,
+    "question": "```kotlin\nfun main(){\n  val x = listOf(1,2,3).first()\n  println(x)\n}\n```\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "3",
+      "null",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 639,
+    "question": "```kotlin\nfun main(){\n  val x = \"a\".repeat(3)\n  println(x)\n}\n```\n",
+    "answer": "aaa",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "aaa",
+      "a a a",
+      "3a",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 640,
+    "question": "```kotlin\nfun main(){\n  val x = (1..4).fold(0) { acc, v -> acc + v }\n  println(x)\n}\n```\n",
+    "answer": "10",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "10",
+      "24",
+      "0",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 641,
+    "question": "```kotlin\nfun main(){\n  val list = listOf(\"a\",\"b\",\"c\")\n  println(list.subList(0,2).joinToString())\n}\n```\n",
+    "answer": "a, b",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "a, b",
+      "a b",
+      "a,b",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 642,
+    "question": "```kotlin\nfun main(){\n  val x = 2.5\n  println(x is Double)\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "2.5"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 643,
+    "question": "```kotlin\nfun main(){\n  val s = \"abc\"\n  println(s[1])\n}\n```\n",
+    "answer": "b",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "a",
+      "b",
+      "c",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 644,
+    "question": "```kotlin\nfun main(){\n  val res = listOf(1,2,3).any { it > 2 }\n  println(res)\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "1"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 645,
+    "question": "```kotlin\nfun main(){\n  val x = (1..3).joinToString(\"-\")\n  println(x)\n}\n```\n",
+    "answer": "1-2-3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1-2-3",
+      "1, 2, 3",
+      "123",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 646,
+    "question": "```kotlin\nfun main(){\n  val t = Triple(1,2,3)\n  println(t.third)\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "2",
+      "3",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 647,
+    "question": "```java\npublic class Main {\n  public static void main(String[] args){\n    System.out.println(1 + 2);\n  }\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "12",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 648,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = \"hi\";\n    System.out.println(s.length());\n  }\n}\n```\n",
+    "answer": "2",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2",
+      "hi",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 649,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int[] a = {1,2,3};\n    System.out.println(a.length);\n  }\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "2",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 650,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(\"A\" + \"B\");\n  }\n}\n```\n",
+    "answer": "AB",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "AB",
+      "A B",
+      "Compilation error",
+      "A+B"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 651,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int a = 5; int b = 2;\n    System.out.println(a / b);\n  }\n}\n```\n",
+    "answer": "2",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2",
+      "2.5",
+      "3",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 652,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    double a = 5; double b = 2;\n    System.out.println(a / b);\n  }\n}\n```\n",
+    "answer": "2.5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2.5",
+      "2",
+      "Compilation error",
+      "3.0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 653,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String[] s = {\"x\",\"y\"};\n    for(String t: s) System.out.print(t);\n  }\n}\n```\n",
+    "answer": "xy",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "xy",
+      "x y",
+      "x\ny",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 654,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int x = 0;\n    if(x==0) x = 1;\n    System.out.println(x);\n  }\n}\n```\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0",
+      "1",
+      "Compilation error",
+      "null"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 655,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(\"\".isEmpty());\n  }\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "null"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 656,
+    "question": "```java\nimport java.util.*;\npublic class Main{\n  public static void main(String[] args){\n    List<Integer> l = Arrays.asList(1,2,3);\n    System.out.println(l.get(2));\n  }\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2",
+      "3",
+      "IndexOutOfBoundsException",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 657,
+    "question": "```java\npublic class Main{\n  static int f(int x){ return x * x; }\n  public static void main(String[] args){\n    System.out.println(f(4));\n  }\n}\n```\n",
+    "answer": "16",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "8",
+      "16",
+      "4",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 658,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    boolean b = (3 > 2);\n    System.out.println(b);\n  }\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "1"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 659,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = \"abc\";\n    System.out.println(s.charAt(1));\n  }\n}\n```\n",
+    "answer": "b",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "a",
+      "b",
+      "c",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 660,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int[] a = {1,2,3};\n    int sum = 0; for(int v: a) sum += v;\n    System.out.println(sum);\n  }\n}\n```\n",
+    "answer": "6",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "6",
+      "123",
+      "0",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 661,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = \"x\" + 1;\n    System.out.println(s);\n  }\n}\n```\n",
+    "answer": "x1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "x1",
+      "x 1",
+      "Compilation error",
+      "1x"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 662,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(Math.max(3,7));\n  }\n}\n```\n",
+    "answer": "7",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "7",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 663,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int a = 1;\n    a += 2;\n    System.out.println(a);\n  }\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "2",
+      "1",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 664,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(\"Hello\".toUpperCase());\n  }\n}\n```\n",
+    "answer": "HELLO",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "HELLO",
+      "hello",
+      "Compilation error",
+      "Hello"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 665,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int x = 5 % 2;\n    System.out.println(x);\n  }\n}\n```\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0",
+      "1",
+      "2",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 666,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    double d = 2.0/4.0;\n    System.out.println(d);\n  }\n}\n```\n",
+    "answer": "0.5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0.5",
+      "0",
+      "0.50",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 667,
+    "question": "```java\npublic class Main{\n  public static int add(int a, int b){ return a + b; }\n  public static void main(String[] args){\n    System.out.println(add(2,3));\n  }\n}\n```\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "5",
+      "23",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 668,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = null;\n    System.out.println(String.valueOf(s));\n  }\n}\n```\n",
+    "answer": "null",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "null",
+      "Compilation error",
+      "\"null\"",
+      "",
+      "NPE at runtime"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 669,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    boolean b = true && false;\n    System.out.println(b);\n  }\n}\n```\n",
+    "answer": "false",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 670,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int x = 1;\n    System.out.println(++x);\n  }\n}\n```\n",
+    "answer": "2",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "2",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 671,
+    "question": "```java\nimport java.util.*;\npublic class Main{\n  public static void main(String[] args){\n    List<Integer> l = new ArrayList<>();\n    l.add(5); l.add(6);\n    System.out.println(l.get(0));\n  }\n}\n```\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "5",
+      "6",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 672,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    for(int i=0;i<3;i++) System.out.print(i);\n  }\n}\n```\n",
+    "answer": "012",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "012",
+      "123",
+      "0 1 2",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 673,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    char c = 'A';\n    System.out.println((int)c);\n  }\n}\n```\n",
+    "answer": "65",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "65",
+      "A",
+      "Compilation error",
+      "97"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 674,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = \"ab\";\n    System.out.println(s.concat(\"c\"));\n  }\n}\n```\n",
+    "answer": "abc",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "abc",
+      "ab",
+      "Compilation error",
+      "a bc"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 675,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int a = 2, b = 3;\n    System.out.println(a * b);\n  }\n}\n```\n",
+    "answer": "6",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "5",
+      "6",
+      "23",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 676,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int[] a = new int[2];\n    System.out.println(a[0]);\n  }\n}\n```\n",
+    "answer": "0",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0",
+      "null",
+      "Compilation error",
+      "IndexOutOfBoundsException"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 677,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(Math.min(4,9));\n  }\n}\n```\n",
+    "answer": "4",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "4",
+      "9",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 678,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = \"abc\";\n    System.out.println(s.substring(1,3));\n  }\n}\n```\n",
+    "answer": "bc",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "b",
+      "bc",
+      "abc",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 679,
+    "question": "```java\npublic class Main{\n  static int fact(int n){ if(n<=1) return 1; return n*fact(n-1); }\n  public static void main(String[] args){ System.out.println(fact(4)); }\n}\n```\n",
+    "answer": "24",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "24",
+      "10",
+      "16",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 680,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int x = 10;\n    System.out.println(x >> 1);\n  }\n}\n```\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "5",
+      "10",
+      "0",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 681,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = String.valueOf(123);\n    System.out.println(s);\n  }\n}\n```\n",
+    "answer": "123",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "123",
+      "Compilation error",
+      "\"123\"",
+      "null"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 682,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int a = 7;\n    System.out.println(a%4==3);\n  }\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "3"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 683,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = \"␣x␣\";\n    System.out.println(s.trim());\n  }\n}\n```\n",
+    "answer": "x",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "␣x␣",
+      "x",
+      "Compilation error",
+      "\"x\""
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 684,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int a = 2;\n    a *= 3;\n    System.out.println(a);\n  }\n}\n```\n",
+    "answer": "6",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "5",
+      "6",
+      "2",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 685,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(java.util.Arrays.toString(new int[]{1,2}));\n  }\n}\n```\n",
+    "answer": "[1, 2]",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "[1, 2]",
+      "[1,2]",
+      "1,2",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 686,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = \"a\" + 2 + 3;\n    System.out.println(s);\n  }\n}\n```\n",
+    "answer": "a23",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "a23",
+      "a5",
+      "Compilation error",
+      "23a"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 687,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(Math.pow(2,3));\n  }\n}\n```\n",
+    "answer": "8.0",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "8.0",
+      "8",
+      "6",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 688,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = null;\n    System.out.println(s == null);\n  }\n}\n```\n",
+    "answer": "true",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "NullPointerException at runtime"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 689,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int a = Integer.parseInt(\"10\");\n    System.out.println(a+5);\n  }\n}\n```\n",
+    "answer": "15",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "15",
+      "105",
+      "Compilation error",
+      "10"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 690,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println((int)Math.round(2.6));\n  }\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "2",
+      "3",
+      "Compilation error",
+      "2.6"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 691,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int x = 1;\n    if(x>0) System.out.println(\"pos\"); else System.out.println(\"neg\");\n  }\n}\n```\n",
+    "answer": "pos",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "pos",
+      "neg",
+      "Compilation error",
+      "null"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 692,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = \"abc\".replace(\"b\",\"x\");\n    System.out.println(s);\n  }\n}\n```\n",
+    "answer": "axc",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "axc",
+      "abc",
+      "Compilation error",
+      "a c"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 693,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int[] a = {1,2,3};\n    System.out.println(a[2]);\n  }\n}\n```\n",
+    "answer": "3",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "2",
+      "IndexOutOfBoundsException",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 694,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(Boolean.toString(false));\n  }\n}\n```\n",
+    "answer": "false",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "false",
+      "true",
+      "Compilation error",
+      "0"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 695,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    int a = 1; int b = 2;\n    System.out.println(a<b ? a : b);\n  }\n}\n```\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "2",
+      "Compilation error",
+      "true"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 696,
+    "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String s = String.format(\"%d-%s\", 10, \"x\");\n    System.out.println(s);\n  }\n}\n```\n",
+    "answer": "10-x",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "10-x",
+      "10 x",
+      "Compilation error",
+      "10-"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 697,
+    "question": "```kotlin\nfun main() {\n  val x = 3\n  val y = 2\n  println(x / y.toDouble())\n}\n```\n\n",
+    "answer": "1.5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "1",
+      "1.0",
+      "1.5",
+      "2",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 698,
+    "question": "```kotlin\nfun main() {\n  val str = \"Kotlin\"\n  println(str.reversed().substring(2, 5))\n}\n```\n\n",
+    "answer": "tlo",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "nil",
+      "tol",
+      "tlo",
+      "otl",
+      "kti"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 699,
+    "question": "```kotlin\nfun main() {\n  val x = null\n  println(x ?: \"default\")\n}\n```\n\n",
+    "answer": "default",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "null",
+      "default",
+      "Compilation error",
+      "\"null\"",
+      "Unit"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 700,
+    "question": "```kotlin\nfun test(): Int {\n  return try {\n    10 / 0\n  } catch (e: Exception) {\n    5\n  } finally {\n    3\n  }\n}\n\nfun main() {\n  println(test())\n}\n```\n\n",
+    "answer": "5",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "0",
+      "5",
+      "3",
+      "Exception",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 701,
+    "question": "```kotlin\nfun main() {\n  val x = listOf(1, 2, 3)\n  println(x.map { it * it }.filter { it % 2 == 1 })\n}\n```\n\n",
+    "answer": "[1, 9]",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "[1, 4, 9]",
+      "[4]",
+      "[1, 9]",
+      "[9]",
+      "[]"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 702,
+    "question": "```kotlin\nfun main() {\n  val text = \"abc\"\n  println(text.getOrNull(5) ?: 'Z')\n}\n```\n\n",
+    "answer": "Z",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "Z",
+      "c",
+      "null",
+      "IndexOutOfBoundsException",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 703,
+    "question": "```kotlin\nfun main() {\n  val a = arrayOf(1, 2, 3)\n  val b = a.copyOf()\n  b[0] = 9\n  println(a[0])\n}\n```\n\n",
+    "answer": "1",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "9",
+      "1",
+      "2",
+      "Compilation error",
+      "ArrayIndexOutOfBoundsException"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 704,
+    "question": "```kotlin\nfun main() {\n  val x = listOf(1, 2, 3)\n  println(x.drop(1).take(1))\n}\n```\n\n",
+    "answer": "[2]",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "[1]",
+      "[2]",
+      "[3]",
+      "[]",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 705,
+    "question": "```kotlin\nfun main() {\n  val result = buildString {\n    append(\"A\")\n    append(\"B\")\n  }\n  println(result)\n}\n```\n\n",
+    "answer": "AB",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "BA",
+      "AB",
+      "A",
+      "B",
+      "Compilation error"
+    ],
+    "category": "KOTLIN_CODE"
+  },
+  {
+    "id": 706,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    int x = 10;\n    System.out.println(x++ + ++x);\n  }\n}\n```\n\n",
+    "answer": "22",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "21",
+      "22",
+      "23",
+      "Compilation error",
+      "10"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 707,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    String s = null;\n    System.out.println(s == null ? \"Null\" : s.length());\n  }\n}\n```\n\n",
+    "answer": "Null",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "NullPointerException",
+      "0",
+      "Null",
+      "Compilation error",
+      "null"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 708,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    int[] arr = {1, 2, 3};\n    System.out.println(arr[3]);\n  }\n}\n```\n\n",
+    "answer": "ArrayIndexOutOfBoundsException",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "3",
+      "Compilation error",
+      "ArrayIndexOutOfBoundsException",
+      "0",
+      "null"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 709,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    int a = 5, b = 10;\n    System.out.println(a > b ? a : b);\n  }\n}\n```\n\n",
+    "answer": "10",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "5",
+      "10",
+      "Compilation error",
+      "true",
+      "false"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 710,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    String s = \"abc\";\n    System.out.println(s.toUpperCase().charAt(1));\n  }\n}\n```\n\n",
+    "answer": "B",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "a",
+      "b",
+      "B",
+      "C",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 711,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    int x = 2;\n    System.out.println(Math.pow(x, 3));\n  }\n}\n```\n\n",
+    "answer": "8.0",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "6",
+      "8",
+      "8.0",
+      "Compilation error",
+      "2^3"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 712,
+    "question": "```java\npublic class Test {\n  static void f(Integer i) { System.out.println(\"Integer\"); }\n  static void f(long l) { System.out.println(\"long\"); }\n  public static void main(String[] args) {\n    f(5);\n  }\n}\n```\n\n",
+    "answer": "long",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "Integer",
+      "long",
+      "Compilation error",
+      "Runtime error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 713,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    String s1 = \"abc\";\n    String s2 = new String(\"abc\");\n    System.out.println(s1 == s2);\n  }\n}\n```\n\n",
+    "answer": "false",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "true",
+      "false",
+      "Compilation error",
+      "Runtime error"
+    ],
+    "category": "JAVA_CODE"
+  },
+  {
+    "id": 714,
+    "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    for (int i = 0; i < 3; i++) {\n      if (i == 1) continue;\n      System.out.print(i);\n    }\n  }\n}\n```\n\n",
+    "answer": "02",
+    "type": "CODE_SNIPPET_OUTPUT",
+    "fakeOptions": [
+      "012",
+      "02",
+      "1",
+      "0",
+      "Compilation error"
+    ],
+    "category": "JAVA_CODE"
   }
 ]
