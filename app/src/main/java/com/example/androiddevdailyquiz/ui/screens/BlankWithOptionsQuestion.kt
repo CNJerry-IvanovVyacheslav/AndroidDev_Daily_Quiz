@@ -32,11 +32,9 @@ fun OptionSelection(
     onClick: () -> Unit
 ) {
     val containerColor = when {
-        // Option selected by user
-        isSelected && isAnswerRevealed && isCorrectAnswer -> MaterialTheme.colorScheme.primary // Correct choice
-        isSelected && isAnswerRevealed && !isCorrectAnswer -> MaterialTheme.colorScheme.errorContainer // Incorrect choice
+        isSelected && isAnswerRevealed && isCorrectAnswer -> MaterialTheme.colorScheme.primary
+        isSelected && isAnswerRevealed && !isCorrectAnswer -> MaterialTheme.colorScheme.errorContainer
 
-        // Right answer when user has chosen incorrectly
         !isSelected && isAnswerRevealed && isCorrectAnswer ->
             MaterialTheme.colorScheme.primary.copy(alpha = 0.5f)
 
@@ -95,7 +93,6 @@ fun BlankWithOptionsQuestion(
     ) {
         QuestionHeader(question)
 
-        // Standard question text
         Text(
             text = question.question,
             style = MaterialTheme.typography.headlineSmall,
@@ -119,20 +116,16 @@ fun BlankWithOptionsQuestion(
     }
 }
 
-// Common header for category display
 @Composable
 fun QuestionHeader(question: Question) {
     Text(
         text = "#${question.category.displayName}",
         style = MaterialTheme.typography.bodySmall,
         color = MaterialTheme.colorScheme.onBackground.copy(alpha = 0.5f),
-        // Modifier.align(Alignment.Start) удален, чтобы избежать ошибки "Unresolved reference 'align'".
-        // В Column это выравнивание происходит по умолчанию.
     )
     Spacer(Modifier.height(8.dp))
 }
 
-// Helper to extract the code block from the question string (assuming triple backticks)
 fun extractCodeSnippet(question: String): Pair<String, String> {
     val regex = Regex("```(\\w+)?\\s*\\n([\\s\\S]*?)\\n```\\s*\\n?([\\s\\S]*)")
     val match = regex.find(question)
@@ -140,10 +133,9 @@ fun extractCodeSnippet(question: String): Pair<String, String> {
     return if (match != null) {
         val code = match.groups[2]?.value?.trim() ?: ""
         val remainingText = (match.groups[3]?.value?.trim() ?: "")
-            .replaceFirst(Regex("^\\s*\\n"), "") // Remove leading newline/spaces after code block
+            .replaceFirst(Regex("^\\s*\\n"), "")
         Pair(code, remainingText)
     } else {
-        // If no code block, return the whole text as remaining text
         Pair("", question)
     }
 }
@@ -181,7 +173,6 @@ fun CodeOutputQuestion(
         )
         Spacer(Modifier.height(16.dp))
 
-        // Code Snippet Display Area (Simulation of code styling)
         Surface(
             shape = RoundedCornerShape(8.dp),
             color = MaterialTheme.colorScheme.surface,

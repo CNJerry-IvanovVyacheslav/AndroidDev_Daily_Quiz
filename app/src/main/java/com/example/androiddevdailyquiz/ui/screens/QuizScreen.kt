@@ -38,9 +38,7 @@ fun QuizScreen(
     val currentQuestion by viewModel.currentQuestion.observeAsState()
     var hasAnswered by remember(currentQuestion?.id) { mutableStateOf(false) }
 
-    // Logic to reset hasAnswered state when question changes
     currentQuestion?.id?.let {
-        // If question ID changes, reset hasAnswered
         if (remember { mutableStateOf(it) }.value != it) {
             hasAnswered = false
             remember { mutableStateOf(it) }.value = it
@@ -67,7 +65,6 @@ fun QuizScreen(
                     .padding(horizontal = 24.dp, vertical = 12.dp)
             ) {
                 currentQuestion?.let { question ->
-                    // NEW LOGIC: Select Composable based on QuestionType
                     val onCheckAnswer: (String) -> Boolean = { answer ->
                         hasAnswered = true
                         val isCorrect = viewModel.checkAnswerSync(answer)
@@ -115,7 +112,7 @@ fun QuizScreen(
 
                 Button(
                     onClick = {
-                        hasAnswered = false // Reset state for the next question
+                        hasAnswered = false
                         viewModel.nextQuestion()
                     },
                     colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.primary),
