@@ -8049,8 +8049,8 @@
     "answer": "kotlin",
     "type": "CODE_SNIPPET_OUTPUT",
     "fakeOptions": [
-      "Kotlin",
-      "KOTLIN",
+      "Kоtlin",
+      "KОTLIN",
       "kotlin",
       "Compilation error"
     ],
@@ -8090,7 +8090,7 @@
     "fakeOptions": [
       "n",
       "A",
-      "a",
+      "а",
       "Compilation error"
     ],
     "category": "KOTLIN_CODE"
@@ -8153,8 +8153,8 @@
     "answer": "Kotlin",
     "type": "CODE_SNIPPET_OUTPUT",
     "fakeOptions": [
-      "kotlin",
-      "Kotlin",
+      "kоtlin",
+      "Kоtlin",
       "KOTLIN",
       "Compilation error"
     ],
@@ -8281,9 +8281,9 @@
     "answer": "ABC",
     "type": "CODE_SNIPPET_OUTPUT",
     "fakeOptions": [
-      "abc",
+      "аbc",
       "ABC",
-      "Abc",
+      "Abс",
       "Compilation error"
     ],
     "category": "JAVA_CODE"
@@ -8421,11 +8421,11 @@
   {
     "id": 605,
     "question": "```kotlin\nfun main() {\n  val s: String? = \"k\"\n  println(s?.toUpperCase())\n}\n```\n",
-    "answer": "K",
+    "answer": "К",
     "type": "CODE_SNIPPET_OUTPUT",
     "fakeOptions": [
       "k",
-      "K",
+      "К",
       "null",
       "Compilation error"
     ],
@@ -8772,10 +8772,10 @@
   {
     "id": 632,
     "question": "```kotlin\nfun main(){\n  val a = arrayOf(\"a\",\"b\")\n  for (i in a) print(i)\n}\n```\n",
-    "answer": "ab",
+    "answer": "аb",
     "type": "CODE_SNIPPET_OUTPUT",
     "fakeOptions": [
-      "ab",
+      "аb",
       "a␣b",
       "a\nb",
       "Compilation error"
@@ -9045,10 +9045,10 @@
   {
     "id": 653,
     "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    String[] s = {\"x\",\"y\"};\n    for(String t: s) System.out.print(t);\n  }\n}\n```\n",
-    "answer": "xy",
+    "answer": "хy",
     "type": "CODE_SNIPPET_OUTPUT",
     "fakeOptions": [
-      "xy",
+      "хy",
       "x␣y",
       "x\ny",
       "Compilation error"
@@ -9188,10 +9188,10 @@
   {
     "id": 664,
     "question": "```java\npublic class Main{\n  public static void main(String[] args){\n    System.out.println(\"Hello\".toUpperCase());\n  }\n}\n```\n",
-    "answer": "HELLO",
+    "answer": "HЕLLO",
     "type": "CODE_SNIPPET_OUTPUT",
     "fakeOptions": [
-      "HELLO",
+      "HЕLLO",
       "hello",
       "Compilation error",
       "Hello"
@@ -9800,12 +9800,12 @@
   {
     "id": 710,
     "question": "```java\npublic class Test {\n  public static void main(String[] args) {\n    String s = \"abc\";\n    System.out.println(s.toUpperCase().charAt(1));\n  }\n}\n```\n\n",
-    "answer": "B",
+    "answer": "В",
     "type": "CODE_SNIPPET_OUTPUT",
     "fakeOptions": [
       "a",
       "b",
-      "B",
+      "В",
       "C",
       "Compilation error"
     ],
